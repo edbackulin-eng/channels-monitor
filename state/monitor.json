@@ -1,0 +1,12 @@
+{
+ "summary_date": "2026-11-05",
+ "alarms": {
+  "closed-tabs:build-failed": "Closed Tabs: last build failed at resume / Render and package",
+  "dinosaurs:buffer": "Urzeit (dinosaurs): 0 of the next 3 slots have a video",
+  "dinosaurs:build-failed": "Urzeit (dinosaurs): last build failed at part (0) / Render part 0",
+  "dinosaurs:failed:lebende-fossilien": "Urzeit (dinosaurs): lebende-fossilien: qa-failed: hook; subject; pace; music; first_min; motion; dinosaurs; wow",
+  "archive:buffer": "Yesterday in Color: 0 of the next 3 slots have a video",
+  "archive:build": "Yesterday in Color: no successful build yet"
+ },
+ "last_pass": "2026-11-05T07:09:19Z"
+}

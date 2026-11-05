@@ -1,0 +1,214 @@
+{
+ "at": "2026-11-05T07:09:19Z",
+ "channels": [
+  {
+   "key": "whatif",
+   "name": "What If",
+   "repo": "edbackulin-eng/whatif-channel",
+   "problems": [],
+   "slots": [
+    {
+     "at": "2026-11-05T15:00Z",
+     "video": "tSThYV896-U",
+     "title": "What If the Core of the Earth Cooled?"
+    },
+    {
+     "at": "2026-11-06T15:00Z",
+     "video": "C1xcaw_DX3k",
+     "title": "What If Jupiter Vanished?"
+    },
+    {
+     "at": "2026-11-07T15:00Z",
+     "video": null,
+     "title": null
+    }
+   ],
+   "buffer": 2,
+   "scheduled_ahead": 2,
+   "waiting": null,
+   "watchdog_h": 0.0,
+   "build_h": 4.1,
+   "last_build_failed": null,
+   "failed": [],
+   "topics": 37,
+   "action": null
+  },
+  {
+   "key": "closed-tabs",
+   "name": "Closed Tabs",
+   "repo": "edbackulin-eng/closed-tabs",
+   "problems": [
+    [
+     "build-failed",
+     "last build failed at resume / Render and package"
+    ]
+   ],
+   "slots": [
+    {
+     "at": "2026-11-05T17:00Z",
+     "video": "gFU64aMwEGI",
+     "title": "The Flash Drives Left in Concert Bathrooms"
+    },
+    {
+     "at": "2026-11-06T17:00Z",
+     "video": "UJKn6B6FaU0",
+     "title": "The Ghost Town With a Door to Another Earth"
+    },
+    {
+     "at": "2026-11-07T17:00Z",
+     "video": null,
+     "title": null
+    }
+   ],
+   "buffer": 2,
+   "scheduled_ahead": 2,
+   "waiting": null,
+   "watchdog_h": 0.0,
+   "build_h": 12.6,
+   "last_build_failed": {
+    "run": "https://github.com/edbackulin-eng/closed-tabs/actions/runs/41955999901",
+    "step": "resume / Render and package",
+    "at": "2026-11-05T02:35:13Z"
+   },
+   "failed": [],
+   "topics": 16,
+   "action": null
+  },
+  {
+   "key": "dinosaurs",
+   "name": "Urzeit (dinosaurs)",
+   "repo": "edbackulin-eng/prehistoric-channel",
+   "problems": [
+    [
+     "buffer",
+     "0 of the next 3 slots have a video"
+    ],
+    [
+     "build-failed",
+     "last build failed at part (0) / Render part 0"
+    ],
+    [
+     "failed:lebende-fossilien",
+     "lebende-fossilien: qa-failed: hook; subject; pace; music; first_min; motion; dinosaurs; wow"
+    ]
+   ],
+   "slots": [
+    {
+     "at": "2026-11-07T16:00Z",
+     "video": null,
+     "title": null
+    },
+    {
+     "at": "2026-11-11T16:00Z",
+     "video": null,
+     "title": null
+    },
+    {
+     "at": "2026-11-14T16:00Z",
+     "video": null,
+     "title": null
+    }
+   ],
+   "buffer": 0,
+   "scheduled_ahead": 0,
+   "waiting": 0,
+   "watchdog_h": 0.0,
+   "build_h": 17.2,
+   "last_build_failed": {
+    "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/41922911782",
+    "step": "part (0) / Render part 0",
+    "at": "2026-11-05T06:57:55Z"
+   },
+   "failed": [
+    {
+     "episode": "lebende-fossilien",
+     "reason": "qa-failed: hook; subject; pace; music; first_min; motion; dinosaurs; wow"
+    }
+   ],
+   "topics": 19,
+   "action": "watchdog.yml: no MONITOR_TOKEN: cannot start it"
+  },
+  {
+   "key": "archive",
+   "name": "Yesterday in Color",
+   "repo": "edbackulin-eng/archive-channel",
+   "problems": [
+    [
+     "buffer",
+     "0 of the next 3 slots have a video"
+    ],
+    [
+     "build",
+     "no successful build yet"
+    ]
+   ],
+   "slots": [
+    {
+     "at": "2026-11-06T17:00Z",
+     "video": null,
+     "title": null
+    },
+    {
+     "at": "2026-11-10T17:00Z",
+     "video": null,
+     "title": null
+    },
+    {
+     "at": "2026-11-13T17:00Z",
+     "video": null,
+     "title": null
+    }
+   ],
+   "buffer": 0,
+   "scheduled_ahead": 0,
+   "waiting": 0,
+   "watchdog_h": 0.0,
+   "build_h": null,
+   "last_build_failed": null,
+   "failed": [],
+   "topics": 20,
+   "action": "watchdog.yml: no MONITOR_TOKEN: cannot start it"
+  },
+  {
+   "key": "stoic",
+   "name": "Stoic (yt-factory-daily)",
+   "repo": "beautyapp800-ctrl/yt-factory-daily",
+   "problems": [],
+   "slots": [
+    {
+     "at": "2026-11-05T19:00Z",
+     "video": "ZYaD33YEqlM",
+     "title": "10 Things To Remove For Stoic Clarity"
+    },
+    {
+     "at": "2026-11-06T19:00Z",
+     "video": null,
+     "title": null
+    },
+    {
+     "at": "2026-11-07T19:00Z",
+     "video": null,
+     "title": null
+    }
+   ],
+   "buffer": 1,
+   "scheduled_ahead": 1,
+   "waiting": null,
+   "watchdog_h": 6.6,
+   "build_h": 12.9,
+   "last_build_failed": null,
+   "failed": [],
+   "topics": null,
+   "action": null
+  }
+ ],
+ "gpu": {
+  "hours": 9.84,
+  "parts": {
+   "closed-tabs": 8.39,
+   "What If": 0.0,
+   "dinosaurs": 1.45
+  }
+ },
+ "shared": []
+}
