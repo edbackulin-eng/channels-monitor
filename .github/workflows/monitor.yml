@@ -1,0 +1,46 @@
+name: monitor
+# One look at every channel (monitor/check.py) every 3 hours, and the daily summary at 07:00
+# Kyiv. A run checks every 15 minutes whether a pass or the summary is due, for almost six
+# hours, and then starts its successor; the schedule (an odd minute, every 3 hours) only
+# restarts the chain if it ever breaks - GitHub drops many scheduled runs.
+on:
+  schedule:
+    - cron: "17 */3 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+  actions: write
+concurrency:
+  group: monitor
+  cancel-in-progress: false
+jobs:
+  watch:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 355
+    env:
+      GH_TOKEN: ${{ github.token }}
+      # starting another repository's watchdog needs a token of its own (actions: write on it)
+      MONITOR_TOKEN: ${{ secrets.MONITOR_TOKEN }}
+      PYTHONUTF8: 1
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - name: Every 15 minutes, a pass when due, then hand over
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          end=$(( $(date +%s) + 5*3600 + 40*60 ))
+          while [ "$(date +%s)" -lt "$end" ]; do
+            git pull -q --rebase --autostash origin main || { git rebase --abort 2>/dev/null || true; git reset -q --hard origin/main; }
+            python monitor/check.py --due || echo "::warning::the pass failed; next try in 15 minutes"
+            git add README.md state/monitor.json state/channels.json 2>/dev/null || true
+            if ! git diff --cached --quiet; then
+              git commit -q -m "monitor: $(date -u +%Y-%m-%dT%H:%MZ)"
+              for i in 1 2 3 4 5; do git pull -q --rebase --autostash origin main && git push -q origin HEAD:main && break; sleep $((i * 8)); done
+            fi
+            sleep 900
+          done
+          gh workflow run monitor.yml --repo ${{ github.repository }}

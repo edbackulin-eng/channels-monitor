@@ -1,0 +1,36 @@
+name: smoke
+# Code reaches main only through here: work is pushed to dev, this runs the monitor on fake
+# data (scripts/smoke.py) and, if it passes, moves dev to main.
+on:
+  push:
+    branches: [dev]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: smoke
+  cancel-in-progress: false
+jobs:
+  smoke:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      PYTHONUTF8: 1
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: dev
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - run: python scripts/smoke.py
+      - name: Move dev to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch -q origin main dev
+          git checkout -q -B main origin/main
+          git merge -q --no-edit origin/dev
+          for i in 1 2 3 4 5; do git push -q origin main && break; sleep $((i * 8)); git fetch -q origin main && git merge -q --no-edit origin/main; done
+          git push -q origin main:dev || true
