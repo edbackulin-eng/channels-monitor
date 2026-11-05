@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T19:12:35Z",
+ "at": "2026-11-05T20:13:27Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 4.6,
+   "build_h": 5.7,
    "last_build_failed": null,
    "failures": [
     {
@@ -100,7 +100,7 @@
    "scheduled_ahead": 1,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 24.7,
+   "build_h": 25.7,
    "last_build_failed": {
     "run": "https://github.com/edbackulin-eng/closed-tabs/actions/runs/41955999901",
     "id": 41955999901,
@@ -183,7 +183,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 29.3,
+   "build_h": 30.3,
    "last_build_failed": {
     "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/41922911782",
     "id": 41922911782,
@@ -331,8 +331,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 18.7,
-   "build_h": 0.9,
+   "watchdog_h": 19.7,
+   "build_h": 2.0,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -343,9 +343,9 @@
   }
  ],
  "gpu": {
-  "hours": 9.84,
+  "hours": 11.81,
   "parts": {
-   "closed-tabs": 8.39,
+   "closed-tabs": 10.36,
    "What If": 0.0,
    "dinosaurs": 1.45
   }

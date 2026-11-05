@@ -10,7 +10,7 @@
   "archive:build": "Yesterday in Color: no successful build yet",
   "archive:build-failed": "Yesterday in Color: last build failed at cut (0) / Run python automation/build.py \"$SLUG\" cut 0 8"
  },
- "last_pass": "2026-11-05T19:12:35Z",
+ "last_pass": "2026-11-05T20:13:27Z",
  "planned": [
   {
    "id": "ct-build-0711",
@@ -22,13 +22,14 @@
     "force_window": "false"
    },
    "unless_slot_filled": "2026-11-07",
-   "why": "owner 05.11: the build for 07.11 starts at 20:00 UTC with the full stills budget"
+   "why": "owner 05.11: the build for 07.11 starts at 20:00 UTC with the full stills budget",
+   "done": "2026-11-05T20:13:27Z"
   }
  ],
  "cancelled": [],
  "requeued": [],
  "done": {
-  "whatif:requeue": "2026-11-05T19:12:35Z"
+  "whatif:requeue": "2026-11-05T20:13:27Z"
  },
  "owner_alarms": {
   "archive:owner-buffer0": "Yesterday in Color: nothing for the next slot (2026-11-06T17:00Z) and no video ahead"

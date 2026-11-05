@@ -6,5 +6,13 @@
   "action": "runbook",
   "why": "",
   "result": "stopped: HTTP Error 500: Internal Server Error"
+ },
+ {
+  "at": "2026-11-05T20:13:27Z",
+  "channel": "closed-tabs",
+  "level": 1,
+  "action": "planned daily.yml",
+  "why": "owner 05.11: the build for 07.11 starts at 20:00 UTC with the full stills budget",
+  "result": "already running"
  }
 ]
