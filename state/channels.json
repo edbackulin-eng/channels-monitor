@@ -1,17 +1,17 @@
 {
- "at": "2026-11-05T13:10:28Z",
+ "at": "2026-11-05T16:11:15Z",
  "channels": [
   {
    "key": "whatif",
    "name": "What If",
    "repo": "edbackulin-eng/whatif-channel",
-   "problems": [],
+   "problems": [
+    [
+     "buffer",
+     "1 of the next 3 slots have a video"
+    ]
+   ],
    "slots": [
-    {
-     "at": "2026-11-05T15:00Z",
-     "video": "tSThYV896-U",
-     "title": "What If the Core of the Earth Cooled?"
-    },
     {
      "at": "2026-11-06T15:00Z",
      "video": "C1xcaw_DX3k",
@@ -21,13 +21,18 @@
      "at": "2026-11-07T15:00Z",
      "video": null,
      "title": null
+    },
+    {
+     "at": "2026-11-09T15:00Z",
+     "video": null,
+     "title": null
     }
    ],
-   "buffer": 2,
-   "scheduled_ahead": 2,
+   "buffer": 1,
+   "scheduled_ahead": 1,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 10.1,
+   "build_h": 1.6,
    "last_build_failed": null,
    "failures": [
     {
@@ -63,7 +68,16 @@
    "owner": [],
    "failed": [],
    "topics": 37,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-05T16:11:15Z",
+     "channel": "whatif",
+     "level": 1,
+     "action": "runbook",
+     "why": "",
+     "result": "stopped: HTTP Error 500: Internal Server Error"
+    }
+   ]
   },
   {
    "key": "closed-tabs",
@@ -96,7 +110,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 18.6,
+   "build_h": 21.6,
    "last_build_failed": {
     "run": "https://github.com/edbackulin-eng/closed-tabs/actions/runs/41955999901",
     "id": 41955999901,
@@ -150,6 +164,10 @@
      "0 of the next 3 slots have a video"
     ],
     [
+     "build-failed",
+     "last build failed at part (7) / Render part 7"
+    ],
+    [
      "failed:lebende-fossilien",
      "lebende-fossilien: qa-failed: hook; subject; pace; music; first_min; motion; dinosaurs; wow"
     ]
@@ -175,9 +193,22 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 23.3,
-   "last_build_failed": null,
+   "build_h": 26.3,
+   "last_build_failed": {
+    "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/41922911782",
+    "id": 41922911782,
+    "step": "part (7) / Render part 7",
+    "at": "2026-11-05T13:45:37Z",
+    "kind": null
+   },
    "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/41922911782",
+     "id": 41922911782,
+     "step": "part (7) / Render part 7",
+     "at": "2026-11-05T13:45:37Z",
+     "kind": null
+    },
     {
      "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/41784634582",
      "id": 41784634582,
@@ -212,7 +243,7 @@
     ],
     [
      "build-failed",
-     "last build failed at cut (3) / Run python automation/build.py \"$SLUG\" cut 3 8"
+     "last build failed at render / Run python automation/build.py \"$SLUG\" render"
     ]
    ],
    "slots": [
@@ -238,13 +269,20 @@
    "watchdog_h": 0.0,
    "build_h": null,
    "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42006079866",
-    "id": 42006079866,
-    "step": "cut (3) / Run python automation/build.py \"$SLUG\" cut 3 8",
-    "at": "2026-11-05T11:53:10Z",
+    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42022587177",
+    "id": 42022587177,
+    "step": "render / Run python automation/build.py \"$SLUG\" render",
+    "at": "2026-11-05T15:02:00Z",
     "kind": null
    },
    "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42022587177",
+     "id": 42022587177,
+     "step": "render / Run python automation/build.py \"$SLUG\" render",
+     "at": "2026-11-05T15:02:00Z",
+     "kind": null
+    },
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42006079866",
      "id": 42006079866,
@@ -303,8 +341,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 12.7,
-   "build_h": 3.7,
+   "watchdog_h": 15.7,
+   "build_h": 6.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,

@@ -1,1 +1,10 @@
-[]
+[
+ {
+  "at": "2026-11-05T16:11:15Z",
+  "channel": "whatif",
+  "level": 1,
+  "action": "runbook",
+  "why": "",
+  "result": "stopped: HTTP Error 500: Internal Server Error"
+ }
+]
