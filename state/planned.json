@@ -1,0 +1,14 @@
+[
+ {
+  "id": "ct-build-0711",
+  "at": "2026-11-05T20:00:00Z",
+  "repo": "edbackulin-eng/closed-tabs",
+  "workflow": "daily.yml",
+  "inputs": {
+   "upload": "true",
+   "force_window": "false"
+  },
+  "unless_slot_filled": "2026-11-07",
+  "why": "owner 05.11: the build for 07.11 starts at 20:00 UTC with the full stills budget"
+ }
+]

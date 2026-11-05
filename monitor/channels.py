@@ -106,6 +106,12 @@ def rows_waiting(root):
                if str(r.get("status") or r.get("state") or "") in ("awaiting_approval", "awaiting_turn", "built"))
 
 
+def rows_built(root):
+    """Built videos in the buffer that have not reached YouTube."""
+    return sum(1 for r in _json(root, "state/episodes.json", [])
+               if str(r.get("status") or r.get("state") or "") == "built" and not (r.get("youtube_id") or r.get("video_id")))
+
+
 def queue_topics(root):
     q = _json(root, "topics/queue.json", {"topics": []})
     t = q.get("topics", []) if isinstance(q, dict) else q
@@ -155,22 +161,41 @@ CHANNELS = [
      "slots": {"weekdays": [0, 1, 3, 4, 5], "time": "15:00", "tz": "UTC"},
      "paths": ["queue", "assets/topics.json", "state"],
      "watchdog": "watchdog.yml", "builds": ["build-video.yml"], "heartbeat": "state/heartbeat.json",
-     "scheduled": wi_scheduled, "failed": wi_failed, "topics": wi_topics, "waiting": None},
+     "scheduled": wi_scheduled, "failed": wi_failed, "topics": wi_topics, "waiting": None,
+     # the runbook (monitor/heal.py): what to start, and how long a run may take before it is hung
+     "refill": ("write-scripts.yml", {}), "build": ("build-video.yml", {}), "upload": None,
+     "build_hours_utc": (3, 18),            # What If starts builds 03:00-18:00 UTC only
+     "hung_h": {"watchdog.yml": 6.2, "build-video.yml": 6.0}, "infra_fixes": "state/infra_fixes.json",
+     "requeue": "whatif"},
     {"key": "closed-tabs", "name": "Closed Tabs", "repo": "edbackulin-eng/closed-tabs", "act": True,
      "slots": {"weekdays": [0, 1, 3, 4, 5], "time": "17:00", "tz": "UTC"},
      "paths": ["state", "topics/queue.json"],
      "watchdog": "watchdog.yml", "builds": ["daily.yml", "resume-episode.yml"], "heartbeat": "state/heartbeat.json",
-     "scheduled": ct_scheduled, "failed": ct_failed, "topics": ct_topics, "waiting": None},
+     "scheduled": ct_scheduled, "failed": ct_failed, "topics": ct_topics, "waiting": None,
+     "refill": ("topics.yml", {}), "build": ("daily.yml", {"upload": "true", "force_window": "false"}), "upload": None,
+     "build_hours_utc": (20, 2),            # its GPU window opens at 20:00 UTC
+     "hung_h": {"watchdog.yml": 6.2, "daily.yml": 13.0, "resume-episode.yml": 8.0},
+     "infra_fixes": "state/infra_fixes.json", "requeue": None},
     {"key": "dinosaurs", "name": "Urzeit (dinosaurs)", "repo": "edbackulin-eng/prehistoric-channel", "act": True,
      "slots": {"weekdays": [2, 5], "time": "17:00", "tz": "Europe/Berlin"},
      "paths": ["state", "topics/queue.json"],
      "watchdog": "watchdog.yml", "builds": ["render.yml"], "heartbeat": "state/heartbeat.json",
-     "scheduled": rows_scheduled, "failed": rows_failed, "topics": queue_topics, "waiting": rows_waiting},
+     "scheduled": rows_scheduled, "failed": rows_failed, "topics": queue_topics, "waiting": rows_waiting,
+     "refill": ("topics.yml", {}), "build": ("episode.yml", {}), "upload": None,
+     "build_hours_utc": None,
+     "hung_h": {"watchdog.yml": 6.2, "episode.yml": 6.2, "render.yml": 10.0, "ltx-extra.yml": 5.2},
+     # a build started while one of these runs would push it out of their shared queue
+     "busy_also": ["ltx-extra.yml", "episode.yml", "render.yml"],
+     "infra_fixes": "state/infra_fixes.json", "requeue": None},
     {"key": "archive", "name": "Yesterday in Color", "repo": "edbackulin-eng/archive-channel", "act": True,
      "slots": {"weekdays": [1, 4], "time": "12:00", "tz": "America/New_York"},
      "paths": ["state", "topics/queue.json"],
      "watchdog": "watchdog.yml", "builds": ["episode.yml"], "heartbeat": "state/heartbeat.json",
-     "scheduled": rows_scheduled, "failed": rows_failed, "topics": queue_topics, "waiting": rows_waiting},
+     "scheduled": rows_scheduled, "failed": rows_failed, "topics": queue_topics, "waiting": rows_waiting,
+     "refill": None, "build": ("episode.yml", {}), "upload": ("upload.yml", {}),
+     "build_hours_utc": None,
+     "hung_h": {"watchdog.yml": 6.2, "episode.yml": 13.5, "upload.yml": 2.0},
+     "infra_fixes": "state/infra_fixes.json", "requeue": None},
     {"key": "stoic", "name": "Stoic (yt-factory-daily)", "repo": "beautyapp800-ctrl/yt-factory-daily", "act": False,
      "slots": {"weekdays": [0, 1, 2, 3, 4, 5, 6], "time": "21:00", "tz": "Europe/Kyiv"},
      "paths": ["data/factory.db"],
@@ -179,7 +204,9 @@ CHANNELS = [
      # it makes each video the day before its slot (every video so far: made on day D, out on
      # D+1), so one slot ahead is its normal state
      "buffer_min": 1, "builds": ["daily.yml", "daily-retry.yml"], "heartbeat": None,
-     "scheduled": st_scheduled, "failed": st_failed, "topics": st_topics, "waiting": None},
+     "scheduled": st_scheduled, "failed": st_failed, "topics": st_topics, "waiting": None,
+     # read only: nothing is ever started, cancelled or changed in it
+     "refill": None, "build": None, "upload": None, "hung_h": {}, "infra_fixes": None, "requeue": None},
 ]
 
 # Kaggle's weekly GPU hours, shared by the channels: their ledgers (read from these checkouts)
