@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T20:13:27Z",
+ "at": "2026-11-05T23:14:16Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 5.7,
+   "build_h": 8.7,
    "last_build_failed": null,
    "failures": [
     {
@@ -69,16 +69,7 @@
    "key": "closed-tabs",
    "name": "Closed Tabs",
    "repo": "edbackulin-eng/closed-tabs",
-   "problems": [
-    [
-     "buffer",
-     "1 of the next 3 slots have a video"
-    ],
-    [
-     "build-failed",
-     "last build failed at resume / Render and package"
-    ]
-   ],
+   "problems": [],
    "slots": [
     {
      "at": "2026-11-06T17:00Z",
@@ -87,8 +78,8 @@
     },
     {
      "at": "2026-11-07T17:00Z",
-     "video": null,
-     "title": null
+     "video": "yyZp0xQPB1M",
+     "title": "He Said He Came from 2036 to Steal a 1975 Computer"
     },
     {
      "at": "2026-11-09T17:00Z",
@@ -96,18 +87,12 @@
      "title": null
     }
    ],
-   "buffer": 1,
-   "scheduled_ahead": 1,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 25.7,
-   "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/closed-tabs/actions/runs/41955999901",
-    "id": 41955999901,
-    "step": "resume / Render and package",
-    "at": "2026-11-05T02:35:13Z",
-    "kind": null
-   },
+   "build_h": 2.1,
+   "last_build_failed": null,
    "failures": [
     {
      "run": "https://github.com/edbackulin-eng/closed-tabs/actions/runs/41955999901",
@@ -141,7 +126,7 @@
    "waiting_built": 0,
    "owner": [],
    "failed": [],
-   "topics": 16,
+   "topics": 15,
    "actions": []
   },
   {
@@ -183,7 +168,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 30.3,
+   "build_h": 33.3,
    "last_build_failed": {
     "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/41922911782",
     "id": 41922911782,
@@ -233,7 +218,7 @@
     ],
     [
      "build-failed",
-     "last build failed at cut (0) / Run python automation/build.py \"$SLUG\" cut 0 8"
+     "last build failed at cut (6) / Run python automation/build.py \"$SLUG\" cut 6 8"
     ]
    ],
    "slots": [
@@ -259,13 +244,20 @@
    "watchdog_h": 0.0,
    "build_h": null,
    "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42051982915",
-    "id": 42051982915,
-    "step": "cut (0) / Run python automation/build.py \"$SLUG\" cut 0 8",
-    "at": "2026-11-05T16:32:52Z",
+    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42066603627",
+    "id": 42066603627,
+    "step": "cut (6) / Run python automation/build.py \"$SLUG\" cut 6 8",
+    "at": "2026-11-05T23:05:53Z",
     "kind": null
    },
    "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42066603627",
+     "id": 42066603627,
+     "step": "cut (6) / Run python automation/build.py \"$SLUG\" cut 6 8",
+     "at": "2026-11-05T23:05:53Z",
+     "kind": null
+    },
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42051982915",
      "id": 42051982915,
@@ -285,13 +277,6 @@
      "id": 42006079866,
      "step": "cut (3) / Run python automation/build.py \"$SLUG\" cut 3 8",
      "at": "2026-11-05T11:53:10Z",
-     "kind": null
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/41992154262",
-     "id": 41992154262,
-     "step": "cut (6) / Run python automation/build.py \"$SLUG\" cut 6 8",
-     "at": "2026-11-05T09:45:14Z",
      "kind": null
     }
    ],
@@ -331,8 +316,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 19.7,
-   "build_h": 2.0,
+   "watchdog_h": 22.7,
+   "build_h": 5.0,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -343,9 +328,9 @@
   }
  ],
  "gpu": {
-  "hours": 11.81,
+  "hours": 12.83,
   "parts": {
-   "closed-tabs": 10.36,
+   "closed-tabs": 11.39,
    "What If": 0.0,
    "dinosaurs": 1.45
   }
