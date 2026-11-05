@@ -164,7 +164,9 @@ CHANNELS = [
      "scheduled": wi_scheduled, "failed": wi_failed, "topics": wi_topics, "waiting": None,
      # the runbook (monitor/heal.py): what to start, and how long a run may take before it is hung
      "refill": ("write-scripts.yml", {}), "build": ("build-video.yml", {}), "upload": None,
-     "build_hours_utc": (3, 18),            # What If starts builds 03:00-18:00 UTC only
+     # a What If build takes about 3 h on the shared GPU: started after 15:00 it would still run
+     # when Closed Tabs' window opens at 20:00
+     "build_hours_utc": (3, 15),
      "hung_h": {"watchdog.yml": 6.2, "build-video.yml": 6.0}, "infra_fixes": "state/infra_fixes.json",
      "requeue": "whatif"},
     {"key": "closed-tabs", "name": "Closed Tabs", "repo": "edbackulin-eng/closed-tabs", "act": True,

@@ -75,8 +75,16 @@ class Net:
     def checkout(self, ch, work):
         dest = Path(work) / ch["key"]
         if dest.exists():
-            subprocess.run(["git", "-C", str(dest), "pull", "-q", "--depth", "1"], capture_output=True)
-            return dest
+            # a shallow clone is moved to the newest commit by fetch + reset: "pull --depth 1" can
+            # fail without a word, and a pass then read hours-old state (05.11: What If's video for
+            # 07.11 was on main, the monitor saw the slot empty and tried to start a build)
+            f = subprocess.run(["git", "-C", str(dest), "fetch", "-q", "--depth", "1", "origin", "HEAD"],
+                               capture_output=True)
+            r = subprocess.run(["git", "-C", str(dest), "reset", "-q", "--hard", "FETCH_HEAD"], capture_output=True)
+            if f.returncode == 0 and r.returncode == 0:
+                return dest
+            import shutil
+            shutil.rmtree(dest, ignore_errors=True)       # cannot be moved on: cloned again
         url = f"https://github.com/{ch['repo']}.git"
         subprocess.run(["git", "clone", "-q", "--depth", "1", "--filter=blob:none", "--sparse", url, str(dest)],
                        check=True, capture_output=True)
