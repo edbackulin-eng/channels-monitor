@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T07:09:19Z",
+ "at": "2026-11-05T10:09:39Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,11 +27,43 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 4.1,
+   "build_h": 7.1,
    "last_build_failed": null,
+   "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/whatif-channel/actions/runs/41882220201",
+     "id": 41882220201,
+     "step": "build / Keep two scheduled ahead",
+     "at": "2026-11-04T17:58:51Z",
+     "kind": null
+    },
+    {
+     "run": "https://github.com/edbackulin-eng/whatif-channel/actions/runs/41877756411",
+     "id": 41877756411,
+     "step": "build / Keep two scheduled ahead",
+     "at": "2026-11-04T17:43:15Z",
+     "kind": null
+    },
+    {
+     "run": "https://github.com/edbackulin-eng/whatif-channel/actions/runs/41875301073",
+     "id": 41875301073,
+     "step": "build / Keep two scheduled ahead",
+     "at": "2026-11-04T17:13:26Z",
+     "kind": null
+    },
+    {
+     "run": "https://github.com/edbackulin-eng/whatif-channel/actions/runs/41872700242",
+     "id": 41872700242,
+     "step": "build / Keep two scheduled ahead",
+     "at": "2026-11-04T16:58:26Z",
+     "kind": null
+    }
+   ],
+   "waiting_built": 0,
+   "owner": [],
    "failed": [],
    "topics": 37,
-   "action": null
+   "actions": []
   },
   {
    "key": "closed-tabs",
@@ -64,15 +96,49 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 12.6,
+   "build_h": 15.6,
    "last_build_failed": {
     "run": "https://github.com/edbackulin-eng/closed-tabs/actions/runs/41955999901",
+    "id": 41955999901,
     "step": "resume / Render and package",
-    "at": "2026-11-05T02:35:13Z"
+    "at": "2026-11-05T02:35:13Z",
+    "kind": null
    },
+   "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/closed-tabs/actions/runs/41955999901",
+     "id": 41955999901,
+     "step": "resume / Render and package",
+     "at": "2026-11-05T02:35:13Z",
+     "kind": null
+    },
+    {
+     "run": "https://github.com/edbackulin-eng/closed-tabs/actions/runs/41944396414",
+     "id": 41944396414,
+     "step": "render (3) / Render part 3",
+     "at": "2026-11-05T02:21:11Z",
+     "kind": null
+    },
+    {
+     "run": "https://github.com/edbackulin-eng/closed-tabs/actions/runs/41938354522",
+     "id": 41938354522,
+     "step": "resume / Render and package",
+     "at": "2026-11-05T00:19:57Z",
+     "kind": null
+    },
+    {
+     "run": "https://github.com/edbackulin-eng/closed-tabs/actions/runs/41922077446",
+     "id": 41922077446,
+     "step": "render (4) / Render part 4",
+     "at": "2026-11-04T23:43:36Z",
+     "kind": null
+    }
+   ],
+   "waiting_built": 0,
+   "owner": [],
    "failed": [],
    "topics": 16,
-   "action": null
+   "actions": []
   },
   {
    "key": "dinosaurs",
@@ -82,10 +148,6 @@
     [
      "buffer",
      "0 of the next 3 slots have a video"
-    ],
-    [
-     "build-failed",
-     "last build failed at part (0) / Render part 0"
     ],
     [
      "failed:lebende-fossilien",
@@ -113,12 +175,19 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 17.2,
-   "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/41922911782",
-    "step": "part (0) / Render part 0",
-    "at": "2026-11-05T06:57:55Z"
-   },
+   "build_h": 20.2,
+   "last_build_failed": null,
+   "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/41784634582",
+     "id": 41784634582,
+     "step": "layers (1) / 2.5D layers, shard 1 of 12",
+     "at": "2026-11-04T11:32:26Z",
+     "kind": null
+    }
+   ],
+   "waiting_built": 0,
+   "owner": [],
    "failed": [
     {
      "episode": "lebende-fossilien",
@@ -126,7 +195,7 @@
     }
    ],
    "topics": 19,
-   "action": "watchdog.yml: no MONITOR_TOKEN: cannot start it"
+   "actions": []
   },
   {
    "key": "archive",
@@ -140,6 +209,10 @@
     [
      "build",
      "no successful build yet"
+    ],
+    [
+     "build-failed",
+     "last build failed at cut (6) / Run python automation/build.py \"$SLUG\" cut 6 8"
     ]
    ],
    "slots": [
@@ -164,10 +237,39 @@
    "waiting": 0,
    "watchdog_h": 0.0,
    "build_h": null,
-   "last_build_failed": null,
+   "last_build_failed": {
+    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/41992154262",
+    "id": 41992154262,
+    "step": "cut (6) / Run python automation/build.py \"$SLUG\" cut 6 8",
+    "at": "2026-11-05T09:45:14Z",
+    "kind": null
+   },
+   "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/41992154262",
+     "id": 41992154262,
+     "step": "cut (6) / Run python automation/build.py \"$SLUG\" cut 6 8",
+     "at": "2026-11-05T09:45:14Z",
+     "kind": null
+    },
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/41985072239",
+     "id": 41985072239,
+     "step": "cut (2) / Run python automation/build.py \"$SLUG\" cut 2 8",
+     "at": "2026-11-05T07:59:39Z",
+     "kind": null
+    }
+   ],
+   "waiting_built": 0,
+   "owner": [
+    [
+     "buffer0",
+     "nothing for the next slot (2026-11-06T17:00Z) and no video ahead"
+    ]
+   ],
    "failed": [],
    "topics": 20,
-   "action": "watchdog.yml: no MONITOR_TOKEN: cannot start it"
+   "actions": []
   },
   {
    "key": "stoic",
@@ -194,12 +296,15 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 6.6,
-   "build_h": 12.9,
+   "watchdog_h": 9.6,
+   "build_h": 0.7,
    "last_build_failed": null,
+   "failures": [],
+   "waiting_built": 0,
+   "owner": [],
    "failed": [],
    "topics": null,
-   "action": null
+   "actions": []
   }
  ],
  "gpu": {

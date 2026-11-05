@@ -3,10 +3,33 @@
  "alarms": {
   "closed-tabs:build-failed": "Closed Tabs: last build failed at resume / Render and package",
   "dinosaurs:buffer": "Urzeit (dinosaurs): 0 of the next 3 slots have a video",
-  "dinosaurs:build-failed": "Urzeit (dinosaurs): last build failed at part (0) / Render part 0",
   "dinosaurs:failed:lebende-fossilien": "Urzeit (dinosaurs): lebende-fossilien: qa-failed: hook; subject; pace; music; first_min; motion; dinosaurs; wow",
   "archive:buffer": "Yesterday in Color: 0 of the next 3 slots have a video",
-  "archive:build": "Yesterday in Color: no successful build yet"
+  "archive:build": "Yesterday in Color: no successful build yet",
+  "archive:build-failed": "Yesterday in Color: last build failed at cut (6) / Run python automation/build.py \"$SLUG\" cut 6 8"
  },
- "last_pass": "2026-11-05T07:09:19Z"
+ "last_pass": "2026-11-05T10:09:39Z",
+ "planned": [
+  {
+   "id": "ct-build-0711",
+   "at": "2026-11-05T20:00:00Z",
+   "repo": "edbackulin-eng/closed-tabs",
+   "workflow": "daily.yml",
+   "inputs": {
+    "upload": "true",
+    "force_window": "false"
+   },
+   "unless_slot_filled": "2026-11-07",
+   "why": "owner 05.11: the build for 07.11 starts at 20:00 UTC with the full stills budget"
+  }
+ ],
+ "cancelled": [],
+ "requeued": [],
+ "done": {
+  "whatif:requeue": "2026-11-05T10:09:39Z"
+ },
+ "owner_alarms": {
+  "archive:owner-buffer0": "Yesterday in Color: nothing for the next slot (2026-11-06T17:00Z) and no video ahead"
+ },
+ "issue": 1
 }
