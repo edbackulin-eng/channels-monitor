@@ -1,16 +1,11 @@
 {
- "at": "2026-11-05T16:11:15Z",
+ "at": "2026-11-05T19:12:35Z",
  "channels": [
   {
    "key": "whatif",
    "name": "What If",
    "repo": "edbackulin-eng/whatif-channel",
-   "problems": [
-    [
-     "buffer",
-     "1 of the next 3 slots have a video"
-    ]
-   ],
+   "problems": [],
    "slots": [
     {
      "at": "2026-11-06T15:00Z",
@@ -19,8 +14,8 @@
     },
     {
      "at": "2026-11-07T15:00Z",
-     "video": null,
-     "title": null
+     "video": "tSiz8ZDmQmk",
+     "title": "What If the Oceans Vanished?"
     },
     {
      "at": "2026-11-09T15:00Z",
@@ -28,11 +23,11 @@
      "title": null
     }
    ],
-   "buffer": 1,
-   "scheduled_ahead": 1,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 1.6,
+   "build_h": 4.6,
    "last_build_failed": null,
    "failures": [
     {
@@ -67,17 +62,8 @@
    "waiting_built": 0,
    "owner": [],
    "failed": [],
-   "topics": 37,
-   "actions": [
-    {
-     "at": "2026-11-05T16:11:15Z",
-     "channel": "whatif",
-     "level": 1,
-     "action": "runbook",
-     "why": "",
-     "result": "stopped: HTTP Error 500: Internal Server Error"
-    }
-   ]
+   "topics": 36,
+   "actions": []
   },
   {
    "key": "closed-tabs",
@@ -85,16 +71,15 @@
    "repo": "edbackulin-eng/closed-tabs",
    "problems": [
     [
+     "buffer",
+     "1 of the next 3 slots have a video"
+    ],
+    [
      "build-failed",
      "last build failed at resume / Render and package"
     ]
    ],
    "slots": [
-    {
-     "at": "2026-11-05T17:00Z",
-     "video": "gFU64aMwEGI",
-     "title": "The Flash Drives Left in Concert Bathrooms"
-    },
     {
      "at": "2026-11-06T17:00Z",
      "video": "UJKn6B6FaU0",
@@ -104,13 +89,18 @@
      "at": "2026-11-07T17:00Z",
      "video": null,
      "title": null
+    },
+    {
+     "at": "2026-11-09T17:00Z",
+     "video": null,
+     "title": null
     }
    ],
-   "buffer": 2,
-   "scheduled_ahead": 2,
+   "buffer": 1,
+   "scheduled_ahead": 1,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 21.6,
+   "build_h": 24.7,
    "last_build_failed": {
     "run": "https://github.com/edbackulin-eng/closed-tabs/actions/runs/41955999901",
     "id": 41955999901,
@@ -193,7 +183,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 26.3,
+   "build_h": 29.3,
    "last_build_failed": {
     "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/41922911782",
     "id": 41922911782,
@@ -243,7 +233,7 @@
     ],
     [
      "build-failed",
-     "last build failed at render / Run python automation/build.py \"$SLUG\" render"
+     "last build failed at cut (0) / Run python automation/build.py \"$SLUG\" cut 0 8"
     ]
    ],
    "slots": [
@@ -269,13 +259,20 @@
    "watchdog_h": 0.0,
    "build_h": null,
    "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42022587177",
-    "id": 42022587177,
-    "step": "render / Run python automation/build.py \"$SLUG\" render",
-    "at": "2026-11-05T15:02:00Z",
+    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42051982915",
+    "id": 42051982915,
+    "step": "cut (0) / Run python automation/build.py \"$SLUG\" cut 0 8",
+    "at": "2026-11-05T16:32:52Z",
     "kind": null
    },
    "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42051982915",
+     "id": 42051982915,
+     "step": "cut (0) / Run python automation/build.py \"$SLUG\" cut 0 8",
+     "at": "2026-11-05T16:32:52Z",
+     "kind": null
+    },
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42022587177",
      "id": 42022587177,
@@ -295,13 +292,6 @@
      "id": 41992154262,
      "step": "cut (6) / Run python automation/build.py \"$SLUG\" cut 6 8",
      "at": "2026-11-05T09:45:14Z",
-     "kind": null
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/41985072239",
-     "id": 41985072239,
-     "step": "cut (2) / Run python automation/build.py \"$SLUG\" cut 2 8",
-     "at": "2026-11-05T07:59:39Z",
      "kind": null
     }
    ],
@@ -323,11 +313,6 @@
    "problems": [],
    "slots": [
     {
-     "at": "2026-11-05T19:00Z",
-     "video": "ZYaD33YEqlM",
-     "title": "10 Things To Remove For Stoic Clarity"
-    },
-    {
      "at": "2026-11-06T19:00Z",
      "video": "wXflSGvXyfQ",
      "title": "10 Stoic Lessons to Stop Overthinking Relationships"
@@ -336,13 +321,18 @@
      "at": "2026-11-07T19:00Z",
      "video": null,
      "title": null
+    },
+    {
+     "at": "2026-11-08T19:00Z",
+     "video": null,
+     "title": null
     }
    ],
-   "buffer": 2,
-   "scheduled_ahead": 2,
+   "buffer": 1,
+   "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 15.7,
-   "build_h": 6.7,
+   "watchdog_h": 18.7,
+   "build_h": 0.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
