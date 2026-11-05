@@ -85,13 +85,21 @@ class Net:
         self.call(f"repos/{repo}/actions/workflows/{workflow}/dispatches", {"ref": "main"}, token=self.write)
         return "started"
 
+    issue = None                     # its number, kept in state/monitor.json ("issue")
+
     def comment(self, body):
-        issues = self.get(f"repos/{self.repo}/issues?state=open&per_page=50")
-        n = next((i["number"] for i in issues if i.get("title") == ISSUE_TITLE and "pull_request" not in i), None)
+        # the number is kept: right after an issue is made, the list does not show it yet, and
+        # a second letter in the same pass made a second "Monitor" (05.11)
+        n = self.issue
+        if n is None:
+            issues = self.get(f"repos/{self.repo}/issues?state=open&per_page=50")
+            n = min((i["number"] for i in issues if i.get("title") == ISSUE_TITLE and "pull_request" not in i),
+                    default=None)
         if n is None:
             n = self.call(f"repos/{self.repo}/issues", {"title": ISSUE_TITLE, "body":
                           "Letters from the channels monitor: a comment here that mentions the owner arrives as an email."})["number"]
         self.call(f"repos/{self.repo}/issues/{n}/comments", {"body": body})
+        self.issue = n
 
 
 class Offline(Net):
@@ -357,6 +365,7 @@ def main(argv=None):
             return 0
         args.summary = args.summary or summary_due
     net = Offline(args.fixtures) if args.fixtures else Net()
+    net.issue = mem.get("issue")
     work = out / "work"
     results, roots = [], {}
     for ch in C.CHANNELS:
@@ -410,6 +419,8 @@ def main(argv=None):
     # an alarm stays known until it clears (no second letter); a letter that failed is tried again
     mem["alarms"] = {k: v for k, v in alarms.items() if k in before or k in new}
     mem["last_pass"] = now.strftime("%Y-%m-%dT%H:%M:%SZ")
+    if net.issue:
+        mem["issue"] = net.issue
     state_p.parent.mkdir(parents=True, exist_ok=True)
     state_p.write_text(json.dumps(mem, indent=1, ensure_ascii=False), encoding="utf-8")
     (out / "state" / "channels.json").write_text(json.dumps({"at": mem["last_pass"], "channels": results,
