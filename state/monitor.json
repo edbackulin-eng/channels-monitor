@@ -6,9 +6,9 @@
   "dinosaurs:failed:lebende-fossilien": "Urzeit (dinosaurs): lebende-fossilien: qa-failed: hook; subject; pace; music; first_min; motion; dinosaurs; wow",
   "archive:buffer": "Yesterday in Color: 0 of the next 3 slots have a video",
   "archive:build": "Yesterday in Color: no successful build yet",
-  "archive:build-failed": "Yesterday in Color: last build failed at cut (6) / Run python automation/build.py \"$SLUG\" cut 6 8"
+  "archive:build-failed": "Yesterday in Color: last build failed at cut (3) / Run python automation/build.py \"$SLUG\" cut 3 8"
  },
- "last_pass": "2026-11-05T10:09:39Z",
+ "last_pass": "2026-11-05T13:10:28Z",
  "planned": [
   {
    "id": "ct-build-0711",
@@ -26,7 +26,7 @@
  "cancelled": [],
  "requeued": [],
  "done": {
-  "whatif:requeue": "2026-11-05T10:09:39Z"
+  "whatif:requeue": "2026-11-05T13:10:28Z"
  },
  "owner_alarms": {
   "archive:owner-buffer0": "Yesterday in Color: nothing for the next slot (2026-11-06T17:00Z) and no video ahead"

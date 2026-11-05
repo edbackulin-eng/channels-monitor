@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T10:09:39Z",
+ "at": "2026-11-05T13:10:28Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 7.1,
+   "build_h": 10.1,
    "last_build_failed": null,
    "failures": [
     {
@@ -96,7 +96,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 15.6,
+   "build_h": 18.6,
    "last_build_failed": {
     "run": "https://github.com/edbackulin-eng/closed-tabs/actions/runs/41955999901",
     "id": 41955999901,
@@ -175,7 +175,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 20.2,
+   "build_h": 23.3,
    "last_build_failed": null,
    "failures": [
     {
@@ -212,7 +212,7 @@
     ],
     [
      "build-failed",
-     "last build failed at cut (6) / Run python automation/build.py \"$SLUG\" cut 6 8"
+     "last build failed at cut (3) / Run python automation/build.py \"$SLUG\" cut 3 8"
     ]
    ],
    "slots": [
@@ -238,13 +238,20 @@
    "watchdog_h": 0.0,
    "build_h": null,
    "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/41992154262",
-    "id": 41992154262,
-    "step": "cut (6) / Run python automation/build.py \"$SLUG\" cut 6 8",
-    "at": "2026-11-05T09:45:14Z",
+    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42006079866",
+    "id": 42006079866,
+    "step": "cut (3) / Run python automation/build.py \"$SLUG\" cut 3 8",
+    "at": "2026-11-05T11:53:10Z",
     "kind": null
    },
    "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42006079866",
+     "id": 42006079866,
+     "step": "cut (3) / Run python automation/build.py \"$SLUG\" cut 3 8",
+     "at": "2026-11-05T11:53:10Z",
+     "kind": null
+    },
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/41992154262",
      "id": 41992154262,
@@ -284,8 +291,8 @@
     },
     {
      "at": "2026-11-06T19:00Z",
-     "video": null,
-     "title": null
+     "video": "wXflSGvXyfQ",
+     "title": "10 Stoic Lessons to Stop Overthinking Relationships"
     },
     {
      "at": "2026-11-07T19:00Z",
@@ -293,11 +300,11 @@
      "title": null
     }
    ],
-   "buffer": 1,
-   "scheduled_ahead": 1,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 9.6,
-   "build_h": 0.7,
+   "watchdog_h": 12.7,
+   "build_h": 3.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
