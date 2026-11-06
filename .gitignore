@@ -3,3 +3,10 @@ sent.json
 __pycache__/
 *.pyc
 .env*
+analysis/footage_de_it/frames/
+analysis/footage_de_it/media/
+analysis/footage_de_it/cache/
+analysis/footage_de_it/sheets/
+analysis/footage_de_it/scan_*.csv
+analysis/footage_de_it/frames_*.csv
+analysis/footage_de_it/progress.json

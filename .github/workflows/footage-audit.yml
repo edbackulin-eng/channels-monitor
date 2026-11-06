@@ -1,0 +1,88 @@
+name: footage-audit
+# The free film of Germany and Italy, 1945-1969 (owner 06.11, task F): every film opened, one
+# frame every 10 s judged for living streets and everyday life, minutes by country, city and
+# year, the series "Flucht, Vertreibung, Neuanfang", contact sheets. Analysis only: nothing
+# is published and no channel is touched; the results are this run's artifact.
+#
+# The key is GEMINI_API_KEY_MON and only gemini-flash-lite is asked (flash has 20 requests a
+# day and level 2 needs them). A day's requests are capped (max_calls), because the key's
+# Google project may be the channels' own. Frames and verdicts are kept in the Actions cache,
+# so each day goes on where the last stopped; when nothing is left the workflow disables itself.
+on:
+  schedule:
+    - cron: "23 9 * * *"           # after the free tier's day turns (midnight Pacific)
+  workflow_dispatch:
+    inputs:
+      max_calls:
+        description: Gemini requests this run may make (the day's cap)
+        default: "200"
+permissions:
+  contents: read
+  actions: write
+concurrency:
+  group: footage-audit
+  cancel-in-progress: false
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 340
+    env:
+      PYTHONUTF8: 1
+      A: analysis/footage_de_it
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          pip install -q pillow==11.3.0 numpy==2.3.3
+      - uses: actions/cache/restore@v4
+        with:
+          path: |
+            analysis/footage_de_it/frames
+            analysis/footage_de_it/cache
+          key: footage-audit-v1-${{ github.run_id }}
+          restore-keys: footage-audit-v1-
+      - name: Open, judge, add up
+        env:
+          GEMINI_API_KEY_MON: ${{ secrets.GEMINI_API_KEY_MON }}
+          FOOTAGE_MODELS: gemini-flash-lite-latest
+          FOOTAGE_MAX_CALLS: ${{ inputs.max_calls || '200' }}
+          FOOTAGE_DROP_MEDIA: "1"
+          FOOTAGE_MIN_GAP_S: "4.5"
+        run: |
+          [ -n "$GEMINI_API_KEY_MON" ] || { echo "::error::GEMINI_API_KEY_MON is not set"; exit 1; }
+          export FOOTAGE_DEADLINE=$(( $(date +%s) + 4*3600 + 30*60 ))
+          python -X utf8 $A/scan.py all
+          python -X utf8 $A/report.py
+          python -X utf8 $A/sheets.py de --top 12
+          python -X utf8 $A/sheets.py it --top 12
+          python -X utf8 $A/sheets.py refugees --top 8
+      - uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: |
+            analysis/footage_de_it/frames
+            analysis/footage_de_it/cache
+          key: footage-audit-v1-${{ github.run_id }}
+      - uses: actions/upload-artifact@v5
+        if: always()
+        with:
+          name: footage-audit
+          retention-days: 30
+          path: |
+            analysis/footage_de_it/*.csv
+            analysis/footage_de_it/*.md
+            analysis/footage_de_it/progress.json
+            analysis/footage_de_it/sheets/*.jpg
+      - name: Nothing left to open - the daily run stops
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          left=$(python -c "import json;print(sum(s['waiting'] for s in json.load(open('$A/progress.json'))['sets']))")
+          echo "films still waiting: $left"
+          if [ "$left" = 0 ] && [ "${{ github.ref_name }}" = main ]; then
+            gh workflow disable footage-audit.yml -R "${{ github.repository }}"
+          fi
