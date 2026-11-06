@@ -19,31 +19,50 @@ from monitor import channels as C  # noqa: E402
 from monitor.check import Net  # noqa: E402
 
 
+def _quota(e):
+    """What a 429 says about the quota: its id and limit (the body holds no secret)."""
+    try:
+        d = json.loads(e.read().decode("utf-8", "replace"))
+    except (ValueError, OSError):
+        return ""
+    out = []
+    for det in d.get("error", {}).get("details", []):
+        for v in det.get("violations", []):
+            out.append(f"{v.get('quotaId', '?')} limit {v.get('quotaValue', '?')}")
+        if det.get("retryDelay"):
+            out.append(f"retry in {det['retryDelay']}")
+    return "; ".join(out) or d.get("error", {}).get("message", "")[:200]
+
+
 def gemini(key):
+    """(works, text): one model lookup, then one tiny request per model the monitor and
+    the footage audit use."""
     if not key:
         return False, "GEMINI_API_KEY_MON is not set"
-    base = "https://generativelanguage.googleapis.com/v1beta/models/" + autofix.MODEL
     h = {"x-goog-api-key": key, "Content-Type": "application/json"}
-    step = "model lookup"
+    root = "https://generativelanguage.googleapis.com/v1beta/models/"
     try:
-        with urllib.request.urlopen(urllib.request.Request(base, headers=h), timeout=60) as r:
-            name = json.load(r).get("name", "?")
-        step = "one request"
-        body = json.dumps({"contents": [{"parts": [{"text": "Answer with one word: ok"}]}]}).encode()
-        for attempt in range(3):
-            try:
-                with urllib.request.urlopen(urllib.request.Request(base + ":generateContent", data=body,
-                                                                   headers=h), timeout=180) as r:
-                    json.load(r)
-                break
-            except (TimeoutError, urllib.error.URLError) as e:
-                if isinstance(e, urllib.error.HTTPError) or attempt == 2:
-                    raise
-        return True, f"works ({name}: model found, one request answered)"
+        with urllib.request.urlopen(urllib.request.Request(root + autofix.MODEL, headers=h), timeout=60) as r:
+            json.load(r)
     except urllib.error.HTTPError as e:
-        return False, f"{step} refused: HTTP {e.code}"
+        return False, f"the key is refused: HTTP {e.code}"
     except (urllib.error.URLError, OSError) as e:
-        return False, f"{step}: no answer ({type(e).__name__})"
+        return False, f"no answer ({type(e).__name__})"
+    lines, ok_all = ["the key is valid (model lookup answered)"], True
+    body = json.dumps({"contents": [{"parts": [{"text": "Answer with one word: ok"}]}]}).encode()
+    for model in (autofix.MODEL, "gemini-flash-lite-latest"):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(root + model + ":generateContent", data=body,
+                                                               headers=h), timeout=180) as r:
+                json.load(r)
+            lines.append(f"{model}: answers")
+        except urllib.error.HTTPError as e:
+            ok_all = ok_all and model != autofix.MODEL
+            lines.append(f"{model}: HTTP {e.code} {_quota(e) if e.code == 429 else ''}".rstrip())
+        except (urllib.error.URLError, OSError) as e:
+            ok_all = ok_all and model != autofix.MODEL
+            lines.append(f"{model}: no answer ({type(e).__name__})")
+    return ok_all, "; ".join(lines)
 
 
 def main():
