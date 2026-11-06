@@ -24,19 +24,26 @@ def gemini(key):
         return False, "GEMINI_API_KEY_MON is not set"
     base = "https://generativelanguage.googleapis.com/v1beta/models/" + autofix.MODEL
     h = {"x-goog-api-key": key, "Content-Type": "application/json"}
+    step = "model lookup"
     try:
-        with urllib.request.urlopen(urllib.request.Request(base, headers=h), timeout=30) as r:
+        with urllib.request.urlopen(urllib.request.Request(base, headers=h), timeout=60) as r:
             name = json.load(r).get("name", "?")
-        body = json.dumps({"contents": [{"parts": [{"text": "Answer with one word: ok"}]}],
-                           "generationConfig": {"maxOutputTokens": 5}}).encode()
-        with urllib.request.urlopen(urllib.request.Request(base + ":generateContent", data=body, headers=h),
-                                    timeout=60) as r:
-            json.load(r)
+        step = "one request"
+        body = json.dumps({"contents": [{"parts": [{"text": "Answer with one word: ok"}]}]}).encode()
+        for attempt in range(3):
+            try:
+                with urllib.request.urlopen(urllib.request.Request(base + ":generateContent", data=body,
+                                                                   headers=h), timeout=180) as r:
+                    json.load(r)
+                break
+            except (TimeoutError, urllib.error.URLError) as e:
+                if isinstance(e, urllib.error.HTTPError) or attempt == 2:
+                    raise
         return True, f"works ({name}: model found, one request answered)"
     except urllib.error.HTTPError as e:
-        return False, f"refused: HTTP {e.code}"
+        return False, f"{step} refused: HTTP {e.code}"
     except (urllib.error.URLError, OSError) as e:
-        return False, f"no answer: {type(e).__name__}"
+        return False, f"{step}: no answer ({type(e).__name__})"
 
 
 def main():
