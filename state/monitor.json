@@ -1,15 +1,15 @@
 {
- "summary_date": "2026-11-05",
+ "summary_date": "2026-11-06",
  "alarms": {
   "dinosaurs:buffer": "Urzeit (dinosaurs): 0 of the next 3 slots have a video",
-  "dinosaurs:build": "Urzeit (dinosaurs): last successful build 36.3 h ago",
+  "dinosaurs:build": "Urzeit (dinosaurs): last successful build 39.1 h ago",
   "dinosaurs:build-failed": "Urzeit (dinosaurs): last build failed at part (7) / Render part 7",
   "dinosaurs:failed:lebende-fossilien": "Urzeit (dinosaurs): lebende-fossilien: qa-failed: hook; subject; pace; music; first_min; motion; dinosaurs; wow",
   "archive:buffer": "Yesterday in Color: 0 of the next 3 slots have a video",
   "archive:build": "Yesterday in Color: no successful build yet",
-  "archive:build-failed": "Yesterday in Color: last build failed at cut (4) / Run python automation/build.py \"$SLUG\" cut 4 8"
+  "archive:build-failed": "Yesterday in Color: last build failed at cut (5) / Run python automation/build.py \"$SLUG\" cut 5 8"
  },
- "last_pass": "2026-11-06T02:15:19Z",
+ "last_pass": "2026-11-06T05:01:14Z",
  "planned": [
   {
    "id": "ct-build-0711",
@@ -28,9 +28,11 @@
  "cancelled": [],
  "requeued": [],
  "done": {
-  "whatif:requeue": "2026-11-06T02:15:19Z"
+  "whatif:requeue": "2026-11-06T05:01:14Z",
+  "archive:build": "2026-11-06T05:01:14Z"
  },
  "owner_alarms": {
+  "dinosaurs:owner-buffer0": "Urzeit (dinosaurs): nothing for the next slot (2026-11-07T16:00Z) and no video ahead",
   "archive:owner-buffer0": "Yesterday in Color: nothing for the next slot (2026-11-06T17:00Z) and no video ahead"
  },
  "issue": 1
