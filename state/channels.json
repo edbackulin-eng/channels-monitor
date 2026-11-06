@@ -1,16 +1,11 @@
 {
- "at": "2026-11-06T11:03:13Z",
+ "at": "2026-11-06T14:04:29Z",
  "channels": [
   {
    "key": "whatif",
    "name": "What If",
    "repo": "edbackulin-eng/whatif-channel",
-   "problems": [
-    [
-     "watchdog",
-     "no sign of life for 4.2 h (max 3)"
-    ]
-   ],
+   "problems": [],
    "slots": [
     {
      "at": "2026-11-06T15:00Z",
@@ -24,15 +19,15 @@
     },
     {
      "at": "2026-11-09T15:00Z",
-     "video": null,
-     "title": null
+     "video": "C2yep2BX-z0",
+     "title": "What If All the Ice on Earth Melted?"
     }
    ],
-   "buffer": 2,
-   "scheduled_ahead": 2,
+   "buffer": 3,
+   "scheduled_ahead": 3,
    "waiting": null,
-   "watchdog_h": 4.2,
-   "build_h": 20.5,
+   "watchdog_h": 0.0,
+   "build_h": 0.5,
    "last_build_failed": null,
    "failures": [
     {
@@ -71,25 +66,8 @@
    "waiting_built": 0,
    "owner": [],
    "failed": [],
-   "topics": 36,
-   "actions": [
-    {
-     "at": "2026-11-06T11:03:13Z",
-     "channel": "whatif",
-     "level": 1,
-     "action": "start watchdog.yml",
-     "why": "dead",
-     "result": "started"
-    },
-    {
-     "at": "2026-11-06T11:03:13Z",
-     "channel": "whatif",
-     "level": 2,
-     "action": "autofix (off)",
-     "why": "seen 4 times: build / keep two scheduled ahead |",
-     "result": "not patched: GEMINI_API_KEY_MON is not set; MONITOR_TOKEN may not write contents here"
-    }
-   ]
+   "topics": 35,
+   "actions": []
   },
   {
    "key": "closed-tabs",
@@ -117,7 +95,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 10.1,
+   "build_h": 13.1,
    "last_build_failed": null,
    "failures": [
     {
@@ -157,24 +135,7 @@
    "owner": [],
    "failed": [],
    "topics": 14,
-   "actions": [
-    {
-     "at": "2026-11-06T11:03:13Z",
-     "channel": "closed-tabs",
-     "level": 2,
-     "action": "autofix (off)",
-     "why": "seen 2 times: resume / render and package |",
-     "result": "not patched: GEMINI_API_KEY_MON is not set; MONITOR_TOKEN may not write contents here"
-    },
-    {
-     "at": "2026-11-06T11:03:13Z",
-     "channel": "closed-tabs",
-     "level": 2,
-     "action": "autofix (off)",
-     "why": "seen 2 times: render (#) / render part # |",
-     "result": "not patched: GEMINI_API_KEY_MON is not set; MONITOR_TOKEN may not write contents here"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "dinosaurs",
@@ -187,7 +148,7 @@
     ],
     [
      "build",
-     "last successful build 45.1 h ago"
+     "last successful build 48.2 h ago"
     ],
     [
      "build-failed",
@@ -219,7 +180,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 45.1,
+   "build_h": 48.2,
    "last_build_failed": {
     "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/41922911782",
     "id": 41922911782,
@@ -277,7 +238,7 @@
     ],
     [
      "build-failed",
-     "last build failed at cut (0) / Run python automation/build.py \"$SLUG\" cut 0 8"
+     "last build failed at render / Run python automation/build.py \"$SLUG\" render"
     ]
    ],
    "slots": [
@@ -303,14 +264,22 @@
    "watchdog_h": 0.0,
    "build_h": null,
    "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42182442583",
-    "id": 42182442583,
-    "step": "cut (0) / Run python automation/build.py \"$SLUG\" cut 0 8",
-    "at": "2026-11-06T09:18:45Z",
+    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42194986056",
+    "id": 42194986056,
+    "step": "render / Run python automation/build.py \"$SLUG\" render",
+    "at": "2026-11-06T12:25:39Z",
     "kind": null,
     "workflow": ".github/workflows/episode.yml"
    },
    "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42194986056",
+     "id": 42194986056,
+     "step": "render / Run python automation/build.py \"$SLUG\" render",
+     "at": "2026-11-06T12:25:39Z",
+     "kind": null,
+     "workflow": ".github/workflows/episode.yml"
+    },
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42182442583",
      "id": 42182442583,
@@ -334,14 +303,6 @@
      "at": "2026-11-06T06:09:53Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42157941075",
-     "id": 42157941075,
-     "step": "cut (5) / Run python automation/build.py \"$SLUG\" cut 5 8",
-     "at": "2026-11-06T04:57:11Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
     }
    ],
    "waiting_built": 0,
@@ -353,16 +314,7 @@
    ],
    "failed": [],
    "topics": 20,
-   "actions": [
-    {
-     "at": "2026-11-06T11:03:13Z",
-     "channel": "archive",
-     "level": 2,
-     "action": "autofix (off)",
-     "why": "seen 4 times: cut (#) / run python automation \"$slug\" cut # # |",
-     "result": "not patched: GEMINI_API_KEY_MON is not set; MONITOR_TOKEN may not write contents here"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "stoic",
@@ -389,8 +341,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 10.5,
-   "build_h": 2.4,
+   "watchdog_h": 13.5,
+   "build_h": 5.4,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,

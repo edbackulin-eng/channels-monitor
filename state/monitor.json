@@ -1,16 +1,15 @@
 {
  "summary_date": "2026-11-06",
  "alarms": {
-  "whatif:watchdog": "What If: no sign of life for 4.2 h (max 3)",
   "dinosaurs:buffer": "Urzeit (dinosaurs): 0 of the next 3 slots have a video",
-  "dinosaurs:build": "Urzeit (dinosaurs): last successful build 45.1 h ago",
+  "dinosaurs:build": "Urzeit (dinosaurs): last successful build 48.2 h ago",
   "dinosaurs:build-failed": "Urzeit (dinosaurs): last build failed at part (7) / Render part 7",
   "dinosaurs:failed:lebende-fossilien": "Urzeit (dinosaurs): lebende-fossilien: qa-failed: hook; subject; pace; music; first_min; motion; dinosaurs; wow",
   "archive:buffer": "Yesterday in Color: 0 of the next 3 slots have a video",
   "archive:build": "Yesterday in Color: no successful build yet",
-  "archive:build-failed": "Yesterday in Color: last build failed at cut (0) / Run python automation/build.py \"$SLUG\" cut 0 8"
+  "archive:build-failed": "Yesterday in Color: last build failed at render / Run python automation/build.py \"$SLUG\" render"
  },
- "last_pass": "2026-11-06T11:03:13Z",
+ "last_pass": "2026-11-06T14:04:29Z",
  "planned": [
   {
    "id": "ct-build-0711",
@@ -29,37 +28,36 @@
  "cancelled": [],
  "requeued": [],
  "done": {
-  "whatif:requeue": "2026-11-06T11:03:13Z",
+  "whatif:requeue": "2026-11-06T14:04:29Z",
   "archive:build": "2026-11-06T05:01:14Z",
   "whatif:watchdog": "2026-11-06T11:03:13Z"
  },
  "owner_alarms": {
   "dinosaurs:owner-buffer0": "Urzeit (dinosaurs): nothing for the next slot (2026-11-07T16:00Z) and no video ahead",
   "archive:owner-buffer0": "Yesterday in Color: nothing for the next slot (2026-11-06T17:00Z) and no video ahead",
-  "l2:key": "Level 2 (automatic patches) is off: GEMINI_API_KEY_MON is not set in channels-monitor's secrets. Level 1 works; a new failure seen twice is only written into the journal.",
-  "l2:rights:edbackulin-eng/archive-channel,edbackulin-eng/closed-tabs,edbackulin-eng/prehistoric-channel,edbackulin-eng/whatif-channel|edbackulin-eng/archive-channel,edbackulin-eng/closed-tabs,edbackulin-eng/prehistoric-channel,edbackulin-eng/whatif-channel": "MONITOR_TOKEN may not write Contents in whatif-channel, closed-tabs, prehistoric-channel, archive-channel (requeues and patches there are off); Workflows in whatif-channel, closed-tabs, prehistoric-channel, archive-channel (workflow patches there are off)."
+  "l2:key": "Level 2 (automatic patches) is off: GEMINI_API_KEY_MON is not set in channels-monitor's secrets. Level 1 works; a new failure seen twice is only written into the journal."
  },
  "issue": 1,
  "rights": {
   "edbackulin-eng/whatif-channel": {
-   "contents": false,
-   "workflows": false
+   "contents": true,
+   "workflows": true
   },
   "edbackulin-eng/closed-tabs": {
-   "contents": false,
-   "workflows": false
+   "contents": true,
+   "workflows": true
   },
   "edbackulin-eng/prehistoric-channel": {
-   "contents": false,
-   "workflows": false
+   "contents": true,
+   "workflows": true
   },
   "edbackulin-eng/archive-channel": {
-   "contents": false,
-   "workflows": false
+   "contents": true,
+   "workflows": true
   },
   "edbackulin-eng/channels-monitor": {
-   "contents": false,
-   "workflows": false
+   "contents": true,
+   "workflows": true
   }
  },
  "l2_off_seen": {
