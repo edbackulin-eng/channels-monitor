@@ -31,6 +31,10 @@ from datetime import datetime, timedelta, timezone
 from monitor import heal
 
 MODEL = "gemini-flash-latest"
+# The free tier gives gemini-flash-latest 20 requests a day per Google project, shared with
+# whatever else uses that project (06.11: spent by midday). flash-lite has a far larger
+# day; a patch asked of it is tested by the same dev smoke before anything is promoted.
+FALLBACK = "gemini-flash-lite-latest"
 URL = "https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent"
 FORBID_PATH = re.compile(r"(^|/)\.github/(?!workflows/[\w.-]+\.ya?ml$)|upload|youtube|publish|schedul|slot|dedup|duplicate|secret|token|credential|"
                          r"(^|/)keys?\b|(^|/)qa|gpu_budget|budget|kaggle_once|(^|/)config|\.env|release", re.I)
@@ -74,10 +78,17 @@ def ask(prompt):
     key = os.environ.get("GEMINI_API_KEY_MON", "")
     body = {"contents": [{"parts": [{"text": prompt}]}],
             "generationConfig": {"temperature": 0, "responseMimeType": "application/json"}}
-    req = urllib.request.Request(URL.format(m=MODEL), data=json.dumps(body).encode(),
-                                 headers={"Content-Type": "application/json", "x-goog-api-key": key})
-    with urllib.request.urlopen(req, timeout=120) as r:
-        d = json.loads(r.read())
+    import urllib.error
+    for model in (MODEL, FALLBACK):
+        req = urllib.request.Request(URL.format(m=model), data=json.dumps(body).encode(),
+                                     headers={"Content-Type": "application/json", "x-goog-api-key": key})
+        try:
+            with urllib.request.urlopen(req, timeout=120) as r:
+                d = json.loads(r.read())
+            break
+        except urllib.error.HTTPError as e:
+            if e.code != 429 or model == FALLBACK:
+                raise
     out = "".join(p.get("text", "") for p in d["candidates"][0]["content"]["parts"])
     return json.loads(out[out.find("{"): out.rfind("}") + 1])
 
