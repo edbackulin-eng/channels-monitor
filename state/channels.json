@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T14:04:29Z",
+ "at": "2026-11-06T17:05:41Z",
  "channels": [
   {
    "key": "whatif",
@@ -7,11 +7,6 @@
    "repo": "edbackulin-eng/whatif-channel",
    "problems": [],
    "slots": [
-    {
-     "at": "2026-11-06T15:00Z",
-     "video": "C1xcaw_DX3k",
-     "title": "What If Jupiter Vanished?"
-    },
     {
      "at": "2026-11-07T15:00Z",
      "video": "tSiz8ZDmQmk",
@@ -21,13 +16,18 @@
      "at": "2026-11-09T15:00Z",
      "video": "C2yep2BX-z0",
      "title": "What If All the Ice on Earth Melted?"
+    },
+    {
+     "at": "2026-11-10T15:00Z",
+     "video": null,
+     "title": null
     }
    ],
-   "buffer": 3,
-   "scheduled_ahead": 3,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 0.5,
+   "build_h": 3.5,
    "last_build_failed": null,
    "failures": [
     {
@@ -76,11 +76,6 @@
    "problems": [],
    "slots": [
     {
-     "at": "2026-11-06T17:00Z",
-     "video": "UJKn6B6FaU0",
-     "title": "The Ghost Town With a Door to Another Earth"
-    },
-    {
      "at": "2026-11-07T17:00Z",
      "video": "yyZp0xQPB1M",
      "title": "He Said He Came from 2036 to Steal a 1975 Computer"
@@ -89,13 +84,18 @@
      "at": "2026-11-09T17:00Z",
      "video": "dz_GTE57Ly4",
      "title": "A Buzz on 4625 kHz, and the Voice That Interrupts It"
+    },
+    {
+     "at": "2026-11-10T17:00Z",
+     "video": null,
+     "title": null
     }
    ],
-   "buffer": 3,
-   "scheduled_ahead": 3,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 13.1,
+   "build_h": 16.1,
    "last_build_failed": null,
    "failures": [
     {
@@ -148,7 +148,7 @@
     ],
     [
      "build",
-     "last successful build 48.2 h ago"
+     "last successful build 51.2 h ago"
     ],
     [
      "build-failed",
@@ -180,7 +180,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 48.2,
+   "build_h": 51.2,
    "last_build_failed": {
     "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/41922911782",
     "id": 41922911782,
@@ -243,17 +243,17 @@
    ],
    "slots": [
     {
-     "at": "2026-11-06T17:00Z",
-     "video": null,
-     "title": null
-    },
-    {
      "at": "2026-11-10T17:00Z",
      "video": null,
      "title": null
     },
     {
      "at": "2026-11-13T17:00Z",
+     "video": null,
+     "title": null
+    },
+    {
+     "at": "2026-11-17T17:00Z",
      "video": null,
      "title": null
     }
@@ -306,12 +306,7 @@
     }
    ],
    "waiting_built": 0,
-   "owner": [
-    [
-     "buffer0",
-     "nothing for the next slot (2026-11-06T17:00Z) and no video ahead"
-    ]
-   ],
+   "owner": [],
    "failed": [],
    "topics": 20,
    "actions": []
@@ -341,8 +336,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 13.5,
-   "build_h": 5.4,
+   "watchdog_h": 16.6,
+   "build_h": 8.4,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
