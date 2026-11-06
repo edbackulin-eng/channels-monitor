@@ -1,14 +1,14 @@
 # Channels monitor
 
-Updated 06.11.2026 10:02 Kyiv (08:02 UTC). A pass every 3 hours; known failures are put right by themselves (level 1), a new one seen twice gets an automatic patch (level 2); letters go to the issue **Monitor** only when the owner is needed.
+Updated 06.11.2026 13:03 Kyiv (11:03 UTC). A pass every 3 hours; known failures are put right by themselves (level 1), a new one seen twice gets an automatic patch (level 2); letters go to the issue **Monitor** only when the owner is needed.
 
 | Channel | | Next 3 slots (local time) | Buffer | Watchdog | Last good build | Topics | What is wrong |
 |---|---|---|---|---|---|---|---|
-| [What If](https://github.com/edbackulin-eng/whatif-channel) | ✓ | 06.11 15:00 ✓, 07.11 15:00 ✓, 09.11 15:00 ✗ | 2/3 | 1.2 h | 17.5 h | 36 | — |
-| [Closed Tabs](https://github.com/edbackulin-eng/closed-tabs) | ✓ | 06.11 17:00 ✓, 07.11 17:00 ✓, 09.11 17:00 ✓ | 3/3 | 0.0 h | 7.1 h | 14 | — |
-| [Urzeit (dinosaurs)](https://github.com/edbackulin-eng/prehistoric-channel) | ✗ | 07.11 17:00 ✗, 11.11 17:00 ✗, 14.11 17:00 ✗ | 0/3 | 0.0 h | 42.1 h | 19 | 0 of the next 3 slots have a video; last successful build 42.1 h ago; last build failed at part (7) / Render part 7; lebende-fossilien: qa-failed: hook; subject; pace; music; first_min; motion; dinosaurs; wow |
+| [What If](https://github.com/edbackulin-eng/whatif-channel) | ✗ | 06.11 15:00 ✓, 07.11 15:00 ✓, 09.11 15:00 ✗ | 2/3 | 4.2 h | 20.5 h | 36 | no sign of life for 4.2 h (max 3) |
+| [Closed Tabs](https://github.com/edbackulin-eng/closed-tabs) | ✓ | 06.11 17:00 ✓, 07.11 17:00 ✓, 09.11 17:00 ✓ | 3/3 | 0.0 h | 10.1 h | 14 | — |
+| [Urzeit (dinosaurs)](https://github.com/edbackulin-eng/prehistoric-channel) | ✗ | 07.11 17:00 ✗, 11.11 17:00 ✗, 14.11 17:00 ✗ | 0/3 | 0.0 h | 45.1 h | 19 | 0 of the next 3 slots have a video; last successful build 45.1 h ago; last build failed at part (7) / Render part 7; lebende-fossilien: qa-failed: hook; subject; pace; music; first_min; motion; dinosaurs; wow |
 | [Yesterday in Color](https://github.com/edbackulin-eng/archive-channel) | ✗ | 06.11 12:00 ✗, 10.11 12:00 ✗, 13.11 12:00 ✗ | 0/3 | 0.0 h | None h | 20 | 0 of the next 3 slots have a video; no successful build yet; last build failed at cut (0) / Run python automation/build.py "$SLUG" cut 0 8 |
-| [Stoic (yt-factory-daily)](https://github.com/beautyapp800-ctrl/yt-factory-daily) | ✓ | 06.11 21:00 ✓, 07.11 21:00 ✗, 08.11 21:00 ✗ | 1/3 | 7.5 h | 13.8 h | generates | — |
+| [Stoic (yt-factory-daily)](https://github.com/beautyapp800-ctrl/yt-factory-daily) | ✓ | 06.11 21:00 ✓, 07.11 21:00 ✓, 08.11 21:00 ✗ | 2/3 | 10.5 h | 2.4 h | generates | — |
 
 **Kaggle GPU, last 7 days:** 10.57 h of 27.5 h (closed-tabs 9.12 h, What If 0.0 h, dinosaurs 1.45 h).
 
@@ -16,6 +16,11 @@ Updated 06.11.2026 10:02 Kyiv (08:02 UTC). A pass every 3 hours; known failures 
 
 | UTC | Channel | Level | Action | Why | Result |
 |---|---|---|---|---|---|
+| 11-06 11:03 | archive | 2 | autofix (off) | seen 4 times: cut (#) / run python automation "$slug" cut # # | | not patched: GEMINI_API_KEY_MON is not set; MONITOR_TOKEN may not write contents here |
+| 11-06 11:03 | closed-tabs | 2 | autofix (off) | seen 2 times: render (#) / render part # | | not patched: GEMINI_API_KEY_MON is not set; MONITOR_TOKEN may not write contents here |
+| 11-06 11:03 | closed-tabs | 2 | autofix (off) | seen 2 times: resume / render and package | | not patched: GEMINI_API_KEY_MON is not set; MONITOR_TOKEN may not write contents here |
+| 11-06 11:03 | whatif | 2 | autofix (off) | seen 4 times: build / keep two scheduled ahead | | not patched: GEMINI_API_KEY_MON is not set; MONITOR_TOKEN may not write contents here |
+| 11-06 11:03 | whatif | 1 | start watchdog.yml | dead | started |
 | 11-06 05:01 | archive | 1 | start episode.yml | 0 of the next 3 slots have a video | started |
 | 11-05 20:13 | closed-tabs | 1 | planned daily.yml | owner 05.11: the build for 07.11 starts at 20:00 UTC with the full stills budget | already running |
 | 11-05 16:11 | whatif | 1 | runbook |  | stopped: HTTP Error 500: Internal Server Error |

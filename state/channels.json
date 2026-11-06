@@ -1,11 +1,16 @@
 {
- "at": "2026-11-06T08:02:22Z",
+ "at": "2026-11-06T11:03:13Z",
  "channels": [
   {
    "key": "whatif",
    "name": "What If",
    "repo": "edbackulin-eng/whatif-channel",
-   "problems": [],
+   "problems": [
+    [
+     "watchdog",
+     "no sign of life for 4.2 h (max 3)"
+    ]
+   ],
    "slots": [
     {
      "at": "2026-11-06T15:00Z",
@@ -26,8 +31,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 1.2,
-   "build_h": 17.5,
+   "watchdog_h": 4.2,
+   "build_h": 20.5,
    "last_build_failed": null,
    "failures": [
     {
@@ -35,35 +40,56 @@
      "id": 41882220201,
      "step": "build / Keep two scheduled ahead",
      "at": "2026-11-04T17:58:51Z",
-     "kind": null
+     "kind": null,
+     "workflow": ".github/workflows/build-video.yml"
     },
     {
      "run": "https://github.com/edbackulin-eng/whatif-channel/actions/runs/41877756411",
      "id": 41877756411,
      "step": "build / Keep two scheduled ahead",
      "at": "2026-11-04T17:43:15Z",
-     "kind": null
+     "kind": null,
+     "workflow": ".github/workflows/build-video.yml"
     },
     {
      "run": "https://github.com/edbackulin-eng/whatif-channel/actions/runs/41875301073",
      "id": 41875301073,
      "step": "build / Keep two scheduled ahead",
      "at": "2026-11-04T17:13:26Z",
-     "kind": null
+     "kind": null,
+     "workflow": ".github/workflows/build-video.yml"
     },
     {
      "run": "https://github.com/edbackulin-eng/whatif-channel/actions/runs/41872700242",
      "id": 41872700242,
      "step": "build / Keep two scheduled ahead",
      "at": "2026-11-04T16:58:26Z",
-     "kind": null
+     "kind": null,
+     "workflow": ".github/workflows/build-video.yml"
     }
    ],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
    "topics": 36,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-06T11:03:13Z",
+     "channel": "whatif",
+     "level": 1,
+     "action": "start watchdog.yml",
+     "why": "dead",
+     "result": "started"
+    },
+    {
+     "at": "2026-11-06T11:03:13Z",
+     "channel": "whatif",
+     "level": 2,
+     "action": "autofix (off)",
+     "why": "seen 4 times: build / keep two scheduled ahead |",
+     "result": "not patched: GEMINI_API_KEY_MON is not set; MONITOR_TOKEN may not write contents here"
+    }
+   ]
   },
   {
    "key": "closed-tabs",
@@ -91,7 +117,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 7.1,
+   "build_h": 10.1,
    "last_build_failed": null,
    "failures": [
     {
@@ -99,35 +125,56 @@
      "id": 41955999901,
      "step": "resume / Render and package",
      "at": "2026-11-05T02:35:13Z",
-     "kind": null
+     "kind": null,
+     "workflow": ".github/workflows/resume-episode.yml"
     },
     {
      "run": "https://github.com/edbackulin-eng/closed-tabs/actions/runs/41944396414",
      "id": 41944396414,
      "step": "render (3) / Render part 3",
      "at": "2026-11-05T02:21:11Z",
-     "kind": null
+     "kind": null,
+     "workflow": ".github/workflows/daily.yml"
     },
     {
      "run": "https://github.com/edbackulin-eng/closed-tabs/actions/runs/41938354522",
      "id": 41938354522,
      "step": "resume / Render and package",
      "at": "2026-11-05T00:19:57Z",
-     "kind": null
+     "kind": null,
+     "workflow": ".github/workflows/resume-episode.yml"
     },
     {
      "run": "https://github.com/edbackulin-eng/closed-tabs/actions/runs/41922077446",
      "id": 41922077446,
      "step": "render (4) / Render part 4",
      "at": "2026-11-04T23:43:36Z",
-     "kind": null
+     "kind": null,
+     "workflow": ".github/workflows/daily.yml"
     }
    ],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
    "topics": 14,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-06T11:03:13Z",
+     "channel": "closed-tabs",
+     "level": 2,
+     "action": "autofix (off)",
+     "why": "seen 2 times: resume / render and package |",
+     "result": "not patched: GEMINI_API_KEY_MON is not set; MONITOR_TOKEN may not write contents here"
+    },
+    {
+     "at": "2026-11-06T11:03:13Z",
+     "channel": "closed-tabs",
+     "level": 2,
+     "action": "autofix (off)",
+     "why": "seen 2 times: render (#) / render part # |",
+     "result": "not patched: GEMINI_API_KEY_MON is not set; MONITOR_TOKEN may not write contents here"
+    }
+   ]
   },
   {
    "key": "dinosaurs",
@@ -140,7 +187,7 @@
     ],
     [
      "build",
-     "last successful build 42.1 h ago"
+     "last successful build 45.1 h ago"
     ],
     [
      "build-failed",
@@ -172,13 +219,14 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 42.1,
+   "build_h": 45.1,
    "last_build_failed": {
     "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/41922911782",
     "id": 41922911782,
     "step": "part (7) / Render part 7",
     "at": "2026-11-05T13:45:37Z",
-    "kind": null
+    "kind": null,
+    "workflow": ".github/workflows/render.yml"
    },
    "failures": [
     {
@@ -186,14 +234,16 @@
      "id": 41922911782,
      "step": "part (7) / Render part 7",
      "at": "2026-11-05T13:45:37Z",
-     "kind": null
+     "kind": null,
+     "workflow": ".github/workflows/render.yml"
     },
     {
      "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/41784634582",
      "id": 41784634582,
      "step": "layers (1) / 2.5D layers, shard 1 of 12",
      "at": "2026-11-04T11:32:26Z",
-     "kind": null
+     "kind": null,
+     "workflow": ".github/workflows/render.yml"
     }
    ],
    "waiting_built": 0,
@@ -253,40 +303,45 @@
    "watchdog_h": 0.0,
    "build_h": null,
    "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42172776232",
-    "id": 42172776232,
+    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42182442583",
+    "id": 42182442583,
     "step": "cut (0) / Run python automation/build.py \"$SLUG\" cut 0 8",
-    "at": "2026-11-06T07:32:33Z",
-    "kind": null
+    "at": "2026-11-06T09:18:45Z",
+    "kind": null,
+    "workflow": ".github/workflows/episode.yml"
    },
    "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42182442583",
+     "id": 42182442583,
+     "step": "cut (0) / Run python automation/build.py \"$SLUG\" cut 0 8",
+     "at": "2026-11-06T09:18:45Z",
+     "kind": null,
+     "workflow": ".github/workflows/episode.yml"
+    },
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42172776232",
      "id": 42172776232,
      "step": "cut (0) / Run python automation/build.py \"$SLUG\" cut 0 8",
      "at": "2026-11-06T07:32:33Z",
-     "kind": null
+     "kind": null,
+     "workflow": ".github/workflows/episode.yml"
     },
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42165960744",
      "id": 42165960744,
      "step": "cut (2) / Run python automation/build.py \"$SLUG\" cut 2 8",
      "at": "2026-11-06T06:09:53Z",
-     "kind": null
+     "kind": null,
+     "workflow": ".github/workflows/episode.yml"
     },
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42157941075",
      "id": 42157941075,
      "step": "cut (5) / Run python automation/build.py \"$SLUG\" cut 5 8",
      "at": "2026-11-06T04:57:11Z",
-     "kind": null
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42146952872",
-     "id": 42146952872,
-     "step": "cut (5) / Run python automation/build.py \"$SLUG\" cut 5 8",
-     "at": "2026-11-06T03:37:34Z",
-     "kind": null
+     "kind": null,
+     "workflow": ".github/workflows/episode.yml"
     }
    ],
    "waiting_built": 0,
@@ -298,7 +353,16 @@
    ],
    "failed": [],
    "topics": 20,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-06T11:03:13Z",
+     "channel": "archive",
+     "level": 2,
+     "action": "autofix (off)",
+     "why": "seen 4 times: cut (#) / run python automation \"$slug\" cut # # |",
+     "result": "not patched: GEMINI_API_KEY_MON is not set; MONITOR_TOKEN may not write contents here"
+    }
+   ]
   },
   {
    "key": "stoic",
@@ -313,8 +377,8 @@
     },
     {
      "at": "2026-11-07T19:00Z",
-     "video": null,
-     "title": null
+     "video": "sxWol7LdNTo",
+     "title": "10 Things Stoics Quietly Remove From Life"
     },
     {
      "at": "2026-11-08T19:00Z",
@@ -322,11 +386,11 @@
      "title": null
     }
    ],
-   "buffer": 1,
-   "scheduled_ahead": 1,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 7.5,
-   "build_h": 13.8,
+   "watchdog_h": 10.5,
+   "build_h": 2.4,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,

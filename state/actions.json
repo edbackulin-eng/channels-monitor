@@ -22,5 +22,45 @@
   "action": "start episode.yml",
   "why": "0 of the next 3 slots have a video",
   "result": "started"
+ },
+ {
+  "at": "2026-11-06T11:03:13Z",
+  "channel": "whatif",
+  "level": 1,
+  "action": "start watchdog.yml",
+  "why": "dead",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-06T11:03:13Z",
+  "channel": "whatif",
+  "level": 2,
+  "action": "autofix (off)",
+  "why": "seen 4 times: build / keep two scheduled ahead |",
+  "result": "not patched: GEMINI_API_KEY_MON is not set; MONITOR_TOKEN may not write contents here"
+ },
+ {
+  "at": "2026-11-06T11:03:13Z",
+  "channel": "closed-tabs",
+  "level": 2,
+  "action": "autofix (off)",
+  "why": "seen 2 times: resume / render and package |",
+  "result": "not patched: GEMINI_API_KEY_MON is not set; MONITOR_TOKEN may not write contents here"
+ },
+ {
+  "at": "2026-11-06T11:03:13Z",
+  "channel": "closed-tabs",
+  "level": 2,
+  "action": "autofix (off)",
+  "why": "seen 2 times: render (#) / render part # |",
+  "result": "not patched: GEMINI_API_KEY_MON is not set; MONITOR_TOKEN may not write contents here"
+ },
+ {
+  "at": "2026-11-06T11:03:13Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix (off)",
+  "why": "seen 4 times: cut (#) / run python automation \"$slug\" cut # # |",
+  "result": "not patched: GEMINI_API_KEY_MON is not set; MONITOR_TOKEN may not write contents here"
  }
 ]
