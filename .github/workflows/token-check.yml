@@ -1,5 +1,7 @@
 name: token-check
 # MONITOR_TOKEN can read the four channels' Actions and start a watchdog: one test dispatch.
+# Then what it may write (Contents, Workflows) in the four channels and here, probed without
+# writing, and whether GEMINI_API_KEY_MON answers (scripts/token_check.py). No secret is printed.
 on:
   workflow_dispatch:
     inputs:
@@ -30,3 +32,17 @@ jobs:
           echo "${{ inputs.dispatch_to }} watchdog dispatch: HTTP $code (204 = started)"
           [ "$code" = 204 ] || bad=1
           exit $bad
+      - uses: actions/checkout@v5
+        if: always()
+      - uses: actions/setup-python@v6
+        if: always()
+        with:
+          python-version: "3.11"
+      - name: Contents and Workflows rights, the level 2 key
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MONITOR_TOKEN: ${{ secrets.MONITOR_TOKEN }}
+          GEMINI_API_KEY_MON: ${{ secrets.GEMINI_API_KEY_MON }}
+          PYTHONUTF8: 1
+        run: python scripts/token_check.py
