@@ -14,6 +14,8 @@ Per channel (monitor/channels.py; the channels' repositories are only read):
             more channels is marked shared
   topics    topics left to build; under 10 -> alarm
   GPU       the Kaggle week (the channels' ledgers, last 7 days) against 27.5 h
+  smoke     the channel's smoke test on dev red for more than 12 h -> a letter (owner 06.11)
+  rights    what MONITOR_TOKEN may write (Contents, Workflows), probed without writing
 Putting things right (edbackulin-eng's channels; the stoic one is only reported):
   level 1  known failures, every pass (monitor/heal.py)
   level 2  a new failure seen twice: an automatic patch, tested, merged or undone (monitor/autofix.py)
@@ -43,6 +45,7 @@ OWNER = "edbackulin-eng"
 ISSUE_TITLE = "Monitor"
 KYIV = ZoneInfo("Europe/Kyiv")
 BUFFER_MIN, WATCHDOG_MAX_H, BUILD_MAX_H, TOPICS_MIN = 2, 3.0, 36.0, 10
+SMOKE_RED_MAX_H = 12.0              # owner 06.11: a channel's dev smoke red longer than this -> a letter
 DISPATCH_EVERY_H = 3.0
 PASS_EVERY_H = 3.0
 API = "https://api.github.com/"
@@ -92,8 +95,47 @@ class Net:
                        check=True, capture_output=True)
         return dest
 
-    def can_write(self):
-        return bool(self.write)
+    rights_seen = None               # {repo: {"contents": bool|None, "workflows": bool|None}}, once a pass
+
+    def can_write(self, repo=None, what="contents"):
+        if not self.write:
+            return False
+        if repo is None or not self.rights_seen or repo not in self.rights_seen:
+            return True
+        return bool(self.rights_seen[repo].get(what))
+
+    def _probe(self, repo, path):
+        """True if MONITOR_TOKEN may write this existing file, found without writing it: a PUT
+        with a sha that cannot be the file's is refused with 409 when the token may write
+        there, 403 (or 404) when it may not. None: no answer."""
+        import base64
+        try:
+            self.call(f"repos/{repo}/contents/{path}", {"message": "monitor: rights probe (never applied)",
+                                                        "content": base64.b64encode(b"probe").decode(),
+                                                        "sha": "0" * 40}, token=self.write, method="PUT")
+        except urllib.error.HTTPError as e:
+            return True if e.code in (409, 422) else False if e.code in (401, 403, 404) else None
+        except (urllib.error.URLError, OSError):
+            return None
+        return None                  # never accepted: the sha cannot match
+
+    def rights(self, repo):
+        """{"contents": ..., "workflows": ...} MONITOR_TOKEN has in a repository (owner 06.11)."""
+        if not self.write:
+            return {"contents": False, "workflows": False}
+        out = {"contents": None, "workflows": None}
+        try:
+            top = self.get(f"repos/{repo}/contents/")
+            f = next((x["path"] for x in top if x.get("type") == "file"), None)
+            wfs = self.get(f"repos/{repo}/contents/.github/workflows")
+            w = next((x["path"] for x in wfs if x.get("type") == "file" and x["name"].endswith((".yml", ".yaml"))), None)
+        except (urllib.error.URLError, OSError, TypeError):
+            return out
+        if f:
+            out["contents"] = self._probe(repo, f)
+        if w:
+            out["workflows"] = self._probe(repo, w)
+        return out
 
     def dispatch(self, repo, workflow, inputs=None, ref="main"):
         if not self.write:
@@ -166,6 +208,9 @@ class Offline(Net):
 
     def checkout(self, ch, work):
         return self.dir / ch["key"]
+
+    def rights(self, repo):
+        return self.answers.get("rights", {}).get(repo, {"contents": True, "workflows": True})
 
     def dispatch(self, repo, workflow, inputs=None, ref="main"):
         self.sent.append({"dispatch": f"{repo}/{workflow}", **({"inputs": inputs} if inputs else {})})
@@ -270,7 +315,7 @@ def failure_of(net, ch, r):
     except (urllib.error.URLError, OSError):
         pass
     return {"run": r.get("html_url"), "id": r.get("id"), "step": step, "at": r.get("updated_at"),
-            "tail": tail, "kind": heal.classify(tail)}
+            "tail": tail, "kind": heal.classify(tail), "workflow": r.get("path")}
 
 
 def builds(net, ch, now=None, max_failures=4):
@@ -322,6 +367,24 @@ def gpu_week(roots, now):
         parts[name] = round(parts.get(name, 0) + h, 2)
         total += h
     return round(total, 2), parts
+
+
+def smoke_red_since(net, ch):
+    """When the channel's smoke test on dev turned red and stayed red (None: green, or no smoke).
+    Its runs on dev only - the monitor's own autofix branches are tested by the same workflow."""
+    try:
+        rs = net.get(f"repos/{ch['repo']}/actions/workflows/{ch.get('smoke', 'smoke.yml')}/runs?per_page=30")             .get("workflow_runs", [])
+    except (urllib.error.URLError, OSError):
+        return None
+    dev = sorted((r for r in rs if r.get("status") == "completed" and r.get("conclusion") in ("success", "failure")
+                  and r.get("head_branch") == "dev" and not str(r.get("display_title") or "").startswith("smoke autofix/")),
+                 key=lambda r: r.get("created_at") or "", reverse=True)
+    since = None
+    for r in dev:
+        if r.get("conclusion") == "success":
+            break
+        since = ts(r.get("created_at"))
+    return since
 
 
 def norm(reason):
@@ -376,6 +439,11 @@ def look(net, ch, now, work):
         out["deferred"] = f"last build waits (quota, GPU window or budget) at {fail['step']}"
     elif fail:
         out["problems"].append(("build-failed", f"last build failed at {fail['step']}"))
+    # owner 06.11: the dev smoke red for more than 12 h - nothing on dev reaches main
+    red = smoke_red_since(net, ch) if ch.get("act") else None
+    if red is not None and now - red > timedelta(hours=SMOKE_RED_MAX_H):
+        out["owner"].append(("smoke-red", f"the smoke test on dev has been red for {age_h(now, red)} h "
+                             f"(since {red:%d.%m %H:%M} UTC): what is on dev does not reach main"))
     for k, text in out["owner"]:
         out["problems"].append((f"owner-{k}", text))
     # tomorrow's slot empty and nothing scheduled: only the owner can still save it
@@ -471,6 +539,9 @@ def main(argv=None):
         args.summary = args.summary or summary_due
     net = Offline(args.fixtures) if args.fixtures else Net()
     net.issue = mem.get("issue")
+    # what MONITOR_TOKEN may write, probed without writing (owner 06.11), once a pass
+    net.rights_seen = {r: net.rights(r) for r in [c["repo"] for c in C.CHANNELS if c.get("act")] + [net.repo]}
+    mem["rights"] = net.rights_seen
     work = out / "work"
     results, roots, owner = [], {}, []
     for ch in C.CHANNELS:
@@ -514,6 +585,9 @@ def main(argv=None):
     need = {f"{r['key']}:owner-{k}": f"{r['name']}: {text}" for r in results for k, text in r.get("owner", [])}
     for i, text in enumerate(owner):
         need[f"revert:{hashlib.sha1(text.encode()).hexdigest()[:8]}"] = text
+    # level 2 off: said once, not kept quiet (owner 06.11)
+    for k, text in autofix.off_letters(net, os.environ.get("GEMINI_API_KEY_MON")):
+        need[k] = text
     before = set(mem.get("owner_alarms", {}))
     new = {k: v for k, v in need.items() if k not in before}
     sent = []

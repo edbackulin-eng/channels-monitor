@@ -24,6 +24,8 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: "3.11"
+      # level 2 parses a patched workflow before it is tested (monitor/autofix.py)
+      - run: pip install -q pyyaml==6.0.3
       - run: python scripts/smoke.py
       - name: Move dev to main
         run: |

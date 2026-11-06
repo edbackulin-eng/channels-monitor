@@ -14,6 +14,8 @@ right what the runbook knows, and nothing else:
   4. letters: only when the owner is needed (an expired token, an undone patch), once; the
      morning summary lists what was put right
   5. --due: nothing runs when no pass, no summary and no planned dispatch is due
+  6. level 2 on workflows: a small fix yes; cron, permissions, secrets, upload workflows never
+  7. level 2 off (no key, token may not write): journal and one letter; dev smoke red > 12 h: a letter
 """
 import json
 import os
@@ -212,6 +214,67 @@ def main():
     bad = {"tail": TRACE.replace("pipeline/sceneplan.py", "automation/upload_youtube.py")}
     got, why = autofix.propose(check.Offline(fx), {"repo": WI}, bad)
     ok("level 2 never touches uploads (and the other forbidden code)", got is None and "may not change" in why, why)
+    # 6. owner 06.11: workflows may be patched - not their cron, secrets, permissions or uploads
+    WF = ("name: build\non:\n  schedule:\n    - cron: \"0 6 * * 1\"\n  workflow_dispatch:\npermissions:\n  contents: write\n"
+          "jobs:\n  build:\n    runs-on: ubuntu-24.04\n    env:\n      K: ${{ secrets.KAGGLE_KEY }}\n    steps:\n"
+          "      - run: pip install -q -r requirements.txt\n      - run: python build.py\n")
+    off = check.Offline(fx)
+    off.answers.setdefault("files", {})[f"{WI}:*:.github/workflows/build-video.yml"] = WF
+    wf_fail = {"tail": "ModuleNotFoundError: No module named 'six'\n##[error]Process completed with exit code 1.",
+               "workflow": ".github/workflows/build-video.yml", "step": "build / Build"}
+    answers = {"fine": {"old": "      - run: pip install -q -r requirements.txt",
+                        "new": "      - run: pip install -q -r requirements.txt six", "why": "six is missing"},
+               "cron": {"old": "    - cron: \"0 6 * * 1\"", "new": "    - cron: \"0 7 * * 1\"", "why": "later"},
+               "perm": {"old": "  contents: write\n", "new": "  contents: write\n  actions: write\n", "why": "more"},
+               "secret": {"old": "      K: ${{ secrets.KAGGLE_KEY }}", "new": "      K: ${{ secrets.OTHER }}", "why": "x"}}
+    got = {}
+    for k, a in answers.items():
+        autofix.ask = lambda prompt, a=a: a
+        got[k] = autofix.propose(off, {"repo": WI}, wf_fail)
+    ok("level 2: a workflow gets a small patch (a missing package)", got["fine"][0] is not None
+       and "requirements.txt six" in got["fine"][0][2], str(got["fine"][1]))
+    ok("level 2: never a workflow's cron, permissions or secrets",
+       all(got[k][0] is None for k in ("cron", "perm", "secret")), str({k: got[k][1] for k in ("cron", "perm", "secret")}))
+    got_up = autofix.propose(off, {"repo": WI}, {**wf_fail, "workflow": ".github/workflows/upload.yml"})
+    ok("level 2: never an upload workflow", got_up[0] is None, str(got_up[1]))
+    off.rights_seen = {WI: {"contents": True, "workflows": False}}
+    autofix.ask = lambda prompt: answers["fine"]
+    got_nw = autofix.propose(off, {"repo": WI}, wf_fail)
+    ok("level 2: no workflow patch without the token's Workflows right", got_nw[0] is None and "Workflows" in got_nw[1].title(),
+       str(got_nw[1]))
+    # 7. level 2 off: journal and one letter, not silence; the dev smoke red over 12 h: a letter
+    tmp2 = Path(tempfile.mkdtemp())
+    fx2, out2 = tmp2 / "fx", tmp2 / "out"
+    out2.mkdir()
+    world(fx2)
+    api = json.loads((fx2 / "api.json").read_text(encoding="utf-8"))
+    api[f"repos/{AR}/actions/workflows/smoke.yml/runs"] = {"workflow_runs": [
+        run(301, "failure", updated="2026-11-05T02:00:00Z", head_branch="dev", display_title="smoke dev"),
+        run(300, "failure", updated="2026-11-04T15:00:00Z", head_branch="dev", display_title="smoke dev"),
+        run(299, "success", updated="2026-11-04T10:00:00Z", head_branch="dev", display_title="smoke dev")]}
+    api[f"repos/{CT}/actions/workflows/smoke.yml/runs"] = {"workflow_runs": [
+        run(401, "failure", updated="2026-11-05T01:00:00Z", head_branch="dev", display_title="smoke dev"),
+        run(400, "success", updated="2026-11-04T20:00:00Z", head_branch="dev", display_title="smoke dev")]}
+    api["rights"] = {DI: {"contents": False, "workflows": False}}
+    (fx2 / "api.json").write_text(json.dumps(api), encoding="utf-8")
+    os.environ.pop("GEMINI_API_KEY_MON", None)
+    asked_off = []
+    autofix.ask = lambda prompt: asked_off.append(1) or {}
+    s1, m1, a1 = pass_(fx2, out2, "2026-11-05T05:30:00Z")
+    c1 = [x["comment"] for x in s1 if "comment" in x]
+    ok("level 2 off: what it would patch is in the journal, nothing asked",
+       any(a["action"] == "autofix (off)" and a["channel"] == "whatif" and "GEMINI_API_KEY_MON" in a["result"] for a in a1)
+       and not asked_off, str([(a["channel"], a["action"], a["result"]) for a in a1 if a["level"] == 2]))
+    ok("level 2 off: the owner is told, once", any("Level 2" in c and "GEMINI_API_KEY_MON" in c for c in c1)
+       and any("may not write Contents in prehistoric-channel" in c for c in c1), str(c1))
+    ok("the dev smoke red over 12 h: a letter (archive, 14.5 h); not under 12 h (Closed Tabs, 4.5 h)",
+       any("smoke test on dev has been red" in c and "Yesterday in Color" in c for c in c1)
+       and not any("Closed Tabs: the smoke test on dev" in c for c in c1), str(c1))
+    s2, m2, a2 = pass_(fx2, out2, "2026-11-05T05:45:00Z")
+    ok("level 2 off: not written again the same day", not [x for x in s2 if "comment" in x]
+       and not [a for a in a2[len(a1):] if a["action"] == "autofix (off)"], str(s2))
+    os.environ["GEMINI_API_KEY_MON"] = "fake"
+    shutil.rmtree(tmp2, ignore_errors=True)
     # 5. --due
     before = (out / "state" / "monitor.json").read_text(encoding="utf-8")
     pass_(fx, out, "2026-11-05T12:40:00Z", due=True)
