@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T20:07:00Z",
+ "at": "2026-11-06T23:08:08Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 6.6,
+   "build_h": 9.6,
    "last_build_failed": null,
    "failures": [
     {
@@ -67,16 +67,7 @@
    "owner": [],
    "failed": [],
    "topics": 35,
-   "actions": [
-    {
-     "at": "2026-11-06T20:07:00Z",
-     "channel": "whatif",
-     "level": 2,
-     "action": "autofix",
-     "why": "build / keep two scheduled ahead |",
-     "result": "stopped: HTTP Error 429: Too Many Requests"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "closed-tabs",
@@ -104,7 +95,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 19.2,
+   "build_h": 22.2,
    "last_build_failed": null,
    "failures": [
     {
@@ -144,16 +135,7 @@
    "owner": [],
    "failed": [],
    "topics": 14,
-   "actions": [
-    {
-     "at": "2026-11-06T20:07:00Z",
-     "channel": "closed-tabs",
-     "level": 2,
-     "action": "autofix",
-     "why": "resume / render and package |",
-     "result": "stopped: HTTP Error 429: Too Many Requests"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "dinosaurs",
@@ -166,7 +148,7 @@
     ],
     [
      "build",
-     "last successful build 54.2 h ago"
+     "last successful build 57.2 h ago"
     ],
     [
      "build-failed",
@@ -198,7 +180,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 54.2,
+   "build_h": 57.2,
    "last_build_failed": {
     "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/41922911782",
     "id": 41922911782,
@@ -253,6 +235,14 @@
     [
      "build",
      "no successful build yet"
+    ],
+    [
+     "build-failed",
+     "last build failed at prepare / Run python automation/build.py \"$SLUG\" script"
+    ],
+    [
+     "failed:1950s-suburb",
+     "1950s-suburb: qa-failed: match_share; length; thumbnail"
     ]
    ],
    "slots": [
@@ -277,53 +267,65 @@
    "waiting": 0,
    "watchdog_h": 0.0,
    "build_h": null,
-   "last_build_failed": null,
+   "last_build_failed": {
+    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42308497525",
+    "id": 42308497525,
+    "step": "prepare / Run python automation/build.py \"$SLUG\" script",
+    "at": "2026-11-06T22:58:24Z",
+    "kind": null,
+    "workflow": ".github/workflows/episode.yml"
+   },
    "failures": [
     {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42194986056",
-     "id": 42194986056,
-     "step": "render / Run python automation/build.py \"$SLUG\" render",
-     "at": "2026-11-06T12:25:39Z",
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42308497525",
+     "id": 42308497525,
+     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
+     "at": "2026-11-06T22:58:24Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
     },
     {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42182442583",
-     "id": 42182442583,
-     "step": "cut (0) / Run python automation/build.py \"$SLUG\" cut 0 8",
-     "at": "2026-11-06T09:18:45Z",
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42302873220",
+     "id": 42302873220,
+     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
+     "at": "2026-11-06T22:44:00Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
     },
     {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42172776232",
-     "id": 42172776232,
-     "step": "cut (0) / Run python automation/build.py \"$SLUG\" cut 0 8",
-     "at": "2026-11-06T07:32:33Z",
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42296825103",
+     "id": 42296825103,
+     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
+     "at": "2026-11-06T21:57:55Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
     },
     {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42165960744",
-     "id": 42165960744,
-     "step": "cut (2) / Run python automation/build.py \"$SLUG\" cut 2 8",
-     "at": "2026-11-06T06:09:53Z",
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42290530150",
+     "id": 42290530150,
+     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
+     "at": "2026-11-06T21:12:42Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
     }
    ],
    "waiting_built": 0,
    "owner": [],
-   "failed": [],
+   "failed": [
+    {
+     "episode": "1950s-suburb",
+     "reason": "qa-failed: match_share; length; thumbnail"
+    }
+   ],
    "topics": 20,
    "actions": [
     {
-     "at": "2026-11-06T20:07:00Z",
+     "at": "2026-11-06T23:08:08Z",
      "channel": "archive",
-     "level": 2,
-     "action": "autofix",
-     "why": "cut (#) / run python automation \"$slug\" cut # # |",
-     "result": "stopped: HTTP Error 429: Too Many Requests"
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
     }
    ]
   },
@@ -352,8 +354,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 19.6,
-   "build_h": 2.4,
+   "watchdog_h": 22.6,
+   "build_h": 5.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,

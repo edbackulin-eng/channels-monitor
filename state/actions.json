@@ -86,5 +86,13 @@
   "action": "autofix",
   "why": "cut (#) / run python automation \"$slug\" cut # # |",
   "result": "stopped: HTTP Error 429: Too Many Requests"
+ },
+ {
+  "at": "2026-11-06T23:08:08Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
  }
 ]
