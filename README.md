@@ -1,14 +1,14 @@
 # Channels monitor
 
-Updated 06.11.2026 19:05 Kyiv (17:05 UTC). A pass every 3 hours; known failures are put right by themselves (level 1), a new one seen twice gets an automatic patch (level 2); letters go to the issue **Monitor** only when the owner is needed.
+Updated 06.11.2026 22:07 Kyiv (20:07 UTC). A pass every 3 hours; known failures are put right by themselves (level 1), a new one seen twice gets an automatic patch (level 2); letters go to the issue **Monitor** only when the owner is needed.
 
 | Channel | | Next 3 slots (local time) | Buffer | Watchdog | Last good build | Topics | What is wrong |
 |---|---|---|---|---|---|---|---|
-| [What If](https://github.com/edbackulin-eng/whatif-channel) | ✓ | 07.11 15:00 ✓, 09.11 15:00 ✓, 10.11 15:00 ✗ | 2/3 | 0.0 h | 3.5 h | 35 | — |
-| [Closed Tabs](https://github.com/edbackulin-eng/closed-tabs) | ✓ | 07.11 17:00 ✓, 09.11 17:00 ✓, 10.11 17:00 ✗ | 2/3 | 0.0 h | 16.1 h | 14 | — |
-| [Urzeit (dinosaurs)](https://github.com/edbackulin-eng/prehistoric-channel) | ✗ | 07.11 17:00 ✗, 11.11 17:00 ✗, 14.11 17:00 ✗ | 0/3 | 0.0 h | 51.2 h | 19 | 0 of the next 3 slots have a video; last successful build 51.2 h ago; last build failed at part (7) / Render part 7; lebende-fossilien: qa-failed: hook; subject; pace; music; first_min; motion; dinosaurs; wow |
-| [Yesterday in Color](https://github.com/edbackulin-eng/archive-channel) | ✗ | 10.11 12:00 ✗, 13.11 12:00 ✗, 17.11 12:00 ✗ | 0/3 | 0.0 h | None h | 20 | 0 of the next 3 slots have a video; no successful build yet; last build failed at render / Run python automation/build.py "$SLUG" render |
-| [Stoic (yt-factory-daily)](https://github.com/beautyapp800-ctrl/yt-factory-daily) | ✓ | 06.11 21:00 ✓, 07.11 21:00 ✓, 08.11 21:00 ✗ | 2/3 | 16.6 h | 8.4 h | generates | — |
+| [What If](https://github.com/edbackulin-eng/whatif-channel) | ✓ | 07.11 15:00 ✓, 09.11 15:00 ✓, 10.11 15:00 ✗ | 2/3 | 0.0 h | 6.6 h | 35 | — |
+| [Closed Tabs](https://github.com/edbackulin-eng/closed-tabs) | ✓ | 07.11 17:00 ✓, 09.11 17:00 ✓, 10.11 17:00 ✗ | 2/3 | 0.0 h | 19.2 h | 14 | — |
+| [Urzeit (dinosaurs)](https://github.com/edbackulin-eng/prehistoric-channel) | ✗ | 07.11 17:00 ✗, 11.11 17:00 ✗, 14.11 17:00 ✗ | 0/3 | 0.0 h | 54.2 h | 19 | 0 of the next 3 slots have a video; last successful build 54.2 h ago; last build failed at part (7) / Render part 7; lebende-fossilien: qa-failed: hook; subject; pace; music; first_min; motion; dinosaurs; wow |
+| [Yesterday in Color](https://github.com/edbackulin-eng/archive-channel) | ✗ | 10.11 12:00 ✗, 13.11 12:00 ✗, 17.11 12:00 ✗ | 0/3 | 0.0 h | None h | 20 | 0 of the next 3 slots have a video; no successful build yet |
+| [Stoic (yt-factory-daily)](https://github.com/beautyapp800-ctrl/yt-factory-daily) | ✓ | 07.11 21:00 ✓, 08.11 21:00 ✗, 09.11 21:00 ✗ | 1/3 | 19.6 h | 2.4 h | generates | — |
 
 **Kaggle GPU, last 7 days:** 10.57 h of 27.5 h (closed-tabs 9.12 h, What If 0.0 h, dinosaurs 1.45 h).
 
@@ -16,6 +16,9 @@ Updated 06.11.2026 19:05 Kyiv (17:05 UTC). A pass every 3 hours; known failures 
 
 | UTC | Channel | Level | Action | Why | Result |
 |---|---|---|---|---|---|
+| 11-06 20:07 | archive | 2 | autofix | cut (#) / run python automation "$slug" cut # # | | stopped: HTTP Error 429: Too Many Requests |
+| 11-06 20:07 | closed-tabs | 2 | autofix | resume / render and package | | stopped: HTTP Error 429: Too Many Requests |
+| 11-06 20:07 | whatif | 2 | autofix | build / keep two scheduled ahead | | stopped: HTTP Error 429: Too Many Requests |
 | 11-06 11:03 | archive | 2 | autofix (off) | seen 4 times: cut (#) / run python automation "$slug" cut # # | | not patched: GEMINI_API_KEY_MON is not set; MONITOR_TOKEN may not write contents here |
 | 11-06 11:03 | closed-tabs | 2 | autofix (off) | seen 2 times: render (#) / render part # | | not patched: GEMINI_API_KEY_MON is not set; MONITOR_TOKEN may not write contents here |
 | 11-06 11:03 | closed-tabs | 2 | autofix (off) | seen 2 times: resume / render and package | | not patched: GEMINI_API_KEY_MON is not set; MONITOR_TOKEN may not write contents here |

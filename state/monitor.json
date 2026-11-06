@@ -2,14 +2,13 @@
  "summary_date": "2026-11-06",
  "alarms": {
   "dinosaurs:buffer": "Urzeit (dinosaurs): 0 of the next 3 slots have a video",
-  "dinosaurs:build": "Urzeit (dinosaurs): last successful build 51.2 h ago",
+  "dinosaurs:build": "Urzeit (dinosaurs): last successful build 54.2 h ago",
   "dinosaurs:build-failed": "Urzeit (dinosaurs): last build failed at part (7) / Render part 7",
   "dinosaurs:failed:lebende-fossilien": "Urzeit (dinosaurs): lebende-fossilien: qa-failed: hook; subject; pace; music; first_min; motion; dinosaurs; wow",
   "archive:buffer": "Yesterday in Color: 0 of the next 3 slots have a video",
-  "archive:build": "Yesterday in Color: no successful build yet",
-  "archive:build-failed": "Yesterday in Color: last build failed at render / Run python automation/build.py \"$SLUG\" render"
+  "archive:build": "Yesterday in Color: no successful build yet"
  },
- "last_pass": "2026-11-06T17:05:41Z",
+ "last_pass": "2026-11-06T20:07:00Z",
  "planned": [
   {
    "id": "ct-build-0711",
@@ -28,13 +27,12 @@
  "cancelled": [],
  "requeued": [],
  "done": {
-  "whatif:requeue": "2026-11-06T17:05:41Z",
+  "whatif:requeue": "2026-11-06T20:07:00Z",
   "archive:build": "2026-11-06T05:01:14Z",
   "whatif:watchdog": "2026-11-06T11:03:13Z"
  },
  "owner_alarms": {
-  "dinosaurs:owner-buffer0": "Urzeit (dinosaurs): nothing for the next slot (2026-11-07T16:00Z) and no video ahead",
-  "l2:key": "Level 2 (automatic patches) is off: GEMINI_API_KEY_MON is not set in channels-monitor's secrets. Level 1 works; a new failure seen twice is only written into the journal."
+  "dinosaurs:owner-buffer0": "Urzeit (dinosaurs): nothing for the next slot (2026-11-07T16:00Z) and no video ahead"
  },
  "issue": 1,
  "rights": {
@@ -64,5 +62,22 @@
   "closed-tabs:2056b8bd99": "2026-11-06",
   "closed-tabs:446fd5f999": "2026-11-06",
   "archive:7e51abab0c": "2026-11-06"
+ },
+ "autofix": {
+  "whatif": {
+   "day": "2026-11-06",
+   "stage": "smoke-failed",
+   "signature": "build / keep two scheduled ahead |"
+  },
+  "closed-tabs": {
+   "day": "2026-11-06",
+   "stage": "smoke-failed",
+   "signature": "resume / render and package |"
+  },
+  "archive": {
+   "day": "2026-11-06",
+   "stage": "smoke-failed",
+   "signature": "cut (#) / run python automation \"$slug\" cut # # |"
+  }
  }
 }

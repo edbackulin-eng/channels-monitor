@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T17:05:41Z",
+ "at": "2026-11-06T20:07:00Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 3.5,
+   "build_h": 6.6,
    "last_build_failed": null,
    "failures": [
     {
@@ -67,7 +67,16 @@
    "owner": [],
    "failed": [],
    "topics": 35,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-06T20:07:00Z",
+     "channel": "whatif",
+     "level": 2,
+     "action": "autofix",
+     "why": "build / keep two scheduled ahead |",
+     "result": "stopped: HTTP Error 429: Too Many Requests"
+    }
+   ]
   },
   {
    "key": "closed-tabs",
@@ -95,7 +104,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 16.1,
+   "build_h": 19.2,
    "last_build_failed": null,
    "failures": [
     {
@@ -135,7 +144,16 @@
    "owner": [],
    "failed": [],
    "topics": 14,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-06T20:07:00Z",
+     "channel": "closed-tabs",
+     "level": 2,
+     "action": "autofix",
+     "why": "resume / render and package |",
+     "result": "stopped: HTTP Error 429: Too Many Requests"
+    }
+   ]
   },
   {
    "key": "dinosaurs",
@@ -148,7 +166,7 @@
     ],
     [
      "build",
-     "last successful build 51.2 h ago"
+     "last successful build 54.2 h ago"
     ],
     [
      "build-failed",
@@ -180,7 +198,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 51.2,
+   "build_h": 54.2,
    "last_build_failed": {
     "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/41922911782",
     "id": 41922911782,
@@ -235,10 +253,6 @@
     [
      "build",
      "no successful build yet"
-    ],
-    [
-     "build-failed",
-     "last build failed at render / Run python automation/build.py \"$SLUG\" render"
     ]
    ],
    "slots": [
@@ -263,14 +277,7 @@
    "waiting": 0,
    "watchdog_h": 0.0,
    "build_h": null,
-   "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42194986056",
-    "id": 42194986056,
-    "step": "render / Run python automation/build.py \"$SLUG\" render",
-    "at": "2026-11-06T12:25:39Z",
-    "kind": null,
-    "workflow": ".github/workflows/episode.yml"
-   },
+   "last_build_failed": null,
    "failures": [
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42194986056",
@@ -309,7 +316,16 @@
    "owner": [],
    "failed": [],
    "topics": 20,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-06T20:07:00Z",
+     "channel": "archive",
+     "level": 2,
+     "action": "autofix",
+     "why": "cut (#) / run python automation \"$slug\" cut # # |",
+     "result": "stopped: HTTP Error 429: Too Many Requests"
+    }
+   ]
   },
   {
    "key": "stoic",
@@ -317,11 +333,6 @@
    "repo": "beautyapp800-ctrl/yt-factory-daily",
    "problems": [],
    "slots": [
-    {
-     "at": "2026-11-06T19:00Z",
-     "video": "wXflSGvXyfQ",
-     "title": "10 Stoic Lessons to Stop Overthinking Relationships"
-    },
     {
      "at": "2026-11-07T19:00Z",
      "video": "sxWol7LdNTo",
@@ -331,13 +342,18 @@
      "at": "2026-11-08T19:00Z",
      "video": null,
      "title": null
+    },
+    {
+     "at": "2026-11-09T19:00Z",
+     "video": null,
+     "title": null
     }
    ],
-   "buffer": 2,
-   "scheduled_ahead": 2,
+   "buffer": 1,
+   "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 16.6,
-   "build_h": 8.4,
+   "watchdog_h": 19.6,
+   "build_h": 2.4,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,

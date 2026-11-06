@@ -62,5 +62,29 @@
   "action": "autofix (off)",
   "why": "seen 4 times: cut (#) / run python automation \"$slug\" cut # # |",
   "result": "not patched: GEMINI_API_KEY_MON is not set; MONITOR_TOKEN may not write contents here"
+ },
+ {
+  "at": "2026-11-06T20:07:00Z",
+  "channel": "whatif",
+  "level": 2,
+  "action": "autofix",
+  "why": "build / keep two scheduled ahead |",
+  "result": "stopped: HTTP Error 429: Too Many Requests"
+ },
+ {
+  "at": "2026-11-06T20:07:00Z",
+  "channel": "closed-tabs",
+  "level": 2,
+  "action": "autofix",
+  "why": "resume / render and package |",
+  "result": "stopped: HTTP Error 429: Too Many Requests"
+ },
+ {
+  "at": "2026-11-06T20:07:00Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "cut (#) / run python automation \"$slug\" cut # # |",
+  "result": "stopped: HTTP Error 429: Too Many Requests"
  }
 ]
