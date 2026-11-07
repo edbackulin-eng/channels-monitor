@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T14:15:51Z",
+ "at": "2026-11-07T17:17:14Z",
  "channels": [
   {
    "key": "whatif",
@@ -7,11 +7,6 @@
    "repo": "edbackulin-eng/whatif-channel",
    "problems": [],
    "slots": [
-    {
-     "at": "2026-11-07T15:00Z",
-     "video": "tSiz8ZDmQmk",
-     "title": "What If the Oceans Vanished?"
-    },
     {
      "at": "2026-11-09T15:00Z",
      "video": "C2yep2BX-z0",
@@ -21,13 +16,18 @@
      "at": "2026-11-10T15:00Z",
      "video": "VhKX4mkahSc",
      "title": "What If the Moon Had an Atmosphere?"
+    },
+    {
+     "at": "2026-11-12T15:00Z",
+     "video": null,
+     "title": null
     }
    ],
-   "buffer": 3,
-   "scheduled_ahead": 3,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 1.1,
+   "build_h": 4.1,
    "last_build_failed": null,
    "failures": [
     {
@@ -45,22 +45,6 @@
      "at": "2026-11-04T17:43:15Z",
      "kind": null,
      "workflow": ".github/workflows/build-video.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/whatif-channel/actions/runs/41875301073",
-     "id": 41875301073,
-     "step": "build / Keep two scheduled ahead",
-     "at": "2026-11-04T17:13:26Z",
-     "kind": null,
-     "workflow": ".github/workflows/build-video.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/whatif-channel/actions/runs/41872700242",
-     "id": 41872700242,
-     "step": "build / Keep two scheduled ahead",
-     "at": "2026-11-04T16:58:26Z",
-     "kind": null,
-     "workflow": ".github/workflows/build-video.yml"
     }
    ],
    "waiting_built": 0,
@@ -76,11 +60,6 @@
    "problems": [],
    "slots": [
     {
-     "at": "2026-11-07T17:00Z",
-     "video": "yyZp0xQPB1M",
-     "title": "He Said He Came from 2036 to Steal a 1975 Computer"
-    },
-    {
      "at": "2026-11-09T17:00Z",
      "video": "dz_GTE57Ly4",
      "title": "A Buzz on 4625 kHz, and the Voice That Interrupts It"
@@ -89,13 +68,18 @@
      "at": "2026-11-10T17:00Z",
      "video": "NUdWNIEKZHk",
      "title": "Is Anyone Actually There? Checking the Dead Internet Claim"
+    },
+    {
+     "at": "2026-11-12T17:00Z",
+     "video": null,
+     "title": null
     }
    ],
-   "buffer": 3,
-   "scheduled_ahead": 3,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 11.1,
+   "build_h": 14.1,
    "last_build_failed": null,
    "failures": [
     {
@@ -144,27 +128,10 @@
    "problems": [
     [
      "buffer",
-     "0 of the next 3 slots have a video"
-    ],
-    [
-     "build",
-     "last successful build 72.3 h ago"
-    ],
-    [
-     "build-failed",
-     "last build failed at part (9) / Render part 9"
-    ],
-    [
-     "failed:lebende-fossilien",
-     "lebende-fossilien: qa-failed: hook; subject; pace; music; first_min; motion; dinosaurs; wow"
+     "0 of the next 3 slots have a video (1 waiting for approval or a slot)"
     ]
    ],
    "slots": [
-    {
-     "at": "2026-11-07T16:00Z",
-     "video": null,
-     "title": null
-    },
     {
      "at": "2026-11-11T16:00Z",
      "video": null,
@@ -174,21 +141,19 @@
      "at": "2026-11-14T16:00Z",
      "video": null,
      "title": null
+    },
+    {
+     "at": "2026-11-18T16:00Z",
+     "video": null,
+     "title": null
     }
    ],
    "buffer": 0,
    "scheduled_ahead": 0,
-   "waiting": 0,
+   "waiting": 1,
    "watchdog_h": 0.0,
-   "build_h": 72.3,
-   "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/42201599552",
-    "id": 42201599552,
-    "step": "part (9) / Render part 9",
-    "at": "2026-11-07T12:07:05Z",
-    "kind": null,
-    "workflow": ".github/workflows/render.yml"
-   },
+   "build_h": 3.0,
+   "last_build_failed": null,
    "failures": [
     {
      "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/42201599552",
@@ -208,18 +173,8 @@
     }
    ],
    "waiting_built": 0,
-   "owner": [
-    [
-     "buffer0",
-     "nothing for the next slot (2026-11-07T16:00Z) and no video ahead"
-    ]
-   ],
-   "failed": [
-    {
-     "episode": "lebende-fossilien",
-     "reason": "qa-failed: hook; subject; pace; music; first_min; motion; dinosaurs; wow"
-    }
-   ],
+   "owner": [],
+   "failed": [],
    "topics": 19,
    "actions": []
   },
@@ -238,7 +193,7 @@
     ],
     [
      "build-failed",
-     "last build failed at prepare / Run python automation/build.py \"$SLUG\" script"
+     "last build failed at prepare / Run python automation/build.py \"$SLUG\" narrate"
     ],
     [
      "failed:1950s-suburb",
@@ -268,14 +223,30 @@
    "watchdog_h": 0.0,
    "build_h": null,
    "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42365239092",
-    "id": 42365239092,
-    "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-    "at": "2026-11-07T10:46:21Z",
+    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42386781523",
+    "id": 42386781523,
+    "step": "prepare / Run python automation/build.py \"$SLUG\" narrate",
+    "at": "2026-11-07T16:02:46Z",
     "kind": null,
     "workflow": ".github/workflows/episode.yml"
    },
    "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42386781523",
+     "id": 42386781523,
+     "step": "prepare / Run python automation/build.py \"$SLUG\" narrate",
+     "at": "2026-11-07T16:02:46Z",
+     "kind": null,
+     "workflow": ".github/workflows/episode.yml"
+    },
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42366128886",
+     "id": 42366128886,
+     "step": "render / Record (QA gate; upload when a token exists, else buffer)",
+     "at": "2026-11-07T15:23:11Z",
+     "kind": null,
+     "workflow": ".github/workflows/episode.yml"
+    },
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42365239092",
      "id": 42365239092,
@@ -289,22 +260,6 @@
      "id": 42364244631,
      "step": "prepare / Run python automation/build.py \"$SLUG\" script",
      "at": "2026-11-07T10:31:33Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42361063616",
-     "id": 42361063616,
-     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-     "at": "2026-11-07T10:16:16Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42357824734",
-     "id": 42357824734,
-     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-     "at": "2026-11-07T09:31:08Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
     }
@@ -345,8 +300,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 14.5,
-   "build_h": 6.5,
+   "watchdog_h": 17.5,
+   "build_h": 0.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
