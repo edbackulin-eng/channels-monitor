@@ -181,9 +181,9 @@ def ask_retries():
     except autofix.AskFailed as e:
         ok("level 2: no model answering is AskFailed, with the reason", "quota is spent" in str(e), str(e))
     offered = {"data": [{"id": "openai/gpt-oss-120b"}, {"id": "llama-3.3-70b-versatile"},
-                        {"id": "meta-llama/llama-4-scout-17b-16e-instruct"}]}
+                        {"id": "meta-llama/llama-4-scout-17b-16e-instruct"}, {"id": "allam-2-7b"}]}
     ok("level 2: Groq gets a model no channel uses",
-       REAL_GROQ("k", get=lambda: offered) == "meta-llama/llama-4-scout-17b-16e-instruct"
+       REAL_GROQ("k", get=lambda: offered) == "allam-2-7b"
        and REAL_GROQ("k", get=lambda: {"data": [{"id": "openai/gpt-oss-120b"}]}) is None)
 
 

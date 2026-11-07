@@ -41,11 +41,15 @@ URL = "https://generativelanguage.googleapis.com/v1beta/models/{m}:generateConte
 # the monitor never spends a channel's day. The first of GROQ_MODELS the account offers;
 # CHANNEL_MODELS are never asked.
 GROQ_URL = "https://api.groq.com/openai/v1/"
-GROQ_MODELS = ("qwen/qwen3-32b", "meta-llama/llama-4-maverick-17b-128e-instruct",
-               "meta-llama/llama-4-scout-17b-16e-instruct")
+GROQ_MODELS = ("qwen/qwen3-32b", "allam-2-7b")
+# what the channels ask of the shared Groq account (checked 07.11): What If and Closed Tabs
+# gpt-oss-120b, Yesterday in Color gpt-oss-20b then kimi-k2 / llama-4-maverick / llama-4-scout,
+# the dinosaurs qwen3.8-27b; on 03.11 the account served gpt-oss-120b, gpt-oss-20b,
+# qwen3.8-27b and allam-2-7b
 CHANNEL_MODELS = {"llama-3.3-70b-versatile", "llama-3.1-8b-instant", "openai/gpt-oss-120b",
                   "openai/gpt-oss-20b", "moonshotai/kimi-k2-instruct", "moonshotai/kimi-k2-instruct-0905",
-                  "groq/compound", "groq/compound-mini"}
+                  "meta-llama/llama-4-maverick-17b-128e-instruct", "meta-llama/llama-4-scout-17b-16e-instruct",
+                  "qwen/qwen3.8-27b", "groq/compound", "groq/compound-mini"}
 RETRY_CODES = (429, 500, 502, 503, 504)
 PAUSES_S = (15, 45, 90)          # between tries of one model on a 429 / 5xx; a day's quota skips at once
 
