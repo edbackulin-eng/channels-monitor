@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T23:08:08Z",
+ "at": "2026-11-07T02:09:20Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 9.6,
+   "build_h": 12.6,
    "last_build_failed": null,
    "failures": [
     {
@@ -67,7 +67,16 @@
    "owner": [],
    "failed": [],
    "topics": 35,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-07T02:09:20Z",
+     "channel": "whatif",
+     "level": 2,
+     "action": "autofix",
+     "why": "build / keep two scheduled ahead |",
+     "result": "stopped: HTTP Error 503: Service Unavailable"
+    }
+   ]
   },
   {
    "key": "closed-tabs",
@@ -95,7 +104,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 22.2,
+   "build_h": 25.2,
    "last_build_failed": null,
    "failures": [
     {
@@ -135,7 +144,16 @@
    "owner": [],
    "failed": [],
    "topics": 14,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-07T02:09:20Z",
+     "channel": "closed-tabs",
+     "level": 2,
+     "action": "autofix",
+     "why": "resume / render and package |",
+     "result": "stopped: HTTP Error 503: Service Unavailable"
+    }
+   ]
   },
   {
    "key": "dinosaurs",
@@ -148,7 +166,7 @@
     ],
     [
      "build",
-     "last successful build 57.2 h ago"
+     "last successful build 60.2 h ago"
     ],
     [
      "build-failed",
@@ -180,7 +198,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 57.2,
+   "build_h": 60.2,
    "last_build_failed": {
     "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/41922911782",
     "id": 41922911782,
@@ -268,43 +286,43 @@
    "watchdog_h": 0.0,
    "build_h": null,
    "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42308497525",
-    "id": 42308497525,
+    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42324224799",
+    "id": 42324224799,
     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-    "at": "2026-11-06T22:58:24Z",
+    "at": "2026-11-07T01:58:59Z",
     "kind": null,
     "workflow": ".github/workflows/episode.yml"
    },
    "failures": [
     {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42308497525",
-     "id": 42308497525,
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42324224799",
+     "id": 42324224799,
      "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-     "at": "2026-11-06T22:58:24Z",
+     "at": "2026-11-07T01:58:59Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
     },
     {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42302873220",
-     "id": 42302873220,
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42322840297",
+     "id": 42322840297,
      "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-     "at": "2026-11-06T22:44:00Z",
+     "at": "2026-11-07T01:24:44Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
     },
     {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42296825103",
-     "id": 42296825103,
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42318376087",
+     "id": 42318376087,
      "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-     "at": "2026-11-06T21:57:55Z",
+     "at": "2026-11-07T00:58:44Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
     },
     {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42290530150",
-     "id": 42290530150,
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42310304500",
+     "id": 42310304500,
      "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-     "at": "2026-11-06T21:12:42Z",
+     "at": "2026-11-07T00:20:16Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
     }
@@ -320,12 +338,20 @@
    "topics": 20,
    "actions": [
     {
-     "at": "2026-11-06T23:08:08Z",
+     "at": "2026-11-07T02:09:20Z",
      "channel": "archive",
      "level": 1,
      "action": "start episode.yml",
      "why": "0 of the next 3 slots have a video",
      "result": "started"
+    },
+    {
+     "at": "2026-11-07T02:09:20Z",
+     "channel": "archive",
+     "level": 2,
+     "action": "autofix",
+     "why": "prepare / run python automation \"$slug\" script |",
+     "result": "stopped: HTTP Error 503: Service Unavailable"
     }
    ]
   },
@@ -354,8 +380,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 22.6,
-   "build_h": 5.5,
+   "watchdog_h": 2.3,
+   "build_h": 8.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -366,9 +392,9 @@
   }
  ],
  "gpu": {
-  "hours": 10.57,
+  "hours": 8.58,
   "parts": {
-   "closed-tabs": 9.12,
+   "closed-tabs": 7.13,
    "What If": 0.0,
    "dinosaurs": 1.45
   }
