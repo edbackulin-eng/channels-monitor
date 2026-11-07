@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T08:13:30Z",
+ "at": "2026-11-07T11:14:49Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 18.7,
+   "build_h": 21.7,
    "last_build_failed": null,
    "failures": [
     {
@@ -95,7 +95,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 5.0,
+   "build_h": 8.0,
    "last_build_failed": null,
    "failures": [
     {
@@ -148,7 +148,7 @@
     ],
     [
      "build",
-     "last successful build 66.3 h ago"
+     "last successful build 69.3 h ago"
     ],
     [
      "build-failed",
@@ -180,7 +180,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 66.3,
+   "build_h": 69.3,
    "last_build_failed": {
     "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/41922911782",
     "id": 41922911782,
@@ -268,43 +268,43 @@
    "watchdog_h": 0.0,
    "build_h": null,
    "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42351515104",
-    "id": 42351515104,
+    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42365239092",
+    "id": 42365239092,
     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-    "at": "2026-11-07T08:00:40Z",
+    "at": "2026-11-07T10:46:21Z",
     "kind": null,
     "workflow": ".github/workflows/episode.yml"
    },
    "failures": [
     {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42351515104",
-     "id": 42351515104,
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42365239092",
+     "id": 42365239092,
      "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-     "at": "2026-11-07T08:00:40Z",
+     "at": "2026-11-07T10:46:21Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
     },
     {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42348338230",
-     "id": 42348338230,
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42364244631",
+     "id": 42364244631,
      "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-     "at": "2026-11-07T07:15:30Z",
+     "at": "2026-11-07T10:31:33Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
     },
     {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42345004028",
-     "id": 42345004028,
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42361063616",
+     "id": 42361063616,
      "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-     "at": "2026-11-07T06:30:13Z",
+     "at": "2026-11-07T10:16:16Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
     },
     {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42341864536",
-     "id": 42341864536,
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42357824734",
+     "id": 42357824734,
      "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-     "at": "2026-11-07T05:45:03Z",
+     "at": "2026-11-07T09:31:08Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
     }
@@ -318,16 +318,7 @@
     }
    ],
    "topics": 20,
-   "actions": [
-    {
-     "at": "2026-11-07T08:13:30Z",
-     "channel": "archive",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "stoic",
@@ -354,8 +345,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 8.4,
-   "build_h": 0.5,
+   "watchdog_h": 11.4,
+   "build_h": 3.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
