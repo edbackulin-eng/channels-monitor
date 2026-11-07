@@ -179,7 +179,7 @@ CHANNELS = [
      "hung_h": {"watchdog.yml": 6.2, "daily.yml": 13.0, "resume-episode.yml": 8.0},
      "infra_fixes": "state/infra_fixes.json", "requeue": None},
     {"key": "dinosaurs", "name": "Urzeit (dinosaurs)", "repo": "edbackulin-eng/prehistoric-channel", "act": True,
-     "slots": {"weekdays": [2, 5], "time": "17:00", "tz": "Europe/Berlin"},
+     "slots": {"weekdays": [6, 2], "time": "17:00", "tz": "Europe/Berlin"},   # Sun + Wed (owner 07.11; was Wed + Sat)
      "paths": ["state", "topics/queue.json"],
      "watchdog": "watchdog.yml", "builds": ["render.yml"], "heartbeat": "state/heartbeat.json",
      "scheduled": rows_scheduled, "failed": rows_failed, "topics": queue_topics, "waiting": rows_waiting,
