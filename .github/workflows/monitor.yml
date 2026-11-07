@@ -24,6 +24,8 @@ jobs:
       MONITOR_TOKEN: ${{ secrets.MONITOR_TOKEN }}
       # level 2 (automatic patches) works only with its own key
       GEMINI_API_KEY_MON: ${{ secrets.GEMINI_API_KEY_MON }}
+      # its last resort when Gemini's day is spent (a model no channel uses; owner 07.11)
+      GROQ_API_KEY_MON: ${{ secrets.GROQ_API_KEY_MON }}
       PYTHONUTF8: 1
     steps:
       - uses: actions/checkout@v5

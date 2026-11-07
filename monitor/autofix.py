@@ -3,7 +3,8 @@
   1. find    the same failure (failed step + last error line, normalised) in two or more
              builds of a channel within 72 h; not deferred (quota, window), not the owner's
              (token, key), not already one of its fixed faults
-  2. patch   Gemini (GEMINI_API_KEY_MON) reads the log tail and the code of the deepest frame
+  2. patch   Gemini (GEMINI_API_KEY_MON; a 429/503 retried after a pause, then flash-lite, then
+             Groq with GROQ_API_KEY_MON and a model no channel uses) reads the log tail and the code of the deepest frame
              of the traceback in the channel's repository - or, a failure with no Python
              frame, the workflow that failed - and returns one minimal edit (old -> new);
              the monitor refuses any edit that touches what it may never change (FORBID_PATH,
@@ -36,6 +37,22 @@ MODEL = "gemini-flash-latest"
 # day; a patch asked of it is tested by the same dev smoke before anything is promoted.
 FALLBACK = "gemini-flash-lite-latest"
 URL = "https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent"
+# The last resort (owner 07.11): Groq, with GROQ_API_KEY_MON and a model no channel uses, so
+# the monitor never spends a channel's day. The first of GROQ_MODELS the account offers;
+# CHANNEL_MODELS are never asked.
+GROQ_URL = "https://api.groq.com/openai/v1/"
+GROQ_MODELS = ("qwen/qwen3-32b", "meta-llama/llama-4-maverick-17b-128e-instruct",
+               "meta-llama/llama-4-scout-17b-16e-instruct")
+CHANNEL_MODELS = {"llama-3.3-70b-versatile", "llama-3.1-8b-instant", "openai/gpt-oss-120b",
+                  "openai/gpt-oss-20b", "moonshotai/kimi-k2-instruct", "moonshotai/kimi-k2-instruct-0905",
+                  "groq/compound", "groq/compound-mini"}
+RETRY_CODES = (429, 500, 502, 503, 504)
+PAUSES_S = (15, 45, 90)          # between tries of one model on a 429 / 5xx; a day's quota skips at once
+
+
+class AskFailed(OSError):
+    """No model answered (quota, overload, no key): nothing is wrong with the failure itself,
+    so the channel's day is not used up and the next pass asks again."""
 FORBID_PATH = re.compile(r"(^|/)\.github/(?!workflows/[\w.-]+\.ya?ml$)|upload|youtube|publish|schedul|slot|dedup|duplicate|secret|token|credential|"
                          r"(^|/)keys?\b|(^|/)qa|gpu_budget|budget|kaggle_once|(^|/)config|\.env|release", re.I)
 FORBID_TEXT = re.compile(r"publishAt|publish_at|privacyStatus|find_by_title|uploaded\.json|YT_TOKEN|API_KEY|secrets\.|"
@@ -74,23 +91,96 @@ def candidates(failures, now, fixes=()):
     return [(s, fs) for s, fs in groups.items() if len(fs) >= 2]
 
 
-def ask(prompt):
-    key = os.environ.get("GEMINI_API_KEY_MON", "")
-    body = {"contents": [{"parts": [{"text": prompt}]}],
-            "generationConfig": {"temperature": 0, "responseMimeType": "application/json"}}
+def _post(url, body, headers, timeout=120):
+    req = urllib.request.Request(url, data=json.dumps(body).encode(),
+                                 headers={"Content-Type": "application/json", **headers})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return json.loads(r.read())
+
+
+def _per_day(e):
+    """A 429 that says the day's quota is spent: no pause helps, the next model is asked."""
+    try:
+        detail = e.read().decode("utf-8", "replace")
+    except (OSError, AttributeError):
+        detail = ""
+    return "PerDay" in detail or "per day" in detail.lower() or "RPD" in detail or "TPD" in detail
+
+
+def _groq_model(key, get=None):
+    """The first of GROQ_MODELS this Groq account offers (never a channel's model)."""
+    get = get or (lambda: json.loads(urllib.request.urlopen(urllib.request.Request(
+        GROQ_URL + "models", headers={"Authorization": f"Bearer {key}"}), timeout=30).read()))
+    try:
+        have = {m.get("id") for m in get().get("data", [])}
+    except (OSError, ValueError):
+        have = set()
+    return next((m for m in GROQ_MODELS if m in have and m not in CHANNEL_MODELS), None)
+
+
+def _providers():
+    """[(name, call)] in order: Gemini flash, Gemini flash-lite, Groq."""
+    out = []
+    gk = os.environ.get("GEMINI_API_KEY_MON", "")
+    if gk:
+        for m in (MODEL, FALLBACK):
+            def gem(prompt, m=m):
+                d = _post(URL.format(m=m), {"contents": [{"parts": [{"text": prompt}]}],
+                                            "generationConfig": {"temperature": 0,
+                                                                 "responseMimeType": "application/json"}},
+                          {"x-goog-api-key": gk})
+                return "".join(p.get("text", "") for p in d["candidates"][0]["content"]["parts"])
+            out.append((m, gem))
+    qk = os.environ.get("GROQ_API_KEY_MON", "")
+    if qk:
+        def groq(prompt):
+            m = _groq_model(qk)
+            if not m:
+                raise AskFailed("Groq offers none of " + ", ".join(GROQ_MODELS))
+            d = _post(GROQ_URL + "chat/completions",
+                      {"model": m, "temperature": 0, "response_format": {"type": "json_object"},
+                       "messages": [{"role": "user", "content": prompt}]},
+                      {"Authorization": f"Bearer {qk}"})
+            return d["choices"][0]["message"]["content"]
+        out.append(("groq", groq))
+    return out
+
+
+def ask(prompt, providers=None, sleep=None):
+    """The patch as JSON, from the first model that answers (owner 07.11: a 429 or 503 is
+    retried after a pause, then flash-lite, then Groq, so level 2 does not stop on a quota)."""
+    import time
     import urllib.error
-    for model in (MODEL, FALLBACK):
-        req = urllib.request.Request(URL.format(m=model), data=json.dumps(body).encode(),
-                                     headers={"Content-Type": "application/json", "x-goog-api-key": key})
-        try:
-            with urllib.request.urlopen(req, timeout=120) as r:
-                d = json.loads(r.read())
-            break
-        except urllib.error.HTTPError as e:
-            if e.code != 429 or model == FALLBACK:
-                raise
-    out = "".join(p.get("text", "") for p in d["candidates"][0]["content"]["parts"])
-    return json.loads(out[out.find("{"): out.rfind("}") + 1])
+    sleep = sleep or time.sleep
+    providers = _providers() if providers is None else providers
+    if not providers:
+        raise AskFailed("no key: GEMINI_API_KEY_MON or GROQ_API_KEY_MON")
+    why = []
+    for name, call in providers:
+        for n in range(len(PAUSES_S) + 1):
+            try:
+                out = call(prompt)
+                return json.loads(out[out.find("{"): out.rfind("}") + 1])
+            except urllib.error.HTTPError as e:
+                if e.code not in RETRY_CODES:
+                    why.append(f"{name}: HTTP {e.code}")
+                    break
+                if e.code == 429 and _per_day(e):
+                    why.append(f"{name}: the day's quota is spent")
+                    break
+                if n == len(PAUSES_S):
+                    why.append(f"{name}: HTTP {e.code} after {n + 1} tries")
+                    break
+                sleep(PAUSES_S[n])
+            except AskFailed as e:
+                why.append(f"{name}: {e}")
+                break
+            except (urllib.error.URLError, TimeoutError, OSError, ValueError, KeyError, IndexError) as e:
+                if n == len(PAUSES_S):
+                    why.append(f"{name}: {type(e).__name__} after {n + 1} tries")
+                    break
+                sleep(PAUSES_S[n])
+    raise AskFailed("no model answered - " + "; ".join(why))
 
 
 PROMPT = """You fix one failure in a video pipeline's code (Python, or a GitHub Actions workflow) with the
@@ -268,7 +358,7 @@ def follow(net, ch, mem, now, owner):
 
 def off_reason(net, repo, key):
     why = []
-    if not key:
+    if not key and not os.environ.get("GROQ_API_KEY_MON"):
         why.append("GEMINI_API_KEY_MON is not set")
     if not net.can_write(repo):
         why.append("MONITOR_TOKEN may not write contents here")
@@ -279,7 +369,7 @@ def off_letters(net, key):
     """[(alarm key, text)]: why level 2 is off, for the owner, once until it clears."""
     from monitor import channels as C
     out = []
-    if not key:
+    if not key and not os.environ.get("GROQ_API_KEY_MON"):
         out.append(("l2:key", "Level 2 (automatic patches) is off: GEMINI_API_KEY_MON is not set in channels-monitor's "
                               "secrets. Level 1 works; a new failure seen twice is only written into the journal."))
     seen = net.rights_seen or {}
@@ -328,6 +418,9 @@ def run(net, ch, res, mem, now, owner, fixes=()):
         sig, fails = cands[0]
         try:
             made.append(start(net, ch, sig, fails, mem, now))
+        except AskFailed as e:
+            made.append(heal.log(mem, now, ch, "autofix", sig[:120], f"waiting: {e}; asked again next pass",
+                                 level=2))
         except (OSError, ValueError, KeyError) as e:
             made.append(heal.log(mem, now, ch, "autofix", sig[:120], f"stopped: {e}", level=2))
             mem.setdefault("autofix", {})[ch["key"]] = {"day": f"{now:%Y-%m-%d}", "stage": "smoke-failed",

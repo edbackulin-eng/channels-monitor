@@ -146,7 +146,51 @@ def pass_(fx, out, now, summary=True, due=False):
     return sent, mem, acts
 
 
+def ask_retries():
+    """Owner 07.11: a 429 or 503 is retried after a pause, then flash-lite, then Groq with a
+    model no channel uses; no model answering does not use up the channel's day."""
+    import io
+    import urllib.error
+
+    def err(code, body=""):
+        return urllib.error.HTTPError("u", code, "x", {}, io.BytesIO(body.encode()))
+
+    def seq(*answers):
+        it = iter(answers)
+
+        def call(prompt):
+            a = next(it)
+            if isinstance(a, Exception):
+                raise a
+            return a
+        return call
+    slept = []
+    got = REAL_ASK("p", providers=[("flash", seq(err(503), err(429, "per minute"), '{"old": "a"}'))],
+                   sleep=slept.append)
+    ok("level 2: a 503 and a per-minute 429 are retried after a pause", got == {"old": "a"} and slept == [15, 45],
+       f"{got} {slept}")
+    slept.clear()
+    got = REAL_ASK("p", providers=[("flash", seq(err(429, "GenerateRequestsPerDayPerProjectPerModel"))),
+                                   ("flash-lite", seq(err(503), err(503), err(503), err(503))),
+                                   ("groq", seq('{"old": "g"}'))], sleep=slept.append)
+    ok("level 2: a day's quota goes on at once, an overloaded model after its pauses, Groq last",
+       got == {"old": "g"} and slept == [15, 45, 90], f"{got} {slept}")
+    try:
+        REAL_ASK("p", providers=[("flash", seq(err(429, "PerDay")))], sleep=slept.append)
+        ok("level 2: no model answering is AskFailed", False)
+    except autofix.AskFailed as e:
+        ok("level 2: no model answering is AskFailed, with the reason", "quota is spent" in str(e), str(e))
+    offered = {"data": [{"id": "openai/gpt-oss-120b"}, {"id": "llama-3.3-70b-versatile"},
+                        {"id": "meta-llama/llama-4-scout-17b-16e-instruct"}]}
+    ok("level 2: Groq gets a model no channel uses",
+       REAL_GROQ("k", get=lambda: offered) == "meta-llama/llama-4-scout-17b-16e-instruct"
+       and REAL_GROQ("k", get=lambda: {"data": [{"id": "openai/gpt-oss-120b"}]}) is None)
+
+
 def main():
+    global REAL_ASK, REAL_GROQ
+    REAL_ASK, REAL_GROQ = autofix.ask, autofix._groq_model
+    ask_retries()
     os.environ["GEMINI_API_KEY_MON"] = "fake"
     asked = []
     autofix.ask = lambda prompt: asked.append(prompt) or {
