@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T05:10:22Z",
+ "at": "2026-11-07T08:13:30Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 15.6,
+   "build_h": 18.7,
    "last_build_failed": null,
    "failures": [
     {
@@ -95,7 +95,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 2.0,
+   "build_h": 5.0,
    "last_build_failed": null,
    "failures": [
     {
@@ -148,11 +148,11 @@
     ],
     [
      "build",
-     "last successful build 63.3 h ago"
+     "last successful build 66.3 h ago"
     ],
     [
      "build-failed",
-     "last build failed at part (5) / Render part 5"
+     "last build failed at part (7) / Render part 7"
     ],
     [
      "failed:lebende-fossilien",
@@ -180,24 +180,16 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 63.3,
+   "build_h": 66.3,
    "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/42201599552",
-    "id": 42201599552,
-    "step": "part (5) / Render part 5",
-    "at": "2026-11-07T05:04:33Z",
+    "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/41922911782",
+    "id": 41922911782,
+    "step": "part (7) / Render part 7",
+    "at": "2026-11-05T13:45:37Z",
     "kind": null,
     "workflow": ".github/workflows/render.yml"
    },
    "failures": [
-    {
-     "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/42201599552",
-     "id": 42201599552,
-     "step": "part (5) / Render part 5",
-     "at": "2026-11-07T05:04:33Z",
-     "kind": null,
-     "workflow": ".github/workflows/render.yml"
-    },
     {
      "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/41922911782",
      "id": 41922911782,
@@ -229,24 +221,7 @@
     }
    ],
    "topics": 19,
-   "actions": [
-    {
-     "at": "2026-11-07T05:10:22Z",
-     "channel": "dinosaurs",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    },
-    {
-     "at": "2026-11-07T05:10:22Z",
-     "channel": "dinosaurs",
-     "level": 2,
-     "action": "autofix",
-     "why": "part (#) / render part # |",
-     "result": "stopped: The read operation timed out"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "archive",
@@ -293,43 +268,43 @@
    "watchdog_h": 0.0,
    "build_h": null,
    "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42338636580",
-    "id": 42338636580,
+    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42351515104",
+    "id": 42351515104,
     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-    "at": "2026-11-07T04:59:53Z",
+    "at": "2026-11-07T08:00:40Z",
     "kind": null,
     "workflow": ".github/workflows/episode.yml"
    },
    "failures": [
     {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42338636580",
-     "id": 42338636580,
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42351515104",
+     "id": 42351515104,
      "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-     "at": "2026-11-07T04:59:53Z",
+     "at": "2026-11-07T08:00:40Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
     },
     {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42335302522",
-     "id": 42335302522,
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42348338230",
+     "id": 42348338230,
      "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-     "at": "2026-11-07T04:14:38Z",
+     "at": "2026-11-07T07:15:30Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
     },
     {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42331788437",
-     "id": 42331788437,
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42345004028",
+     "id": 42345004028,
      "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-     "at": "2026-11-07T03:29:25Z",
+     "at": "2026-11-07T06:30:13Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
     },
     {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42328133129",
-     "id": 42328133129,
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42341864536",
+     "id": 42341864536,
      "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-     "at": "2026-11-07T02:44:29Z",
+     "at": "2026-11-07T05:45:03Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
     }
@@ -345,7 +320,7 @@
    "topics": 20,
    "actions": [
     {
-     "at": "2026-11-07T05:10:22Z",
+     "at": "2026-11-07T08:13:30Z",
      "channel": "archive",
      "level": 1,
      "action": "start episode.yml",
@@ -367,8 +342,8 @@
     },
     {
      "at": "2026-11-08T19:00Z",
-     "video": null,
-     "title": null
+     "video": "HcNQ7tfDO30",
+     "title": "10 Stoic Lessons for Hard Choices"
     },
     {
      "at": "2026-11-09T19:00Z",
@@ -376,11 +351,11 @@
      "title": null
     }
    ],
-   "buffer": 1,
-   "scheduled_ahead": 1,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 5.4,
-   "build_h": 11.5,
+   "watchdog_h": 8.4,
+   "build_h": 0.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
