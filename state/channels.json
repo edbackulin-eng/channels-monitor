@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T11:14:49Z",
+ "at": "2026-11-07T14:15:51Z",
  "channels": [
   {
    "key": "whatif",
@@ -19,15 +19,15 @@
     },
     {
      "at": "2026-11-10T15:00Z",
-     "video": null,
-     "title": null
+     "video": "VhKX4mkahSc",
+     "title": "What If the Moon Had an Atmosphere?"
     }
    ],
-   "buffer": 2,
-   "scheduled_ahead": 2,
+   "buffer": 3,
+   "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 21.7,
+   "build_h": 1.1,
    "last_build_failed": null,
    "failures": [
     {
@@ -66,7 +66,7 @@
    "waiting_built": 0,
    "owner": [],
    "failed": [],
-   "topics": 35,
+   "topics": 34,
    "actions": []
   },
   {
@@ -95,7 +95,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 8.0,
+   "build_h": 11.1,
    "last_build_failed": null,
    "failures": [
     {
@@ -148,11 +148,11 @@
     ],
     [
      "build",
-     "last successful build 69.3 h ago"
+     "last successful build 72.3 h ago"
     ],
     [
      "build-failed",
-     "last build failed at part (7) / Render part 7"
+     "last build failed at part (9) / Render part 9"
     ],
     [
      "failed:lebende-fossilien",
@@ -180,29 +180,29 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 69.3,
+   "build_h": 72.3,
    "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/41922911782",
-    "id": 41922911782,
-    "step": "part (7) / Render part 7",
-    "at": "2026-11-05T13:45:37Z",
+    "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/42201599552",
+    "id": 42201599552,
+    "step": "part (9) / Render part 9",
+    "at": "2026-11-07T12:07:05Z",
     "kind": null,
     "workflow": ".github/workflows/render.yml"
    },
    "failures": [
     {
-     "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/41922911782",
-     "id": 41922911782,
-     "step": "part (7) / Render part 7",
-     "at": "2026-11-05T13:45:37Z",
+     "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/42201599552",
+     "id": 42201599552,
+     "step": "part (9) / Render part 9",
+     "at": "2026-11-07T12:07:05Z",
      "kind": null,
      "workflow": ".github/workflows/render.yml"
     },
     {
-     "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/41784634582",
-     "id": 41784634582,
-     "step": "layers (1) / 2.5D layers, shard 1 of 12",
-     "at": "2026-11-04T11:32:26Z",
+     "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/41922911782",
+     "id": 41922911782,
+     "step": "part (7) / Render part 7",
+     "at": "2026-11-05T13:45:37Z",
      "kind": null,
      "workflow": ".github/workflows/render.yml"
     }
@@ -345,8 +345,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 11.4,
-   "build_h": 3.5,
+   "watchdog_h": 14.5,
+   "build_h": 6.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,

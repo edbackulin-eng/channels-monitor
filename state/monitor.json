@@ -2,15 +2,15 @@
  "summary_date": "2026-11-07",
  "alarms": {
   "dinosaurs:buffer": "Urzeit (dinosaurs): 0 of the next 3 slots have a video",
-  "dinosaurs:build": "Urzeit (dinosaurs): last successful build 69.3 h ago",
-  "dinosaurs:build-failed": "Urzeit (dinosaurs): last build failed at part (7) / Render part 7",
+  "dinosaurs:build": "Urzeit (dinosaurs): last successful build 72.3 h ago",
+  "dinosaurs:build-failed": "Urzeit (dinosaurs): last build failed at part (9) / Render part 9",
   "dinosaurs:failed:lebende-fossilien": "Urzeit (dinosaurs): lebende-fossilien: qa-failed: hook; subject; pace; music; first_min; motion; dinosaurs; wow",
   "archive:buffer": "Yesterday in Color: 0 of the next 3 slots have a video",
   "archive:build": "Yesterday in Color: no successful build yet",
   "archive:build-failed": "Yesterday in Color: last build failed at prepare / Run python automation/build.py \"$SLUG\" script",
   "archive:failed:1950s-suburb": "Yesterday in Color: 1950s-suburb: qa-failed: match_share; length; thumbnail"
  },
- "last_pass": "2026-11-07T11:14:49Z",
+ "last_pass": "2026-11-07T14:15:51Z",
  "planned": [
   {
    "id": "ct-build-0711",
@@ -29,7 +29,7 @@
  "cancelled": [],
  "requeued": [],
  "done": {
-  "whatif:requeue": "2026-11-07T11:14:49Z",
+  "whatif:requeue": "2026-11-07T14:15:51Z",
   "archive:build": "2026-11-07T08:13:30Z",
   "whatif:watchdog": "2026-11-06T11:03:13Z",
   "dinosaurs:build": "2026-11-07T05:10:22Z"
