@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T20:18:16Z",
+ "at": "2026-11-07T23:19:25Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 7.1,
+   "build_h": 10.2,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 17.1,
+   "build_h": 20.1,
    "last_build_failed": null,
    "failures": [
     {
@@ -135,7 +135,7 @@
    "scheduled_ahead": 1,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 6.0,
+   "build_h": 9.0,
    "last_build_failed": null,
    "failures": [
     {
@@ -159,7 +159,16 @@
    "owner": [],
    "failed": [],
    "topics": 20,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-07T23:19:25Z",
+     "channel": "dinosaurs",
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "1 of the next 3 slots have a video",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "archive",
@@ -176,7 +185,7 @@
     ],
     [
      "build-failed",
-     "last build failed at prepare / Run python automation/build.py \"$SLUG\" narrate"
+     "last build failed at prepare / Run python automation/build.py \"$SLUG\" script"
     ],
     [
      "failed:1950s-suburb",
@@ -206,43 +215,43 @@
    "watchdog_h": 0.0,
    "build_h": null,
    "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42407863212",
-    "id": 42407863212,
-    "step": "prepare / Run python automation/build.py \"$SLUG\" narrate",
-    "at": "2026-11-07T19:58:21Z",
+    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42424576357",
+    "id": 42424576357,
+    "step": "prepare / Run python automation/build.py \"$SLUG\" script",
+    "at": "2026-11-07T23:19:16Z",
     "kind": null,
     "workflow": ".github/workflows/episode.yml"
    },
    "failures": [
     {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42407863212",
-     "id": 42407863212,
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42424576357",
+     "id": 42424576357,
+     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
+     "at": "2026-11-07T23:19:16Z",
+     "kind": null,
+     "workflow": ".github/workflows/episode.yml"
+    },
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42415861235",
+     "id": 42415861235,
+     "step": "prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)",
+     "at": "2026-11-07T23:14:29Z",
+     "kind": null,
+     "workflow": ".github/workflows/episode.yml"
+    },
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42413902397",
+     "id": 42413902397,
      "step": "prepare / Run python automation/build.py \"$SLUG\" narrate",
-     "at": "2026-11-07T19:58:21Z",
+     "at": "2026-11-07T21:42:10Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
     },
     {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42390397870",
-     "id": 42390397870,
-     "step": "render / Record (QA gate; upload when a token exists, else buffer)",
-     "at": "2026-11-07T19:36:02Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42386781523",
-     "id": 42386781523,
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42411513677",
+     "id": 42411513677,
      "step": "prepare / Run python automation/build.py \"$SLUG\" narrate",
-     "at": "2026-11-07T16:02:46Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42366128886",
-     "id": 42366128886,
-     "step": "render / Record (QA gate; upload when a token exists, else buffer)",
-     "at": "2026-11-07T15:23:11Z",
+     "at": "2026-11-07T20:54:44Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
     }
@@ -256,7 +265,16 @@
     }
    ],
    "topics": 20,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-07T23:19:25Z",
+     "channel": "archive",
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "stoic",
@@ -283,8 +301,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 20.5,
-   "build_h": 3.7,
+   "watchdog_h": 0.4,
+   "build_h": 6.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
