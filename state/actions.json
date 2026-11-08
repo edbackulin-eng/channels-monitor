@@ -326,5 +326,45 @@
   "action": "autofix",
   "why": "prepare / run python automation \"$slug\" narrate |",
   "result": "no patch: Gemini: No error log was provided to identify the cause of the failure in the narrate step."
+ },
+ {
+  "at": "2026-11-08T20:24:14Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-08T20:24:14Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "cancel watchdog.yml run 42484741975",
+  "why": "running 7.0 h (limit 6.2 h)",
+  "result": "cancelled"
+ },
+ {
+  "at": "2026-11-08T20:24:14Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start watchdog.yml",
+  "why": "hung",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-08T20:24:14Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-08T20:24:14Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" narrate |",
+  "result": "no patch: Gemini: The error text is missing from the prompt."
  }
 ]

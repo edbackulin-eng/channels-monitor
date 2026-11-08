@@ -1,14 +1,14 @@
 # Channels monitor
 
-Updated 08.11.2026 19:22 Kyiv (17:22 UTC). A pass every 3 hours; known failures are put right by themselves (level 1), a new one seen twice gets an automatic patch (level 2); letters go to the issue **Monitor** only when the owner is needed.
+Updated 08.11.2026 22:24 Kyiv (20:24 UTC). A pass every 3 hours; known failures are put right by themselves (level 1), a new one seen twice gets an automatic patch (level 2); letters go to the issue **Monitor** only when the owner is needed.
 
 | Channel | | Next 3 slots (local time) | Buffer | Watchdog | Last good build | Topics | What is wrong |
 |---|---|---|---|---|---|---|---|
-| [What If](https://github.com/edbackulin-eng/whatif-channel) | ✓ | 09.11 15:00 ✓, 10.11 15:00 ✓, 12.11 15:00 ✗ | 2/3 | 0.0 h | 28.2 h | 34 | — |
-| [Closed Tabs](https://github.com/edbackulin-eng/closed-tabs) | ✓ | 09.11 17:00 ✓, 10.11 17:00 ✓, 12.11 17:00 ✓ | 3/3 | 0.0 h | 14.9 h | 12 | — |
-| [Urzeit (dinosaurs)](https://github.com/edbackulin-eng/prehistoric-channel) | ✗ | 11.11 17:00 ✗, 15.11 17:00 ✗, 18.11 17:00 ✗ | 0/3 | 0.0 h | 27.0 h | 20 | 0 of the next 3 slots have a video |
+| [What If](https://github.com/edbackulin-eng/whatif-channel) | ✓ | 09.11 15:00 ✓, 10.11 15:00 ✓, 12.11 15:00 ✗ | 2/3 | 0.0 h | 31.2 h | 34 | — |
+| [Closed Tabs](https://github.com/edbackulin-eng/closed-tabs) | ✓ | 09.11 17:00 ✓, 10.11 17:00 ✓, 12.11 17:00 ✓ | 3/3 | 0.0 h | 17.9 h | 12 | — |
+| [Urzeit (dinosaurs)](https://github.com/edbackulin-eng/prehistoric-channel) | ✗ | 11.11 17:00 ✗, 15.11 17:00 ✗, 18.11 17:00 ✗ | 0/3 | 0.0 h | 30.1 h | 20 | 0 of the next 3 slots have a video |
 | [Yesterday in Color](https://github.com/edbackulin-eng/archive-channel) | ✗ | 10.11 12:00 ✗, 13.11 12:00 ✗, 17.11 12:00 ✗ | 0/3 | 0.0 h | 3.0 h | 19 | 0 of the next 3 slots have a video; 1950s-suburb: qa-failed: repeats; thumbnail |
-| [Stoic (yt-factory-daily)](https://github.com/beautyapp800-ctrl/yt-factory-daily) | ✓ | 08.11 21:00 ✓, 09.11 21:00 ✓, 10.11 21:00 ✗ | 2/3 | 18.4 h | 0.6 h | generates | — |
+| [Stoic (yt-factory-daily)](https://github.com/beautyapp800-ctrl/yt-factory-daily) | ✓ | 09.11 21:00 ✓, 10.11 21:00 ✗, 11.11 21:00 ✗ | 1/3 | 21.4 h | 3.6 h | generates | — |
 
 **Kaggle GPU, last 7 days:** 11.5 h of 27.5 h (closed-tabs 9.36 h, What If 0.0 h, dinosaurs 2.14 h).
 
@@ -16,6 +16,11 @@ Updated 08.11.2026 19:22 Kyiv (17:22 UTC). A pass every 3 hours; known failures 
 
 | UTC | Channel | Level | Action | Why | Result |
 |---|---|---|---|---|---|
+| 11-08 20:24 | archive | 2 | autofix | prepare / run python automation "$slug" narrate | | no patch: Gemini: The error text is missing from the prompt. |
+| 11-08 20:24 | archive | 1 | start episode.yml | 0 of the next 3 slots have a video | started |
+| 11-08 20:24 | archive | 1 | start watchdog.yml | hung | started |
+| 11-08 20:24 | archive | 1 | cancel watchdog.yml run 42484741975 | running 7.0 h (limit 6.2 h) | cancelled |
+| 11-08 20:24 | dinosaurs | 1 | start episode.yml | 0 of the next 3 slots have a video | started |
 | 11-08 17:22 | archive | 2 | autofix | prepare / run python automation "$slug" narrate | | no patch: Gemini: No error log was provided to identify the cause of the failure in the na |
 | 11-08 17:22 | archive | 1 | start episode.yml | 0 of the next 3 slots have a video | started |
 | 11-08 17:22 | dinosaurs | 1 | start episode.yml | 0 of the next 3 slots have a video | started |
