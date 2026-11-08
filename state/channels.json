@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T20:24:14Z",
+ "at": "2026-11-08T23:25:33Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 31.2,
+   "build_h": 34.3,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 17.9,
+   "build_h": 20.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -102,7 +102,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 30.1,
+   "build_h": 33.1,
    "last_build_failed": null,
    "failures": [
     {
@@ -120,7 +120,7 @@
    "topics": 20,
    "actions": [
     {
-     "at": "2026-11-08T20:24:14Z",
+     "at": "2026-11-08T23:25:33Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
@@ -163,7 +163,7 @@
    "buffer": 0,
    "scheduled_ahead": 0,
    "waiting": 0,
-   "watchdog_h": 0.0,
+   "watchdog_h": -0.0,
    "build_h": 3.0,
    "last_build_failed": null,
    "failures": [
@@ -211,23 +211,7 @@
    "topics": 19,
    "actions": [
     {
-     "at": "2026-11-08T20:24:14Z",
-     "channel": "archive",
-     "level": 1,
-     "action": "cancel watchdog.yml run 42484741975",
-     "why": "running 7.0 h (limit 6.2 h)",
-     "result": "cancelled"
-    },
-    {
-     "at": "2026-11-08T20:24:14Z",
-     "channel": "archive",
-     "level": 1,
-     "action": "start watchdog.yml",
-     "why": "hung",
-     "result": "started"
-    },
-    {
-     "at": "2026-11-08T20:24:14Z",
+     "at": "2026-11-08T23:25:33Z",
      "channel": "archive",
      "level": 1,
      "action": "start episode.yml",
@@ -235,12 +219,12 @@
      "result": "started"
     },
     {
-     "at": "2026-11-08T20:24:14Z",
+     "at": "2026-11-08T23:25:33Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
      "why": "prepare / run python automation \"$slug\" narrate |",
-     "result": "no patch: Gemini: The error text is missing from the prompt."
+     "result": "no patch: Gemini: The error log is missing from the prompt."
     }
    ]
   },
@@ -269,8 +253,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 21.4,
-   "build_h": 3.6,
+   "watchdog_h": 0.3,
+   "build_h": 6.6,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,

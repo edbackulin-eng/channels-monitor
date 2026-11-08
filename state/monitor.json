@@ -5,7 +5,7 @@
   "archive:buffer": "Yesterday in Color: 0 of the next 3 slots have a video",
   "archive:failed:1950s-suburb": "Yesterday in Color: 1950s-suburb: qa-failed: repeats; thumbnail"
  },
- "last_pass": "2026-11-08T20:24:14Z",
+ "last_pass": "2026-11-08T23:25:33Z",
  "planned": [
   {
    "id": "ct-build-0711",
@@ -26,10 +26,10 @@
  ],
  "requeued": [],
  "done": {
-  "whatif:requeue": "2026-11-08T20:24:14Z",
-  "archive:build": "2026-11-08T20:24:14Z",
+  "whatif:requeue": "2026-11-08T23:25:33Z",
+  "archive:build": "2026-11-08T23:25:33Z",
   "whatif:watchdog": "2026-11-06T11:03:13Z",
-  "dinosaurs:build": "2026-11-08T20:24:14Z",
+  "dinosaurs:build": "2026-11-08T23:25:33Z",
   "archive:watchdog": "2026-11-08T20:24:14Z"
  },
  "owner_alarms": {},
