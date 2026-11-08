@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T02:20:26Z",
+ "at": "2026-11-08T05:09:24Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 13.2,
+   "build_h": 16.0,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -54,38 +54,21 @@
     },
     {
      "at": "2026-11-12T17:00Z",
-     "video": null,
-     "title": null
+     "video": "OZ8-2vPvmos",
+     "title": "A Million Euros to Prove a City Is Fake"
     }
    ],
-   "buffer": 2,
-   "scheduled_ahead": 2,
+   "buffer": 3,
+   "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 23.1,
+   "build_h": 2.7,
    "last_build_failed": null,
-   "failures": [
-    {
-     "run": "https://github.com/edbackulin-eng/closed-tabs/actions/runs/41955999901",
-     "id": 41955999901,
-     "step": "resume / Render and package",
-     "at": "2026-11-05T02:35:13Z",
-     "kind": null,
-     "workflow": ".github/workflows/resume-episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/closed-tabs/actions/runs/41944396414",
-     "id": 41944396414,
-     "step": "render (3) / Render part 3",
-     "at": "2026-11-05T02:21:11Z",
-     "kind": null,
-     "workflow": ".github/workflows/daily.yml"
-    }
-   ],
+   "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
-   "topics": 13,
+   "topics": 12,
    "actions": []
   },
   {
@@ -119,7 +102,7 @@
    "scheduled_ahead": 1,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 12.0,
+   "build_h": 14.8,
    "last_build_failed": null,
    "failures": [
     {
@@ -145,20 +128,12 @@
    "topics": 20,
    "actions": [
     {
-     "at": "2026-11-08T02:20:26Z",
-     "channel": "dinosaurs",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "1 of the next 3 slots have a video",
-     "result": "started"
-    },
-    {
-     "at": "2026-11-08T02:20:26Z",
+     "at": "2026-11-08T05:09:24Z",
      "channel": "dinosaurs",
      "level": 2,
      "action": "autofix",
      "why": "part (#) / render part # |",
-     "result": "no patch: Gemini: no failure log was provided to identify the error"
+     "result": "no patch: Gemini: The failure log is empty, making the exact cause of the failure in the 'Render part 7' step uncertain."
     }
    ]
   },
@@ -170,14 +145,6 @@
     [
      "buffer",
      "0 of the next 3 slots have a video"
-    ],
-    [
-     "build",
-     "no successful build yet"
-    ],
-    [
-     "build-failed",
-     "last build failed at prepare / Run python automation/build.py \"$SLUG\" script"
     ],
     [
      "failed:1950s-suburb",
@@ -205,15 +172,8 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": null,
-   "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42425727168",
-    "id": 42425727168,
-    "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-    "at": "2026-11-07T23:34:20Z",
-    "kind": null,
-    "workflow": ".github/workflows/episode.yml"
-   },
+   "build_h": 2.8,
+   "last_build_failed": null,
    "failures": [
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42425727168",
@@ -259,20 +219,12 @@
    "topics": 20,
    "actions": [
     {
-     "at": "2026-11-08T02:20:26Z",
-     "channel": "archive",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    },
-    {
-     "at": "2026-11-08T02:20:26Z",
+     "at": "2026-11-08T05:09:24Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
      "why": "prepare / run python automation \"$slug\" script |",
-     "result": "no patch: Gemini: No failure log was provided to diagnose the failure."
+     "result": "no patch: Gemini: No failure log was provided to diagnose why the script step failed."
     }
    ]
   },
@@ -301,8 +253,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 3.4,
-   "build_h": 9.7,
+   "watchdog_h": 6.2,
+   "build_h": 12.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
