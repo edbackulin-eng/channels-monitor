@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T14:19:34Z",
+ "at": "2026-11-08T17:22:20Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 25.2,
+   "build_h": 28.2,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 11.8,
+   "build_h": 14.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -78,15 +78,10 @@
    "problems": [
     [
      "buffer",
-     "1 of the next 3 slots have a video"
+     "0 of the next 3 slots have a video"
     ]
    ],
    "slots": [
-    {
-     "at": "2026-11-08T16:00Z",
-     "video": "FdVckiuzgUw",
-     "title": "lebende-fossilien"
-    },
     {
      "at": "2026-11-11T16:00Z",
      "video": null,
@@ -96,13 +91,18 @@
      "at": "2026-11-15T16:00Z",
      "video": null,
      "title": null
+    },
+    {
+     "at": "2026-11-18T16:00Z",
+     "video": null,
+     "title": null
     }
    ],
-   "buffer": 1,
-   "scheduled_ahead": 1,
+   "buffer": 0,
+   "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 24.0,
+   "build_h": 27.0,
    "last_build_failed": null,
    "failures": [
     {
@@ -120,11 +120,11 @@
    "topics": 20,
    "actions": [
     {
-     "at": "2026-11-08T14:19:34Z",
+     "at": "2026-11-08T17:22:20Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
-     "why": "1 of the next 3 slots have a video",
+     "why": "0 of the next 3 slots have a video",
      "result": "started"
     }
    ]
@@ -137,10 +137,6 @@
     [
      "buffer",
      "0 of the next 3 slots have a video"
-    ],
-    [
-     "build-failed",
-     "last build failed at prepare / Run python automation/build.py \"$SLUG\" narrate"
     ],
     [
      "failed:1950s-suburb",
@@ -167,16 +163,9 @@
    "buffer": 0,
    "scheduled_ahead": 0,
    "waiting": 0,
-   "watchdog_h": -0.0,
-   "build_h": 11.9,
-   "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42479710225",
-    "id": 42479710225,
-    "step": "prepare / Run python automation/build.py \"$SLUG\" narrate",
-    "at": "2026-11-08T13:15:13Z",
-    "kind": null,
-    "workflow": ".github/workflows/episode.yml"
-   },
+   "watchdog_h": 0.0,
+   "build_h": 3.0,
+   "last_build_failed": null,
    "failures": [
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42479710225",
@@ -222,7 +211,7 @@
    "topics": 19,
    "actions": [
     {
-     "at": "2026-11-08T14:19:34Z",
+     "at": "2026-11-08T17:22:20Z",
      "channel": "archive",
      "level": 1,
      "action": "start episode.yml",
@@ -230,12 +219,12 @@
      "result": "started"
     },
     {
-     "at": "2026-11-08T14:19:34Z",
+     "at": "2026-11-08T17:22:20Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
      "why": "prepare / run python automation \"$slug\" narrate |",
-     "result": "no patch: Gemini: No error log was provided to determine the cause of the failure."
+     "result": "no patch: Gemini: No error log was provided to identify the cause of the failure in the narrate step."
     }
    ]
   },
@@ -264,8 +253,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 15.4,
-   "build_h": 6.4,
+   "watchdog_h": 18.4,
+   "build_h": 0.6,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
