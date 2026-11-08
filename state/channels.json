@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T23:19:25Z",
+ "at": "2026-11-08T02:20:26Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 10.2,
+   "build_h": 13.2,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 20.1,
+   "build_h": 23.1,
    "last_build_failed": null,
    "failures": [
     {
@@ -78,22 +78,6 @@
      "id": 41944396414,
      "step": "render (3) / Render part 3",
      "at": "2026-11-05T02:21:11Z",
-     "kind": null,
-     "workflow": ".github/workflows/daily.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/closed-tabs/actions/runs/41938354522",
-     "id": 41938354522,
-     "step": "resume / Render and package",
-     "at": "2026-11-05T00:19:57Z",
-     "kind": null,
-     "workflow": ".github/workflows/resume-episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/closed-tabs/actions/runs/41922077446",
-     "id": 41922077446,
-     "step": "render (4) / Render part 4",
-     "at": "2026-11-04T23:43:36Z",
      "kind": null,
      "workflow": ".github/workflows/daily.yml"
     }
@@ -135,7 +119,7 @@
    "scheduled_ahead": 1,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 9.0,
+   "build_h": 12.0,
    "last_build_failed": null,
    "failures": [
     {
@@ -161,12 +145,20 @@
    "topics": 20,
    "actions": [
     {
-     "at": "2026-11-07T23:19:25Z",
+     "at": "2026-11-08T02:20:26Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
      "why": "1 of the next 3 slots have a video",
      "result": "started"
+    },
+    {
+     "at": "2026-11-08T02:20:26Z",
+     "channel": "dinosaurs",
+     "level": 2,
+     "action": "autofix",
+     "why": "part (#) / render part # |",
+     "result": "no patch: Gemini: no failure log was provided to identify the error"
     }
    ]
   },
@@ -215,14 +207,30 @@
    "watchdog_h": 0.0,
    "build_h": null,
    "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42424576357",
-    "id": 42424576357,
+    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42425727168",
+    "id": 42425727168,
     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-    "at": "2026-11-07T23:19:16Z",
+    "at": "2026-11-07T23:34:20Z",
     "kind": null,
     "workflow": ".github/workflows/episode.yml"
    },
    "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42425727168",
+     "id": 42425727168,
+     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
+     "at": "2026-11-07T23:34:20Z",
+     "kind": null,
+     "workflow": ".github/workflows/episode.yml"
+    },
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42424787288",
+     "id": 42424787288,
+     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
+     "at": "2026-11-07T23:22:00Z",
+     "kind": null,
+     "workflow": ".github/workflows/episode.yml"
+    },
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42424576357",
      "id": 42424576357,
@@ -238,22 +246,6 @@
      "at": "2026-11-07T23:14:29Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42413902397",
-     "id": 42413902397,
-     "step": "prepare / Run python automation/build.py \"$SLUG\" narrate",
-     "at": "2026-11-07T21:42:10Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42411513677",
-     "id": 42411513677,
-     "step": "prepare / Run python automation/build.py \"$SLUG\" narrate",
-     "at": "2026-11-07T20:54:44Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
     }
    ],
    "waiting_built": 0,
@@ -267,12 +259,20 @@
    "topics": 20,
    "actions": [
     {
-     "at": "2026-11-07T23:19:25Z",
+     "at": "2026-11-08T02:20:26Z",
      "channel": "archive",
      "level": 1,
      "action": "start episode.yml",
      "why": "0 of the next 3 slots have a video",
      "result": "started"
+    },
+    {
+     "at": "2026-11-08T02:20:26Z",
+     "channel": "archive",
+     "level": 2,
+     "action": "autofix",
+     "why": "prepare / run python automation \"$slug\" script |",
+     "result": "no patch: Gemini: No failure log was provided to diagnose the failure."
     }
    ]
   },
@@ -301,8 +301,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 0.4,
-   "build_h": 6.7,
+   "watchdog_h": 3.4,
+   "build_h": 9.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -313,9 +313,9 @@
   }
  ],
  "gpu": {
-  "hours": 11.34,
+  "hours": 11.5,
   "parts": {
-   "closed-tabs": 9.2,
+   "closed-tabs": 9.36,
    "What If": 0.0,
    "dinosaurs": 2.14
   }

@@ -7,7 +7,7 @@
   "archive:build-failed": "Yesterday in Color: last build failed at prepare / Run python automation/build.py \"$SLUG\" script",
   "archive:failed:1950s-suburb": "Yesterday in Color: 1950s-suburb: qa-failed: repeats; thumbnail"
  },
- "last_pass": "2026-11-07T23:19:25Z",
+ "last_pass": "2026-11-08T02:20:26Z",
  "planned": [
   {
    "id": "ct-build-0711",
@@ -26,10 +26,10 @@
  "cancelled": [],
  "requeued": [],
  "done": {
-  "whatif:requeue": "2026-11-07T23:19:25Z",
-  "archive:build": "2026-11-07T23:19:25Z",
+  "whatif:requeue": "2026-11-08T02:20:26Z",
+  "archive:build": "2026-11-08T02:20:26Z",
   "whatif:watchdog": "2026-11-06T11:03:13Z",
-  "dinosaurs:build": "2026-11-07T23:19:25Z"
+  "dinosaurs:build": "2026-11-08T02:20:26Z"
  },
  "owner_alarms": {},
  "issue": 1,
