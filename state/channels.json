@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T08:11:46Z",
+ "at": "2026-11-08T11:18:21Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 19.0,
+   "build_h": 22.1,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 5.7,
+   "build_h": 8.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -102,7 +102,7 @@
    "scheduled_ahead": 1,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 17.9,
+   "build_h": 21.0,
    "last_build_failed": null,
    "failures": [
     {
@@ -128,7 +128,7 @@
    "topics": 20,
    "actions": [
     {
-     "at": "2026-11-08T08:11:46Z",
+     "at": "2026-11-08T11:18:21Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
@@ -136,12 +136,12 @@
      "result": "started"
     },
     {
-     "at": "2026-11-08T08:11:46Z",
+     "at": "2026-11-08T11:18:21Z",
      "channel": "dinosaurs",
      "level": 2,
      "action": "autofix",
      "why": "part (#) / render part # |",
-     "result": "no patch: Gemini: The error log is empty, so the exact cause of the step failure cannot be determined with certainty."
+     "result": "no patch: Gemini: The error log was omitted from the prompt, making it impossible to identify the exact failure."
     }
    ]
   },
@@ -153,6 +153,10 @@
     [
      "buffer",
      "0 of the next 3 slots have a video"
+    ],
+    [
+     "build-failed",
+     "last build failed at prepare / Run pip install -q -r requirements.txt && python automation/fetch_models.py"
     ],
     [
      "failed:1950s-suburb",
@@ -180,9 +184,32 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 5.8,
-   "last_build_failed": null,
+   "build_h": 8.9,
+   "last_build_failed": {
+    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42464533599",
+    "id": 42464533599,
+    "step": "prepare / Run pip install -q -r requirements.txt && python automation/fetch_models.py",
+    "at": "2026-11-08T08:57:54Z",
+    "kind": null,
+    "workflow": ".github/workflows/episode.yml"
+   },
    "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42464533599",
+     "id": 42464533599,
+     "step": "prepare / Run pip install -q -r requirements.txt && python automation/fetch_models.py",
+     "at": "2026-11-08T08:57:54Z",
+     "kind": null,
+     "workflow": ".github/workflows/episode.yml"
+    },
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42462256258",
+     "id": 42462256258,
+     "step": "prepare / Run python automation/build.py \"$SLUG\" narrate",
+     "at": "2026-11-08T08:31:24Z",
+     "kind": null,
+     "workflow": ".github/workflows/episode.yml"
+    },
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42425727168",
      "id": 42425727168,
@@ -198,22 +225,6 @@
      "at": "2026-11-07T23:22:00Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42424576357",
-     "id": 42424576357,
-     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-     "at": "2026-11-07T23:19:16Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42415861235",
-     "id": 42415861235,
-     "step": "prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)",
-     "at": "2026-11-07T23:14:29Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
     }
    ],
    "waiting_built": 0,
@@ -227,20 +238,12 @@
    "topics": 20,
    "actions": [
     {
-     "at": "2026-11-08T08:11:46Z",
-     "channel": "archive",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    },
-    {
-     "at": "2026-11-08T08:11:46Z",
+     "at": "2026-11-08T11:18:21Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
      "why": "prepare / run python automation \"$slug\" script |",
-     "result": "no patch: Gemini: No failure log was provided to determine why the script step failed."
+     "result": "no patch: Gemini: No error log was provided in the prompt to diagnose the exact failure."
     }
    ]
   },
@@ -269,8 +272,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 9.2,
-   "build_h": 0.3,
+   "watchdog_h": 12.3,
+   "build_h": 3.4,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
