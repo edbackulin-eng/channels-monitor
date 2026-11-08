@@ -278,5 +278,29 @@
   "action": "autofix",
   "why": "prepare / run python automation \"$slug\" script |",
   "result": "no patch: Gemini: No error log was provided in the prompt to diagnose the exact failure."
+ },
+ {
+  "at": "2026-11-08T14:19:34Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "1 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-08T14:19:34Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-08T14:19:34Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" narrate |",
+  "result": "no patch: Gemini: No error log was provided to determine the cause of the failure."
  }
 ]

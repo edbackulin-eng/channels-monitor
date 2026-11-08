@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T11:18:21Z",
+ "at": "2026-11-08T14:19:34Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 22.1,
+   "build_h": 25.2,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 8.8,
+   "build_h": 11.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -102,7 +102,7 @@
    "scheduled_ahead": 1,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 21.0,
+   "build_h": 24.0,
    "last_build_failed": null,
    "failures": [
     {
@@ -110,14 +110,6 @@
      "id": 42201599552,
      "step": "part (9) / Render part 9",
      "at": "2026-11-07T12:07:05Z",
-     "kind": null,
-     "workflow": ".github/workflows/render.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/41922911782",
-     "id": 41922911782,
-     "step": "part (7) / Render part 7",
-     "at": "2026-11-05T13:45:37Z",
      "kind": null,
      "workflow": ".github/workflows/render.yml"
     }
@@ -128,20 +120,12 @@
    "topics": 20,
    "actions": [
     {
-     "at": "2026-11-08T11:18:21Z",
+     "at": "2026-11-08T14:19:34Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
      "why": "1 of the next 3 slots have a video",
      "result": "started"
-    },
-    {
-     "at": "2026-11-08T11:18:21Z",
-     "channel": "dinosaurs",
-     "level": 2,
-     "action": "autofix",
-     "why": "part (#) / render part # |",
-     "result": "no patch: Gemini: The error log was omitted from the prompt, making it impossible to identify the exact failure."
     }
    ]
   },
@@ -156,7 +140,7 @@
     ],
     [
      "build-failed",
-     "last build failed at prepare / Run pip install -q -r requirements.txt && python automation/fetch_models.py"
+     "last build failed at prepare / Run python automation/build.py \"$SLUG\" narrate"
     ],
     [
      "failed:1950s-suburb",
@@ -183,17 +167,33 @@
    "buffer": 0,
    "scheduled_ahead": 0,
    "waiting": 0,
-   "watchdog_h": 0.0,
-   "build_h": 8.9,
+   "watchdog_h": -0.0,
+   "build_h": 11.9,
    "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42464533599",
-    "id": 42464533599,
-    "step": "prepare / Run pip install -q -r requirements.txt && python automation/fetch_models.py",
-    "at": "2026-11-08T08:57:54Z",
+    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42479710225",
+    "id": 42479710225,
+    "step": "prepare / Run python automation/build.py \"$SLUG\" narrate",
+    "at": "2026-11-08T13:15:13Z",
     "kind": null,
     "workflow": ".github/workflows/episode.yml"
    },
    "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42479710225",
+     "id": 42479710225,
+     "step": "prepare / Run python automation/build.py \"$SLUG\" narrate",
+     "at": "2026-11-08T13:15:13Z",
+     "kind": null,
+     "workflow": ".github/workflows/episode.yml"
+    },
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42466423372",
+     "id": 42466423372,
+     "step": "prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)",
+     "at": "2026-11-08T12:03:02Z",
+     "kind": null,
+     "workflow": ".github/workflows/episode.yml"
+    },
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42464533599",
      "id": 42464533599,
@@ -209,22 +209,6 @@
      "at": "2026-11-08T08:31:24Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42425727168",
-     "id": 42425727168,
-     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-     "at": "2026-11-07T23:34:20Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42424787288",
-     "id": 42424787288,
-     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-     "at": "2026-11-07T23:22:00Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
     }
    ],
    "waiting_built": 0,
@@ -235,15 +219,23 @@
      "reason": "qa-failed: repeats; thumbnail"
     }
    ],
-   "topics": 20,
+   "topics": 19,
    "actions": [
     {
-     "at": "2026-11-08T11:18:21Z",
+     "at": "2026-11-08T14:19:34Z",
+     "channel": "archive",
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
+    },
+    {
+     "at": "2026-11-08T14:19:34Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
-     "why": "prepare / run python automation \"$slug\" script |",
-     "result": "no patch: Gemini: No error log was provided in the prompt to diagnose the exact failure."
+     "why": "prepare / run python automation \"$slug\" narrate |",
+     "result": "no patch: Gemini: No error log was provided to determine the cause of the failure."
     }
    ]
   },
@@ -272,8 +264,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 12.3,
-   "build_h": 3.4,
+   "watchdog_h": 15.4,
+   "build_h": 6.4,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
