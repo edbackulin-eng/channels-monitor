@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T05:09:24Z",
+ "at": "2026-11-08T08:11:46Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 16.0,
+   "build_h": 19.0,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 2.7,
+   "build_h": 5.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -102,7 +102,7 @@
    "scheduled_ahead": 1,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 14.8,
+   "build_h": 17.9,
    "last_build_failed": null,
    "failures": [
     {
@@ -128,12 +128,20 @@
    "topics": 20,
    "actions": [
     {
-     "at": "2026-11-08T05:09:24Z",
+     "at": "2026-11-08T08:11:46Z",
+     "channel": "dinosaurs",
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "1 of the next 3 slots have a video",
+     "result": "started"
+    },
+    {
+     "at": "2026-11-08T08:11:46Z",
      "channel": "dinosaurs",
      "level": 2,
      "action": "autofix",
      "why": "part (#) / render part # |",
-     "result": "no patch: Gemini: The failure log is empty, making the exact cause of the failure in the 'Render part 7' step uncertain."
+     "result": "no patch: Gemini: The error log is empty, so the exact cause of the step failure cannot be determined with certainty."
     }
    ]
   },
@@ -172,7 +180,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 2.8,
+   "build_h": 5.8,
    "last_build_failed": null,
    "failures": [
     {
@@ -219,12 +227,20 @@
    "topics": 20,
    "actions": [
     {
-     "at": "2026-11-08T05:09:24Z",
+     "at": "2026-11-08T08:11:46Z",
+     "channel": "archive",
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
+    },
+    {
+     "at": "2026-11-08T08:11:46Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
      "why": "prepare / run python automation \"$slug\" script |",
-     "result": "no patch: Gemini: No failure log was provided to diagnose why the script step failed."
+     "result": "no patch: Gemini: No failure log was provided to determine why the script step failed."
     }
    ]
   },
@@ -241,8 +257,8 @@
     },
     {
      "at": "2026-11-09T19:00Z",
-     "video": null,
-     "title": null
+     "video": "rmNjpcy-jhM",
+     "title": "10 Things to Drop When Your Mind Races"
     },
     {
      "at": "2026-11-10T19:00Z",
@@ -250,11 +266,11 @@
      "title": null
     }
    ],
-   "buffer": 1,
-   "scheduled_ahead": 1,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 6.2,
-   "build_h": 12.5,
+   "watchdog_h": 9.2,
+   "build_h": 0.3,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,

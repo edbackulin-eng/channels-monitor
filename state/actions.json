@@ -222,5 +222,37 @@
   "action": "autofix",
   "why": "prepare / run python automation \"$slug\" script |",
   "result": "no patch: Gemini: No failure log was provided to diagnose why the script step failed."
+ },
+ {
+  "at": "2026-11-08T08:11:46Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "1 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-08T08:11:46Z",
+  "channel": "dinosaurs",
+  "level": 2,
+  "action": "autofix",
+  "why": "part (#) / render part # |",
+  "result": "no patch: Gemini: The error log is empty, so the exact cause of the step failure cannot be determined with certainty."
+ },
+ {
+  "at": "2026-11-08T08:11:46Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-08T08:11:46Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" script |",
+  "result": "no patch: Gemini: No failure log was provided to determine why the script step failed."
  }
 ]
