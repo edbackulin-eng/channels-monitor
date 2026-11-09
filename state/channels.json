@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T08:02:44Z",
+ "at": "2026-11-09T11:11:56Z",
  "channels": [
   {
    "key": "whatif",
@@ -8,7 +8,7 @@
    "problems": [
     [
      "build",
-     "last successful build 42.9 h ago"
+     "last successful build 46.0 h ago"
     ]
    ],
    "slots": [
@@ -32,7 +32,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 42.9,
+   "build_h": 46.0,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -67,7 +67,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 8.4,
+   "build_h": 11.6,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -87,7 +87,7 @@
     ],
     [
      "build",
-     "last successful build 41.7 h ago"
+     "last successful build 44.9 h ago"
     ]
    ],
    "slots": [
@@ -111,7 +111,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 41.7,
+   "build_h": 44.9,
    "last_build_failed": null,
    "failures": [
     {
@@ -129,7 +129,7 @@
    "topics": 20,
    "actions": [
     {
-     "at": "2026-11-09T08:02:44Z",
+     "at": "2026-11-09T11:11:56Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
@@ -173,7 +173,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 5.5,
+   "build_h": 3.1,
    "last_build_failed": null,
    "failures": [
     {
@@ -225,7 +225,7 @@
    "topics": 19,
    "actions": [
     {
-     "at": "2026-11-09T08:02:44Z",
+     "at": "2026-11-09T11:11:56Z",
      "channel": "archive",
      "level": 1,
      "action": "start episode.yml",
@@ -233,12 +233,12 @@
      "result": "started"
     },
     {
-     "at": "2026-11-09T08:02:44Z",
+     "at": "2026-11-09T11:11:56Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
      "why": "prepare / run python automation \"$slug\" narrate |",
-     "result": "no patch: Gemini: No failure log was provided, so the cause of the failure cannot be determined with certainty."
+     "result": "no patch: Gemini: The error text is missing from the prompt."
     }
    ]
   },
@@ -255,8 +255,8 @@
     },
     {
      "at": "2026-11-10T19:00Z",
-     "video": null,
-     "title": null
+     "video": "T7lm3SNrjGE",
+     "title": "10 Things to Drop From Your Daily Life"
     },
     {
      "at": "2026-11-11T19:00Z",
@@ -264,11 +264,11 @@
      "title": null
     }
    ],
-   "buffer": 1,
-   "scheduled_ahead": 1,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 8.9,
-   "build_h": 15.3,
+   "watchdog_h": 12.1,
+   "build_h": 2.3,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
