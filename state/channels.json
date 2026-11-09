@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T20:23:30Z",
+ "at": "2026-11-09T23:24:45Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 3.9,
+   "build_h": 6.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 20.8,
+   "build_h": 23.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -82,7 +82,7 @@
     ],
     [
      "build",
-     "last successful build 54.1 h ago"
+     "last successful build 57.1 h ago"
     ]
    ],
    "slots": [
@@ -106,7 +106,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 54.1,
+   "build_h": 57.1,
    "last_build_failed": null,
    "failures": [
     {
@@ -124,7 +124,7 @@
    "topics": 20,
    "actions": [
     {
-     "at": "2026-11-09T20:23:30Z",
+     "at": "2026-11-09T23:24:45Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
@@ -141,6 +141,10 @@
     [
      "buffer",
      "0 of the next 3 slots have a video"
+    ],
+    [
+     "build-failed",
+     "last build failed at prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)"
     ],
     [
      "failed:1950s-suburb",
@@ -168,14 +172,21 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 3.0,
-   "last_build_failed": null,
+   "build_h": 1.6,
+   "last_build_failed": {
+    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42706119533",
+    "id": 42706119533,
+    "step": "prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)",
+    "at": "2026-11-09T23:02:52Z",
+    "kind": null,
+    "workflow": ".github/workflows/episode.yml"
+   },
    "failures": [
     {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42479710225",
-     "id": 42479710225,
-     "step": "prepare / Run python automation/build.py \"$SLUG\" narrate",
-     "at": "2026-11-08T13:15:13Z",
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42706119533",
+     "id": 42706119533,
+     "step": "prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)",
+     "at": "2026-11-09T23:02:52Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
     }
@@ -193,10 +204,10 @@
      "reason": "qa-failed: repeats; thumbnail"
     }
    ],
-   "topics": 19,
+   "topics": 18,
    "actions": [
     {
-     "at": "2026-11-09T20:23:30Z",
+     "at": "2026-11-09T23:24:45Z",
      "channel": "archive",
      "level": 1,
      "action": "start episode.yml",
@@ -230,8 +241,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 21.3,
-   "build_h": 11.5,
+   "watchdog_h": 24.3,
+   "build_h": 2.4,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,

@@ -1,14 +1,14 @@
 # Channels monitor
 
-Updated 09.11.2026 22:23 Kyiv (20:23 UTC). A pass every 3 hours; known failures are put right by themselves (level 1), a new one seen twice gets an automatic patch (level 2); letters go to the issue **Monitor** only when the owner is needed.
+Updated 10.11.2026 01:24 Kyiv (23:24 UTC). A pass every 3 hours; known failures are put right by themselves (level 1), a new one seen twice gets an automatic patch (level 2); letters go to the issue **Monitor** only when the owner is needed.
 
 | Channel | | Next 3 slots (local time) | Buffer | Watchdog | Last good build | Topics | What is wrong |
 |---|---|---|---|---|---|---|---|
-| [What If](https://github.com/edbackulin-eng/whatif-channel) | ✓ | 10.11 15:00 ✓, 12.11 15:00 ✓, 13.11 15:00 ✗ | 2/3 | 0.0 h | 3.9 h | 33 | — |
-| [Closed Tabs](https://github.com/edbackulin-eng/closed-tabs) | ✓ | 10.11 17:00 ✓, 12.11 17:00 ✓, 13.11 17:00 ✗ | 2/3 | 0.0 h | 20.8 h | 12 | — |
-| [Urzeit (dinosaurs)](https://github.com/edbackulin-eng/prehistoric-channel) | ✗ | 11.11 17:00 ✗, 15.11 17:00 ✗, 18.11 17:00 ✗ | 0/3 | 0.0 h | 54.1 h | 20 | 0 of the next 3 slots have a video; last successful build 54.1 h ago |
-| [Yesterday in Color](https://github.com/edbackulin-eng/archive-channel) | ✗ | 10.11 12:00 ✗, 13.11 12:00 ✗, 17.11 12:00 ✗ | 0/3 | 0.0 h | 3.0 h | 19 | 0 of the next 3 slots have a video; 1950s-suburb: qa-failed: repeats; thumbnail |
-| [Stoic (yt-factory-daily)](https://github.com/beautyapp800-ctrl/yt-factory-daily) | ✓ | 10.11 21:00 ✓, 11.11 21:00 ✗, 12.11 21:00 ✗ | 1/3 | 21.3 h | 11.5 h | generates | — |
+| [What If](https://github.com/edbackulin-eng/whatif-channel) | ✓ | 10.11 15:00 ✓, 12.11 15:00 ✓, 13.11 15:00 ✗ | 2/3 | 0.0 h | 6.9 h | 33 | — |
+| [Closed Tabs](https://github.com/edbackulin-eng/closed-tabs) | ✓ | 10.11 17:00 ✓, 12.11 17:00 ✓, 13.11 17:00 ✗ | 2/3 | 0.0 h | 23.8 h | 12 | — |
+| [Urzeit (dinosaurs)](https://github.com/edbackulin-eng/prehistoric-channel) | ✗ | 11.11 17:00 ✗, 15.11 17:00 ✗, 18.11 17:00 ✗ | 0/3 | 0.0 h | 57.1 h | 20 | 0 of the next 3 slots have a video; last successful build 57.1 h ago |
+| [Yesterday in Color](https://github.com/edbackulin-eng/archive-channel) | ✗ | 10.11 12:00 ✗, 13.11 12:00 ✗, 17.11 12:00 ✗ | 0/3 | 0.0 h | 1.6 h | 18 | 0 of the next 3 slots have a video; last build failed at prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started); 1950s-suburb: qa-failed: repeats; thumbnail |
+| [Stoic (yt-factory-daily)](https://github.com/beautyapp800-ctrl/yt-factory-daily) | ✓ | 10.11 21:00 ✓, 11.11 21:00 ✗, 12.11 21:00 ✗ | 1/3 | 24.3 h | 2.4 h | generates | — |
 
 **Kaggle GPU, last 7 days:** 11.5 h of 27.5 h (closed-tabs 9.36 h, What If 0.0 h, dinosaurs 2.14 h).
 
@@ -16,6 +16,8 @@ Updated 09.11.2026 22:23 Kyiv (20:23 UTC). A pass every 3 hours; known failures 
 
 | UTC | Channel | Level | Action | Why | Result |
 |---|---|---|---|---|---|
+| 11-09 23:24 | archive | 1 | start episode.yml | 0 of the next 3 slots have a video | started |
+| 11-09 23:24 | dinosaurs | 1 | start episode.yml | 0 of the next 3 slots have a video | started |
 | 11-09 20:23 | archive | 1 | start episode.yml | 0 of the next 3 slots have a video | started |
 | 11-09 20:23 | dinosaurs | 1 | start episode.yml | 0 of the next 3 slots have a video | started |
 | 11-09 17:22 | archive | 1 | start episode.yml | 0 of the next 3 slots have a video | started |
@@ -34,8 +36,3 @@ Updated 09.11.2026 22:23 Kyiv (20:23 UTC). A pass every 3 hours; known failures 
 | 11-08 23:25 | archive | 2 | autofix | prepare / run python automation "$slug" narrate | | no patch: Gemini: The error log is missing from the prompt. |
 | 11-08 23:25 | archive | 1 | start episode.yml | 0 of the next 3 slots have a video | started |
 | 11-08 23:25 | dinosaurs | 1 | start episode.yml | 0 of the next 3 slots have a video | started |
-| 11-08 20:24 | archive | 2 | autofix | prepare / run python automation "$slug" narrate | | no patch: Gemini: The error text is missing from the prompt. |
-| 11-08 20:24 | archive | 1 | start episode.yml | 0 of the next 3 slots have a video | started |
-| 11-08 20:24 | archive | 1 | start watchdog.yml | hung | started |
-| 11-08 20:24 | archive | 1 | cancel watchdog.yml run 42484741975 | running 7.0 h (limit 6.2 h) | cancelled |
-| 11-08 20:24 | dinosaurs | 1 | start episode.yml | 0 of the next 3 slots have a video | started |
