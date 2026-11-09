@@ -1,22 +1,12 @@
 {
- "at": "2026-11-09T14:21:23Z",
+ "at": "2026-11-09T17:22:28Z",
  "channels": [
   {
    "key": "whatif",
    "name": "What If",
    "repo": "edbackulin-eng/whatif-channel",
-   "problems": [
-    [
-     "build",
-     "last successful build 49.2 h ago"
-    ]
-   ],
+   "problems": [],
    "slots": [
-    {
-     "at": "2026-11-09T15:00Z",
-     "video": "C2yep2BX-z0",
-     "title": "What If All the Ice on Earth Melted?"
-    },
     {
      "at": "2026-11-10T15:00Z",
      "video": "VhKX4mkahSc",
@@ -24,6 +14,11 @@
     },
     {
      "at": "2026-11-12T15:00Z",
+     "video": "wLdBFJ79Lzc",
+     "title": "What If Earth Were Twice as Large?"
+    },
+    {
+     "at": "2026-11-13T15:00Z",
      "video": null,
      "title": null
     }
@@ -32,13 +27,13 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 49.2,
+   "build_h": 0.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
-   "topics": 34,
+   "topics": 33,
    "actions": []
   },
   {
@@ -48,11 +43,6 @@
    "problems": [],
    "slots": [
     {
-     "at": "2026-11-09T17:00Z",
-     "video": "dz_GTE57Ly4",
-     "title": "A Buzz on 4625 kHz, and the Voice That Interrupts It"
-    },
-    {
      "at": "2026-11-10T17:00Z",
      "video": "NUdWNIEKZHk",
      "title": "Is Anyone Actually There? Checking the Dead Internet Claim"
@@ -61,13 +51,18 @@
      "at": "2026-11-12T17:00Z",
      "video": "OZ8-2vPvmos",
      "title": "A Million Euros to Prove a City Is Fake"
+    },
+    {
+     "at": "2026-11-13T17:00Z",
+     "video": null,
+     "title": null
     }
    ],
-   "buffer": 3,
-   "scheduled_ahead": 3,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 14.7,
+   "build_h": 17.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -87,7 +82,7 @@
     ],
     [
      "build",
-     "last successful build 48.0 h ago"
+     "last successful build 51.0 h ago"
     ]
    ],
    "slots": [
@@ -111,7 +106,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 48.0,
+   "build_h": 51.0,
    "last_build_failed": null,
    "failures": [
     {
@@ -127,16 +122,7 @@
    "owner": [],
    "failed": [],
    "topics": 20,
-   "actions": [
-    {
-     "at": "2026-11-09T14:21:23Z",
-     "channel": "dinosaurs",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "archive",
@@ -173,7 +159,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 3.1,
+   "build_h": 3.0,
    "last_build_failed": null,
    "failures": [
     {
@@ -189,14 +175,6 @@
      "id": 42466423372,
      "step": "prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)",
      "at": "2026-11-08T12:03:02Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42464533599",
-     "id": 42464533599,
-     "step": "prepare / Run pip install -q -r requirements.txt && python automation/fetch_models.py",
-     "at": "2026-11-08T08:57:54Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
     }
@@ -217,7 +195,7 @@
    "topics": 19,
    "actions": [
     {
-     "at": "2026-11-09T14:21:23Z",
+     "at": "2026-11-09T17:22:28Z",
      "channel": "archive",
      "level": 1,
      "action": "start episode.yml",
@@ -251,8 +229,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 15.2,
-   "build_h": 5.5,
+   "watchdog_h": 18.3,
+   "build_h": 8.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
