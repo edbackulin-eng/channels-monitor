@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T02:29:34Z",
+ "at": "2026-11-09T05:01:23Z",
  "channels": [
   {
    "key": "whatif",
@@ -8,7 +8,7 @@
    "problems": [
     [
      "build",
-     "last successful build 37.3 h ago"
+     "last successful build 39.9 h ago"
     ]
    ],
    "slots": [
@@ -32,7 +32,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 37.3,
+   "build_h": 39.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -67,7 +67,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 2.9,
+   "build_h": 5.4,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -87,7 +87,7 @@
     ],
     [
      "build",
-     "last successful build 36.2 h ago"
+     "last successful build 38.7 h ago"
     ]
    ],
    "slots": [
@@ -111,7 +111,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 36.2,
+   "build_h": 38.7,
    "last_build_failed": null,
    "failures": [
     {
@@ -127,16 +127,7 @@
    "owner": [],
    "failed": [],
    "topics": 20,
-   "actions": [
-    {
-     "at": "2026-11-09T02:29:34Z",
-     "channel": "dinosaurs",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "archive",
@@ -173,7 +164,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 3.1,
+   "build_h": 2.5,
    "last_build_failed": null,
    "failures": [
     {
@@ -210,7 +201,12 @@
     }
    ],
    "waiting_built": 0,
-   "owner": [],
+   "owner": [
+    [
+     "buffer0",
+     "nothing for the next slot (2026-11-10T17:00Z) and no video ahead"
+    ]
+   ],
    "failed": [
     {
      "episode": "1950s-suburb",
@@ -220,20 +216,12 @@
    "topics": 19,
    "actions": [
     {
-     "at": "2026-11-09T02:29:34Z",
-     "channel": "archive",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    },
-    {
-     "at": "2026-11-09T02:29:34Z",
+     "at": "2026-11-09T05:01:23Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
      "why": "prepare / run python automation \"$slug\" narrate |",
-     "result": "no patch: Gemini: The failure log is empty, so the error in the narrate step cannot be determined with certainty."
+     "result": "no patch: the edit does not match the file once"
     }
    ]
   },
@@ -262,8 +250,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 3.4,
-   "build_h": 9.7,
+   "watchdog_h": 5.9,
+   "build_h": 12.2,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
