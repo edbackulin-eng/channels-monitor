@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T11:11:56Z",
+ "at": "2026-11-09T14:21:23Z",
  "channels": [
   {
    "key": "whatif",
@@ -8,7 +8,7 @@
    "problems": [
     [
      "build",
-     "last successful build 46.0 h ago"
+     "last successful build 49.2 h ago"
     ]
    ],
    "slots": [
@@ -32,7 +32,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 46.0,
+   "build_h": 49.2,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -67,7 +67,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 11.6,
+   "build_h": 14.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -87,7 +87,7 @@
     ],
     [
      "build",
-     "last successful build 44.9 h ago"
+     "last successful build 48.0 h ago"
     ]
    ],
    "slots": [
@@ -111,7 +111,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 44.9,
+   "build_h": 48.0,
    "last_build_failed": null,
    "failures": [
     {
@@ -129,7 +129,7 @@
    "topics": 20,
    "actions": [
     {
-     "at": "2026-11-09T11:11:56Z",
+     "at": "2026-11-09T14:21:23Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
@@ -199,14 +199,6 @@
      "at": "2026-11-08T08:57:54Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42462256258",
-     "id": 42462256258,
-     "step": "prepare / Run python automation/build.py \"$SLUG\" narrate",
-     "at": "2026-11-08T08:31:24Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
     }
    ],
    "waiting_built": 0,
@@ -225,20 +217,12 @@
    "topics": 19,
    "actions": [
     {
-     "at": "2026-11-09T11:11:56Z",
+     "at": "2026-11-09T14:21:23Z",
      "channel": "archive",
      "level": 1,
      "action": "start episode.yml",
      "why": "0 of the next 3 slots have a video",
      "result": "started"
-    },
-    {
-     "at": "2026-11-09T11:11:56Z",
-     "channel": "archive",
-     "level": 2,
-     "action": "autofix",
-     "why": "prepare / run python automation \"$slug\" narrate |",
-     "result": "no patch: Gemini: The error text is missing from the prompt."
     }
    ]
   },
@@ -267,8 +251,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 12.1,
-   "build_h": 2.3,
+   "watchdog_h": 15.2,
+   "build_h": 5.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,

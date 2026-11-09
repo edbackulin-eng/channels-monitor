@@ -1,14 +1,14 @@
 # Channels monitor
 
-Updated 09.11.2026 13:11 Kyiv (11:11 UTC). A pass every 3 hours; known failures are put right by themselves (level 1), a new one seen twice gets an automatic patch (level 2); letters go to the issue **Monitor** only when the owner is needed.
+Updated 09.11.2026 16:21 Kyiv (14:21 UTC). A pass every 3 hours; known failures are put right by themselves (level 1), a new one seen twice gets an automatic patch (level 2); letters go to the issue **Monitor** only when the owner is needed.
 
 | Channel | | Next 3 slots (local time) | Buffer | Watchdog | Last good build | Topics | What is wrong |
 |---|---|---|---|---|---|---|---|
-| [What If](https://github.com/edbackulin-eng/whatif-channel) | ✗ | 09.11 15:00 ✓, 10.11 15:00 ✓, 12.11 15:00 ✗ | 2/3 | 0.0 h | 46.0 h | 34 | last successful build 46.0 h ago |
-| [Closed Tabs](https://github.com/edbackulin-eng/closed-tabs) | ✓ | 09.11 17:00 ✓, 10.11 17:00 ✓, 12.11 17:00 ✓ | 3/3 | 0.0 h | 11.6 h | 12 | — |
-| [Urzeit (dinosaurs)](https://github.com/edbackulin-eng/prehistoric-channel) | ✗ | 11.11 17:00 ✗, 15.11 17:00 ✗, 18.11 17:00 ✗ | 0/3 | 0.0 h | 44.9 h | 20 | 0 of the next 3 slots have a video; last successful build 44.9 h ago |
+| [What If](https://github.com/edbackulin-eng/whatif-channel) | ✗ | 09.11 15:00 ✓, 10.11 15:00 ✓, 12.11 15:00 ✗ | 2/3 | 0.0 h | 49.2 h | 34 | last successful build 49.2 h ago |
+| [Closed Tabs](https://github.com/edbackulin-eng/closed-tabs) | ✓ | 09.11 17:00 ✓, 10.11 17:00 ✓, 12.11 17:00 ✓ | 3/3 | 0.0 h | 14.7 h | 12 | — |
+| [Urzeit (dinosaurs)](https://github.com/edbackulin-eng/prehistoric-channel) | ✗ | 11.11 17:00 ✗, 15.11 17:00 ✗, 18.11 17:00 ✗ | 0/3 | 0.0 h | 48.0 h | 20 | 0 of the next 3 slots have a video; last successful build 48.0 h ago |
 | [Yesterday in Color](https://github.com/edbackulin-eng/archive-channel) | ✗ | 10.11 12:00 ✗, 13.11 12:00 ✗, 17.11 12:00 ✗ | 0/3 | 0.0 h | 3.1 h | 19 | 0 of the next 3 slots have a video; 1950s-suburb: qa-failed: repeats; thumbnail |
-| [Stoic (yt-factory-daily)](https://github.com/beautyapp800-ctrl/yt-factory-daily) | ✓ | 09.11 21:00 ✓, 10.11 21:00 ✓, 11.11 21:00 ✗ | 2/3 | 12.1 h | 2.3 h | generates | — |
+| [Stoic (yt-factory-daily)](https://github.com/beautyapp800-ctrl/yt-factory-daily) | ✓ | 09.11 21:00 ✓, 10.11 21:00 ✓, 11.11 21:00 ✗ | 2/3 | 15.2 h | 5.5 h | generates | — |
 
 **Kaggle GPU, last 7 days:** 11.5 h of 27.5 h (closed-tabs 9.36 h, What If 0.0 h, dinosaurs 2.14 h).
 
@@ -16,6 +16,8 @@ Updated 09.11.2026 13:11 Kyiv (11:11 UTC). A pass every 3 hours; known failures 
 
 | UTC | Channel | Level | Action | Why | Result |
 |---|---|---|---|---|---|
+| 11-09 14:21 | archive | 1 | start episode.yml | 0 of the next 3 slots have a video | started |
+| 11-09 14:21 | dinosaurs | 1 | start episode.yml | 0 of the next 3 slots have a video | started |
 | 11-09 11:11 | archive | 2 | autofix | prepare / run python automation "$slug" narrate | | no patch: Gemini: The error text is missing from the prompt. |
 | 11-09 11:11 | archive | 1 | start episode.yml | 0 of the next 3 slots have a video | started |
 | 11-09 11:11 | dinosaurs | 1 | start episode.yml | 0 of the next 3 slots have a video | started |
@@ -37,9 +39,3 @@ Updated 09.11.2026 13:11 Kyiv (11:11 UTC). A pass every 3 hours; known failures 
 | 11-08 17:22 | archive | 2 | autofix | prepare / run python automation "$slug" narrate | | no patch: Gemini: No error log was provided to identify the cause of the failure in the na |
 | 11-08 17:22 | archive | 1 | start episode.yml | 0 of the next 3 slots have a video | started |
 | 11-08 17:22 | dinosaurs | 1 | start episode.yml | 0 of the next 3 slots have a video | started |
-| 11-08 14:19 | archive | 2 | autofix | prepare / run python automation "$slug" narrate | | no patch: Gemini: No error log was provided to determine the cause of the failure. |
-| 11-08 14:19 | archive | 1 | start episode.yml | 0 of the next 3 slots have a video | started |
-| 11-08 14:19 | dinosaurs | 1 | start episode.yml | 1 of the next 3 slots have a video | started |
-| 11-08 11:18 | archive | 2 | autofix | prepare / run python automation "$slug" script | | no patch: Gemini: No error log was provided in the prompt to diagnose the exact failure. |
-| 11-08 11:18 | dinosaurs | 2 | autofix | part (#) / render part # | | no patch: Gemini: The error log was omitted from the prompt, making it impossible to ident |
-| 11-08 11:18 | dinosaurs | 1 | start episode.yml | 1 of the next 3 slots have a video | started |
