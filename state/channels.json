@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T17:22:28Z",
+ "at": "2026-11-09T20:23:30Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 0.9,
+   "build_h": 3.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 17.7,
+   "build_h": 20.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -82,7 +82,7 @@
     ],
     [
      "build",
-     "last successful build 51.0 h ago"
+     "last successful build 54.1 h ago"
     ]
    ],
    "slots": [
@@ -106,7 +106,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 51.0,
+   "build_h": 54.1,
    "last_build_failed": null,
    "failures": [
     {
@@ -122,7 +122,16 @@
    "owner": [],
    "failed": [],
    "topics": 20,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-09T20:23:30Z",
+     "channel": "dinosaurs",
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "archive",
@@ -169,14 +178,6 @@
      "at": "2026-11-08T13:15:13Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42466423372",
-     "id": 42466423372,
-     "step": "prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)",
-     "at": "2026-11-08T12:03:02Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
     }
    ],
    "waiting_built": 0,
@@ -195,7 +196,7 @@
    "topics": 19,
    "actions": [
     {
-     "at": "2026-11-09T17:22:28Z",
+     "at": "2026-11-09T20:23:30Z",
      "channel": "archive",
      "level": 1,
      "action": "start episode.yml",
@@ -211,11 +212,6 @@
    "problems": [],
    "slots": [
     {
-     "at": "2026-11-09T19:00Z",
-     "video": "rmNjpcy-jhM",
-     "title": "10 Things to Drop When Your Mind Races"
-    },
-    {
      "at": "2026-11-10T19:00Z",
      "video": "T7lm3SNrjGE",
      "title": "10 Things to Drop From Your Daily Life"
@@ -224,13 +220,18 @@
      "at": "2026-11-11T19:00Z",
      "video": null,
      "title": null
+    },
+    {
+     "at": "2026-11-12T19:00Z",
+     "video": null,
+     "title": null
     }
    ],
-   "buffer": 2,
-   "scheduled_ahead": 2,
+   "buffer": 1,
+   "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 18.3,
-   "build_h": 8.5,
+   "watchdog_h": 21.3,
+   "build_h": 11.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
