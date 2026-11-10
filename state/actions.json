@@ -582,5 +582,13 @@
   "action": "start episode.yml",
   "why": "0 of the next 3 slots have a video",
   "result": "started"
+ },
+ {
+  "at": "2026-11-10T17:15:34Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" script |",
+  "result": "no patch: the edit does not match the file once"
  }
 ]

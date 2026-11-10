@@ -1,5 +1,5 @@
 {
- "at": "2026-11-10T14:14:29Z",
+ "at": "2026-11-10T17:15:34Z",
  "channels": [
   {
    "key": "whatif",
@@ -8,17 +8,17 @@
    "problems": [],
    "slots": [
     {
-     "at": "2026-11-10T15:00Z",
-     "video": "VhKX4mkahSc",
-     "title": "What If the Moon Had an Atmosphere?"
-    },
-    {
      "at": "2026-11-12T15:00Z",
      "video": "wLdBFJ79Lzc",
      "title": "What If Earth Were Twice as Large?"
     },
     {
      "at": "2026-11-13T15:00Z",
+     "video": "EPgYYUuJGc8",
+     "title": "What If the Seasons Reversed?"
+    },
+    {
+     "at": "2026-11-14T15:00Z",
      "video": null,
      "title": null
     }
@@ -27,13 +27,13 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 21.7,
+   "build_h": 1.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
-   "topics": 33,
+   "topics": 32,
    "actions": []
   },
   {
@@ -43,11 +43,6 @@
    "problems": [],
    "slots": [
     {
-     "at": "2026-11-10T17:00Z",
-     "video": "NUdWNIEKZHk",
-     "title": "Is Anyone Actually There? Checking the Dead Internet Claim"
-    },
-    {
      "at": "2026-11-12T17:00Z",
      "video": "OZ8-2vPvmos",
      "title": "A Million Euros to Prove a City Is Fake"
@@ -56,13 +51,18 @@
      "at": "2026-11-13T17:00Z",
      "video": "JYNmukqFXJo",
      "title": "Eight Thousand People Dreamed Him. Then Someone Drew Him."
+    },
+    {
+     "at": "2026-11-14T17:00Z",
+     "video": null,
+     "title": null
     }
    ],
-   "buffer": 3,
-   "scheduled_ahead": 3,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 7.9,
+   "build_h": 10.9,
    "last_build_failed": null,
    "failures": [
     {
@@ -91,7 +91,7 @@
     ],
     [
      "build",
-     "last successful build 71.9 h ago"
+     "last successful build 74.9 h ago"
     ]
    ],
    "slots": [
@@ -115,7 +115,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 71.9,
+   "build_h": 74.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -127,16 +127,7 @@
    ],
    "failed": [],
    "topics": 20,
-   "actions": [
-    {
-     "at": "2026-11-10T14:14:29Z",
-     "channel": "dinosaurs",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "archive",
@@ -158,11 +149,6 @@
    ],
    "slots": [
     {
-     "at": "2026-11-10T17:00Z",
-     "video": null,
-     "title": null
-    },
-    {
      "at": "2026-11-13T17:00Z",
      "video": null,
      "title": null
@@ -171,22 +157,43 @@
      "at": "2026-11-17T17:00Z",
      "video": null,
      "title": null
+    },
+    {
+     "at": "2026-11-20T17:00Z",
+     "video": null,
+     "title": null
     }
    ],
    "buffer": 0,
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 0.3,
+   "build_h": 3.3,
    "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42828996654",
-    "id": 42828996654,
+    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42860219499",
+    "id": 42860219499,
     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-    "at": "2026-11-10T14:08:39Z",
+    "at": "2026-11-10T17:04:52Z",
     "kind": null,
     "workflow": ".github/workflows/episode.yml"
    },
    "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42860219499",
+     "id": 42860219499,
+     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
+     "at": "2026-11-10T17:04:52Z",
+     "kind": null,
+     "workflow": ".github/workflows/episode.yml"
+    },
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42832189241",
+     "id": 42832189241,
+     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
+     "at": "2026-11-10T15:25:33Z",
+     "kind": null,
+     "workflow": ".github/workflows/episode.yml"
+    },
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42828996654",
      "id": 42828996654,
@@ -194,38 +201,25 @@
      "at": "2026-11-10T14:08:39Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42706119533",
-     "id": 42706119533,
-     "step": "prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)",
-     "at": "2026-11-09T23:02:52Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
     }
    ],
    "waiting_built": 0,
-   "owner": [
-    [
-     "buffer0",
-     "nothing for the next slot (2026-11-10T17:00Z) and no video ahead"
-    ]
-   ],
+   "owner": [],
    "failed": [
     {
      "episode": "1950s-suburb",
      "reason": "qa-failed: repeats; thumbnail"
     }
    ],
-   "topics": 14,
+   "topics": 11,
    "actions": [
     {
-     "at": "2026-11-10T14:14:29Z",
+     "at": "2026-11-10T17:15:34Z",
      "channel": "archive",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
+     "level": 2,
+     "action": "autofix",
+     "why": "prepare / run python automation \"$slug\" script |",
+     "result": "no patch: the edit does not match the file once"
     }
    ]
   },
@@ -254,8 +248,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 11.9,
-   "build_h": 5.2,
+   "watchdog_h": 14.9,
+   "build_h": 8.2,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
