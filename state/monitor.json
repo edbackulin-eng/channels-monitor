@@ -1,13 +1,12 @@
 {
  "summary_date": "2026-11-10",
  "alarms": {
-  "closed-tabs:build-failed": "Closed Tabs: last build failed at stills / Stills (Kaggle FLUX, vision check)",
   "dinosaurs:buffer": "Urzeit (dinosaurs): 0 of the next 3 slots have a video",
-  "dinosaurs:build": "Urzeit (dinosaurs): last successful build 62.9 h ago",
+  "dinosaurs:build": "Urzeit (dinosaurs): last successful build 65.9 h ago",
   "archive:buffer": "Yesterday in Color: 0 of the next 3 slots have a video",
   "archive:failed:1950s-suburb": "Yesterday in Color: 1950s-suburb: qa-failed: repeats; thumbnail"
  },
- "last_pass": "2026-11-10T05:11:42Z",
+ "last_pass": "2026-11-10T08:12:33Z",
  "planned": [
   {
    "id": "ct-build-0711",
@@ -28,10 +27,10 @@
  ],
  "requeued": [],
  "done": {
-  "whatif:requeue": "2026-11-10T05:11:42Z",
-  "archive:build": "2026-11-10T02:25:33Z",
+  "whatif:requeue": "2026-11-10T08:12:33Z",
+  "archive:build": "2026-11-10T08:12:33Z",
   "whatif:watchdog": "2026-11-06T11:03:13Z",
-  "dinosaurs:build": "2026-11-10T02:25:33Z",
+  "dinosaurs:build": "2026-11-10T08:12:33Z",
   "archive:watchdog": "2026-11-08T20:24:14Z"
  },
  "owner_alarms": {

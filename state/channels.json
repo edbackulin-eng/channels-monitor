@@ -1,5 +1,5 @@
 {
- "at": "2026-11-10T05:11:42Z",
+ "at": "2026-11-10T08:12:33Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 12.7,
+   "build_h": 15.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -40,12 +40,7 @@
    "key": "closed-tabs",
    "name": "Closed Tabs",
    "repo": "edbackulin-eng/closed-tabs",
-   "problems": [
-    [
-     "build-failed",
-     "last build failed at stills / Stills (Kaggle FLUX, vision check)"
-    ]
-   ],
+   "problems": [],
    "slots": [
     {
      "at": "2026-11-10T17:00Z",
@@ -59,23 +54,16 @@
     },
     {
      "at": "2026-11-13T17:00Z",
-     "video": null,
-     "title": null
+     "video": "JYNmukqFXJo",
+     "title": "Eight Thousand People Dreamed Him. Then Someone Drew Him."
     }
    ],
-   "buffer": 2,
-   "scheduled_ahead": 2,
+   "buffer": 3,
+   "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 29.6,
-   "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/closed-tabs/actions/runs/42744271566",
-    "id": 42744271566,
-    "step": "stills / Stills (Kaggle FLUX, vision check)",
-    "at": "2026-11-10T04:57:40Z",
-    "kind": null,
-    "workflow": ".github/workflows/daily.yml"
-   },
+   "build_h": 1.9,
+   "last_build_failed": null,
    "failures": [
     {
      "run": "https://github.com/edbackulin-eng/closed-tabs/actions/runs/42744271566",
@@ -89,7 +77,7 @@
    "waiting_built": 0,
    "owner": [],
    "failed": [],
-   "topics": 12,
+   "topics": 11,
    "actions": []
   },
   {
@@ -103,7 +91,7 @@
     ],
     [
      "build",
-     "last successful build 62.9 h ago"
+     "last successful build 65.9 h ago"
     ]
    ],
    "slots": [
@@ -127,7 +115,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 62.9,
+   "build_h": 65.9,
    "last_build_failed": null,
    "failures": [
     {
@@ -148,7 +136,16 @@
    ],
    "failed": [],
    "topics": 20,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-10T08:12:33Z",
+     "channel": "dinosaurs",
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "archive",
@@ -185,7 +182,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 2.8,
+   "build_h": 5.8,
    "last_build_failed": null,
    "failures": [
     {
@@ -211,7 +208,16 @@
     }
    ],
    "topics": 18,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-10T08:12:33Z",
+     "channel": "archive",
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "stoic",
@@ -238,8 +244,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 2.8,
-   "build_h": 8.1,
+   "watchdog_h": 5.8,
+   "build_h": 11.2,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
