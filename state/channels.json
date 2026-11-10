@@ -1,5 +1,5 @@
 {
- "at": "2026-11-10T17:15:34Z",
+ "at": "2026-11-10T20:17:04Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 1.7,
+   "build_h": 4.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 10.9,
+   "build_h": 13.9,
    "last_build_failed": null,
    "failures": [
     {
@@ -91,7 +91,7 @@
     ],
     [
      "build",
-     "last successful build 74.9 h ago"
+     "last successful build 78.0 h ago"
     ]
    ],
    "slots": [
@@ -115,7 +115,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 74.9,
+   "build_h": 78.0,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -127,7 +127,16 @@
    ],
    "failed": [],
    "topics": 20,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-10T20:17:04Z",
+     "channel": "dinosaurs",
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "archive",
@@ -168,16 +177,32 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 3.3,
+   "build_h": 6.4,
    "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42860219499",
-    "id": 42860219499,
+    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42866419744",
+    "id": 42866419744,
     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-    "at": "2026-11-10T17:04:52Z",
+    "at": "2026-11-10T17:47:14Z",
     "kind": null,
     "workflow": ".github/workflows/episode.yml"
    },
    "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42866419744",
+     "id": 42866419744,
+     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
+     "at": "2026-11-10T17:47:14Z",
+     "kind": null,
+     "workflow": ".github/workflows/episode.yml"
+    },
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42862943197",
+     "id": 42862943197,
+     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
+     "at": "2026-11-10T17:25:50Z",
+     "kind": null,
+     "workflow": ".github/workflows/episode.yml"
+    },
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42860219499",
      "id": 42860219499,
@@ -193,14 +218,6 @@
      "at": "2026-11-10T15:25:33Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42828996654",
-     "id": 42828996654,
-     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-     "at": "2026-11-10T14:08:39Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
     }
    ],
    "waiting_built": 0,
@@ -214,7 +231,15 @@
    "topics": 11,
    "actions": [
     {
-     "at": "2026-11-10T17:15:34Z",
+     "at": "2026-11-10T20:17:04Z",
+     "channel": "archive",
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
+    },
+    {
+     "at": "2026-11-10T20:17:04Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
@@ -230,11 +255,6 @@
    "problems": [],
    "slots": [
     {
-     "at": "2026-11-10T19:00Z",
-     "video": "T7lm3SNrjGE",
-     "title": "10 Things to Drop From Your Daily Life"
-    },
-    {
      "at": "2026-11-11T19:00Z",
      "video": "6OApA5l_MUw",
      "title": "10 Things to Drop When Reality Bites Hard"
@@ -243,13 +263,18 @@
      "at": "2026-11-12T19:00Z",
      "video": null,
      "title": null
+    },
+    {
+     "at": "2026-11-13T19:00Z",
+     "video": null,
+     "title": null
     }
    ],
-   "buffer": 2,
-   "scheduled_ahead": 2,
+   "buffer": 1,
+   "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 14.9,
-   "build_h": 8.2,
+   "watchdog_h": 17.9,
+   "build_h": 2.0,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -260,11 +285,11 @@
   }
  ],
  "gpu": {
-  "hours": 12.64,
+  "hours": 13.34,
   "parts": {
    "closed-tabs": 10.5,
    "What If": 0.0,
-   "dinosaurs": 2.14
+   "dinosaurs": 2.85
   }
  },
  "shared": []
