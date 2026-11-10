@@ -1,5 +1,5 @@
 {
- "at": "2026-11-10T02:25:33Z",
+ "at": "2026-11-10T05:11:42Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 9.9,
+   "build_h": 12.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -40,7 +40,12 @@
    "key": "closed-tabs",
    "name": "Closed Tabs",
    "repo": "edbackulin-eng/closed-tabs",
-   "problems": [],
+   "problems": [
+    [
+     "build-failed",
+     "last build failed at stills / Stills (Kaggle FLUX, vision check)"
+    ]
+   ],
    "slots": [
     {
      "at": "2026-11-10T17:00Z",
@@ -62,9 +67,25 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 26.8,
-   "last_build_failed": null,
-   "failures": [],
+   "build_h": 29.6,
+   "last_build_failed": {
+    "run": "https://github.com/edbackulin-eng/closed-tabs/actions/runs/42744271566",
+    "id": 42744271566,
+    "step": "stills / Stills (Kaggle FLUX, vision check)",
+    "at": "2026-11-10T04:57:40Z",
+    "kind": null,
+    "workflow": ".github/workflows/daily.yml"
+   },
+   "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/closed-tabs/actions/runs/42744271566",
+     "id": 42744271566,
+     "step": "stills / Stills (Kaggle FLUX, vision check)",
+     "at": "2026-11-10T04:57:40Z",
+     "kind": null,
+     "workflow": ".github/workflows/daily.yml"
+    }
+   ],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
@@ -82,7 +103,7 @@
     ],
     [
      "build",
-     "last successful build 60.1 h ago"
+     "last successful build 62.9 h ago"
     ]
    ],
    "slots": [
@@ -106,7 +127,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 60.1,
+   "build_h": 62.9,
    "last_build_failed": null,
    "failures": [
     {
@@ -119,19 +140,15 @@
     }
    ],
    "waiting_built": 0,
-   "owner": [],
+   "owner": [
+    [
+     "buffer0",
+     "nothing for the next slot (2026-11-11T16:00Z) and no video ahead"
+    ]
+   ],
    "failed": [],
    "topics": 20,
-   "actions": [
-    {
-     "at": "2026-11-10T02:25:33Z",
-     "channel": "dinosaurs",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "archive",
@@ -168,7 +185,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 3.0,
+   "build_h": 2.8,
    "last_build_failed": null,
    "failures": [
     {
@@ -194,16 +211,7 @@
     }
    ],
    "topics": 18,
-   "actions": [
-    {
-     "at": "2026-11-10T02:25:33Z",
-     "channel": "archive",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "stoic",
@@ -230,8 +238,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 0.1,
-   "build_h": 5.4,
+   "watchdog_h": 2.8,
+   "build_h": 8.1,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -242,9 +250,9 @@
   }
  ],
  "gpu": {
-  "hours": 11.5,
+  "hours": 12.64,
   "parts": {
-   "closed-tabs": 9.36,
+   "closed-tabs": 10.5,
    "What If": 0.0,
    "dinosaurs": 2.14
   }
