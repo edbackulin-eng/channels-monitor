@@ -614,5 +614,29 @@
   "action": "autofix",
   "why": "prepare / run python automation \"$slug\" script |",
   "result": "no patch: the edit does not match the file once"
+ },
+ {
+  "at": "2026-11-10T23:19:38Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-10T23:19:38Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-10T23:19:38Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" script |",
+  "result": "no patch: the edit does not match the file once"
  }
 ]
