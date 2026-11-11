@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T02:21:02Z",
+ "at": "2026-11-11T05:07:07Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 10.8,
+   "build_h": 13.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -54,15 +54,15 @@
     },
     {
      "at": "2026-11-14T17:00Z",
-     "video": null,
-     "title": null
+     "video": "pqkiQDL--Ao",
+     "title": "The Website That Promised You Everything"
     }
    ],
-   "buffer": 2,
-   "scheduled_ahead": 2,
+   "buffer": 3,
+   "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 20.0,
+   "build_h": 1.7,
    "last_build_failed": null,
    "failures": [
     {
@@ -77,7 +77,7 @@
    "waiting_built": 0,
    "owner": [],
    "failed": [],
-   "topics": 11,
+   "topics": 10,
    "actions": []
   },
   {
@@ -91,7 +91,7 @@
     ],
     [
      "build",
-     "last successful build 84.0 h ago"
+     "last successful build 86.8 h ago"
     ]
    ],
    "slots": [
@@ -115,7 +115,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 84.0,
+   "build_h": 86.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -127,16 +127,7 @@
    ],
    "failed": [],
    "topics": 20,
-   "actions": [
-    {
-     "at": "2026-11-11T02:21:02Z",
-     "channel": "dinosaurs",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "archive",
@@ -173,7 +164,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 3.0,
+   "build_h": 2.8,
    "last_build_failed": null,
    "failures": [
     {
@@ -220,20 +211,12 @@
    "topics": 11,
    "actions": [
     {
-     "at": "2026-11-11T02:21:02Z",
-     "channel": "archive",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    },
-    {
-     "at": "2026-11-11T02:21:02Z",
+     "at": "2026-11-11T05:07:07Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
      "why": "prepare / run python automation \"$slug\" script |",
-     "result": "no patch: the edit does not match the file once"
+     "result": "no patch: Gemini: No failure log was provided, so the exact error and its cause cannot be determined with certainty."
     }
    ]
   },
@@ -262,8 +245,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 2.1,
-   "build_h": 8.1,
+   "watchdog_h": 4.9,
+   "build_h": 10.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -274,11 +257,11 @@
   }
  ],
  "gpu": {
-  "hours": 13.34,
+  "hours": 14.49,
   "parts": {
-   "closed-tabs": 10.5,
+   "closed-tabs": 12.41,
    "What If": 0.0,
-   "dinosaurs": 2.85
+   "dinosaurs": 2.08
   }
  },
  "shared": []
