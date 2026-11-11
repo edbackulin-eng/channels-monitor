@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T08:08:09Z",
+ "at": "2026-11-11T11:12:36Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 16.5,
+   "build_h": 19.6,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 4.7,
+   "build_h": 7.8,
    "last_build_failed": null,
    "failures": [
     {
@@ -91,7 +91,7 @@
     ],
     [
      "build",
-     "last successful build 89.8 h ago"
+     "last successful build 92.9 h ago"
     ]
    ],
    "slots": [
@@ -115,7 +115,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 89.8,
+   "build_h": 92.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -164,7 +164,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 5.8,
+   "build_h": 8.8,
    "last_build_failed": null,
    "failures": [
     {
@@ -211,12 +211,12 @@
    "topics": 11,
    "actions": [
     {
-     "at": "2026-11-11T08:08:09Z",
+     "at": "2026-11-11T11:12:36Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
      "why": "prepare / run python automation \"$slug\" script |",
-     "result": "no patch: Gemini: No error log was provided, so the cause of failure cannot be determined."
+     "result": "no patch: Gemini: No failure log provided to identify the error"
     }
    ]
   },
@@ -233,8 +233,8 @@
     },
     {
      "at": "2026-11-12T19:00Z",
-     "video": null,
-     "title": null
+     "video": "L1rkJjoAhqc",
+     "title": "10 Things Marcus Aurelius Demands You Drop Right Now"
     },
     {
      "at": "2026-11-13T19:00Z",
@@ -242,11 +242,11 @@
      "title": null
     }
    ],
-   "buffer": 1,
-   "scheduled_ahead": 1,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 7.9,
-   "build_h": 13.9,
+   "watchdog_h": 11.0,
+   "build_h": 2.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
