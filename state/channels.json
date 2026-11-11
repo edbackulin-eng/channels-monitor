@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T11:12:36Z",
+ "at": "2026-11-11T14:14:54Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 19.6,
+   "build_h": 22.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 7.8,
+   "build_h": 10.8,
    "last_build_failed": null,
    "failures": [
     {
@@ -91,7 +91,7 @@
     ],
     [
      "build",
-     "last successful build 92.9 h ago"
+     "last successful build 95.9 h ago"
     ]
    ],
    "slots": [
@@ -115,7 +115,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 92.9,
+   "build_h": 95.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -137,6 +137,10 @@
     [
      "buffer",
      "0 of the next 3 slots have a video"
+    ],
+    [
+     "build-failed",
+     "last build failed at render / Run python automation/build.py \"$SLUG\" render"
     ],
     [
      "failed:1950s-suburb",
@@ -164,9 +168,24 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 8.8,
-   "last_build_failed": null,
+   "build_h": 11.9,
+   "last_build_failed": {
+    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42984385916",
+    "id": 42984385916,
+    "step": "render / Run python automation/build.py \"$SLUG\" render",
+    "at": "2026-11-11T13:09:21Z",
+    "kind": null,
+    "workflow": ".github/workflows/episode.yml"
+   },
    "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42984385916",
+     "id": 42984385916,
+     "step": "render / Run python automation/build.py \"$SLUG\" render",
+     "at": "2026-11-11T13:09:21Z",
+     "kind": null,
+     "workflow": ".github/workflows/episode.yml"
+    },
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42866419744",
      "id": 42866419744,
@@ -190,14 +209,6 @@
      "at": "2026-11-10T17:04:52Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42832189241",
-     "id": 42832189241,
-     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-     "at": "2026-11-10T15:25:33Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
     }
    ],
    "waiting_built": 0,
@@ -211,12 +222,20 @@
    "topics": 11,
    "actions": [
     {
-     "at": "2026-11-11T11:12:36Z",
+     "at": "2026-11-11T14:14:54Z",
+     "channel": "archive",
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
+    },
+    {
+     "at": "2026-11-11T14:14:54Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
      "why": "prepare / run python automation \"$slug\" script |",
-     "result": "no patch: Gemini: No failure log provided to identify the error"
+     "result": "no patch: the edit does not match the file once"
     }
    ]
   },
@@ -245,8 +264,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 11.0,
-   "build_h": 2.9,
+   "watchdog_h": 14.0,
+   "build_h": 5.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
