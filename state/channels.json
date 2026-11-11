@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T14:14:54Z",
+ "at": "2026-11-11T17:19:24Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 22.7,
+   "build_h": 25.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 10.8,
+   "build_h": 13.9,
    "last_build_failed": null,
    "failures": [
     {
@@ -91,15 +91,10 @@
     ],
     [
      "build",
-     "last successful build 95.9 h ago"
+     "last successful build 99.0 h ago"
     ]
    ],
    "slots": [
-    {
-     "at": "2026-11-11T16:00Z",
-     "video": null,
-     "title": null
-    },
     {
      "at": "2026-11-15T16:00Z",
      "video": null,
@@ -109,22 +104,22 @@
      "at": "2026-11-18T16:00Z",
      "video": null,
      "title": null
+    },
+    {
+     "at": "2026-11-22T16:00Z",
+     "video": null,
+     "title": null
     }
    ],
    "buffer": 0,
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 95.9,
+   "build_h": 99.0,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
-   "owner": [
-    [
-     "buffer0",
-     "nothing for the next slot (2026-11-11T16:00Z) and no video ahead"
-    ]
-   ],
+   "owner": [],
    "failed": [],
    "topics": 20,
    "actions": []
@@ -137,10 +132,6 @@
     [
      "buffer",
      "0 of the next 3 slots have a video"
-    ],
-    [
-     "build-failed",
-     "last build failed at render / Run python automation/build.py \"$SLUG\" render"
     ],
     [
      "failed:1950s-suburb",
@@ -168,15 +159,8 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 11.9,
-   "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42984385916",
-    "id": 42984385916,
-    "step": "render / Run python automation/build.py \"$SLUG\" render",
-    "at": "2026-11-11T13:09:21Z",
-    "kind": null,
-    "workflow": ".github/workflows/episode.yml"
-   },
+   "build_h": 3.1,
+   "last_build_failed": null,
    "failures": [
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42984385916",
@@ -222,7 +206,7 @@
    "topics": 11,
    "actions": [
     {
-     "at": "2026-11-11T14:14:54Z",
+     "at": "2026-11-11T17:19:24Z",
      "channel": "archive",
      "level": 1,
      "action": "start episode.yml",
@@ -230,7 +214,7 @@
      "result": "started"
     },
     {
-     "at": "2026-11-11T14:14:54Z",
+     "at": "2026-11-11T17:19:24Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
@@ -264,8 +248,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 14.0,
-   "build_h": 5.9,
+   "watchdog_h": 17.1,
+   "build_h": 9.0,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -276,9 +260,9 @@
   }
  ],
  "gpu": {
-  "hours": 13.81,
+  "hours": 12.22,
   "parts": {
-   "closed-tabs": 12.41,
+   "closed-tabs": 10.82,
    "What If": 0.0,
    "dinosaurs": 1.4
   }
