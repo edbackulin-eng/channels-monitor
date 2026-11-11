@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T17:19:24Z",
+ "at": "2026-11-11T20:21:56Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 25.7,
+   "build_h": 28.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,13 +62,13 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 13.9,
+   "build_h": 16.9,
    "last_build_failed": null,
    "failures": [
     {
      "run": "https://github.com/edbackulin-eng/closed-tabs/actions/runs/42744271566",
      "id": 42744271566,
-     "step": "stills / Stills (Kaggle FLUX, vision check)",
+     "step": "?",
      "at": "2026-11-10T04:57:40Z",
      "kind": null,
      "workflow": ".github/workflows/daily.yml"
@@ -91,7 +91,7 @@
     ],
     [
      "build",
-     "last successful build 99.0 h ago"
+     "last successful build 102.0 h ago"
     ]
    ],
    "slots": [
@@ -115,7 +115,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 99.0,
+   "build_h": 102.0,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -159,13 +159,13 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 3.1,
+   "build_h": 3.0,
    "last_build_failed": null,
    "failures": [
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42984385916",
      "id": 42984385916,
-     "step": "render / Run python automation/build.py \"$SLUG\" render",
+     "step": "?",
      "at": "2026-11-11T13:09:21Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
@@ -173,7 +173,7 @@
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42866419744",
      "id": 42866419744,
-     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
+     "step": "?",
      "at": "2026-11-10T17:47:14Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
@@ -181,7 +181,7 @@
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42862943197",
      "id": 42862943197,
-     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
+     "step": "?",
      "at": "2026-11-10T17:25:50Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
@@ -189,7 +189,7 @@
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42860219499",
      "id": 42860219499,
-     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
+     "step": "?",
      "at": "2026-11-10T17:04:52Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
@@ -206,7 +206,7 @@
    "topics": 11,
    "actions": [
     {
-     "at": "2026-11-11T17:19:24Z",
+     "at": "2026-11-11T20:21:56Z",
      "channel": "archive",
      "level": 1,
      "action": "start episode.yml",
@@ -214,11 +214,11 @@
      "result": "started"
     },
     {
-     "at": "2026-11-11T17:19:24Z",
+     "at": "2026-11-11T20:21:56Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
-     "why": "prepare / run python automation \"$slug\" script |",
+     "why": "? |",
      "result": "no patch: the edit does not match the file once"
     }
    ]
@@ -230,11 +230,6 @@
    "problems": [],
    "slots": [
     {
-     "at": "2026-11-11T19:00Z",
-     "video": "6OApA5l_MUw",
-     "title": "10 Things to Drop When Reality Bites Hard"
-    },
-    {
      "at": "2026-11-12T19:00Z",
      "video": "L1rkJjoAhqc",
      "title": "10 Things Marcus Aurelius Demands You Drop Right Now"
@@ -243,13 +238,18 @@
      "at": "2026-11-13T19:00Z",
      "video": null,
      "title": null
+    },
+    {
+     "at": "2026-11-14T19:00Z",
+     "video": null,
+     "title": null
     }
    ],
-   "buffer": 2,
-   "scheduled_ahead": 2,
+   "buffer": 1,
+   "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 17.1,
-   "build_h": 9.0,
+   "watchdog_h": 20.1,
+   "build_h": 2.3,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -260,11 +260,11 @@
   }
  ],
  "gpu": {
-  "hours": 12.22,
+  "hours": 12.47,
   "parts": {
-   "closed-tabs": 10.82,
+   "closed-tabs": 10.41,
    "What If": 0.0,
-   "dinosaurs": 1.4
+   "dinosaurs": 2.06
   }
  },
  "shared": []
