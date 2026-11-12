@@ -1,22 +1,12 @@
 {
- "at": "2026-11-12T14:06:42Z",
+ "at": "2026-11-12T17:07:43Z",
  "channels": [
   {
    "key": "whatif",
    "name": "What If",
    "repo": "edbackulin-eng/whatif-channel",
-   "problems": [
-    [
-     "build",
-     "last successful build 46.5 h ago"
-    ]
-   ],
+   "problems": [],
    "slots": [
-    {
-     "at": "2026-11-12T15:00Z",
-     "video": "wLdBFJ79Lzc",
-     "title": "What If Earth Were Twice as Large?"
-    },
     {
      "at": "2026-11-13T15:00Z",
      "video": "EPgYYUuJGc8",
@@ -24,6 +14,11 @@
     },
     {
      "at": "2026-11-14T15:00Z",
+     "video": "p9q_hf1idAU",
+     "title": "What If a Solar Flare Hit Earth Directly?"
+    },
+    {
+     "at": "2026-11-16T15:00Z",
      "video": null,
      "title": null
     }
@@ -32,13 +27,13 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 46.5,
+   "build_h": 2.0,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
-   "topics": 32,
+   "topics": 31,
    "actions": []
   },
   {
@@ -48,11 +43,6 @@
    "problems": [],
    "slots": [
     {
-     "at": "2026-11-12T17:00Z",
-     "video": "OZ8-2vPvmos",
-     "title": "A Million Euros to Prove a City Is Fake"
-    },
-    {
      "at": "2026-11-13T17:00Z",
      "video": "JYNmukqFXJo",
      "title": "Eight Thousand People Dreamed Him. Then Someone Drew Him."
@@ -61,13 +51,18 @@
      "at": "2026-11-14T17:00Z",
      "video": "pqkiQDL--Ao",
      "title": "The Website That Promised You Everything"
+    },
+    {
+     "at": "2026-11-16T17:00Z",
+     "video": null,
+     "title": null
     }
    ],
-   "buffer": 3,
-   "scheduled_ahead": 3,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 12.2,
+   "build_h": 15.3,
    "last_build_failed": null,
    "failures": [
     {
@@ -120,7 +115,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 5.6,
+   "build_h": 8.6,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -142,6 +137,10 @@
     [
      "buffer",
      "0 of the next 3 slots have a video"
+    ],
+    [
+     "build-failed",
+     "last build failed at prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)"
     ],
     [
      "failed:1950s-suburb",
@@ -169,9 +168,24 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 3.0,
-   "last_build_failed": null,
+   "build_h": 6.0,
+   "last_build_failed": {
+    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43208551424",
+    "id": 43208551424,
+    "step": "prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)",
+    "at": "2026-11-12T14:13:37Z",
+    "kind": null,
+    "workflow": ".github/workflows/episode.yml"
+   },
    "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43208551424",
+     "id": 43208551424,
+     "step": "prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)",
+     "at": "2026-11-12T14:13:37Z",
+     "kind": null,
+     "workflow": ".github/workflows/episode.yml"
+    },
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42984385916",
      "id": 42984385916,
@@ -195,7 +209,16 @@
     }
    ],
    "topics": 11,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-12T17:07:43Z",
+     "channel": "archive",
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "stoic",
@@ -222,8 +245,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 12.4,
-   "build_h": 5.0,
+   "watchdog_h": 15.5,
+   "build_h": 8.0,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
