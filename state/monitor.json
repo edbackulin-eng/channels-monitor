@@ -1,13 +1,13 @@
 {
  "summary_date": "2026-11-12",
  "alarms": {
-  "whatif:build": "What If: last successful build 43.5 h ago",
+  "whatif:build": "What If: last successful build 46.5 h ago",
   "dinosaurs:buffer": "Urzeit (dinosaurs): 0 of the next 3 slots have a video",
   "dinosaurs:failed:megalodon": "Urzeit (dinosaurs): megalodon: qa-failed: hook; subject; pace; music; motion; dinosaurs; scenes; match; consistent; viewer",
   "archive:buffer": "Yesterday in Color: 0 of the next 3 slots have a video",
   "archive:failed:1950s-suburb": "Yesterday in Color: 1950s-suburb: qa-failed: repeats; thumbnail"
  },
- "last_pass": "2026-11-12T11:05:45Z",
+ "last_pass": "2026-11-12T14:06:42Z",
  "planned": [
   {
    "id": "ct-build-0711",
@@ -28,7 +28,7 @@
  ],
  "requeued": [],
  "done": {
-  "whatif:requeue": "2026-11-12T11:05:45Z",
+  "whatif:requeue": "2026-11-12T14:06:42Z",
   "archive:build": "2026-11-12T11:05:45Z",
   "whatif:watchdog": "2026-11-06T11:03:13Z",
   "dinosaurs:build": "2026-11-12T11:05:45Z",

@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T11:05:45Z",
+ "at": "2026-11-12T14:06:42Z",
  "channels": [
   {
    "key": "whatif",
@@ -8,7 +8,7 @@
    "problems": [
     [
      "build",
-     "last successful build 43.5 h ago"
+     "last successful build 46.5 h ago"
     ]
    ],
    "slots": [
@@ -32,7 +32,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 43.5,
+   "build_h": 46.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -67,7 +67,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 9.2,
+   "build_h": 12.2,
    "last_build_failed": null,
    "failures": [
     {
@@ -120,7 +120,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 2.6,
+   "build_h": 5.6,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -131,17 +131,8 @@
      "reason": "qa-failed: hook; subject; pace; music; motion; dinosaurs; scenes; match; consistent; viewer"
     }
    ],
-   "topics": 20,
-   "actions": [
-    {
-     "at": "2026-11-12T11:05:45Z",
-     "channel": "dinosaurs",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    }
-   ]
+   "topics": 19,
+   "actions": []
   },
   {
    "key": "archive",
@@ -204,16 +195,7 @@
     }
    ],
    "topics": 11,
-   "actions": [
-    {
-     "at": "2026-11-12T11:05:45Z",
-     "channel": "archive",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "stoic",
@@ -240,8 +222,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 9.4,
-   "build_h": 2.0,
+   "watchdog_h": 12.4,
+   "build_h": 5.0,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
