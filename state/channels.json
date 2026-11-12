@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T03:48:07Z",
+ "at": "2026-11-12T05:03:59Z",
  "channels": [
   {
    "key": "whatif",
@@ -8,7 +8,7 @@
    "problems": [
     [
      "build",
-     "last successful build 36.2 h ago"
+     "last successful build 37.5 h ago"
     ]
    ],
    "slots": [
@@ -32,7 +32,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 36.2,
+   "build_h": 37.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -67,7 +67,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 1.9,
+   "build_h": 3.2,
    "last_build_failed": null,
    "failures": [
     {
@@ -96,7 +96,7 @@
     ],
     [
      "build",
-     "last successful build 109.5 h ago"
+     "last successful build 110.7 h ago"
     ]
    ],
    "slots": [
@@ -120,14 +120,23 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 109.5,
+   "build_h": 110.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
    "topics": 20,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-12T05:03:59Z",
+     "channel": "dinosaurs",
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "archive",
@@ -164,7 +173,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 3.0,
+   "build_h": 1.2,
    "last_build_failed": null,
    "failures": [
     {
@@ -182,18 +191,15 @@
      "at": "2026-11-10T17:47:14Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42862943197",
-     "id": 42862943197,
-     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-     "at": "2026-11-10T17:25:50Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
     }
    ],
    "waiting_built": 0,
-   "owner": [],
+   "owner": [
+    [
+     "buffer0",
+     "nothing for the next slot (2026-11-13T17:00Z) and no video ahead"
+    ]
+   ],
    "failed": [
     {
      "episode": "1950s-suburb",
@@ -201,24 +207,7 @@
     }
    ],
    "topics": 11,
-   "actions": [
-    {
-     "at": "2026-11-12T03:48:07Z",
-     "channel": "archive",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    },
-    {
-     "at": "2026-11-12T03:48:07Z",
-     "channel": "archive",
-     "level": 2,
-     "action": "autofix",
-     "why": "prepare / run python automation \"$slug\" script |",
-     "result": "no patch: the edit does not match the file once"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "stoic",
@@ -245,8 +234,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 2.1,
-   "build_h": 9.8,
+   "watchdog_h": 3.4,
+   "build_h": 11.0,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
