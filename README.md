@@ -1,21 +1,24 @@
 # Channels monitor
 
-Updated 11.11.2026 22:21 Kyiv (20:21 UTC). A pass every 3 hours; known failures are put right by themselves (level 1), a new one seen twice gets an automatic patch (level 2); letters go to the issue **Monitor** only when the owner is needed.
+Updated 12.11.2026 02:47 Kyiv (00:47 UTC). A pass every 3 hours; known failures are put right by themselves (level 1), a new one seen twice gets an automatic patch (level 2); letters go to the issue **Monitor** only when the owner is needed.
 
 | Channel | | Next 3 slots (local time) | Buffer | Watchdog | Last good build | Topics | What is wrong |
 |---|---|---|---|---|---|---|---|
-| [What If](https://github.com/edbackulin-eng/whatif-channel) | ✓ | 12.11 15:00 ✓, 13.11 15:00 ✓, 14.11 15:00 ✗ | 2/3 | 0.0 h | 28.8 h | 32 | — |
-| [Closed Tabs](https://github.com/edbackulin-eng/closed-tabs) | ✓ | 12.11 17:00 ✓, 13.11 17:00 ✓, 14.11 17:00 ✓ | 3/3 | 0.0 h | 16.9 h | 10 | — |
-| [Urzeit (dinosaurs)](https://github.com/edbackulin-eng/prehistoric-channel) | ✗ | 15.11 17:00 ✗, 18.11 17:00 ✗, 22.11 17:00 ✗ | 0/3 | 0.0 h | 102.0 h | 20 | 0 of the next 3 slots have a video; last successful build 102.0 h ago |
-| [Yesterday in Color](https://github.com/edbackulin-eng/archive-channel) | ✗ | 13.11 12:00 ✗, 17.11 12:00 ✗, 20.11 12:00 ✗ | 0/3 | 0.0 h | 3.0 h | 11 | 0 of the next 3 slots have a video; 1950s-suburb: qa-failed: repeats; thumbnail |
-| [Stoic (yt-factory-daily)](https://github.com/beautyapp800-ctrl/yt-factory-daily) | ✓ | 12.11 21:00 ✓, 13.11 21:00 ✗, 14.11 21:00 ✗ | 1/3 | 20.1 h | 2.3 h | generates | — |
+| [What If](https://github.com/edbackulin-eng/whatif-channel) | ✓ | 12.11 15:00 ✓, 13.11 15:00 ✓, 14.11 15:00 ✗ | 2/3 | 0.0 h | 33.2 h | 32 | — |
+| [Closed Tabs](https://github.com/edbackulin-eng/closed-tabs) | ✓ | 12.11 17:00 ✓, 13.11 17:00 ✓, 14.11 17:00 ✓ | 3/3 | 0.0 h | 21.4 h | 10 | — |
+| [Urzeit (dinosaurs)](https://github.com/edbackulin-eng/prehistoric-channel) | ✗ | 15.11 17:00 ✗, 18.11 17:00 ✗, 22.11 17:00 ✗ | 0/3 | 0.0 h | 106.5 h | 20 | 0 of the next 3 slots have a video; last successful build 106.5 h ago |
+| [Yesterday in Color](https://github.com/edbackulin-eng/archive-channel) | ✗ | 13.11 12:00 ✗, 17.11 12:00 ✗, 20.11 12:00 ✗ | 0/3 | 0.0 h | 7.4 h | 11 | 0 of the next 3 slots have a video; 1950s-suburb: qa-failed: repeats; thumbnail |
+| [Stoic (yt-factory-daily)](https://github.com/beautyapp800-ctrl/yt-factory-daily) | ✓ | 12.11 21:00 ✓, 13.11 21:00 ✗, 14.11 21:00 ✗ | 1/3 | 24.6 h | 6.7 h | generates | — |
 
-**Kaggle GPU, last 7 days:** 12.47 h of 27.5 h (closed-tabs 10.41 h, What If 0.0 h, dinosaurs 2.06 h).
+**Kaggle GPU, last 7 days:** 12.25 h of 27.5 h (closed-tabs 10.19 h, What If 0.0 h, dinosaurs 2.06 h).
 
 ## Journal (last 24 h)
 
 | UTC | Channel | Level | Action | Why | Result |
 |---|---|---|---|---|---|
+| 11-12 00:47 | archive | 2 | autofix | prepare / run python automation "$slug" script | | no patch: the edit does not match the file once |
+| 11-12 00:47 | archive | 1 | start episode.yml | 0 of the next 3 slots have a video | started |
+| 11-12 00:47 | dinosaurs | 1 | start episode.yml | 0 of the next 3 slots have a video | started |
 | 11-11 20:21 | archive | 2 | autofix | ? | | no patch: the edit does not match the file once |
 | 11-11 20:21 | archive | 1 | start episode.yml | 0 of the next 3 slots have a video | started |
 | 11-11 17:19 | archive | 2 | autofix | prepare / run python automation "$slug" script | | no patch: the edit does not match the file once |
@@ -28,6 +31,3 @@ Updated 11.11.2026 22:21 Kyiv (20:21 UTC). A pass every 3 hours; known failures 
 | 11-11 02:21 | archive | 2 | autofix | prepare / run python automation "$slug" script | | no patch: the edit does not match the file once |
 | 11-11 02:21 | archive | 1 | start episode.yml | 0 of the next 3 slots have a video | started |
 | 11-11 02:21 | dinosaurs | 1 | start episode.yml | 0 of the next 3 slots have a video | started |
-| 11-10 23:19 | archive | 2 | autofix | prepare / run python automation "$slug" script | | no patch: the edit does not match the file once |
-| 11-10 23:19 | archive | 1 | start episode.yml | 0 of the next 3 slots have a video | started |
-| 11-10 23:19 | dinosaurs | 1 | start episode.yml | 0 of the next 3 slots have a video | started |
