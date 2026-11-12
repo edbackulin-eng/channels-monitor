@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T05:03:59Z",
+ "at": "2026-11-12T08:05:03Z",
  "channels": [
   {
    "key": "whatif",
@@ -8,7 +8,7 @@
    "problems": [
     [
      "build",
-     "last successful build 37.5 h ago"
+     "last successful build 40.5 h ago"
     ]
    ],
    "slots": [
@@ -32,7 +32,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 37.5,
+   "build_h": 40.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -67,7 +67,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 3.2,
+   "build_h": 6.2,
    "last_build_failed": null,
    "failures": [
     {
@@ -96,7 +96,7 @@
     ],
     [
      "build",
-     "last successful build 110.7 h ago"
+     "last successful build 113.8 h ago"
     ]
    ],
    "slots": [
@@ -120,23 +120,14 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 110.7,
+   "build_h": 113.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
    "topics": 20,
-   "actions": [
-    {
-     "at": "2026-11-12T05:03:59Z",
-     "channel": "dinosaurs",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "archive",
@@ -173,7 +164,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 1.2,
+   "build_h": 4.3,
    "last_build_failed": null,
    "failures": [
     {
@@ -207,7 +198,16 @@
     }
    ],
    "topics": 11,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-12T08:05:03Z",
+     "channel": "archive",
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "stoic",
@@ -234,8 +234,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 3.4,
-   "build_h": 11.0,
+   "watchdog_h": 6.4,
+   "build_h": 14.0,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
