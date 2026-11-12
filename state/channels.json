@@ -1,11 +1,16 @@
 {
- "at": "2026-11-12T00:47:03Z",
+ "at": "2026-11-12T03:48:07Z",
  "channels": [
   {
    "key": "whatif",
    "name": "What If",
    "repo": "edbackulin-eng/whatif-channel",
-   "problems": [],
+   "problems": [
+    [
+     "build",
+     "last successful build 36.2 h ago"
+    ]
+   ],
    "slots": [
     {
      "at": "2026-11-12T15:00Z",
@@ -27,7 +32,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 33.2,
+   "build_h": 36.2,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +67,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 21.4,
+   "build_h": 1.9,
    "last_build_failed": null,
    "failures": [
     {
@@ -91,7 +96,7 @@
     ],
     [
      "build",
-     "last successful build 106.5 h ago"
+     "last successful build 109.5 h ago"
     ]
    ],
    "slots": [
@@ -115,23 +120,14 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 106.5,
+   "build_h": 109.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
    "topics": 20,
-   "actions": [
-    {
-     "at": "2026-11-12T00:47:03Z",
-     "channel": "dinosaurs",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "archive",
@@ -168,7 +164,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 7.4,
+   "build_h": 3.0,
    "last_build_failed": null,
    "failures": [
     {
@@ -194,14 +190,6 @@
      "at": "2026-11-10T17:25:50Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42860219499",
-     "id": 42860219499,
-     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-     "at": "2026-11-10T17:04:52Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
     }
    ],
    "waiting_built": 0,
@@ -215,7 +203,7 @@
    "topics": 11,
    "actions": [
     {
-     "at": "2026-11-12T00:47:03Z",
+     "at": "2026-11-12T03:48:07Z",
      "channel": "archive",
      "level": 1,
      "action": "start episode.yml",
@@ -223,7 +211,7 @@
      "result": "started"
     },
     {
-     "at": "2026-11-12T00:47:03Z",
+     "at": "2026-11-12T03:48:07Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
@@ -257,8 +245,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 24.6,
-   "build_h": 6.7,
+   "watchdog_h": 2.1,
+   "build_h": 9.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
