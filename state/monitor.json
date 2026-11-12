@@ -4,10 +4,9 @@
   "dinosaurs:buffer": "Urzeit (dinosaurs): 0 of the next 3 slots have a video",
   "dinosaurs:failed:megalodon": "Urzeit (dinosaurs): megalodon: qa-failed: hook; subject; pace; music; motion; dinosaurs; scenes; match; consistent; viewer",
   "archive:buffer": "Yesterday in Color: 0 of the next 3 slots have a video",
-  "archive:build-failed": "Yesterday in Color: last build failed at prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)",
   "archive:failed:1950s-suburb": "Yesterday in Color: 1950s-suburb: qa-failed: repeats; thumbnail"
  },
- "last_pass": "2026-11-12T17:07:43Z",
+ "last_pass": "2026-11-12T20:08:56Z",
  "planned": [
   {
    "id": "ct-build-0711",
@@ -28,10 +27,10 @@
  ],
  "requeued": [],
  "done": {
-  "whatif:requeue": "2026-11-12T17:07:43Z",
-  "archive:build": "2026-11-12T17:07:43Z",
+  "whatif:requeue": "2026-11-12T20:08:56Z",
+  "archive:build": "2026-11-12T20:08:56Z",
   "whatif:watchdog": "2026-11-06T11:03:13Z",
-  "dinosaurs:build": "2026-11-12T11:05:45Z",
+  "dinosaurs:build": "2026-11-12T20:08:56Z",
   "archive:watchdog": "2026-11-08T20:24:14Z"
  },
  "owner_alarms": {
