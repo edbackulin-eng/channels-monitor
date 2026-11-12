@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T08:05:03Z",
+ "at": "2026-11-12T11:05:45Z",
  "channels": [
   {
    "key": "whatif",
@@ -8,7 +8,7 @@
    "problems": [
     [
      "build",
-     "last successful build 40.5 h ago"
+     "last successful build 43.5 h ago"
     ]
    ],
    "slots": [
@@ -32,7 +32,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 40.5,
+   "build_h": 43.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -67,7 +67,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 6.2,
+   "build_h": 9.2,
    "last_build_failed": null,
    "failures": [
     {
@@ -95,8 +95,8 @@
      "0 of the next 3 slots have a video"
     ],
     [
-     "build",
-     "last successful build 113.8 h ago"
+     "failed:megalodon",
+     "megalodon: qa-failed: hook; subject; pace; music; motion; dinosaurs; scenes; match; consistent; viewer"
     ]
    ],
    "slots": [
@@ -120,14 +120,28 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 113.8,
+   "build_h": 2.6,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
    "owner": [],
-   "failed": [],
+   "failed": [
+    {
+     "episode": "megalodon",
+     "reason": "qa-failed: hook; subject; pace; music; motion; dinosaurs; scenes; match; consistent; viewer"
+    }
+   ],
    "topics": 20,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-12T11:05:45Z",
+     "channel": "dinosaurs",
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "archive",
@@ -164,7 +178,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 4.3,
+   "build_h": 3.0,
    "last_build_failed": null,
    "failures": [
     {
@@ -172,14 +186,6 @@
      "id": 42984385916,
      "step": "render / Run python automation/build.py \"$SLUG\" render",
      "at": "2026-11-11T13:09:21Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42866419744",
-     "id": 42866419744,
-     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-     "at": "2026-11-10T17:47:14Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
     }
@@ -200,7 +206,7 @@
    "topics": 11,
    "actions": [
     {
-     "at": "2026-11-12T08:05:03Z",
+     "at": "2026-11-12T11:05:45Z",
      "channel": "archive",
      "level": 1,
      "action": "start episode.yml",
@@ -222,8 +228,8 @@
     },
     {
      "at": "2026-11-13T19:00Z",
-     "video": null,
-     "title": null
+     "video": "b0IIEw8r7S0",
+     "title": "10 Things You Must Stop Fighting Right Now"
     },
     {
      "at": "2026-11-14T19:00Z",
@@ -231,11 +237,11 @@
      "title": null
     }
    ],
-   "buffer": 1,
-   "scheduled_ahead": 1,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 6.4,
-   "build_h": 14.0,
+   "watchdog_h": 9.4,
+   "build_h": 2.0,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
