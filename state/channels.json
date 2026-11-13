@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T23:09:51Z",
+ "at": "2026-11-13T02:10:48Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 8.1,
+   "build_h": 11.1,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 21.3,
+   "build_h": 24.3,
    "last_build_failed": null,
    "failures": [
     {
@@ -115,7 +115,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 14.7,
+   "build_h": 17.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -129,7 +129,7 @@
    "topics": 19,
    "actions": [
     {
-     "at": "2026-11-12T23:09:51Z",
+     "at": "2026-11-13T02:10:48Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
@@ -201,7 +201,7 @@
    "topics": 11,
    "actions": [
     {
-     "at": "2026-11-12T23:09:51Z",
+     "at": "2026-11-13T02:10:48Z",
      "channel": "archive",
      "level": 1,
      "action": "start episode.yml",
@@ -235,8 +235,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 21.5,
-   "build_h": 4.6,
+   "watchdog_h": 1.5,
+   "build_h": 7.6,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
