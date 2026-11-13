@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T20:23:52Z",
+ "at": "2026-11-13T23:24:41Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 6.7,
+   "build_h": 9.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 16.9,
+   "build_h": 19.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -79,6 +79,10 @@
     [
      "buffer",
      "0 of the next 3 slots have a video"
+    ],
+    [
+     "build",
+     "last successful build 38.9 h ago"
     ],
     [
      "failed:megalodon",
@@ -106,7 +110,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 35.9,
+   "build_h": 38.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -151,7 +155,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 3.1,
+   "build_h": 3.0,
    "last_build_failed": null,
    "failures": [
     {
@@ -177,7 +181,7 @@
    "topics": 11,
    "actions": [
     {
-     "at": "2026-11-13T20:23:52Z",
+     "at": "2026-11-13T23:24:41Z",
      "channel": "archive",
      "level": 1,
      "action": "start episode.yml",
@@ -211,8 +215,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 19.7,
-   "build_h": 2.4,
+   "watchdog_h": 22.7,
+   "build_h": 5.4,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
