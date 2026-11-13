@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T11:13:09Z",
+ "at": "2026-11-13T14:14:08Z",
  "channels": [
   {
    "key": "whatif",
@@ -19,21 +19,21 @@
     },
     {
      "at": "2026-11-16T15:00Z",
-     "video": null,
-     "title": null
+     "video": "2_jALZ7FNDQ",
+     "title": "What If Earth Had Rings?"
     }
    ],
-   "buffer": 2,
-   "scheduled_ahead": 2,
+   "buffer": 3,
+   "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 20.1,
+   "build_h": 0.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
-   "topics": 31,
+   "topics": 30,
    "actions": []
   },
   {
@@ -62,14 +62,31 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 7.7,
+   "build_h": 10.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
    "topics": 10,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-13T14:14:08Z",
+     "channel": "closed-tabs",
+     "level": 1,
+     "action": "cancel watchdog.yml run 43379187798",
+     "why": "running 7.7 h (limit 6.2 h)",
+     "result": "cancelled"
+    },
+    {
+     "at": "2026-11-13T14:14:08Z",
+     "channel": "closed-tabs",
+     "level": 1,
+     "action": "start watchdog.yml",
+     "why": "hung",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "dinosaurs",
@@ -106,7 +123,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 26.7,
+   "build_h": 29.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -120,7 +137,7 @@
    "topics": 19,
    "actions": [
     {
-     "at": "2026-11-13T11:13:09Z",
+     "at": "2026-11-13T14:14:08Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
@@ -136,22 +153,18 @@
    "problems": [
     [
      "buffer",
-     "0 of the next 3 slots have a video"
+     "1 of the next 3 slots have a video"
     ],
     [
-     "failed:1950s-suburb",
-     "1950s-suburb: qa-failed: repeats; thumbnail"
-    ],
-    [
-     "failed:american-home-1950s",
-     "american-home-1950s: qa-failed: hook; prices; thumbnail; viewer"
+     "build-failed",
+     "last build failed at prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)"
     ]
    ],
    "slots": [
     {
      "at": "2026-11-13T17:00Z",
-     "video": null,
-     "title": null
+     "video": "12t0lIZqjCk",
+     "title": "Suburban Dreams: The 1950s Home in Color"
     },
     {
      "at": "2026-11-17T17:00Z",
@@ -164,13 +177,36 @@
      "title": null
     }
    ],
-   "buffer": 0,
-   "scheduled_ahead": 0,
+   "buffer": 1,
+   "scheduled_ahead": 1,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 3.0,
-   "last_build_failed": null,
+   "build_h": 6.0,
+   "last_build_failed": {
+    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43425827864",
+    "id": 43425827864,
+    "step": "prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)",
+    "at": "2026-11-13T13:16:11Z",
+    "kind": null,
+    "workflow": ".github/workflows/episode.yml"
+   },
    "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43425827864",
+     "id": 43425827864,
+     "step": "prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)",
+     "at": "2026-11-13T13:16:11Z",
+     "kind": null,
+     "workflow": ".github/workflows/episode.yml"
+    },
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43391741551",
+     "id": 43391741551,
+     "step": "render / Record (QA gate; upload when a token exists, else buffer)",
+     "at": "2026-11-13T12:12:45Z",
+     "kind": null,
+     "workflow": ".github/workflows/episode.yml"
+    },
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43208551424",
      "id": 43208551424,
@@ -181,24 +217,27 @@
     }
    ],
    "waiting_built": 0,
-   "owner": [
-    [
-     "buffer0",
-     "nothing for the next slot (2026-11-13T17:00Z) and no video ahead"
-    ]
-   ],
-   "failed": [
+   "owner": [],
+   "failed": [],
+   "topics": 11,
+   "actions": [
     {
-     "episode": "1950s-suburb",
-     "reason": "qa-failed: repeats; thumbnail"
+     "at": "2026-11-13T14:14:08Z",
+     "channel": "archive",
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "1 of the next 3 slots have a video",
+     "result": "started"
     },
     {
-     "episode": "american-home-1950s",
-     "reason": "qa-failed: hook; prices; thumbnail; viewer"
+     "at": "2026-11-13T14:14:08Z",
+     "channel": "archive",
+     "level": 2,
+     "action": "autofix",
+     "why": "prepare / plan the shots (a topic with under # min of confirmed film is deferred, the next one started) |",
+     "result": "no patch: Gemini: The error log is missing, so the exact failure and failing line cannot be identified."
     }
-   ],
-   "topics": 11,
-   "actions": []
+   ]
   },
   {
    "key": "stoic",
@@ -225,8 +264,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 10.5,
-   "build_h": 2.4,
+   "watchdog_h": 13.6,
+   "build_h": 5.4,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
