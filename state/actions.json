@@ -974,5 +974,13 @@
   "action": "autofix",
   "why": "prepare / plan the shots (a topic with under # min of confirmed film is deferred, the next one started) |",
   "result": "no patch: the edit does not match the file once"
+ },
+ {
+  "at": "2026-11-13T20:23:52Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
  }
 ]

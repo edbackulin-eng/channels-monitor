@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T17:15:48Z",
+ "at": "2026-11-13T20:23:52Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 3.5,
+   "build_h": 6.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 13.8,
+   "build_h": 16.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -106,7 +106,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 32.8,
+   "build_h": 35.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -118,16 +118,7 @@
     }
    ],
    "topics": 19,
-   "actions": [
-    {
-     "at": "2026-11-13T17:15:48Z",
-     "channel": "dinosaurs",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "archive",
@@ -160,7 +151,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 3.0,
+   "build_h": 3.1,
    "last_build_failed": null,
    "failures": [
     {
@@ -178,14 +169,6 @@
      "at": "2026-11-13T12:12:45Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43208551424",
-     "id": 43208551424,
-     "step": "prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)",
-     "at": "2026-11-12T14:13:37Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
     }
    ],
    "waiting_built": 0,
@@ -194,20 +177,12 @@
    "topics": 11,
    "actions": [
     {
-     "at": "2026-11-13T17:15:48Z",
+     "at": "2026-11-13T20:23:52Z",
      "channel": "archive",
      "level": 1,
      "action": "start episode.yml",
      "why": "0 of the next 3 slots have a video",
      "result": "started"
-    },
-    {
-     "at": "2026-11-13T17:15:48Z",
-     "channel": "archive",
-     "level": 2,
-     "action": "autofix",
-     "why": "prepare / plan the shots (a topic with under # min of confirmed film is deferred, the next one started) |",
-     "result": "no patch: the edit does not match the file once"
     }
    ]
   },
@@ -218,11 +193,6 @@
    "problems": [],
    "slots": [
     {
-     "at": "2026-11-13T19:00Z",
-     "video": "b0IIEw8r7S0",
-     "title": "10 Things You Must Stop Fighting Right Now"
-    },
-    {
      "at": "2026-11-14T19:00Z",
      "video": "oIXJRCmBJHw",
      "title": "10 Things You Should Drop to Stop Fighting Reality"
@@ -231,13 +201,18 @@
      "at": "2026-11-15T19:00Z",
      "video": null,
      "title": null
+    },
+    {
+     "at": "2026-11-16T19:00Z",
+     "video": null,
+     "title": null
     }
    ],
-   "buffer": 2,
-   "scheduled_ahead": 2,
+   "buffer": 1,
+   "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 16.6,
-   "build_h": 8.4,
+   "watchdog_h": 19.7,
+   "build_h": 2.4,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -248,11 +223,11 @@
   }
  ],
  "gpu": {
-  "hours": 11.45,
+  "hours": 11.81,
   "parts": {
    "closed-tabs": 8.81,
    "What If": 0.0,
-   "dinosaurs": 2.64
+   "dinosaurs": 3.0
   }
  },
  "shared": []
