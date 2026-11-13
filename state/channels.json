@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T02:10:48Z",
+ "at": "2026-11-13T05:11:24Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 11.1,
+   "build_h": 14.1,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -40,7 +40,12 @@
    "key": "closed-tabs",
    "name": "Closed Tabs",
    "repo": "edbackulin-eng/closed-tabs",
-   "problems": [],
+   "problems": [
+    [
+     "topics",
+     "9 topics left (min 10)"
+    ]
+   ],
    "slots": [
     {
      "at": "2026-11-13T17:00Z",
@@ -54,31 +59,31 @@
     },
     {
      "at": "2026-11-16T17:00Z",
-     "video": null,
-     "title": null
+     "video": "7jqGJsLWEVQ",
+     "title": "A Million Pixels, Sold. Now Look at the Dead Links."
     }
    ],
-   "buffer": 2,
-   "scheduled_ahead": 2,
+   "buffer": 3,
+   "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 24.3,
+   "build_h": 1.7,
    "last_build_failed": null,
-   "failures": [
-    {
-     "run": "https://github.com/edbackulin-eng/closed-tabs/actions/runs/42744271566",
-     "id": 42744271566,
-     "step": "stills / Stills (Kaggle FLUX, vision check)",
-     "at": "2026-11-10T04:57:40Z",
-     "kind": null,
-     "workflow": ".github/workflows/daily.yml"
-    }
-   ],
+   "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
-   "topics": 10,
-   "actions": []
+   "topics": 9,
+   "actions": [
+    {
+     "at": "2026-11-13T05:11:24Z",
+     "channel": "closed-tabs",
+     "level": 1,
+     "action": "start topics.yml",
+     "why": "9 topics left",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "dinosaurs",
@@ -115,7 +120,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 17.7,
+   "build_h": 20.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -129,7 +134,7 @@
    "topics": 19,
    "actions": [
     {
-     "at": "2026-11-13T02:10:48Z",
+     "at": "2026-11-13T05:11:24Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
@@ -201,7 +206,7 @@
    "topics": 11,
    "actions": [
     {
-     "at": "2026-11-13T02:10:48Z",
+     "at": "2026-11-13T05:11:24Z",
      "channel": "archive",
      "level": 1,
      "action": "start episode.yml",
@@ -235,8 +240,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 1.5,
-   "build_h": 7.6,
+   "watchdog_h": 4.5,
+   "build_h": 10.6,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -247,9 +252,9 @@
   }
  ],
  "gpu": {
-  "hours": 9.83,
+  "hours": 11.45,
   "parts": {
-   "closed-tabs": 7.19,
+   "closed-tabs": 8.81,
    "What If": 0.0,
    "dinosaurs": 2.64
   }
