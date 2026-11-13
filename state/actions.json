@@ -950,5 +950,29 @@
   "action": "autofix",
   "why": "prepare / plan the shots (a topic with under # min of confirmed film is deferred, the next one started) |",
   "result": "no patch: Gemini: The error log is missing, so the exact failure and failing line cannot be identified."
+ },
+ {
+  "at": "2026-11-13T17:15:48Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-13T17:15:48Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-13T17:15:48Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / plan the shots (a topic with under # min of confirmed film is deferred, the next one started) |",
+  "result": "no patch: the edit does not match the file once"
  }
 ]

@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T14:14:08Z",
+ "at": "2026-11-13T17:15:48Z",
  "channels": [
   {
    "key": "whatif",
@@ -7,11 +7,6 @@
    "repo": "edbackulin-eng/whatif-channel",
    "problems": [],
    "slots": [
-    {
-     "at": "2026-11-13T15:00Z",
-     "video": "EPgYYUuJGc8",
-     "title": "What If the Seasons Reversed?"
-    },
     {
      "at": "2026-11-14T15:00Z",
      "video": "p9q_hf1idAU",
@@ -21,13 +16,18 @@
      "at": "2026-11-16T15:00Z",
      "video": "2_jALZ7FNDQ",
      "title": "What If Earth Had Rings?"
+    },
+    {
+     "at": "2026-11-17T15:00Z",
+     "video": null,
+     "title": null
     }
    ],
-   "buffer": 3,
-   "scheduled_ahead": 3,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 0.5,
+   "build_h": 3.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -43,11 +43,6 @@
    "problems": [],
    "slots": [
     {
-     "at": "2026-11-13T17:00Z",
-     "video": "JYNmukqFXJo",
-     "title": "Eight Thousand People Dreamed Him. Then Someone Drew Him."
-    },
-    {
      "at": "2026-11-14T17:00Z",
      "video": "pqkiQDL--Ao",
      "title": "The Website That Promised You Everything"
@@ -56,37 +51,25 @@
      "at": "2026-11-16T17:00Z",
      "video": "7jqGJsLWEVQ",
      "title": "A Million Pixels, Sold. Now Look at the Dead Links."
+    },
+    {
+     "at": "2026-11-17T17:00Z",
+     "video": null,
+     "title": null
     }
    ],
-   "buffer": 3,
-   "scheduled_ahead": 3,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 10.8,
+   "build_h": 13.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
    "topics": 10,
-   "actions": [
-    {
-     "at": "2026-11-13T14:14:08Z",
-     "channel": "closed-tabs",
-     "level": 1,
-     "action": "cancel watchdog.yml run 43379187798",
-     "why": "running 7.7 h (limit 6.2 h)",
-     "result": "cancelled"
-    },
-    {
-     "at": "2026-11-13T14:14:08Z",
-     "channel": "closed-tabs",
-     "level": 1,
-     "action": "start watchdog.yml",
-     "why": "hung",
-     "result": "started"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "dinosaurs",
@@ -123,7 +106,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 29.7,
+   "build_h": 32.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -137,7 +120,7 @@
    "topics": 19,
    "actions": [
     {
-     "at": "2026-11-13T14:14:08Z",
+     "at": "2026-11-13T17:15:48Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
@@ -153,19 +136,10 @@
    "problems": [
     [
      "buffer",
-     "1 of the next 3 slots have a video"
-    ],
-    [
-     "build-failed",
-     "last build failed at prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)"
+     "0 of the next 3 slots have a video"
     ]
    ],
    "slots": [
-    {
-     "at": "2026-11-13T17:00Z",
-     "video": "12t0lIZqjCk",
-     "title": "Suburban Dreams: The 1950s Home in Color"
-    },
     {
      "at": "2026-11-17T17:00Z",
      "video": null,
@@ -175,21 +149,19 @@
      "at": "2026-11-20T17:00Z",
      "video": null,
      "title": null
+    },
+    {
+     "at": "2026-11-24T17:00Z",
+     "video": null,
+     "title": null
     }
    ],
-   "buffer": 1,
-   "scheduled_ahead": 1,
+   "buffer": 0,
+   "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 6.0,
-   "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43425827864",
-    "id": 43425827864,
-    "step": "prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)",
-    "at": "2026-11-13T13:16:11Z",
-    "kind": null,
-    "workflow": ".github/workflows/episode.yml"
-   },
+   "build_h": 3.0,
+   "last_build_failed": null,
    "failures": [
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43425827864",
@@ -222,20 +194,20 @@
    "topics": 11,
    "actions": [
     {
-     "at": "2026-11-13T14:14:08Z",
+     "at": "2026-11-13T17:15:48Z",
      "channel": "archive",
      "level": 1,
      "action": "start episode.yml",
-     "why": "1 of the next 3 slots have a video",
+     "why": "0 of the next 3 slots have a video",
      "result": "started"
     },
     {
-     "at": "2026-11-13T14:14:08Z",
+     "at": "2026-11-13T17:15:48Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
      "why": "prepare / plan the shots (a topic with under # min of confirmed film is deferred, the next one started) |",
-     "result": "no patch: Gemini: The error log is missing, so the exact failure and failing line cannot be identified."
+     "result": "no patch: the edit does not match the file once"
     }
    ]
   },
@@ -264,8 +236,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 13.6,
-   "build_h": 5.4,
+   "watchdog_h": 16.6,
+   "build_h": 8.4,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
