@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T08:12:19Z",
+ "at": "2026-11-13T11:13:09Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 17.1,
+   "build_h": 20.1,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 4.7,
+   "build_h": 7.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -106,7 +106,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 23.7,
+   "build_h": 26.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -120,7 +120,7 @@
    "topics": 19,
    "actions": [
     {
-     "at": "2026-11-13T08:12:19Z",
+     "at": "2026-11-13T11:13:09Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
@@ -141,6 +141,10 @@
     [
      "failed:1950s-suburb",
      "1950s-suburb: qa-failed: repeats; thumbnail"
+    ],
+    [
+     "failed:american-home-1950s",
+     "american-home-1950s: qa-failed: hook; prices; thumbnail; viewer"
     ]
    ],
    "slots": [
@@ -187,19 +191,14 @@
     {
      "episode": "1950s-suburb",
      "reason": "qa-failed: repeats; thumbnail"
+    },
+    {
+     "episode": "american-home-1950s",
+     "reason": "qa-failed: hook; prices; thumbnail; viewer"
     }
    ],
    "topics": 11,
-   "actions": [
-    {
-     "at": "2026-11-13T08:12:19Z",
-     "channel": "archive",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "stoic",
@@ -214,8 +213,8 @@
     },
     {
      "at": "2026-11-14T19:00Z",
-     "video": null,
-     "title": null
+     "video": "oIXJRCmBJHw",
+     "title": "10 Things You Should Drop to Stop Fighting Reality"
     },
     {
      "at": "2026-11-15T19:00Z",
@@ -223,11 +222,11 @@
      "title": null
     }
    ],
-   "buffer": 1,
-   "scheduled_ahead": 1,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 7.5,
-   "build_h": 13.6,
+   "watchdog_h": 10.5,
+   "build_h": 2.4,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
