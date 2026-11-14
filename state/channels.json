@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T08:12:09Z",
+ "at": "2026-11-14T11:13:15Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 18.5,
+   "build_h": 21.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 4.6,
+   "build_h": 7.6,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -82,7 +82,7 @@
     ],
     [
      "build",
-     "last successful build 47.7 h ago"
+     "last successful build 50.7 h ago"
     ],
     [
      "failed:megalodon",
@@ -110,7 +110,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 47.7,
+   "build_h": 50.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -137,6 +137,10 @@
     [
      "buffer",
      "0 of the next 3 slots have a video"
+    ],
+    [
+     "build-failed",
+     "last build failed at prepare / Run python automation/build.py \"$SLUG\" narrate"
     ]
    ],
    "slots": [
@@ -160,9 +164,24 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 5.8,
-   "last_build_failed": null,
+   "build_h": 0.7,
+   "last_build_failed": {
+    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43585992868",
+    "id": 43585992868,
+    "step": "prepare / Run python automation/build.py \"$SLUG\" narrate",
+    "at": "2026-11-14T11:11:47Z",
+    "kind": null,
+    "workflow": ".github/workflows/episode.yml"
+   },
    "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43585992868",
+     "id": 43585992868,
+     "step": "prepare / Run python automation/build.py \"$SLUG\" narrate",
+     "at": "2026-11-14T11:11:47Z",
+     "kind": null,
+     "workflow": ".github/workflows/episode.yml"
+    },
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43425827864",
      "id": 43425827864,
@@ -186,7 +205,7 @@
    "topics": 11,
    "actions": [
     {
-     "at": "2026-11-14T08:12:09Z",
+     "at": "2026-11-14T11:13:15Z",
      "channel": "archive",
      "level": 1,
      "action": "start episode.yml",
@@ -208,8 +227,8 @@
     },
     {
      "at": "2026-11-15T19:00Z",
-     "video": null,
-     "title": null
+     "video": "jkpRMrt3lJA",
+     "title": "10 Ways to Stop Fighting Reality"
     },
     {
      "at": "2026-11-16T19:00Z",
@@ -217,11 +236,11 @@
      "title": null
     }
    ],
-   "buffer": 1,
-   "scheduled_ahead": 1,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 7.7,
-   "build_h": 14.2,
+   "watchdog_h": 10.8,
+   "build_h": 2.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
