@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T20:20:47Z",
+ "at": "2026-11-14T23:26:18Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 4.8,
+   "build_h": 7.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 16.7,
+   "build_h": 19.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -102,7 +102,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 1.5,
+   "build_h": 4.6,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -116,7 +116,7 @@
    "topics": 19,
    "actions": [
     {
-     "at": "2026-11-14T20:20:47Z",
+     "at": "2026-11-14T23:26:18Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
@@ -156,7 +156,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 3.0,
+   "build_h": 3.1,
    "last_build_failed": null,
    "failures": [
     {
@@ -198,7 +198,7 @@
    "topics": 10,
    "actions": [
     {
-     "at": "2026-11-14T20:20:47Z",
+     "at": "2026-11-14T23:26:18Z",
      "channel": "archive",
      "level": 1,
      "action": "start episode.yml",
@@ -206,12 +206,12 @@
      "result": "started"
     },
     {
-     "at": "2026-11-14T20:20:47Z",
+     "at": "2026-11-14T23:26:18Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
      "why": "prepare / run python automation \"$slug\" narrate |",
-     "result": "no patch: Gemini: The error log is missing from the prompt, making it impossible to identify the exact failure."
+     "result": "no patch: Gemini: The error log is missing from the prompt, making it impossible to identify the specific failure and apply a fix."
     }
    ]
   },
@@ -240,8 +240,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 19.9,
-   "build_h": 3.6,
+   "watchdog_h": 0.1,
+   "build_h": 6.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
