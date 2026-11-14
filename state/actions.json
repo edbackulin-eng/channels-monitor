@@ -1014,5 +1014,13 @@
   "action": "start topics.yml",
   "why": "9 topics left",
   "result": "started"
+ },
+ {
+  "at": "2026-11-14T08:12:09Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
  }
 ]

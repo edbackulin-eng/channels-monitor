@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T05:11:14Z",
+ "at": "2026-11-14T08:12:09Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 15.5,
+   "build_h": 18.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -40,12 +40,7 @@
    "key": "closed-tabs",
    "name": "Closed Tabs",
    "repo": "edbackulin-eng/closed-tabs",
-   "problems": [
-    [
-     "topics",
-     "9 topics left (min 10)"
-    ]
-   ],
+   "problems": [],
    "slots": [
     {
      "at": "2026-11-14T17:00Z",
@@ -67,23 +62,14 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 1.6,
+   "build_h": 4.6,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
-   "topics": 9,
-   "actions": [
-    {
-     "at": "2026-11-14T05:11:14Z",
-     "channel": "closed-tabs",
-     "level": 1,
-     "action": "start topics.yml",
-     "why": "9 topics left",
-     "result": "started"
-    }
-   ]
+   "topics": 10,
+   "actions": []
   },
   {
    "key": "dinosaurs",
@@ -96,7 +82,7 @@
     ],
     [
      "build",
-     "last successful build 44.7 h ago"
+     "last successful build 47.7 h ago"
     ],
     [
      "failed:megalodon",
@@ -124,7 +110,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 44.7,
+   "build_h": 47.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -174,7 +160,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 2.8,
+   "build_h": 5.8,
    "last_build_failed": null,
    "failures": [
     {
@@ -198,7 +184,16 @@
    "owner": [],
    "failed": [],
    "topics": 11,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-14T08:12:09Z",
+     "channel": "archive",
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "stoic",
@@ -225,8 +220,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 4.7,
-   "build_h": 11.1,
+   "watchdog_h": 7.7,
+   "build_h": 14.2,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
