@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T23:24:41Z",
+ "at": "2026-11-14T02:25:21Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 9.7,
+   "build_h": 12.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 19.9,
+   "build_h": 22.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -82,7 +82,7 @@
     ],
     [
      "build",
-     "last successful build 38.9 h ago"
+     "last successful build 41.9 h ago"
     ],
     [
      "failed:megalodon",
@@ -110,7 +110,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 38.9,
+   "build_h": 41.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -122,7 +122,16 @@
     }
    ],
    "topics": 19,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-14T02:25:21Z",
+     "channel": "dinosaurs",
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "archive",
@@ -181,7 +190,7 @@
    "topics": 11,
    "actions": [
     {
-     "at": "2026-11-13T23:24:41Z",
+     "at": "2026-11-14T02:25:21Z",
      "channel": "archive",
      "level": 1,
      "action": "start episode.yml",
@@ -215,8 +224,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 22.7,
-   "build_h": 5.4,
+   "watchdog_h": 2.0,
+   "build_h": 8.4,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -227,9 +236,9 @@
   }
  ],
  "gpu": {
-  "hours": 11.81,
+  "hours": 9.96,
   "parts": {
-   "closed-tabs": 8.81,
+   "closed-tabs": 6.96,
    "What If": 0.0,
    "dinosaurs": 3.0
   }
