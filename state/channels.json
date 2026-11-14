@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T14:14:00Z",
+ "at": "2026-11-14T17:19:56Z",
  "channels": [
   {
    "key": "whatif",
@@ -8,17 +8,17 @@
    "problems": [],
    "slots": [
     {
-     "at": "2026-11-14T15:00Z",
-     "video": "p9q_hf1idAU",
-     "title": "What If a Solar Flare Hit Earth Directly?"
-    },
-    {
      "at": "2026-11-16T15:00Z",
      "video": "2_jALZ7FNDQ",
      "title": "What If Earth Had Rings?"
     },
     {
      "at": "2026-11-17T15:00Z",
+     "video": "u-bUfXP7EDM",
+     "title": "What If You Dug a Hole Through the Earth?"
+    },
+    {
+     "at": "2026-11-19T15:00Z",
      "video": null,
      "title": null
     }
@@ -27,13 +27,13 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 24.5,
+   "build_h": 1.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
-   "topics": 30,
+   "topics": 29,
    "actions": []
   },
   {
@@ -43,11 +43,6 @@
    "problems": [],
    "slots": [
     {
-     "at": "2026-11-14T17:00Z",
-     "video": "pqkiQDL--Ao",
-     "title": "The Website That Promised You Everything"
-    },
-    {
      "at": "2026-11-16T17:00Z",
      "video": "7jqGJsLWEVQ",
      "title": "A Million Pixels, Sold. Now Look at the Dead Links."
@@ -56,13 +51,18 @@
      "at": "2026-11-17T17:00Z",
      "video": "UTqPv-pQSus",
      "title": "The Doomsday Book That Outlived Its Own Machines"
+    },
+    {
+     "at": "2026-11-19T17:00Z",
+     "video": null,
+     "title": null
     }
    ],
-   "buffer": 3,
-   "scheduled_ahead": 3,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 10.6,
+   "build_h": 13.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -102,7 +102,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 0.7,
+   "build_h": 1.4,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -127,7 +127,7 @@
     ],
     [
      "build-failed",
-     "last build failed at prepare / Run python automation/build.py \"$SLUG\" narrate"
+     "last build failed at prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)"
     ]
    ],
    "slots": [
@@ -151,16 +151,32 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 3.7,
+   "build_h": 6.8,
    "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43595600319",
-    "id": 43595600319,
-    "step": "prepare / Run python automation/build.py \"$SLUG\" narrate",
-    "at": "2026-11-14T13:41:21Z",
+    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43612430904",
+    "id": 43612430904,
+    "step": "prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)",
+    "at": "2026-11-14T17:06:57Z",
     "kind": null,
     "workflow": ".github/workflows/episode.yml"
    },
    "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43612430904",
+     "id": 43612430904,
+     "step": "prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)",
+     "at": "2026-11-14T17:06:57Z",
+     "kind": null,
+     "workflow": ".github/workflows/episode.yml"
+    },
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43603078079",
+     "id": 43603078079,
+     "step": "prepare / Run python automation/build.py \"$SLUG\" narrate",
+     "at": "2026-11-14T15:31:44Z",
+     "kind": null,
+     "workflow": ".github/workflows/episode.yml"
+    },
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43595600319",
      "id": 43595600319,
@@ -176,14 +192,6 @@
      "at": "2026-11-14T12:14:38Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43585992868",
-     "id": 43585992868,
-     "step": "prepare / Run python automation/build.py \"$SLUG\" narrate",
-     "at": "2026-11-14T11:11:47Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
     }
    ],
    "waiting_built": 0,
@@ -192,7 +200,15 @@
    "topics": 10,
    "actions": [
     {
-     "at": "2026-11-14T14:14:00Z",
+     "at": "2026-11-14T17:19:56Z",
+     "channel": "archive",
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
+    },
+    {
+     "at": "2026-11-14T17:19:56Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
@@ -226,8 +242,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 13.8,
-   "build_h": 5.9,
+   "watchdog_h": 16.9,
+   "build_h": 0.6,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
