@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T17:19:56Z",
+ "at": "2026-11-14T20:20:47Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 1.8,
+   "build_h": 4.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 13.7,
+   "build_h": 16.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -102,7 +102,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 1.4,
+   "build_h": 1.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -114,7 +114,16 @@
    ],
    "failed": [],
    "topics": 19,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-14T20:20:47Z",
+     "channel": "dinosaurs",
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "archive",
@@ -124,10 +133,6 @@
     [
      "buffer",
      "0 of the next 3 slots have a video"
-    ],
-    [
-     "build-failed",
-     "last build failed at prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)"
     ]
    ],
    "slots": [
@@ -151,15 +156,8 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 6.8,
-   "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43612430904",
-    "id": 43612430904,
-    "step": "prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)",
-    "at": "2026-11-14T17:06:57Z",
-    "kind": null,
-    "workflow": ".github/workflows/episode.yml"
-   },
+   "build_h": 3.0,
+   "last_build_failed": null,
    "failures": [
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43612430904",
@@ -200,7 +198,7 @@
    "topics": 10,
    "actions": [
     {
-     "at": "2026-11-14T17:19:56Z",
+     "at": "2026-11-14T20:20:47Z",
      "channel": "archive",
      "level": 1,
      "action": "start episode.yml",
@@ -208,12 +206,12 @@
      "result": "started"
     },
     {
-     "at": "2026-11-14T17:19:56Z",
+     "at": "2026-11-14T20:20:47Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
      "why": "prepare / run python automation \"$slug\" narrate |",
-     "result": "no patch: the edit does not match the file once"
+     "result": "no patch: Gemini: The error log is missing from the prompt, making it impossible to identify the exact failure."
     }
    ]
   },
@@ -224,11 +222,6 @@
    "problems": [],
    "slots": [
     {
-     "at": "2026-11-14T19:00Z",
-     "video": "oIXJRCmBJHw",
-     "title": "10 Things You Should Drop to Stop Fighting Reality"
-    },
-    {
      "at": "2026-11-15T19:00Z",
      "video": "jkpRMrt3lJA",
      "title": "10 Ways to Stop Fighting Reality"
@@ -237,13 +230,18 @@
      "at": "2026-11-16T19:00Z",
      "video": null,
      "title": null
+    },
+    {
+     "at": "2026-11-17T19:00Z",
+     "video": null,
+     "title": null
     }
    ],
-   "buffer": 2,
-   "scheduled_ahead": 2,
+   "buffer": 1,
+   "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 16.9,
-   "build_h": 0.6,
+   "watchdog_h": 19.9,
+   "build_h": 3.6,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -254,11 +252,11 @@
   }
  ],
  "gpu": {
-  "hours": 11.76,
+  "hours": 11.06,
   "parts": {
    "closed-tabs": 8.76,
    "What If": 0.0,
-   "dinosaurs": 3.0
+   "dinosaurs": 2.3
   }
  },
  "shared": []
