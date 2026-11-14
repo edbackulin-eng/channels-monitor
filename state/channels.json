@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T11:13:15Z",
+ "at": "2026-11-14T14:14:00Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 21.5,
+   "build_h": 24.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 7.6,
+   "build_h": 10.6,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -79,14 +79,6 @@
     [
      "buffer",
      "0 of the next 3 slots have a video"
-    ],
-    [
-     "build",
-     "last successful build 50.7 h ago"
-    ],
-    [
-     "failed:megalodon",
-     "megalodon: qa-failed: hook; subject; pace; music; motion; dinosaurs; scenes; match; consistent; viewer"
     ]
    ],
    "slots": [
@@ -110,7 +102,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 50.7,
+   "build_h": 0.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -120,12 +112,7 @@
      "nothing for the next slot (2026-11-15T16:00Z) and no video ahead"
     ]
    ],
-   "failed": [
-    {
-     "episode": "megalodon",
-     "reason": "qa-failed: hook; subject; pace; music; motion; dinosaurs; scenes; match; consistent; viewer"
-    }
-   ],
+   "failed": [],
    "topics": 19,
    "actions": []
   },
@@ -164,16 +151,32 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 0.7,
+   "build_h": 3.7,
    "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43585992868",
-    "id": 43585992868,
+    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43595600319",
+    "id": 43595600319,
     "step": "prepare / Run python automation/build.py \"$SLUG\" narrate",
-    "at": "2026-11-14T11:11:47Z",
+    "at": "2026-11-14T13:41:21Z",
     "kind": null,
     "workflow": ".github/workflows/episode.yml"
    },
    "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43595600319",
+     "id": 43595600319,
+     "step": "prepare / Run python automation/build.py \"$SLUG\" narrate",
+     "at": "2026-11-14T13:41:21Z",
+     "kind": null,
+     "workflow": ".github/workflows/episode.yml"
+    },
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43589029345",
+     "id": 43589029345,
+     "step": "prepare / Run python automation/build.py \"$SLUG\" narrate",
+     "at": "2026-11-14T12:14:38Z",
+     "kind": null,
+     "workflow": ".github/workflows/episode.yml"
+    },
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43585992868",
      "id": 43585992868,
@@ -181,36 +184,20 @@
      "at": "2026-11-14T11:11:47Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43425827864",
-     "id": 43425827864,
-     "step": "prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)",
-     "at": "2026-11-13T13:16:11Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43391741551",
-     "id": 43391741551,
-     "step": "render / Record (QA gate; upload when a token exists, else buffer)",
-     "at": "2026-11-13T12:12:45Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
     }
    ],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
-   "topics": 11,
+   "topics": 10,
    "actions": [
     {
-     "at": "2026-11-14T11:13:15Z",
+     "at": "2026-11-14T14:14:00Z",
      "channel": "archive",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
+     "level": 2,
+     "action": "autofix",
+     "why": "prepare / run python automation \"$slug\" narrate |",
+     "result": "no patch: the edit does not match the file once"
     }
    ]
   },
@@ -239,8 +226,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 10.8,
-   "build_h": 2.9,
+   "watchdog_h": 13.8,
+   "build_h": 5.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
