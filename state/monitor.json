@@ -1,12 +1,13 @@
 {
- "summary_date": "2026-11-13",
+ "summary_date": "2026-11-14",
  "alarms": {
+  "closed-tabs:topics": "Closed Tabs: 9 topics left (min 10)",
   "dinosaurs:buffer": "Urzeit (dinosaurs): 0 of the next 3 slots have a video",
-  "dinosaurs:build": "Urzeit (dinosaurs): last successful build 41.9 h ago",
+  "dinosaurs:build": "Urzeit (dinosaurs): last successful build 44.7 h ago",
   "dinosaurs:failed:megalodon": "Urzeit (dinosaurs): megalodon: qa-failed: hook; subject; pace; music; motion; dinosaurs; scenes; match; consistent; viewer",
   "archive:buffer": "Yesterday in Color: 0 of the next 3 slots have a video"
  },
- "last_pass": "2026-11-14T02:25:21Z",
+ "last_pass": "2026-11-14T05:11:14Z",
  "planned": [
   {
    "id": "ct-build-0711",
@@ -28,15 +29,17 @@
  ],
  "requeued": [],
  "done": {
-  "whatif:requeue": "2026-11-14T02:25:21Z",
+  "whatif:requeue": "2026-11-14T05:11:14Z",
   "archive:build": "2026-11-14T02:25:21Z",
   "whatif:watchdog": "2026-11-06T11:03:13Z",
   "dinosaurs:build": "2026-11-14T02:25:21Z",
   "archive:watchdog": "2026-11-08T20:24:14Z",
-  "closed-tabs:topics": "2026-11-13T05:11:24Z",
+  "closed-tabs:topics": "2026-11-14T05:11:14Z",
   "closed-tabs:watchdog": "2026-11-13T14:14:08Z"
  },
- "owner_alarms": {},
+ "owner_alarms": {
+  "dinosaurs:owner-buffer0": "Urzeit (dinosaurs): nothing for the next slot (2026-11-15T16:00Z) and no video ahead"
+ },
  "issue": 1,
  "rights": {
   "edbackulin-eng/whatif-channel": {

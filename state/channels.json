@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T02:25:21Z",
+ "at": "2026-11-14T05:11:14Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 12.7,
+   "build_h": 15.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -40,7 +40,12 @@
    "key": "closed-tabs",
    "name": "Closed Tabs",
    "repo": "edbackulin-eng/closed-tabs",
-   "problems": [],
+   "problems": [
+    [
+     "topics",
+     "9 topics left (min 10)"
+    ]
+   ],
    "slots": [
     {
      "at": "2026-11-14T17:00Z",
@@ -54,22 +59,31 @@
     },
     {
      "at": "2026-11-17T17:00Z",
-     "video": null,
-     "title": null
+     "video": "UTqPv-pQSus",
+     "title": "The Doomsday Book That Outlived Its Own Machines"
     }
    ],
-   "buffer": 2,
-   "scheduled_ahead": 2,
+   "buffer": 3,
+   "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 22.9,
+   "build_h": 1.6,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
-   "topics": 10,
-   "actions": []
+   "topics": 9,
+   "actions": [
+    {
+     "at": "2026-11-14T05:11:14Z",
+     "channel": "closed-tabs",
+     "level": 1,
+     "action": "start topics.yml",
+     "why": "9 topics left",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "dinosaurs",
@@ -82,7 +96,7 @@
     ],
     [
      "build",
-     "last successful build 41.9 h ago"
+     "last successful build 44.7 h ago"
     ],
     [
      "failed:megalodon",
@@ -110,11 +124,16 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 41.9,
+   "build_h": 44.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
-   "owner": [],
+   "owner": [
+    [
+     "buffer0",
+     "nothing for the next slot (2026-11-15T16:00Z) and no video ahead"
+    ]
+   ],
    "failed": [
     {
      "episode": "megalodon",
@@ -122,16 +141,7 @@
     }
    ],
    "topics": 19,
-   "actions": [
-    {
-     "at": "2026-11-14T02:25:21Z",
-     "channel": "dinosaurs",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "archive",
@@ -164,7 +174,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 3.0,
+   "build_h": 2.8,
    "last_build_failed": null,
    "failures": [
     {
@@ -188,16 +198,7 @@
    "owner": [],
    "failed": [],
    "topics": 11,
-   "actions": [
-    {
-     "at": "2026-11-14T02:25:21Z",
-     "channel": "archive",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "stoic",
@@ -224,8 +225,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 2.0,
-   "build_h": 8.4,
+   "watchdog_h": 4.7,
+   "build_h": 11.1,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -236,9 +237,9 @@
   }
  ],
  "gpu": {
-  "hours": 9.96,
+  "hours": 11.76,
   "parts": {
-   "closed-tabs": 6.96,
+   "closed-tabs": 8.76,
    "What If": 0.0,
    "dinosaurs": 3.0
   }
