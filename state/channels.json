@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T20:06:20Z",
+ "at": "2026-11-15T23:07:02Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 28.5,
+   "build_h": 31.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 17.8,
+   "build_h": 20.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -102,23 +102,14 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 25.3,
+   "build_h": 28.3,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
    "topics": 20,
-   "actions": [
-    {
-     "at": "2026-11-15T20:06:20Z",
-     "channel": "dinosaurs",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "archive",
@@ -130,12 +121,8 @@
      "0 of the next 3 slots have a video"
     ],
     [
-     "build-failed",
-     "last build failed at prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)"
-    ],
-    [
      "owner-smoke-red",
-     "the smoke test on dev has been red for 15.1 h (since 15.11 05:03 UTC): what is on dev does not reach main"
+     "the smoke test on dev has been red for 18.1 h (since 15.11 05:03 UTC): what is on dev does not reach main"
     ]
    ],
    "slots": [
@@ -159,15 +146,8 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 3.1,
-   "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43739195561",
-    "id": 43739195561,
-    "step": "prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)",
-    "at": "2026-11-15T17:51:17Z",
-    "kind": null,
-    "workflow": ".github/workflows/episode.yml"
-   },
+   "build_h": 3.0,
+   "last_build_failed": null,
    "failures": [
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43739195561",
@@ -182,14 +162,14 @@
    "owner": [
     [
      "smoke-red",
-     "the smoke test on dev has been red for 15.1 h (since 15.11 05:03 UTC): what is on dev does not reach main"
+     "the smoke test on dev has been red for 18.1 h (since 15.11 05:03 UTC): what is on dev does not reach main"
     ]
    ],
    "failed": [],
    "topics": 10,
    "actions": [
     {
-     "at": "2026-11-15T20:06:20Z",
+     "at": "2026-11-15T23:07:02Z",
      "channel": "archive",
      "level": 1,
      "action": "start episode.yml",
@@ -228,8 +208,8 @@
    "buffer": 0,
    "scheduled_ahead": 0,
    "waiting": null,
-   "watchdog_h": 20.8,
-   "build_h": 2.7,
+   "watchdog_h": 23.8,
+   "build_h": 5.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
