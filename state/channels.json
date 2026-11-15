@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T14:05:00Z",
+ "at": "2026-11-15T17:05:49Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 22.5,
+   "build_h": 25.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 11.7,
+   "build_h": 14.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -78,15 +78,10 @@
    "problems": [
     [
      "buffer",
-     "1 of the next 3 slots have a video"
+     "0 of the next 3 slots have a video"
     ]
    ],
    "slots": [
-    {
-     "at": "2026-11-15T16:00Z",
-     "video": "3cdJb8ni37o",
-     "title": "megalodon"
-    },
     {
      "at": "2026-11-18T16:00Z",
      "video": null,
@@ -96,29 +91,25 @@
      "at": "2026-11-22T16:00Z",
      "video": null,
      "title": null
+    },
+    {
+     "at": "2026-11-25T16:00Z",
+     "video": null,
+     "title": null
     }
    ],
-   "buffer": 1,
-   "scheduled_ahead": 1,
+   "buffer": 0,
+   "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 19.3,
+   "build_h": 22.3,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
-   "topics": 19,
-   "actions": [
-    {
-     "at": "2026-11-15T14:05:00Z",
-     "channel": "dinosaurs",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "1 of the next 3 slots have a video",
-     "result": "started"
-    }
-   ]
+   "topics": 20,
+   "actions": []
   },
   {
    "key": "archive",
@@ -128,6 +119,10 @@
     [
      "buffer",
      "0 of the next 3 slots have a video"
+    ],
+    [
+     "owner-smoke-red",
+     "the smoke test on dev has been red for 12.0 h (since 15.11 05:03 UTC): what is on dev does not reach main"
     ]
    ],
    "slots": [
@@ -151,7 +146,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 1.5,
+   "build_h": 0.1,
    "last_build_failed": null,
    "failures": [
     {
@@ -161,21 +156,27 @@
      "at": "2026-11-14T17:06:57Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43603078079",
-     "id": 43603078079,
-     "step": "prepare / Run python automation/build.py \"$SLUG\" narrate",
-     "at": "2026-11-14T15:31:44Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
     }
    ],
    "waiting_built": 0,
-   "owner": [],
+   "owner": [
+    [
+     "smoke-red",
+     "the smoke test on dev has been red for 12.0 h (since 15.11 05:03 UTC): what is on dev does not reach main"
+    ]
+   ],
    "failed": [],
    "topics": 10,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-15T17:05:49Z",
+     "channel": "archive",
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "stoic",
@@ -202,8 +203,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 14.7,
-   "build_h": 6.3,
+   "watchdog_h": 17.8,
+   "build_h": 9.3,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
