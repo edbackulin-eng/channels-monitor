@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T17:05:49Z",
+ "at": "2026-11-15T20:06:20Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 25.5,
+   "build_h": 28.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 14.8,
+   "build_h": 17.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -102,14 +102,23 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 22.3,
+   "build_h": 25.3,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
    "topics": 20,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-15T20:06:20Z",
+     "channel": "dinosaurs",
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "archive",
@@ -121,8 +130,12 @@
      "0 of the next 3 slots have a video"
     ],
     [
+     "build-failed",
+     "last build failed at prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)"
+    ],
+    [
      "owner-smoke-red",
-     "the smoke test on dev has been red for 12.0 h (since 15.11 05:03 UTC): what is on dev does not reach main"
+     "the smoke test on dev has been red for 15.1 h (since 15.11 05:03 UTC): what is on dev does not reach main"
     ]
    ],
    "slots": [
@@ -146,14 +159,21 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 0.1,
-   "last_build_failed": null,
+   "build_h": 3.1,
+   "last_build_failed": {
+    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43739195561",
+    "id": 43739195561,
+    "step": "prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)",
+    "at": "2026-11-15T17:51:17Z",
+    "kind": null,
+    "workflow": ".github/workflows/episode.yml"
+   },
    "failures": [
     {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43612430904",
-     "id": 43612430904,
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43739195561",
+     "id": 43739195561,
      "step": "prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)",
-     "at": "2026-11-14T17:06:57Z",
+     "at": "2026-11-15T17:51:17Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
     }
@@ -162,14 +182,14 @@
    "owner": [
     [
      "smoke-red",
-     "the smoke test on dev has been red for 12.0 h (since 15.11 05:03 UTC): what is on dev does not reach main"
+     "the smoke test on dev has been red for 15.1 h (since 15.11 05:03 UTC): what is on dev does not reach main"
     ]
    ],
    "failed": [],
    "topics": 10,
    "actions": [
     {
-     "at": "2026-11-15T17:05:49Z",
+     "at": "2026-11-15T20:06:20Z",
      "channel": "archive",
      "level": 1,
      "action": "start episode.yml",
@@ -182,13 +202,13 @@
    "key": "stoic",
    "name": "Stoic (yt-factory-daily)",
    "repo": "beautyapp800-ctrl/yt-factory-daily",
-   "problems": [],
+   "problems": [
+    [
+     "buffer",
+     "0 of the next 3 slots have a video"
+    ]
+   ],
    "slots": [
-    {
-     "at": "2026-11-15T19:00Z",
-     "video": "jkpRMrt3lJA",
-     "title": "10 Ways to Stop Fighting Reality"
-    },
     {
      "at": "2026-11-16T19:00Z",
      "video": null,
@@ -198,17 +218,27 @@
      "at": "2026-11-17T19:00Z",
      "video": null,
      "title": null
+    },
+    {
+     "at": "2026-11-18T19:00Z",
+     "video": null,
+     "title": null
     }
    ],
-   "buffer": 1,
-   "scheduled_ahead": 1,
+   "buffer": 0,
+   "scheduled_ahead": 0,
    "waiting": null,
-   "watchdog_h": 17.8,
-   "build_h": 9.3,
+   "watchdog_h": 20.8,
+   "build_h": 2.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
-   "owner": [],
+   "owner": [
+    [
+     "buffer0",
+     "nothing for the next slot (2026-11-16T19:00Z) and no video ahead"
+    ]
+   ],
    "failed": [],
    "topics": null,
    "actions": []

@@ -1190,5 +1190,21 @@
   "action": "start episode.yml",
   "why": "0 of the next 3 slots have a video",
   "result": "started"
+ },
+ {
+  "at": "2026-11-15T20:06:20Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-15T20:06:20Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
  }
 ]
