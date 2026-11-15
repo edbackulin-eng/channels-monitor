@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T05:02:41Z",
+ "at": "2026-11-15T08:03:22Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 13.5,
+   "build_h": 16.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 2.7,
+   "build_h": 5.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -102,7 +102,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 10.2,
+   "build_h": 13.3,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -114,7 +114,16 @@
    ],
    "failed": [],
    "topics": 19,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-15T08:03:22Z",
+     "channel": "dinosaurs",
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "archive",
@@ -147,7 +156,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 2.5,
+   "build_h": 5.6,
    "last_build_failed": null,
    "failures": [
     {
@@ -189,12 +198,12 @@
    "topics": 10,
    "actions": [
     {
-     "at": "2026-11-15T05:02:41Z",
+     "at": "2026-11-15T08:03:22Z",
      "channel": "archive",
-     "level": 2,
-     "action": "merge autofix/archive-20261115",
-     "why": "smoke on the branch passed",
-     "result": "merged into dev; dev goes to main by its smoke"
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
     }
    ]
   },
@@ -223,8 +232,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 5.7,
-   "build_h": 12.3,
+   "watchdog_h": 8.7,
+   "build_h": 0.2,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
