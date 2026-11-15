@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T23:26:18Z",
+ "at": "2026-11-15T02:29:22Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 7.9,
+   "build_h": 10.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -40,7 +40,12 @@
    "key": "closed-tabs",
    "name": "Closed Tabs",
    "repo": "edbackulin-eng/closed-tabs",
-   "problems": [],
+   "problems": [
+    [
+     "topics",
+     "9 topics left (min 10)"
+    ]
+   ],
    "slots": [
     {
      "at": "2026-11-16T17:00Z",
@@ -54,22 +59,31 @@
     },
     {
      "at": "2026-11-19T17:00Z",
-     "video": null,
-     "title": null
+     "video": "OBi9ghcicR4",
+     "title": "The 360,000 Dollar Ghost Console"
     }
    ],
-   "buffer": 2,
-   "scheduled_ahead": 2,
+   "buffer": 3,
+   "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 19.8,
+   "build_h": 0.2,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
-   "topics": 10,
-   "actions": []
+   "topics": 9,
+   "actions": [
+    {
+     "at": "2026-11-15T02:29:22Z",
+     "channel": "closed-tabs",
+     "level": 1,
+     "action": "start topics.yml",
+     "why": "9 topics left",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "dinosaurs",
@@ -102,7 +116,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 4.6,
+   "build_h": 7.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -116,7 +130,7 @@
    "topics": 19,
    "actions": [
     {
-     "at": "2026-11-14T23:26:18Z",
+     "at": "2026-11-15T02:29:22Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
@@ -156,7 +170,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 3.1,
+   "build_h": 3.0,
    "last_build_failed": null,
    "failures": [
     {
@@ -198,7 +212,7 @@
    "topics": 10,
    "actions": [
     {
-     "at": "2026-11-14T23:26:18Z",
+     "at": "2026-11-15T02:29:22Z",
      "channel": "archive",
      "level": 1,
      "action": "start episode.yml",
@@ -206,12 +220,12 @@
      "result": "started"
     },
     {
-     "at": "2026-11-14T23:26:18Z",
+     "at": "2026-11-15T02:29:22Z",
      "channel": "archive",
      "level": 2,
-     "action": "autofix",
+     "action": "autofix autofix/archive-20261115",
      "why": "prepare / run python automation \"$slug\" narrate |",
-     "result": "no patch: Gemini: The error log is missing from the prompt, making it impossible to identify the specific failure and apply a fix."
+     "result": "patch on .github/workflows/episode.yml, smoke started"
     }
    ]
   },
@@ -240,8 +254,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 0.1,
-   "build_h": 6.7,
+   "watchdog_h": 3.1,
+   "build_h": 9.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -252,9 +266,9 @@
   }
  ],
  "gpu": {
-  "hours": 11.06,
+  "hours": 10.75,
   "parts": {
-   "closed-tabs": 8.76,
+   "closed-tabs": 8.45,
    "What If": 0.0,
    "dinosaurs": 2.3
   }
