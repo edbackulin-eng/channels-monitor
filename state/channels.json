@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T08:03:22Z",
+ "at": "2026-11-15T11:04:24Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 16.5,
+   "build_h": 19.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 5.7,
+   "build_h": 8.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -102,7 +102,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 13.3,
+   "build_h": 16.3,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -116,7 +116,7 @@
    "topics": 19,
    "actions": [
     {
-     "at": "2026-11-15T08:03:22Z",
+     "at": "2026-11-15T11:04:24Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
@@ -156,7 +156,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 5.6,
+   "build_h": 0.8,
    "last_build_failed": null,
    "failures": [
     {
@@ -182,14 +182,6 @@
      "at": "2026-11-14T13:41:21Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43589029345",
-     "id": 43589029345,
-     "step": "prepare / Run python automation/build.py \"$SLUG\" narrate",
-     "at": "2026-11-14T12:14:38Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
     }
    ],
    "waiting_built": 0,
@@ -198,12 +190,12 @@
    "topics": 10,
    "actions": [
     {
-     "at": "2026-11-15T08:03:22Z",
+     "at": "2026-11-15T11:04:24Z",
      "channel": "archive",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
+     "level": 2,
+     "action": "autofix autofix/archive-20261115",
+     "why": "the next build passed",
+     "result": "kept"
     }
    ]
   },
@@ -232,8 +224,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 8.7,
-   "build_h": 0.2,
+   "watchdog_h": 11.7,
+   "build_h": 3.2,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
