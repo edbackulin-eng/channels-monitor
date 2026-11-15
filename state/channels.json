@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T02:29:22Z",
+ "at": "2026-11-15T05:02:41Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 10.9,
+   "build_h": 13.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -40,12 +40,7 @@
    "key": "closed-tabs",
    "name": "Closed Tabs",
    "repo": "edbackulin-eng/closed-tabs",
-   "problems": [
-    [
-     "topics",
-     "9 topics left (min 10)"
-    ]
-   ],
+   "problems": [],
    "slots": [
     {
      "at": "2026-11-16T17:00Z",
@@ -67,23 +62,14 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 0.2,
+   "build_h": 2.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
-   "topics": 9,
-   "actions": [
-    {
-     "at": "2026-11-15T02:29:22Z",
-     "channel": "closed-tabs",
-     "level": 1,
-     "action": "start topics.yml",
-     "why": "9 topics left",
-     "result": "started"
-    }
-   ]
+   "topics": 10,
+   "actions": []
   },
   {
    "key": "dinosaurs",
@@ -116,7 +102,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 7.7,
+   "build_h": 10.2,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -128,16 +114,7 @@
    ],
    "failed": [],
    "topics": 19,
-   "actions": [
-    {
-     "at": "2026-11-15T02:29:22Z",
-     "channel": "dinosaurs",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "archive",
@@ -170,7 +147,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 3.0,
+   "build_h": 2.5,
    "last_build_failed": null,
    "failures": [
     {
@@ -212,20 +189,12 @@
    "topics": 10,
    "actions": [
     {
-     "at": "2026-11-15T02:29:22Z",
-     "channel": "archive",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    },
-    {
-     "at": "2026-11-15T02:29:22Z",
+     "at": "2026-11-15T05:02:41Z",
      "channel": "archive",
      "level": 2,
-     "action": "autofix autofix/archive-20261115",
-     "why": "prepare / run python automation \"$slug\" narrate |",
-     "result": "patch on .github/workflows/episode.yml, smoke started"
+     "action": "merge autofix/archive-20261115",
+     "why": "smoke on the branch passed",
+     "result": "merged into dev; dev goes to main by its smoke"
     }
    ]
   },
@@ -254,8 +223,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 3.1,
-   "build_h": 9.8,
+   "watchdog_h": 5.7,
+   "build_h": 12.3,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
