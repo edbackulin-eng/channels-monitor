@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T11:04:24Z",
+ "at": "2026-11-15T14:05:00Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 19.5,
+   "build_h": 22.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 8.7,
+   "build_h": 11.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -78,14 +78,14 @@
    "problems": [
     [
      "buffer",
-     "0 of the next 3 slots have a video"
+     "1 of the next 3 slots have a video"
     ]
    ],
    "slots": [
     {
      "at": "2026-11-15T16:00Z",
-     "video": null,
-     "title": null
+     "video": "3cdJb8ni37o",
+     "title": "megalodon"
     },
     {
      "at": "2026-11-18T16:00Z",
@@ -98,29 +98,24 @@
      "title": null
     }
    ],
-   "buffer": 0,
-   "scheduled_ahead": 0,
+   "buffer": 1,
+   "scheduled_ahead": 1,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 16.3,
+   "build_h": 19.3,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
-   "owner": [
-    [
-     "buffer0",
-     "nothing for the next slot (2026-11-15T16:00Z) and no video ahead"
-    ]
-   ],
+   "owner": [],
    "failed": [],
    "topics": 19,
    "actions": [
     {
-     "at": "2026-11-15T11:04:24Z",
+     "at": "2026-11-15T14:05:00Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
+     "why": "1 of the next 3 slots have a video",
      "result": "started"
     }
    ]
@@ -156,7 +151,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 0.8,
+   "build_h": 1.5,
    "last_build_failed": null,
    "failures": [
     {
@@ -174,30 +169,13 @@
      "at": "2026-11-14T15:31:44Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43595600319",
-     "id": 43595600319,
-     "step": "prepare / Run python automation/build.py \"$SLUG\" narrate",
-     "at": "2026-11-14T13:41:21Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
     }
    ],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
    "topics": 10,
-   "actions": [
-    {
-     "at": "2026-11-15T11:04:24Z",
-     "channel": "archive",
-     "level": 2,
-     "action": "autofix autofix/archive-20261115",
-     "why": "the next build passed",
-     "result": "kept"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "stoic",
@@ -224,8 +202,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 11.7,
-   "build_h": 3.2,
+   "watchdog_h": 14.7,
+   "build_h": 6.3,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
