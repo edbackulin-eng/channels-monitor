@@ -1,5 +1,5 @@
 {
- "at": "2026-11-16T20:12:44Z",
+ "at": "2026-11-16T23:13:52Z",
  "channels": [
   {
    "key": "whatif",
@@ -32,13 +32,13 @@
    "scheduled_ahead": 1,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 9.1,
+   "build_h": 12.1,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
-   "topics": 30,
+   "topics": 33,
    "actions": []
   },
   {
@@ -67,7 +67,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 20.3,
+   "build_h": 23.3,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -87,7 +87,7 @@
     ],
     [
      "build",
-     "last successful build 49.4 h ago"
+     "last successful build 52.4 h ago"
     ]
    ],
    "slots": [
@@ -111,7 +111,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 49.4,
+   "build_h": 52.4,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -120,7 +120,7 @@
    "topics": 20,
    "actions": [
     {
-     "at": "2026-11-16T20:12:44Z",
+     "at": "2026-11-16T23:13:52Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
@@ -140,11 +140,11 @@
     ],
     [
      "build-failed",
-     "last build failed at render / Run python automation/build.py \"$SLUG\" render"
+     "last build failed at prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)"
     ],
     [
      "owner-smoke-red",
-     "the smoke test on dev has been red for 39.2 h (since 15.11 05:03 UTC): what is on dev does not reach main"
+     "the smoke test on dev has been red for 42.2 h (since 15.11 05:03 UTC): what is on dev does not reach main"
     ]
    ],
    "slots": [
@@ -168,29 +168,29 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 4.8,
+   "build_h": 7.8,
    "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43896853411",
-    "id": 43896853411,
-    "step": "render / Run python automation/build.py \"$SLUG\" render",
-    "at": "2026-11-16T18:09:35Z",
+    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43947484038",
+    "id": 43947484038,
+    "step": "prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)",
+    "at": "2026-11-16T21:29:40Z",
     "kind": null,
     "workflow": ".github/workflows/episode.yml"
    },
    "failures": [
     {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43896853411",
-     "id": 43896853411,
-     "step": "render / Run python automation/build.py \"$SLUG\" render",
-     "at": "2026-11-16T18:09:35Z",
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43947484038",
+     "id": 43947484038,
+     "step": "prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)",
+     "at": "2026-11-16T21:29:40Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
     },
     {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43739195561",
-     "id": 43739195561,
-     "step": "prepare / Plan the shots (a topic with under 15 min of confirmed film is deferred, the next one started)",
-     "at": "2026-11-15T17:51:17Z",
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43896853411",
+     "id": 43896853411,
+     "step": "render / Run python automation/build.py \"$SLUG\" render",
+     "at": "2026-11-16T18:09:35Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
     }
@@ -199,7 +199,7 @@
    "owner": [
     [
      "smoke-red",
-     "the smoke test on dev has been red for 39.2 h (since 15.11 05:03 UTC): what is on dev does not reach main"
+     "the smoke test on dev has been red for 42.2 h (since 15.11 05:03 UTC): what is on dev does not reach main"
     ],
     [
      "buffer0",
@@ -210,7 +210,7 @@
    "topics": 10,
    "actions": [
     {
-     "at": "2026-11-16T20:12:44Z",
+     "at": "2026-11-16T23:13:52Z",
      "channel": "archive",
      "level": 1,
      "action": "start episode.yml",
@@ -244,8 +244,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 20.7,
-   "build_h": 11.5,
+   "watchdog_h": 23.7,
+   "build_h": 2.6,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
