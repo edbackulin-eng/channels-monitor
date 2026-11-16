@@ -1,12 +1,13 @@
 {
  "summary_date": "2026-11-16",
  "alarms": {
+  "whatif:buffer": "What If: 1 of the next 3 slots have a video",
   "dinosaurs:buffer": "Urzeit (dinosaurs): 0 of the next 3 slots have a video",
-  "dinosaurs:build": "Urzeit (dinosaurs): last successful build 43.4 h ago",
+  "dinosaurs:build": "Urzeit (dinosaurs): last successful build 46.4 h ago",
   "archive:buffer": "Yesterday in Color: 0 of the next 3 slots have a video",
-  "archive:owner-smoke-red": "Yesterday in Color: the smoke test on dev has been red for 33.1 h (since 15.11 05:03 UTC): what is on dev does not reach main"
+  "archive:owner-smoke-red": "Yesterday in Color: the smoke test on dev has been red for 36.1 h (since 15.11 05:03 UTC): what is on dev does not reach main"
  },
- "last_pass": "2026-11-16T14:11:04Z",
+ "last_pass": "2026-11-16T17:12:07Z",
  "planned": [
   {
    "id": "ct-build-0711",
@@ -28,16 +29,16 @@
  ],
  "requeued": [],
  "done": {
-  "whatif:requeue": "2026-11-16T14:11:04Z",
+  "whatif:requeue": "2026-11-16T17:12:07Z",
   "archive:build": "2026-11-16T11:10:28Z",
   "whatif:watchdog": "2026-11-06T11:03:13Z",
-  "dinosaurs:build": "2026-11-16T14:11:04Z",
+  "dinosaurs:build": "2026-11-16T17:12:07Z",
   "archive:watchdog": "2026-11-08T20:24:14Z",
   "closed-tabs:topics": "2026-11-15T02:29:22Z",
   "closed-tabs:watchdog": "2026-11-13T14:14:08Z"
  },
  "owner_alarms": {
-  "archive:owner-smoke-red": "Yesterday in Color: the smoke test on dev has been red for 33.1 h (since 15.11 05:03 UTC): what is on dev does not reach main",
+  "archive:owner-smoke-red": "Yesterday in Color: the smoke test on dev has been red for 36.1 h (since 15.11 05:03 UTC): what is on dev does not reach main",
   "archive:owner-buffer0": "Yesterday in Color: nothing for the next slot (2026-11-17T17:00Z) and no video ahead"
  },
  "issue": 1,

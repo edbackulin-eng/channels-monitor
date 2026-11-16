@@ -1,17 +1,17 @@
 {
- "at": "2026-11-16T14:11:04Z",
+ "at": "2026-11-16T17:12:07Z",
  "channels": [
   {
    "key": "whatif",
    "name": "What If",
    "repo": "edbackulin-eng/whatif-channel",
-   "problems": [],
+   "problems": [
+    [
+     "buffer",
+     "1 of the next 3 slots have a video"
+    ]
+   ],
    "slots": [
-    {
-     "at": "2026-11-16T15:00Z",
-     "video": "2_jALZ7FNDQ",
-     "title": "What If Earth Had Rings?"
-    },
     {
      "at": "2026-11-17T15:00Z",
      "video": "u-bUfXP7EDM",
@@ -21,13 +21,18 @@
      "at": "2026-11-19T15:00Z",
      "video": null,
      "title": null
+    },
+    {
+     "at": "2026-11-20T15:00Z",
+     "video": null,
+     "title": null
     }
    ],
-   "buffer": 2,
-   "scheduled_ahead": 2,
+   "buffer": 1,
+   "scheduled_ahead": 1,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 3.1,
+   "build_h": 6.1,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -43,11 +48,6 @@
    "problems": [],
    "slots": [
     {
-     "at": "2026-11-16T17:00Z",
-     "video": "7jqGJsLWEVQ",
-     "title": "A Million Pixels, Sold. Now Look at the Dead Links."
-    },
-    {
      "at": "2026-11-17T17:00Z",
      "video": "UTqPv-pQSus",
      "title": "The Doomsday Book That Outlived Its Own Machines"
@@ -56,13 +56,18 @@
      "at": "2026-11-19T17:00Z",
      "video": "OBi9ghcicR4",
      "title": "The 360,000 Dollar Ghost Console"
+    },
+    {
+     "at": "2026-11-20T17:00Z",
+     "video": null,
+     "title": null
     }
    ],
-   "buffer": 3,
-   "scheduled_ahead": 3,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 14.3,
+   "build_h": 17.3,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -82,7 +87,7 @@
     ],
     [
      "build",
-     "last successful build 43.4 h ago"
+     "last successful build 46.4 h ago"
     ]
    ],
    "slots": [
@@ -106,7 +111,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 43.4,
+   "build_h": 46.4,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -115,7 +120,7 @@
    "topics": 20,
    "actions": [
     {
-     "at": "2026-11-16T14:11:04Z",
+     "at": "2026-11-16T17:12:07Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
@@ -135,7 +140,7 @@
     ],
     [
      "owner-smoke-red",
-     "the smoke test on dev has been red for 33.1 h (since 15.11 05:03 UTC): what is on dev does not reach main"
+     "the smoke test on dev has been red for 36.1 h (since 15.11 05:03 UTC): what is on dev does not reach main"
     ]
    ],
    "slots": [
@@ -159,7 +164,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 3.0,
+   "build_h": 1.8,
    "last_build_failed": null,
    "failures": [
     {
@@ -175,7 +180,7 @@
    "owner": [
     [
      "smoke-red",
-     "the smoke test on dev has been red for 33.1 h (since 15.11 05:03 UTC): what is on dev does not reach main"
+     "the smoke test on dev has been red for 36.1 h (since 15.11 05:03 UTC): what is on dev does not reach main"
     ],
     [
      "buffer0",
@@ -211,8 +216,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 14.7,
-   "build_h": 5.5,
+   "watchdog_h": 17.7,
+   "build_h": 8.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
