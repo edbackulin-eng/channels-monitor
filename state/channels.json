@@ -1,5 +1,5 @@
 {
- "at": "2026-11-16T11:10:28Z",
+ "at": "2026-11-16T14:11:04Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 0.1,
+   "build_h": 3.1,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 11.2,
+   "build_h": 14.3,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -82,7 +82,7 @@
     ],
     [
      "build",
-     "last successful build 40.4 h ago"
+     "last successful build 43.4 h ago"
     ]
    ],
    "slots": [
@@ -106,14 +106,23 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 40.4,
+   "build_h": 43.4,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
    "topics": 20,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-16T14:11:04Z",
+     "channel": "dinosaurs",
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "archive",
@@ -126,7 +135,7 @@
     ],
     [
      "owner-smoke-red",
-     "the smoke test on dev has been red for 30.1 h (since 15.11 05:03 UTC): what is on dev does not reach main"
+     "the smoke test on dev has been red for 33.1 h (since 15.11 05:03 UTC): what is on dev does not reach main"
     ]
    ],
    "slots": [
@@ -150,7 +159,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 1.5,
+   "build_h": 3.0,
    "last_build_failed": null,
    "failures": [
     {
@@ -166,7 +175,7 @@
    "owner": [
     [
      "smoke-red",
-     "the smoke test on dev has been red for 30.1 h (since 15.11 05:03 UTC): what is on dev does not reach main"
+     "the smoke test on dev has been red for 33.1 h (since 15.11 05:03 UTC): what is on dev does not reach main"
     ],
     [
      "buffer0",
@@ -175,16 +184,7 @@
    ],
    "failed": [],
    "topics": 10,
-   "actions": [
-    {
-     "at": "2026-11-16T11:10:28Z",
-     "channel": "archive",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "stoic",
@@ -211,8 +211,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 11.7,
-   "build_h": 2.5,
+   "watchdog_h": 14.7,
+   "build_h": 5.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
