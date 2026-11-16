@@ -1,5 +1,5 @@
 {
- "at": "2026-11-16T05:08:44Z",
+ "at": "2026-11-16T08:09:30Z",
  "channels": [
   {
    "key": "whatif",
@@ -8,7 +8,7 @@
    "problems": [
     [
      "build",
-     "last successful build 37.6 h ago"
+     "last successful build 40.6 h ago"
     ]
    ],
    "slots": [
@@ -32,7 +32,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 37.6,
+   "build_h": 40.6,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -67,7 +67,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 5.2,
+   "build_h": 8.2,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -84,6 +84,10 @@
     [
      "buffer",
      "0 of the next 3 slots have a video"
+    ],
+    [
+     "build",
+     "last successful build 37.4 h ago"
     ]
    ],
    "slots": [
@@ -107,7 +111,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 34.3,
+   "build_h": 37.4,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -127,7 +131,7 @@
     ],
     [
      "owner-smoke-red",
-     "the smoke test on dev has been red for 24.1 h (since 15.11 05:03 UTC): what is on dev does not reach main"
+     "the smoke test on dev has been red for 27.1 h (since 15.11 05:03 UTC): what is on dev does not reach main"
     ]
    ],
    "slots": [
@@ -167,7 +171,7 @@
    "owner": [
     [
      "smoke-red",
-     "the smoke test on dev has been red for 24.1 h (since 15.11 05:03 UTC): what is on dev does not reach main"
+     "the smoke test on dev has been red for 27.1 h (since 15.11 05:03 UTC): what is on dev does not reach main"
     ],
     [
      "buffer0",
@@ -178,7 +182,7 @@
    "topics": 10,
    "actions": [
     {
-     "at": "2026-11-16T05:08:44Z",
+     "at": "2026-11-16T08:09:30Z",
      "channel": "archive",
      "level": 1,
      "action": "start episode.yml",
@@ -217,8 +221,8 @@
    "buffer": 0,
    "scheduled_ahead": 0,
    "waiting": null,
-   "watchdog_h": 5.6,
-   "build_h": 11.8,
+   "watchdog_h": 8.7,
+   "build_h": 14.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
