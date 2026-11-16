@@ -1,5 +1,5 @@
 {
- "at": "2026-11-16T17:12:07Z",
+ "at": "2026-11-16T20:12:44Z",
  "channels": [
   {
    "key": "whatif",
@@ -32,7 +32,7 @@
    "scheduled_ahead": 1,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 6.1,
+   "build_h": 9.1,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -67,7 +67,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 17.3,
+   "build_h": 20.3,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -87,7 +87,7 @@
     ],
     [
      "build",
-     "last successful build 46.4 h ago"
+     "last successful build 49.4 h ago"
     ]
    ],
    "slots": [
@@ -111,7 +111,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 46.4,
+   "build_h": 49.4,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -120,7 +120,7 @@
    "topics": 20,
    "actions": [
     {
-     "at": "2026-11-16T17:12:07Z",
+     "at": "2026-11-16T20:12:44Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
@@ -139,8 +139,12 @@
      "0 of the next 3 slots have a video"
     ],
     [
+     "build-failed",
+     "last build failed at render / Run python automation/build.py \"$SLUG\" render"
+    ],
+    [
      "owner-smoke-red",
-     "the smoke test on dev has been red for 36.1 h (since 15.11 05:03 UTC): what is on dev does not reach main"
+     "the smoke test on dev has been red for 39.2 h (since 15.11 05:03 UTC): what is on dev does not reach main"
     ]
    ],
    "slots": [
@@ -164,9 +168,24 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 1.8,
-   "last_build_failed": null,
+   "build_h": 4.8,
+   "last_build_failed": {
+    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43896853411",
+    "id": 43896853411,
+    "step": "render / Run python automation/build.py \"$SLUG\" render",
+    "at": "2026-11-16T18:09:35Z",
+    "kind": null,
+    "workflow": ".github/workflows/episode.yml"
+   },
    "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43896853411",
+     "id": 43896853411,
+     "step": "render / Run python automation/build.py \"$SLUG\" render",
+     "at": "2026-11-16T18:09:35Z",
+     "kind": null,
+     "workflow": ".github/workflows/episode.yml"
+    },
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/43739195561",
      "id": 43739195561,
@@ -180,7 +199,7 @@
    "owner": [
     [
      "smoke-red",
-     "the smoke test on dev has been red for 36.1 h (since 15.11 05:03 UTC): what is on dev does not reach main"
+     "the smoke test on dev has been red for 39.2 h (since 15.11 05:03 UTC): what is on dev does not reach main"
     ],
     [
      "buffer0",
@@ -189,7 +208,16 @@
    ],
    "failed": [],
    "topics": 10,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-16T20:12:44Z",
+     "channel": "archive",
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "stoic",
@@ -197,11 +225,6 @@
    "repo": "beautyapp800-ctrl/yt-factory-daily",
    "problems": [],
    "slots": [
-    {
-     "at": "2026-11-16T19:00Z",
-     "video": null,
-     "title": null
-    },
     {
      "at": "2026-11-17T19:00Z",
      "video": null,
@@ -211,13 +234,18 @@
      "at": "2026-11-18T19:00Z",
      "video": "ykjDykfRf4c",
      "title": "10 Things You Should Quietly Remove From Your Life"
+    },
+    {
+     "at": "2026-11-19T19:00Z",
+     "video": null,
+     "title": null
     }
    ],
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 17.7,
-   "build_h": 8.5,
+   "watchdog_h": 20.7,
+   "build_h": 11.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
