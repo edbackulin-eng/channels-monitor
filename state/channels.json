@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T23:07:02Z",
+ "at": "2026-11-16T02:07:43Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 31.5,
+   "build_h": 34.6,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -62,7 +62,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 20.8,
+   "build_h": 2.2,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -102,14 +102,23 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 28.3,
+   "build_h": 31.3,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
    "topics": 20,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-16T02:07:43Z",
+     "channel": "dinosaurs",
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "archive",
@@ -122,7 +131,7 @@
     ],
     [
      "owner-smoke-red",
-     "the smoke test on dev has been red for 18.1 h (since 15.11 05:03 UTC): what is on dev does not reach main"
+     "the smoke test on dev has been red for 21.1 h (since 15.11 05:03 UTC): what is on dev does not reach main"
     ]
    ],
    "slots": [
@@ -162,14 +171,14 @@
    "owner": [
     [
      "smoke-red",
-     "the smoke test on dev has been red for 18.1 h (since 15.11 05:03 UTC): what is on dev does not reach main"
+     "the smoke test on dev has been red for 21.1 h (since 15.11 05:03 UTC): what is on dev does not reach main"
     ]
    ],
    "failed": [],
    "topics": 10,
    "actions": [
     {
-     "at": "2026-11-15T23:07:02Z",
+     "at": "2026-11-16T02:07:43Z",
      "channel": "archive",
      "level": 1,
      "action": "start episode.yml",
@@ -208,8 +217,8 @@
    "buffer": 0,
    "scheduled_ahead": 0,
    "waiting": null,
-   "watchdog_h": 23.8,
-   "build_h": 5.7,
+   "watchdog_h": 2.6,
+   "build_h": 8.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,

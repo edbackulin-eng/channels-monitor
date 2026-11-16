@@ -3,10 +3,10 @@
  "alarms": {
   "dinosaurs:buffer": "Urzeit (dinosaurs): 0 of the next 3 slots have a video",
   "archive:buffer": "Yesterday in Color: 0 of the next 3 slots have a video",
-  "archive:owner-smoke-red": "Yesterday in Color: the smoke test on dev has been red for 18.1 h (since 15.11 05:03 UTC): what is on dev does not reach main",
+  "archive:owner-smoke-red": "Yesterday in Color: the smoke test on dev has been red for 21.1 h (since 15.11 05:03 UTC): what is on dev does not reach main",
   "stoic:buffer": "Stoic (yt-factory-daily): 0 of the next 3 slots have a video"
  },
- "last_pass": "2026-11-15T23:07:02Z",
+ "last_pass": "2026-11-16T02:07:43Z",
  "planned": [
   {
    "id": "ct-build-0711",
@@ -28,16 +28,16 @@
  ],
  "requeued": [],
  "done": {
-  "whatif:requeue": "2026-11-15T23:07:02Z",
-  "archive:build": "2026-11-15T23:07:02Z",
+  "whatif:requeue": "2026-11-16T02:07:43Z",
+  "archive:build": "2026-11-16T02:07:43Z",
   "whatif:watchdog": "2026-11-06T11:03:13Z",
-  "dinosaurs:build": "2026-11-15T20:06:20Z",
+  "dinosaurs:build": "2026-11-16T02:07:43Z",
   "archive:watchdog": "2026-11-08T20:24:14Z",
   "closed-tabs:topics": "2026-11-15T02:29:22Z",
   "closed-tabs:watchdog": "2026-11-13T14:14:08Z"
  },
  "owner_alarms": {
-  "archive:owner-smoke-red": "Yesterday in Color: the smoke test on dev has been red for 18.1 h (since 15.11 05:03 UTC): what is on dev does not reach main",
+  "archive:owner-smoke-red": "Yesterday in Color: the smoke test on dev has been red for 21.1 h (since 15.11 05:03 UTC): what is on dev does not reach main",
   "stoic:owner-buffer0": "Stoic (yt-factory-daily): nothing for the next slot (2026-11-16T19:00Z) and no video ahead"
  },
  "issue": 1,
