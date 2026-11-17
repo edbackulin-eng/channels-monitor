@@ -1,5 +1,5 @@
 {
- "at": "2026-11-17T11:02:47Z",
+ "at": "2026-11-17T14:05:26Z",
  "channels": [
   {
    "key": "whatif",
@@ -32,7 +32,7 @@
    "scheduled_ahead": 1,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 3.0,
+   "build_h": 2.3,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -41,7 +41,7 @@
    "topics": 31,
    "actions": [
     {
-     "at": "2026-11-17T11:02:47Z",
+     "at": "2026-11-17T14:05:26Z",
      "channel": "whatif",
      "level": 1,
      "action": "start build-video.yml",
@@ -76,7 +76,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 8.2,
+   "build_h": 11.2,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -96,7 +96,7 @@
     ],
     [
      "build",
-     "last successful build 64.2 h ago"
+     "last successful build 67.3 h ago"
     ]
    ],
    "slots": [
@@ -120,7 +120,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 64.2,
+   "build_h": 67.3,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -134,7 +134,7 @@
    "topics": 20,
    "actions": [
     {
-     "at": "2026-11-17T11:02:47Z",
+     "at": "2026-11-17T14:05:26Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
@@ -154,7 +154,7 @@
     ],
     [
      "owner-smoke-red",
-     "the smoke test on dev has been red for 54.0 h (since 15.11 05:03 UTC): what is on dev does not reach main"
+     "the smoke test on dev has been red for 57.0 h (since 15.11 05:03 UTC): what is on dev does not reach main"
     ]
    ],
    "slots": [
@@ -178,7 +178,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 0.8,
+   "build_h": 1.5,
    "last_build_failed": null,
    "failures": [
     {
@@ -202,7 +202,7 @@
    "owner": [
     [
      "smoke-red",
-     "the smoke test on dev has been red for 54.0 h (since 15.11 05:03 UTC): what is on dev does not reach main"
+     "the smoke test on dev has been red for 57.0 h (since 15.11 05:03 UTC): what is on dev does not reach main"
     ],
     [
      "buffer0",
@@ -238,8 +238,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 8.4,
-   "build_h": 1.9,
+   "watchdog_h": 11.5,
+   "build_h": 4.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
