@@ -1,5 +1,5 @@
 {
- "at": "2026-11-17T17:06:13Z",
+ "at": "2026-11-17T20:07:16Z",
  "channels": [
   {
    "key": "whatif",
@@ -32,7 +32,7 @@
    "scheduled_ahead": 0,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 3.0,
+   "build_h": 6.0,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -49,6 +49,10 @@
     [
      "buffer",
      "1 of the next 3 slots have a video"
+    ],
+    [
+     "topics",
+     "9 topics left (min 10)"
     ]
    ],
    "slots": [
@@ -69,17 +73,34 @@
     }
    ],
    "buffer": 1,
-   "scheduled_ahead": 1,
+   "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 14.2,
+   "build_h": 0.6,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
-   "topics": 10,
-   "actions": []
+   "topics": 9,
+   "actions": [
+    {
+     "at": "2026-11-17T20:07:16Z",
+     "channel": "closed-tabs",
+     "level": 1,
+     "action": "start topics.yml",
+     "why": "9 topics left",
+     "result": "started"
+    },
+    {
+     "at": "2026-11-17T20:07:16Z",
+     "channel": "closed-tabs",
+     "level": 1,
+     "action": "start daily.yml",
+     "why": "1 of the next 3 slots have a video",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "dinosaurs",
@@ -92,7 +113,7 @@
     ],
     [
      "build",
-     "last successful build 70.3 h ago"
+     "last successful build 73.3 h ago"
     ]
    ],
    "slots": [
@@ -116,7 +137,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 70.3,
+   "build_h": 73.3,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -130,7 +151,7 @@
    "topics": 20,
    "actions": [
     {
-     "at": "2026-11-17T17:06:13Z",
+     "at": "2026-11-17T20:07:16Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
@@ -150,7 +171,7 @@
     ],
     [
      "owner-smoke-red",
-     "the smoke test on dev has been red for 60.0 h (since 15.11 05:03 UTC): what is on dev does not reach main"
+     "the smoke test on dev has been red for 63.1 h (since 15.11 05:03 UTC): what is on dev does not reach main"
     ]
    ],
    "slots": [
@@ -174,7 +195,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 2.1,
+   "build_h": 5.1,
    "last_build_failed": null,
    "failures": [
     {
@@ -198,7 +219,7 @@
    "owner": [
     [
      "smoke-red",
-     "the smoke test on dev has been red for 60.0 h (since 15.11 05:03 UTC): what is on dev does not reach main"
+     "the smoke test on dev has been red for 63.1 h (since 15.11 05:03 UTC): what is on dev does not reach main"
     ]
    ],
    "failed": [],
@@ -212,11 +233,6 @@
    "problems": [],
    "slots": [
     {
-     "at": "2026-11-17T19:00Z",
-     "video": null,
-     "title": null
-    },
-    {
      "at": "2026-11-18T19:00Z",
      "video": "ykjDykfRf4c",
      "title": "10 Things You Should Quietly Remove From Your Life"
@@ -225,13 +241,18 @@
      "at": "2026-11-19T19:00Z",
      "video": null,
      "title": null
+    },
+    {
+     "at": "2026-11-20T19:00Z",
+     "video": null,
+     "title": null
     }
    ],
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 14.5,
-   "build_h": 7.9,
+   "watchdog_h": 17.5,
+   "build_h": 0.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -242,11 +263,11 @@
   }
  ],
  "gpu": {
-  "hours": 9.61,
+  "hours": 10.6,
   "parts": {
-   "closed-tabs": 7.3,
+   "closed-tabs": 9.0,
    "What If": 0.0,
-   "dinosaurs": 2.3
+   "dinosaurs": 1.6
   }
  },
  "shared": []
