@@ -156,6 +156,13 @@ def st_topics(root):
     return None
 
 
+def aot_topics(root):
+    """America Over Time: approved topics whose code exists (`module`) and that are not rendered/uploaded yet."""
+    q = _json(root, "data/topic_queue.json", {"topics": []})
+    done = {r.get("slug") for r in _json(root, "state/episodes.json", [])}
+    return sum(1 for t in q.get("topics", []) if t.get("module") and t.get("status") == "approved" and t.get("id") not in done)
+
+
 CHANNELS = [
     {"key": "whatif", "name": "What If", "repo": "edbackulin-eng/whatif-channel", "act": True,
      "slots": {"weekdays": [0, 1, 3, 4, 5], "time": "15:00", "tz": "UTC"},
@@ -208,6 +215,14 @@ CHANNELS = [
      "buffer_min": 1, "builds": ["daily.yml", "daily-retry.yml"], "heartbeat": None,
      "scheduled": st_scheduled, "failed": st_failed, "topics": st_topics, "waiting": None,
      # read only: nothing is ever started, cancelled or changed in it
+     "refill": None, "build": None, "upload": None, "hung_h": {}, "infra_fixes": None, "requeue": None},
+    {"key": "aot", "name": "America Over Time", "repo": "edbackulin-eng/map-timelapse", "act": False,
+     "slots": {"weekdays": [0, 4], "time": "20:00", "tz": "Europe/Kyiv"},      # Mon + Fri (owner 17.11)
+     "paths": ["state", "data/topic_queue.json"],
+     # no watchdog of its own: the daily upload.yml run is what says it is alive; read only, nothing is started or changed in it
+     "watchdog": "upload.yml", "watchdog_max_h": 26,
+     "builds": ["video.yml", "upload.yml"], "heartbeat": None,
+     "scheduled": rows_scheduled, "failed": rows_failed, "topics": None, "waiting": None,   # topics: no runway alarm yet (few topic modules are built)
      "refill": None, "build": None, "upload": None, "hung_h": {}, "infra_fixes": None, "requeue": None},
 ]
 
