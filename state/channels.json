@@ -1,5 +1,5 @@
 {
- "at": "2026-11-17T02:14:36Z",
+ "at": "2026-11-17T05:00:35Z",
  "channels": [
   {
    "key": "whatif",
@@ -32,14 +32,23 @@
    "scheduled_ahead": 1,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 15.1,
+   "build_h": 17.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
    "topics": 32,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-17T05:00:35Z",
+     "channel": "whatif",
+     "level": 1,
+     "action": "start build-video.yml",
+     "why": "1 of the next 3 slots have a video",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "closed-tabs",
@@ -67,7 +76,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 26.3,
+   "build_h": 2.1,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -87,7 +96,7 @@
     ],
     [
      "build",
-     "last successful build 55.4 h ago"
+     "last successful build 58.2 h ago"
     ]
    ],
    "slots": [
@@ -111,23 +120,19 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 55.4,
+   "build_h": 58.2,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
-   "owner": [],
+   "owner": [
+    [
+     "buffer0",
+     "nothing for the next slot (2026-11-18T16:00Z) and no video ahead"
+    ]
+   ],
    "failed": [],
    "topics": 20,
-   "actions": [
-    {
-     "at": "2026-11-17T02:14:36Z",
-     "channel": "dinosaurs",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "archive",
@@ -140,7 +145,7 @@
     ],
     [
      "owner-smoke-red",
-     "the smoke test on dev has been red for 45.2 h (since 15.11 05:03 UTC): what is on dev does not reach main"
+     "the smoke test on dev has been red for 48.0 h (since 15.11 05:03 UTC): what is on dev does not reach main"
     ]
    ],
    "slots": [
@@ -164,7 +169,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 3.0,
+   "build_h": 2.8,
    "last_build_failed": null,
    "failures": [
     {
@@ -188,7 +193,7 @@
    "owner": [
     [
      "smoke-red",
-     "the smoke test on dev has been red for 45.2 h (since 15.11 05:03 UTC): what is on dev does not reach main"
+     "the smoke test on dev has been red for 48.0 h (since 15.11 05:03 UTC): what is on dev does not reach main"
     ],
     [
      "buffer0",
@@ -197,27 +202,13 @@
    ],
    "failed": [],
    "topics": 10,
-   "actions": [
-    {
-     "at": "2026-11-17T02:14:36Z",
-     "channel": "archive",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "stoic",
    "name": "Stoic (yt-factory-daily)",
    "repo": "beautyapp800-ctrl/yt-factory-daily",
-   "problems": [
-    [
-     "watchdog",
-     "no sign of life for 26.7 h (max 26)"
-    ]
-   ],
+   "problems": [],
    "slots": [
     {
      "at": "2026-11-17T19:00Z",
@@ -238,8 +229,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 26.7,
-   "build_h": 5.6,
+   "watchdog_h": 2.4,
+   "build_h": 8.3,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -250,9 +241,9 @@
   }
  ],
  "gpu": {
-  "hours": 10.75,
+  "hours": 9.61,
   "parts": {
-   "closed-tabs": 8.45,
+   "closed-tabs": 7.3,
    "What If": 0.0,
    "dinosaurs": 2.3
   }
