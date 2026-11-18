@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T17:23:13Z",
+ "at": "2026-11-18T20:32:32Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 1.2,
+   "build_h": 4.4,
    "last_build_failed": null,
    "failures": [
     {
@@ -69,12 +69,12 @@
    "topics": 30,
    "actions": [
     {
-     "at": "2026-11-18T17:23:13Z",
+     "at": "2026-11-18T20:32:32Z",
      "channel": "whatif",
      "level": 2,
      "action": "autofix",
      "why": "blender (#) / #d shots, share # of # |",
-     "result": "no patch: Gemini: The error text and log were not provided in the prompt"
+     "result": "no patch: the edit does not match the file once"
     }
    ]
   },
@@ -104,7 +104,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 15.1,
+   "build_h": 18.2,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -124,7 +124,11 @@
     ],
     [
      "build",
-     "last successful build 94.6 h ago"
+     "last successful build 97.7 h ago"
+    ],
+    [
+     "missed:2026-11-18",
+     "no video went out on the slot 2026-11-18 16:00 UTC"
     ]
    ],
    "slots": [
@@ -148,7 +152,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 94.6,
+   "build_h": 97.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -188,7 +192,7 @@
    "scheduled_ahead": 2,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 15.9,
+   "build_h": 19.0,
    "last_build_failed": null,
    "failures": [
     {
@@ -222,7 +226,7 @@
    "topics": 8,
    "actions": [
     {
-     "at": "2026-11-18T17:23:13Z",
+     "at": "2026-11-18T20:32:32Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
@@ -238,17 +242,17 @@
    "problems": [],
    "slots": [
     {
-     "at": "2026-11-18T19:00Z",
-     "video": "ykjDykfRf4c",
-     "title": "10 Things You Should Quietly Remove From Your Life"
+     "at": "2026-11-22T19:00Z",
+     "video": "2KZkp89qNbM",
+     "title": "10 Stoic Ways to Stop Being Ruined"
     },
     {
-     "at": "2026-11-22T19:00Z",
+     "at": "2026-11-25T19:00Z",
      "video": null,
      "title": null
     },
     {
-     "at": "2026-11-25T19:00Z",
+     "at": "2026-11-29T19:00Z",
      "video": null,
      "title": null
     }
@@ -256,8 +260,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 15.5,
-   "build_h": 8.9,
+   "watchdog_h": 18.7,
+   "build_h": 0.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -291,8 +295,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 14.9,
-   "build_h": 6.9,
+   "watchdog_h": 18.1,
+   "build_h": 1.4,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -305,26 +309,17 @@
    "key": "aot",
    "name": "America Over Time",
    "repo": "edbackulin-eng/map-timelapse",
-   "problems": [
-    [
-     "buffer",
-     "0 of the next 3 slots have a video"
-    ],
-    [
-     "missed:2026-11-16",
-     "no video went out on the slot 2026-11-16 18:00 UTC"
-    ]
-   ],
+   "problems": [],
    "slots": [
     {
      "at": "2026-11-20T18:00Z",
-     "video": null,
-     "title": null
+     "video": "iAzEpMBxQu0",
+     "title": "US Population 1790–2020: How America Grew Across the Map"
     },
     {
      "at": "2026-11-23T18:00Z",
-     "video": null,
-     "title": null
+     "video": "9E6P9D0O6Mo",
+     "title": "Sun Belt Migration: How Americans Moved South and West (1900–2020)"
     },
     {
      "at": "2026-11-27T18:00Z",
@@ -332,13 +327,21 @@
      "title": null
     }
    ],
-   "buffer": 0,
-   "scheduled_ahead": 0,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 3.7,
-   "build_h": 0.3,
+   "watchdog_h": 2.2,
+   "build_h": 2.2,
    "last_build_failed": null,
    "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/map-timelapse/actions/runs/44361659084",
+     "id": 44361659084,
+     "step": "upload / Upload next reserve video",
+     "at": "2026-11-18T17:43:10Z",
+     "kind": null,
+     "workflow": ".github/workflows/upload.yml"
+    },
     {
      "run": "https://github.com/edbackulin-eng/map-timelapse/actions/runs/44316573560",
      "id": 44316573560,
@@ -362,6 +365,10 @@
     [
      "buffer",
      "0 of the next 3 slots have a video"
+    ],
+    [
+     "missed:2026-11-18",
+     "no video went out on the slot 2026-11-18 17:00 UTC"
     ],
     [
      "missed:2026-11-17",
@@ -388,8 +395,8 @@
    "buffer": 0,
    "scheduled_ahead": 0,
    "waiting": null,
-   "watchdog_h": 1.9,
-   "build_h": 1.9,
+   "watchdog_h": 5.0,
+   "build_h": 2.8,
    "last_build_failed": null,
    "failures": [
     {
@@ -409,16 +416,16 @@
     ]
    ],
    "failed": [],
-   "topics": 30,
+   "topics": 32,
    "actions": []
   }
  ],
  "gpu": {
-  "hours": 8.68,
+  "hours": 8.02,
   "parts": {
    "closed-tabs": 7.08,
    "What If": 0.0,
-   "dinosaurs": 1.6
+   "dinosaurs": 0.94
   }
  },
  "shared": []
