@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T05:10:05Z",
+ "at": "2026-11-18T08:17:41Z",
  "channels": [
   {
    "key": "whatif",
@@ -13,17 +13,17 @@
    ],
    "slots": [
     {
-     "at": "2026-11-19T15:00Z",
-     "video": null,
-     "title": null
-    },
-    {
-     "at": "2026-11-20T15:00Z",
-     "video": null,
-     "title": null
-    },
-    {
      "at": "2026-11-21T15:00Z",
+     "video": null,
+     "title": null
+    },
+    {
+     "at": "2026-11-24T15:00Z",
+     "video": null,
+     "title": null
+    },
+    {
+     "at": "2026-11-28T15:00Z",
      "video": null,
      "title": null
     }
@@ -32,38 +32,37 @@
    "scheduled_ahead": 0,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 15.1,
+   "build_h": 12.1,
    "last_build_failed": null,
-   "failures": [],
-   "waiting_built": 0,
-   "owner": [
-    [
-     "buffer0",
-     "nothing for the next slot (2026-11-19T15:00Z) and no video ahead"
-    ]
+   "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/whatif-channel/actions/runs/44067971530",
+     "id": 44067971530,
+     "step": "blender (5) / 3D shots, share 5 of 8",
+     "at": "2026-11-17T14:11:42Z",
+     "kind": null,
+     "workflow": ".github/workflows/build-v2.yml"
+    },
+    {
+     "run": "https://github.com/edbackulin-eng/whatif-channel/actions/runs/44021103370",
+     "id": 44021103370,
+     "step": "assemble / Record the outcome",
+     "at": "2026-11-17T10:20:34Z",
+     "kind": null,
+     "workflow": ".github/workflows/build-v2.yml"
+    }
    ],
+   "waiting_built": 0,
+   "owner": [],
    "failed": [],
    "topics": 30,
-   "actions": [
-    {
-     "at": "2026-11-18T05:10:05Z",
-     "channel": "whatif",
-     "level": 1,
-     "action": "start build-video.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "closed-tabs",
    "name": "Closed Tabs",
    "repo": "edbackulin-eng/closed-tabs",
    "problems": [
-    [
-     "buffer",
-     "1 of the next 3 slots have a video"
-    ],
     [
      "topics",
      "9 topics left (min 10)"
@@ -76,28 +75,37 @@
      "title": "The 360,000 Dollar Ghost Console"
     },
     {
-     "at": "2026-11-20T17:00Z",
-     "video": null,
-     "title": null
+     "at": "2026-11-23T17:00Z",
+     "video": "SZSNmVD-cdo",
+     "title": "The Bot That Wasn't a Bot"
     },
     {
-     "at": "2026-11-21T17:00Z",
+     "at": "2026-11-26T17:00Z",
      "video": null,
      "title": null
     }
    ],
-   "buffer": 1,
+   "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 2.8,
+   "build_h": 6.0,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
    "topics": 9,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-18T08:17:41Z",
+     "channel": "closed-tabs",
+     "level": 1,
+     "action": "start topics.yml",
+     "why": "9 topics left",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "dinosaurs",
@@ -110,7 +118,7 @@
     ],
     [
      "build",
-     "last successful build 82.4 h ago"
+     "last successful build 85.5 h ago"
     ]
    ],
    "slots": [
@@ -134,7 +142,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 82.4,
+   "build_h": 85.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -146,7 +154,16 @@
    ],
    "failed": [],
    "topics": 20,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-18T08:17:41Z",
+     "channel": "dinosaurs",
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "archive",
@@ -179,7 +196,7 @@
    "scheduled_ahead": 2,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 3.6,
+   "build_h": 6.8,
    "last_build_failed": null,
    "failures": [
     {
@@ -213,12 +230,12 @@
    "topics": 8,
    "actions": [
     {
-     "at": "2026-11-18T05:10:05Z",
+     "at": "2026-11-18T08:17:41Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
      "why": "? |",
-     "result": "no patch: the edit does not match the file once"
+     "result": "no patch: Gemini: No failure log provided to identify the error."
     }
    ]
   },
@@ -234,12 +251,12 @@
      "title": "10 Things You Should Quietly Remove From Your Life"
     },
     {
-     "at": "2026-11-19T19:00Z",
+     "at": "2026-11-22T19:00Z",
      "video": null,
      "title": null
     },
     {
-     "at": "2026-11-20T19:00Z",
+     "at": "2026-11-25T19:00Z",
      "video": null,
      "title": null
     }
@@ -247,8 +264,91 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 3.3,
-   "build_h": 9.8,
+   "watchdog_h": 6.4,
+   "build_h": 12.9,
+   "last_build_failed": null,
+   "failures": [],
+   "waiting_built": 0,
+   "owner": [],
+   "failed": [],
+   "topics": null,
+   "actions": []
+  },
+  {
+   "key": "kids",
+   "name": "Moo Toot (yt-kids-daily)",
+   "repo": "beautyapp800-ctrl/yt-kids-daily",
+   "problems": [],
+   "slots": [
+    {
+     "at": "2026-11-19T14:00Z",
+     "video": "Z4BxIL3Uhyc",
+     "title": "15 Things That Go for Kids"
+    },
+    {
+     "at": "2026-11-22T14:00Z",
+     "video": "cbjouadOqAs",
+     "title": "15 Birds for Kids"
+    },
+    {
+     "at": "2026-11-24T14:00Z",
+     "video": null,
+     "title": null
+    }
+   ],
+   "buffer": 2,
+   "scheduled_ahead": 2,
+   "waiting": null,
+   "watchdog_h": 5.8,
+   "build_h": 12.7,
+   "last_build_failed": null,
+   "failures": [],
+   "waiting_built": 0,
+   "owner": [],
+   "failed": [],
+   "topics": null,
+   "actions": []
+  },
+  {
+   "key": "aot",
+   "name": "America Over Time",
+   "repo": "edbackulin-eng/map-timelapse",
+   "problems": [
+    [
+     "buffer",
+     "0 of the next 3 slots have a video"
+    ],
+    [
+     "watchdog",
+     "no sign of life for None h (max 26)"
+    ],
+    [
+     "missed:2026-11-16",
+     "no video went out on the slot 2026-11-16 18:00 UTC"
+    ]
+   ],
+   "slots": [
+    {
+     "at": "2026-11-20T18:00Z",
+     "video": null,
+     "title": null
+    },
+    {
+     "at": "2026-11-23T18:00Z",
+     "video": null,
+     "title": null
+    },
+    {
+     "at": "2026-11-27T18:00Z",
+     "video": null,
+     "title": null
+    }
+   ],
+   "buffer": 0,
+   "scheduled_ahead": 0,
+   "waiting": null,
+   "watchdog_h": null,
+   "build_h": 8.3,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
