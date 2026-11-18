@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T02:17:41Z",
+ "at": "2026-11-18T05:10:05Z",
  "channels": [
   {
    "key": "whatif",
@@ -32,14 +32,28 @@
    "scheduled_ahead": 0,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 12.2,
+   "build_h": 15.1,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
-   "owner": [],
+   "owner": [
+    [
+     "buffer0",
+     "nothing for the next slot (2026-11-19T15:00Z) and no video ahead"
+    ]
+   ],
    "failed": [],
    "topics": 30,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-18T05:10:05Z",
+     "channel": "whatif",
+     "level": 1,
+     "action": "start build-video.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "closed-tabs",
@@ -76,7 +90,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 3.2,
+   "build_h": 2.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -96,7 +110,7 @@
     ],
     [
      "build",
-     "last successful build 79.5 h ago"
+     "last successful build 82.4 h ago"
     ]
    ],
    "slots": [
@@ -120,7 +134,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 79.5,
+   "build_h": 82.4,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -132,16 +146,7 @@
    ],
    "failed": [],
    "topics": 20,
-   "actions": [
-    {
-     "at": "2026-11-18T02:17:41Z",
-     "channel": "dinosaurs",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "archive",
@@ -174,7 +179,7 @@
    "scheduled_ahead": 2,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 0.8,
+   "build_h": 3.6,
    "last_build_failed": null,
    "failures": [
     {
@@ -208,7 +213,7 @@
    "topics": 8,
    "actions": [
     {
-     "at": "2026-11-18T02:17:41Z",
+     "at": "2026-11-18T05:10:05Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
@@ -242,8 +247,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 0.4,
-   "build_h": 6.9,
+   "watchdog_h": 3.3,
+   "build_h": 9.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -254,9 +259,9 @@
   }
  ],
  "gpu": {
-  "hours": 8.96,
+  "hours": 8.68,
   "parts": {
-   "closed-tabs": 7.36,
+   "closed-tabs": 7.08,
    "What If": 0.0,
    "dinosaurs": 1.6
   }
