@@ -1,20 +1,11 @@
 {
- "at": "2026-11-18T11:18:53Z",
+ "at": "2026-11-18T14:27:12Z",
  "channels": [
   {
    "key": "whatif",
    "name": "What If",
    "repo": "edbackulin-eng/whatif-channel",
-   "problems": [
-    [
-     "buffer",
-     "1 of the next 3 slots have a video"
-    ],
-    [
-     "build-failed",
-     "last build failed at blender (5) / 3D shots, share 5 of 8"
-    ]
-   ],
+   "problems": [],
    "slots": [
     {
      "at": "2026-11-21T15:00Z",
@@ -23,8 +14,8 @@
     },
     {
      "at": "2026-11-24T15:00Z",
-     "video": null,
-     "title": null
+     "video": "UQ8nwTvG2kc",
+     "title": "What Would Happen If the Sun Exploded?"
     },
     {
      "at": "2026-11-28T15:00Z",
@@ -32,20 +23,21 @@
      "title": null
     }
    ],
-   "buffer": 1,
-   "scheduled_ahead": 1,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 15.1,
-   "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/whatif-channel/actions/runs/44261282033",
-    "id": 44261282033,
-    "step": "blender (5) / 3D shots, share 5 of 8",
-    "at": "2026-11-18T09:57:58Z",
-    "kind": null,
-    "workflow": ".github/workflows/build-v2.yml"
-   },
+   "build_h": 1.4,
+   "last_build_failed": null,
    "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/whatif-channel/actions/runs/44281130610",
+     "id": 44281130610,
+     "step": "blender (0) / 3D shots, share 0 of 8",
+     "at": "2026-11-18T13:03:59Z",
+     "kind": null,
+     "workflow": ".github/workflows/build-v2.yml"
+    },
     {
      "run": "https://github.com/edbackulin-eng/whatif-channel/actions/runs/44261282033",
      "id": 44261282033,
@@ -77,12 +69,12 @@
    "topics": 30,
    "actions": [
     {
-     "at": "2026-11-18T11:18:53Z",
+     "at": "2026-11-18T14:27:12Z",
      "channel": "whatif",
      "level": 2,
      "action": "autofix",
      "why": "blender (#) / #d shots, share # of # |",
-     "result": "no patch: Gemini: The failure log is empty, so the exact error in the blender step cannot be determined with certainty."
+     "result": "no patch: the edit does not match the file once"
     }
    ]
   },
@@ -112,7 +104,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 9.0,
+   "build_h": 12.1,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -132,7 +124,7 @@
     ],
     [
      "build",
-     "last successful build 88.5 h ago"
+     "last successful build 91.7 h ago"
     ]
    ],
    "slots": [
@@ -156,7 +148,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 88.5,
+   "build_h": 91.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -170,7 +162,7 @@
    "topics": 20,
    "actions": [
     {
-     "at": "2026-11-18T11:18:53Z",
+     "at": "2026-11-18T14:27:12Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
@@ -210,7 +202,7 @@
    "scheduled_ahead": 2,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 9.8,
+   "build_h": 12.9,
    "last_build_failed": null,
    "failures": [
     {
@@ -244,12 +236,12 @@
    "topics": 8,
    "actions": [
     {
-     "at": "2026-11-18T11:18:53Z",
+     "at": "2026-11-18T14:27:12Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
      "why": "? |",
-     "result": "no patch: Gemini: The error log is missing from the prompt, so the exact failure cannot be diagnosed."
+     "result": "no patch: Gemini: The error log was omitted from the prompt, making it impossible to identify the exact failure."
     }
    ]
   },
@@ -278,8 +270,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 9.5,
-   "build_h": 2.8,
+   "watchdog_h": 12.6,
+   "build_h": 5.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -313,8 +305,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 8.9,
-   "build_h": 0.8,
+   "watchdog_h": 12.0,
+   "build_h": 4.0,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -357,14 +349,84 @@
    "buffer": 0,
    "scheduled_ahead": 0,
    "waiting": null,
-   "watchdog_h": 1.4,
-   "build_h": 0.3,
+   "watchdog_h": 0.7,
+   "build_h": -0.0,
    "last_build_failed": null,
-   "failures": [],
+   "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/map-timelapse/actions/runs/44316573560",
+     "id": 44316573560,
+     "step": "upload / Upload next reserve video",
+     "at": "2026-11-18T13:43:41Z",
+     "kind": null,
+     "workflow": ".github/workflows/upload.yml"
+    }
+   ],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
    "topics": null,
+   "actions": []
+  },
+  {
+   "key": "hts",
+   "name": "Huge To Scale",
+   "repo": "edbackulin-eng/HugeToScale",
+   "problems": [
+    [
+     "buffer",
+     "0 of the next 3 slots have a video"
+    ],
+    [
+     "watchdog",
+     "no sign of life for None h (max 26)"
+    ],
+    [
+     "build",
+     "no successful build yet"
+    ],
+    [
+     "missed:2026-11-17",
+     "no video went out on the slot 2026-11-17 17:00 UTC"
+    ],
+    [
+     "missed:2026-11-16",
+     "no video went out on the slot 2026-11-16 17:00 UTC"
+    ]
+   ],
+   "slots": [
+    {
+     "at": "2026-11-18T17:00Z",
+     "video": null,
+     "title": null
+    },
+    {
+     "at": "2026-11-19T17:00Z",
+     "video": null,
+     "title": null
+    },
+    {
+     "at": "2026-11-20T17:00Z",
+     "video": null,
+     "title": null
+    }
+   ],
+   "buffer": 0,
+   "scheduled_ahead": 0,
+   "waiting": null,
+   "watchdog_h": null,
+   "build_h": null,
+   "last_build_failed": null,
+   "failures": [],
+   "waiting_built": 0,
+   "owner": [
+    [
+     "buffer0",
+     "nothing for the next slot (2026-11-18T17:00Z) and no video ahead"
+    ]
+   ],
+   "failed": [],
+   "topics": 16,
    "actions": []
   }
  ],
