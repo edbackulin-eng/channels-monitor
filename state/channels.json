@@ -1,5 +1,5 @@
 {
- "at": "2026-11-17T23:08:11Z",
+ "at": "2026-11-18T02:17:41Z",
  "channels": [
   {
    "key": "whatif",
@@ -32,7 +32,7 @@
    "scheduled_ahead": 0,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 9.0,
+   "build_h": 12.2,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -76,23 +76,14 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 3.0,
+   "build_h": 3.2,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
    "topics": 9,
-   "actions": [
-    {
-     "at": "2026-11-17T23:08:11Z",
-     "channel": "closed-tabs",
-     "level": 1,
-     "action": "start daily.yml",
-     "why": "1 of the next 3 slots have a video",
-     "result": "started"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "dinosaurs",
@@ -105,7 +96,7 @@
     ],
     [
      "build",
-     "last successful build 76.3 h ago"
+     "last successful build 79.5 h ago"
     ]
    ],
    "slots": [
@@ -129,7 +120,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 76.3,
+   "build_h": 79.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -143,7 +134,7 @@
    "topics": 20,
    "actions": [
     {
-     "at": "2026-11-17T23:08:11Z",
+     "at": "2026-11-18T02:17:41Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
@@ -158,14 +149,6 @@
    "repo": "edbackulin-eng/archive-channel",
    "problems": [
     [
-     "buffer",
-     "1 of the next 3 slots have a video"
-    ],
-    [
-     "build-failed",
-     "last build failed at ?"
-    ],
-    [
      "topics",
      "8 topics left (min 10)"
     ]
@@ -178,8 +161,8 @@
     },
     {
      "at": "2026-11-24T17:00Z",
-     "video": null,
-     "title": null
+     "video": "TTyj7rAwf8s",
+     "title": "A Day in 1955 America in Color"
     },
     {
      "at": "2026-11-27T17:00Z",
@@ -187,19 +170,12 @@
      "title": null
     }
    ],
-   "buffer": 1,
-   "scheduled_ahead": 1,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 8.1,
-   "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/44175359128",
-    "id": 44175359128,
-    "step": "?",
-    "at": "2026-11-17T21:01:08Z",
-    "kind": null,
-    "workflow": ".github/workflows/episode.yml"
-   },
+   "build_h": 0.8,
+   "last_build_failed": null,
    "failures": [
     {
      "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/44175359128",
@@ -232,15 +208,7 @@
    "topics": 8,
    "actions": [
     {
-     "at": "2026-11-17T23:08:11Z",
-     "channel": "archive",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "1 of the next 3 slots have a video",
-     "result": "started"
-    },
-    {
-     "at": "2026-11-17T23:08:11Z",
+     "at": "2026-11-18T02:17:41Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
@@ -274,8 +242,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 20.5,
-   "build_h": 3.8,
+   "watchdog_h": 0.4,
+   "build_h": 6.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -286,9 +254,9 @@
   }
  ],
  "gpu": {
-  "hours": 10.6,
+  "hours": 8.96,
   "parts": {
-   "closed-tabs": 9.0,
+   "closed-tabs": 7.36,
    "What If": 0.0,
    "dinosaurs": 1.6
   }
