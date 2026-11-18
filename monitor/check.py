@@ -175,6 +175,8 @@ class Net:
     issue = None                     # its number, kept in state/monitor.json ("issue")
 
     def comment(self, body):
+        print(f"LETTER (mail is off (owner 18.11): the text stays in the Actions log, nobody is written to): {body[:600]}")
+        return
         # the number is kept: right after an issue is made, the list does not show it yet, and
         # a second letter in the same pass made a second "Monitor" (05.11)
         n = self.issue
