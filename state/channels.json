@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T14:27:12Z",
+ "at": "2026-11-18T17:23:13Z",
  "channels": [
   {
    "key": "whatif",
@@ -19,15 +19,15 @@
     },
     {
      "at": "2026-11-28T15:00Z",
-     "video": null,
-     "title": null
+     "video": "Jm6VI8Yc0i0",
+     "title": "What Would Happen If Yellowstone Erupted?"
     }
    ],
-   "buffer": 2,
-   "scheduled_ahead": 2,
+   "buffer": 3,
+   "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 1.4,
+   "build_h": 1.2,
    "last_build_failed": null,
    "failures": [
     {
@@ -69,12 +69,12 @@
    "topics": 30,
    "actions": [
     {
-     "at": "2026-11-18T14:27:12Z",
+     "at": "2026-11-18T17:23:13Z",
      "channel": "whatif",
      "level": 2,
      "action": "autofix",
      "why": "blender (#) / #d shots, share # of # |",
-     "result": "no patch: the edit does not match the file once"
+     "result": "no patch: Gemini: The error text and log were not provided in the prompt"
     }
    ]
   },
@@ -104,7 +104,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 12.1,
+   "build_h": 15.1,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -124,15 +124,10 @@
     ],
     [
      "build",
-     "last successful build 91.7 h ago"
+     "last successful build 94.6 h ago"
     ]
    ],
    "slots": [
-    {
-     "at": "2026-11-18T16:00Z",
-     "video": null,
-     "title": null
-    },
     {
      "at": "2026-11-22T16:00Z",
      "video": null,
@@ -142,34 +137,25 @@
      "at": "2026-11-25T16:00Z",
      "video": null,
      "title": null
+    },
+    {
+     "at": "2026-11-29T16:00Z",
+     "video": null,
+     "title": null
     }
    ],
    "buffer": 0,
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 91.7,
+   "build_h": 94.6,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
-   "owner": [
-    [
-     "buffer0",
-     "nothing for the next slot (2026-11-18T16:00Z) and no video ahead"
-    ]
-   ],
+   "owner": [],
    "failed": [],
    "topics": 20,
-   "actions": [
-    {
-     "at": "2026-11-18T14:27:12Z",
-     "channel": "dinosaurs",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    }
-   ]
+   "actions": []
   },
   {
    "key": "archive",
@@ -202,7 +188,7 @@
    "scheduled_ahead": 2,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 12.9,
+   "build_h": 15.9,
    "last_build_failed": null,
    "failures": [
     {
@@ -236,12 +222,12 @@
    "topics": 8,
    "actions": [
     {
-     "at": "2026-11-18T14:27:12Z",
+     "at": "2026-11-18T17:23:13Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
      "why": "? |",
-     "result": "no patch: Gemini: The error log was omitted from the prompt, making it impossible to identify the exact failure."
+     "result": "no patch: the edit does not match the file once"
     }
    ]
   },
@@ -270,8 +256,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 12.6,
-   "build_h": 5.9,
+   "watchdog_h": 15.5,
+   "build_h": 8.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -305,8 +291,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 12.0,
-   "build_h": 4.0,
+   "watchdog_h": 14.9,
+   "build_h": 6.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -349,8 +335,8 @@
    "buffer": 0,
    "scheduled_ahead": 0,
    "waiting": null,
-   "watchdog_h": 0.7,
-   "build_h": -0.0,
+   "watchdog_h": 3.7,
+   "build_h": 0.3,
    "last_build_failed": null,
    "failures": [
     {
@@ -378,28 +364,11 @@
      "0 of the next 3 slots have a video"
     ],
     [
-     "watchdog",
-     "no sign of life for None h (max 26)"
-    ],
-    [
-     "build",
-     "no successful build yet"
-    ],
-    [
      "missed:2026-11-17",
      "no video went out on the slot 2026-11-17 17:00 UTC"
-    ],
-    [
-     "missed:2026-11-16",
-     "no video went out on the slot 2026-11-16 17:00 UTC"
     ]
    ],
    "slots": [
-    {
-     "at": "2026-11-18T17:00Z",
-     "video": null,
-     "title": null
-    },
     {
      "at": "2026-11-19T17:00Z",
      "video": null,
@@ -409,24 +378,38 @@
      "at": "2026-11-20T17:00Z",
      "video": null,
      "title": null
+    },
+    {
+     "at": "2026-11-21T17:00Z",
+     "video": null,
+     "title": null
     }
    ],
    "buffer": 0,
    "scheduled_ahead": 0,
    "waiting": null,
-   "watchdog_h": null,
-   "build_h": null,
+   "watchdog_h": 1.9,
+   "build_h": 1.9,
    "last_build_failed": null,
-   "failures": [],
+   "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/HugeToScale/actions/runs/44336109555",
+     "id": 44336109555,
+     "step": "upload / Run python automation/publish.py",
+     "at": "2026-11-18T15:29:13Z",
+     "kind": null,
+     "workflow": ".github/workflows/upload.yml"
+    }
+   ],
    "waiting_built": 0,
    "owner": [
     [
      "buffer0",
-     "nothing for the next slot (2026-11-18T17:00Z) and no video ahead"
+     "nothing for the next slot (2026-11-19T17:00Z) and no video ahead"
     ]
    ],
    "failed": [],
-   "topics": 16,
+   "topics": 30,
    "actions": []
   }
  ],
