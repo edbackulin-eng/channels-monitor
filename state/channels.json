@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T08:17:41Z",
+ "at": "2026-11-18T11:18:53Z",
  "channels": [
   {
    "key": "whatif",
@@ -8,14 +8,18 @@
    "problems": [
     [
      "buffer",
-     "0 of the next 3 slots have a video"
+     "1 of the next 3 slots have a video"
+    ],
+    [
+     "build-failed",
+     "last build failed at blender (5) / 3D shots, share 5 of 8"
     ]
    ],
    "slots": [
     {
      "at": "2026-11-21T15:00Z",
-     "video": null,
-     "title": null
+     "video": "O1J00xJlV_U",
+     "title": "What Would Happen If the Moon Came Twice as Close?"
     },
     {
      "at": "2026-11-24T15:00Z",
@@ -28,13 +32,28 @@
      "title": null
     }
    ],
-   "buffer": 0,
-   "scheduled_ahead": 0,
+   "buffer": 1,
+   "scheduled_ahead": 1,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 12.1,
-   "last_build_failed": null,
+   "build_h": 15.1,
+   "last_build_failed": {
+    "run": "https://github.com/edbackulin-eng/whatif-channel/actions/runs/44261282033",
+    "id": 44261282033,
+    "step": "blender (5) / 3D shots, share 5 of 8",
+    "at": "2026-11-18T09:57:58Z",
+    "kind": null,
+    "workflow": ".github/workflows/build-v2.yml"
+   },
    "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/whatif-channel/actions/runs/44261282033",
+     "id": 44261282033,
+     "step": "blender (5) / 3D shots, share 5 of 8",
+     "at": "2026-11-18T09:57:58Z",
+     "kind": null,
+     "workflow": ".github/workflows/build-v2.yml"
+    },
     {
      "run": "https://github.com/edbackulin-eng/whatif-channel/actions/runs/44067971530",
      "id": 44067971530,
@@ -56,18 +75,22 @@
    "owner": [],
    "failed": [],
    "topics": 30,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-18T11:18:53Z",
+     "channel": "whatif",
+     "level": 2,
+     "action": "autofix",
+     "why": "blender (#) / #d shots, share # of # |",
+     "result": "no patch: Gemini: The failure log is empty, so the exact error in the blender step cannot be determined with certainty."
+    }
+   ]
   },
   {
    "key": "closed-tabs",
    "name": "Closed Tabs",
    "repo": "edbackulin-eng/closed-tabs",
-   "problems": [
-    [
-     "topics",
-     "9 topics left (min 10)"
-    ]
-   ],
+   "problems": [],
    "slots": [
     {
      "at": "2026-11-19T17:00Z",
@@ -89,23 +112,14 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 6.0,
+   "build_h": 9.0,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
-   "topics": 9,
-   "actions": [
-    {
-     "at": "2026-11-18T08:17:41Z",
-     "channel": "closed-tabs",
-     "level": 1,
-     "action": "start topics.yml",
-     "why": "9 topics left",
-     "result": "started"
-    }
-   ]
+   "topics": 10,
+   "actions": []
   },
   {
    "key": "dinosaurs",
@@ -118,7 +132,7 @@
     ],
     [
      "build",
-     "last successful build 85.5 h ago"
+     "last successful build 88.5 h ago"
     ]
    ],
    "slots": [
@@ -142,7 +156,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 85.5,
+   "build_h": 88.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -156,7 +170,7 @@
    "topics": 20,
    "actions": [
     {
-     "at": "2026-11-18T08:17:41Z",
+     "at": "2026-11-18T11:18:53Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
@@ -196,7 +210,7 @@
    "scheduled_ahead": 2,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 6.8,
+   "build_h": 9.8,
    "last_build_failed": null,
    "failures": [
     {
@@ -230,12 +244,12 @@
    "topics": 8,
    "actions": [
     {
-     "at": "2026-11-18T08:17:41Z",
+     "at": "2026-11-18T11:18:53Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
      "why": "? |",
-     "result": "no patch: Gemini: No failure log provided to identify the error."
+     "result": "no patch: Gemini: The error log is missing from the prompt, so the exact failure cannot be diagnosed."
     }
    ]
   },
@@ -264,8 +278,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 6.4,
-   "build_h": 12.9,
+   "watchdog_h": 9.5,
+   "build_h": 2.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -299,8 +313,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 5.8,
-   "build_h": 12.7,
+   "watchdog_h": 8.9,
+   "build_h": 0.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -317,10 +331,6 @@
     [
      "buffer",
      "0 of the next 3 slots have a video"
-    ],
-    [
-     "watchdog",
-     "no sign of life for None h (max 26)"
     ],
     [
      "missed:2026-11-16",
@@ -347,8 +357,8 @@
    "buffer": 0,
    "scheduled_ahead": 0,
    "waiting": null,
-   "watchdog_h": null,
-   "build_h": 8.3,
+   "watchdog_h": 1.4,
+   "build_h": 0.3,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,

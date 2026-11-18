@@ -1,16 +1,15 @@
 {
  "summary_date": "2026-11-18",
  "alarms": {
-  "whatif:buffer": "What If: 0 of the next 3 slots have a video",
-  "closed-tabs:topics": "Closed Tabs: 9 topics left (min 10)",
+  "whatif:buffer": "What If: 1 of the next 3 slots have a video",
+  "whatif:build-failed": "What If: last build failed at blender (5) / 3D shots, share 5 of 8",
   "dinosaurs:buffer": "Urzeit (dinosaurs): 0 of the next 3 slots have a video",
-  "dinosaurs:build": "Urzeit (dinosaurs): last successful build 85.5 h ago",
+  "dinosaurs:build": "Urzeit (dinosaurs): last successful build 88.5 h ago",
   "archive:topics": "Yesterday in Color: 8 topics left (min 10)",
   "aot:buffer": "America Over Time: 0 of the next 3 slots have a video",
-  "aot:watchdog": "America Over Time: no sign of life for None h (max 26)",
   "aot:missed:2026-11-16": "America Over Time: no video went out on the slot 2026-11-16 18:00 UTC"
  },
- "last_pass": "2026-11-18T08:17:41Z",
+ "last_pass": "2026-11-18T11:18:53Z",
  "planned": [
   {
    "id": "ct-build-0711",
@@ -32,10 +31,10 @@
  ],
  "requeued": [],
  "done": {
-  "whatif:requeue": "2026-11-18T08:17:41Z",
+  "whatif:requeue": "2026-11-18T11:18:53Z",
   "archive:build": "2026-11-17T23:08:11Z",
   "whatif:watchdog": "2026-11-06T11:03:13Z",
-  "dinosaurs:build": "2026-11-18T08:17:41Z",
+  "dinosaurs:build": "2026-11-18T11:18:53Z",
   "archive:watchdog": "2026-11-08T20:24:14Z",
   "closed-tabs:topics": "2026-11-18T08:17:41Z",
   "closed-tabs:watchdog": "2026-11-13T14:14:08Z",

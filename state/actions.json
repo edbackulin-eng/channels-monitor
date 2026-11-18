@@ -1502,5 +1502,29 @@
   "action": "autofix",
   "why": "? |",
   "result": "no patch: Gemini: No failure log provided to identify the error."
+ },
+ {
+  "at": "2026-11-18T11:18:53Z",
+  "channel": "whatif",
+  "level": 2,
+  "action": "autofix",
+  "why": "blender (#) / #d shots, share # of # |",
+  "result": "no patch: Gemini: The failure log is empty, so the exact error in the blender step cannot be determined with certainty."
+ },
+ {
+  "at": "2026-11-18T11:18:53Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-18T11:18:53Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "? |",
+  "result": "no patch: Gemini: The error log is missing from the prompt, so the exact failure cannot be diagnosed."
  }
 ]
