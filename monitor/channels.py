@@ -156,6 +156,36 @@ def st_topics(root):
     return None
 
 
+def _kids_db(root):
+    p = Path(root) / "data" / "kids.db"
+    return sqlite3.connect(f"file:{p.as_posix()}?mode=ro", uri=True) if p.exists() else None
+
+
+KIDS_CHANNEL = "UCX71CVp9h0wn762YHzdo0QQ"      # Moo Toot on the former yoga channel (owner 14.11)
+
+
+def kids_scheduled(root):
+    c = _kids_db(root)
+    if not c:
+        return []
+    rows = c.execute("select published_at, youtube_id, title from videos where youtube_id is not null "
+                     "and published_at is not null and channel = ?", (KIDS_CHANNEL,)).fetchall()
+    c.close()
+    return [(_when(a), b, t) for a, b, t in rows if _when(a)]
+
+
+def kids_failed(root, days=7):
+    c = _kids_db(root)
+    if not c:
+        return []
+    since = datetime.now(timezone.utc).timestamp() - days * 86400
+    rows = c.execute("select id, created_at, coalesce(error, ''), coalesce(title, theme) from videos "
+                     "where status = 'failed' and channel = ?", (KIDS_CHANNEL,)).fetchall()
+    c.close()
+    return [(f"#{v} {str(t)[:30]}", e or "failed") for v, cr, e, t in rows
+            if _when(cr) and _when(cr).timestamp() >= since]
+
+
 def aot_topics(root):
     """America Over Time: approved topics whose code exists (`module`) and that are not rendered/uploaded yet."""
     q = _json(root, "data/topic_queue.json", {"topics": []})
@@ -165,19 +195,19 @@ def aot_topics(root):
 
 CHANNELS = [
     {"key": "whatif", "name": "What If", "repo": "edbackulin-eng/whatif-channel", "act": True,
-     "slots": {"weekdays": [0, 1, 3, 4, 5], "time": "15:00", "tz": "UTC"},
+     "slots": {"weekdays": [1, 5], "time": "15:00", "tz": "UTC"},     # Tue + Sat 17:00 Kyiv (owner 16.11)
      "paths": ["queue", "assets/topics.json", "state"],
-     "watchdog": "watchdog.yml", "builds": ["build-video.yml"], "heartbeat": "state/heartbeat.json",
+     "watchdog": "watchdog.yml", "builds": ["build-v2.yml"], "heartbeat": "state/heartbeat.json",
      "scheduled": wi_scheduled, "failed": wi_failed, "topics": wi_topics, "waiting": None,
      # the runbook (monitor/heal.py): what to start, and how long a run may take before it is hung
-     "refill": ("write-scripts.yml", {}), "build": ("build-video.yml", {}), "upload": None,
+     "refill": ("write-scripts.yml", {}), "build": ("build-v2.yml", {"slug": "next", "upload": "true"}), "upload": None,
      # a What If build takes about 3 h on the shared GPU: started after 15:00 it would still run
      # when Closed Tabs' window opens at 20:00
-     "build_hours_utc": (3, 15),
-     "hung_h": {"watchdog.yml": 6.2, "build-video.yml": 6.0}, "infra_fixes": "state/infra_fixes.json",
+     "build_hours_utc": (5, 12),            # v2: FLUX must land in the Kaggle window 07:00-17:30 UTC
+     "hung_h": {"watchdog.yml": 6.2, "build-v2.yml": 13.0}, "infra_fixes": "state/infra_fixes.json",
      "requeue": "whatif"},
     {"key": "closed-tabs", "name": "Closed Tabs", "repo": "edbackulin-eng/closed-tabs", "act": True,
-     "slots": {"weekdays": [0, 1, 3, 4, 5], "time": "17:00", "tz": "UTC"},
+     "slots": {"weekdays": [0, 3], "time": "17:00", "tz": "UTC"},      # Mon + Thu (owner 16.11)
      "paths": ["state", "topics/queue.json"],
      "watchdog": "watchdog.yml", "builds": ["daily.yml", "resume-episode.yml"], "heartbeat": "state/heartbeat.json",
      "scheduled": ct_scheduled, "failed": ct_failed, "topics": ct_topics, "waiting": None,
@@ -206,7 +236,7 @@ CHANNELS = [
      "hung_h": {"watchdog.yml": 6.2, "episode.yml": 13.5, "upload.yml": 2.0},
      "infra_fixes": "state/infra_fixes.json", "requeue": None},
     {"key": "stoic", "name": "Stoic (yt-factory-daily)", "repo": "beautyapp800-ctrl/yt-factory-daily", "act": False,
-     "slots": {"weekdays": [0, 1, 2, 3, 4, 5, 6], "time": "21:00", "tz": "Europe/Kyiv"},
+     "slots": {"weekdays": [6, 2], "time": "21:00", "tz": "Europe/Kyiv"},     # Sun + Wed (its config.json)
      "paths": ["data/factory.db"],
      # no watchdog of its own: its daily heartbeat workflow is what says it is alive
      "watchdog": "heartbeat.yml", "watchdog_max_h": 26,
@@ -214,6 +244,14 @@ CHANNELS = [
      # D+1), so one slot ahead is its normal state
      "buffer_min": 1, "builds": ["daily.yml", "daily-retry.yml"], "heartbeat": None,
      "scheduled": st_scheduled, "failed": st_failed, "topics": st_topics, "waiting": None,
+     # read only: nothing is ever started, cancelled or changed in it
+     "refill": None, "build": None, "upload": None, "hung_h": {}, "infra_fixes": None, "requeue": None},
+    {"key": "kids", "name": "Moo Toot (yt-kids-daily)", "repo": "beautyapp800-ctrl/yt-kids-daily", "act": False,
+     "slots": {"weekdays": [6, 1, 3], "time": "16:00", "tz": "Europe/Kyiv"},  # Sun + Tue + Thu (its config.json)
+     "paths": ["data/kids.db"],
+     "watchdog": "heartbeat.yml", "watchdog_max_h": 26,
+     "buffer_min": 1, "builds": ["daily.yml"], "heartbeat": None,
+     "scheduled": kids_scheduled, "failed": kids_failed, "topics": None, "waiting": None,
      # read only: nothing is ever started, cancelled or changed in it
      "refill": None, "build": None, "upload": None, "hung_h": {}, "infra_fixes": None, "requeue": None},
     {"key": "aot", "name": "America Over Time", "repo": "edbackulin-eng/map-timelapse", "act": False,

@@ -424,7 +424,7 @@ def look(net, ch, now, work):
         elif f["kind"] == "key":
             out["owner"].append(("key", f"a key is missing or refused ({f['step']})"))
     out["failed"] = [{"episode": e, "reason": r} for e, r in ch["failed"](root)]
-    out["topics"] = ch["topics"](root)
+    out["topics"] = ch["topics"](root) if ch.get("topics") else None
     # the alarms
     if out["buffer"] < ch.get("buffer_min", BUFFER_MIN):
         out["problems"].append(("buffer", f"{out['buffer']} of the next 3 slots have a video"
@@ -450,11 +450,34 @@ def look(net, ch, now, work):
     if out["slots"] and not out["slots"][0]["video"] and out["buffer"] == 0 \
             and ts(out["slots"][0]["at"]) - now <= timedelta(hours=36):
         out["owner"].append(("buffer0", f"nothing for the next slot ({out['slots'][0]['at']}) and no video ahead"))
+    # owner 17.11: a slot of the last two days that went by with no video of the channel
+    past = [x for x in ch["scheduled"](root) if x[0]]
+    for s in missed_slots(ch["slots"], now, past):
+        out["problems"].append((f"missed:{s:%Y-%m-%d}", f"no video went out on the slot {s:%Y-%m-%d %H:%M} UTC"))
     for f in out["failed"]:
         out["problems"].append((f"failed:{f['episode']}", f"{f['episode']}: {str(f['reason'])[:160]}"))
     if out["topics"] is not None and out["topics"] < TOPICS_MIN:
         out["problems"].append(("topics", f"{out['topics']} topics left (min {TOPICS_MIN})"))
     return out, root
+
+
+def missed_slots(spec, now, published, days=2, grace_h=2):
+    """Slots of the last `days` days (ended at least `grace_h` hours ago) with no video of the channel
+    within 3 hours of them."""
+    from zoneinfo import ZoneInfo
+    tz = ZoneInfo(spec["tz"])
+    hh, mm = (int(x) for x in spec["time"].split(":"))
+    out = []
+    local = now.astimezone(tz)
+    for k in range(days + 1):
+        d = (local - timedelta(days=k)).date()
+        slot = datetime(d.year, d.month, d.day, hh, mm, tzinfo=tz).astimezone(timezone.utc)
+        if slot.astimezone(tz).weekday() not in spec["weekdays"] or now - slot < timedelta(hours=grace_h) \
+                or now - slot > timedelta(days=days):
+            continue
+        if not any(abs((t - slot).total_seconds()) <= 3 * 3600 for t, *_ in published):
+            out.append(slot)
+    return out
 
 
 def slot_text(s, tz):

@@ -187,9 +187,38 @@ def ask_retries():
        and REAL_GROQ("k", get=lambda: {"data": [{"id": "openai/gpt-oss-120b"}]}) is None)
 
 
+def fixture_world_channels():
+    """The fixture world (06-07.11) was drawn on the schedules of that week: the live table (17.11 - What If
+    v2 Tue+Sat, Closed Tabs Mon+Thu, Stoic Sun+Wed, Moo Toot and America Over Time added) is put back to
+    them here, and the missed-slot alarm has its own check below."""
+    from monitor import channels as C_
+    keep = {"whatif", "closed-tabs", "dinosaurs", "archive", "stoic"}
+    C_.CHANNELS[:] = [c for c in C_.CHANNELS if c["key"] in keep]
+    for c in C_.CHANNELS:
+        if c["key"] == "whatif":
+            c.update({"slots": {"weekdays": [0, 1, 3, 4, 5], "time": "15:00", "tz": "UTC"},
+                      "builds": ["build-video.yml"], "build": ("build-video.yml", {}), "build_hours_utc": (3, 15),
+                      "hung_h": {"watchdog.yml": 6.2, "build-video.yml": 6.0}})
+        elif c["key"] == "closed-tabs":
+            c["slots"] = {"weekdays": [0, 1, 3, 4, 5], "time": "17:00", "tz": "UTC"}
+        elif c["key"] == "stoic":
+            c["slots"] = {"weekdays": [0, 1, 2, 3, 4, 5, 6], "time": "21:00", "tz": "Europe/Kyiv"}
+    real = check.missed_slots
+    check.missed_slots = lambda *a, **k: []
+    # the alarm itself: a Tuesday 15:00 UTC slot that went by with nothing, a Saturday one that had its video
+    from datetime import datetime, timezone
+    spec = {"weekdays": [1, 5], "time": "15:00", "tz": "UTC"}
+    now = datetime(2026, 11, 18, 9, 0, tzinfo=timezone.utc)
+    gone = real(spec, now, [])
+    had = real(spec, now, [(datetime(2026, 11, 17, 15, 0, 5, tzinfo=timezone.utc), "v", "t")])
+    ok("a slot that went by with no video is an alarm (owner 17.11)",
+       [g.strftime("%Y-%m-%d") for g in gone] == ["2026-11-17"] and had == [], f"{gone} {had}")
+
+
 def main():
     global REAL_ASK, REAL_GROQ
     REAL_ASK, REAL_GROQ = autofix.ask, autofix._groq_model
+    fixture_world_channels()
     ask_retries()
     os.environ["GEMINI_API_KEY_MON"] = "fake"
     asked = []
