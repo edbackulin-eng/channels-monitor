@@ -2,14 +2,13 @@
  "summary_date": "2026-11-18",
  "alarms": {
   "dinosaurs:buffer": "Urzeit (dinosaurs): 0 of the next 3 slots have a video",
-  "dinosaurs:build": "Urzeit (dinosaurs): last successful build 97.7 h ago",
+  "dinosaurs:build": "Urzeit (dinosaurs): last successful build 100.8 h ago",
   "dinosaurs:missed:2026-11-18": "Urzeit (dinosaurs): no video went out on the slot 2026-11-18 16:00 UTC",
   "archive:topics": "Yesterday in Color: 8 topics left (min 10)",
-  "hts:buffer": "Huge To Scale: 0 of the next 3 slots have a video",
   "hts:missed:2026-11-18": "Huge To Scale: no video went out on the slot 2026-11-18 17:00 UTC",
   "hts:missed:2026-11-17": "Huge To Scale: no video went out on the slot 2026-11-17 17:00 UTC"
  },
- "last_pass": "2026-11-18T20:32:32Z",
+ "last_pass": "2026-11-18T23:35:29Z",
  "planned": [
   {
    "id": "ct-build-0711",
@@ -31,19 +30,17 @@
  ],
  "requeued": [],
  "done": {
-  "whatif:requeue": "2026-11-18T20:32:32Z",
+  "whatif:requeue": "2026-11-18T23:35:29Z",
   "archive:build": "2026-11-17T23:08:11Z",
   "whatif:watchdog": "2026-11-06T11:03:13Z",
-  "dinosaurs:build": "2026-11-18T14:27:12Z",
+  "dinosaurs:build": "2026-11-18T23:35:29Z",
   "archive:watchdog": "2026-11-08T20:24:14Z",
   "closed-tabs:topics": "2026-11-18T08:17:41Z",
   "closed-tabs:watchdog": "2026-11-13T14:14:08Z",
   "whatif:build": "2026-11-18T05:10:05Z",
   "closed-tabs:build": "2026-11-17T23:08:11Z"
  },
- "owner_alarms": {
-  "hts:owner-buffer0": "Huge To Scale: nothing for the next slot (2026-11-19T17:00Z) and no video ahead"
- },
+ "owner_alarms": {},
  "issue": 1,
  "rights": {
   "edbackulin-eng/whatif-channel": {

@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T20:32:32Z",
+ "at": "2026-11-18T23:35:29Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 4.4,
+   "build_h": 7.4,
    "last_build_failed": null,
    "failures": [
     {
@@ -69,7 +69,7 @@
    "topics": 30,
    "actions": [
     {
-     "at": "2026-11-18T20:32:32Z",
+     "at": "2026-11-18T23:35:29Z",
      "channel": "whatif",
      "level": 2,
      "action": "autofix",
@@ -104,7 +104,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 18.2,
+   "build_h": 21.3,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -124,7 +124,7 @@
     ],
     [
      "build",
-     "last successful build 97.7 h ago"
+     "last successful build 100.8 h ago"
     ],
     [
      "missed:2026-11-18",
@@ -152,14 +152,23 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 97.7,
+   "build_h": 100.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
    "topics": 20,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-18T23:35:29Z",
+     "channel": "dinosaurs",
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "archive",
@@ -192,7 +201,7 @@
    "scheduled_ahead": 2,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 19.0,
+   "build_h": 22.1,
    "last_build_failed": null,
    "failures": [
     {
@@ -226,12 +235,12 @@
    "topics": 8,
    "actions": [
     {
-     "at": "2026-11-18T20:32:32Z",
+     "at": "2026-11-18T23:35:29Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
      "why": "? |",
-     "result": "no patch: the edit does not match the file once"
+     "result": "no patch: Gemini: The error log was omitted from the prompt, making it impossible to identify the exact failing step or fix."
     }
    ]
   },
@@ -260,8 +269,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 18.7,
-   "build_h": 0.7,
+   "watchdog_h": 21.7,
+   "build_h": 3.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -295,8 +304,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 18.1,
-   "build_h": 1.4,
+   "watchdog_h": 21.1,
+   "build_h": 4.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -330,8 +339,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 2.2,
-   "build_h": 2.2,
+   "watchdog_h": 5.3,
+   "build_h": 5.3,
    "last_build_failed": null,
    "failures": [
     {
@@ -363,10 +372,6 @@
    "repo": "edbackulin-eng/HugeToScale",
    "problems": [
     [
-     "buffer",
-     "0 of the next 3 slots have a video"
-    ],
-    [
      "missed:2026-11-18",
      "no video went out on the slot 2026-11-18 17:00 UTC"
     ],
@@ -378,13 +383,13 @@
    "slots": [
     {
      "at": "2026-11-19T17:00Z",
-     "video": null,
-     "title": null
+     "video": "5tiUd32il0I",
+     "title": "Meteor Crater Size Comparison: a 1.2 km Hole in Manhattan"
     },
     {
      "at": "2026-11-20T17:00Z",
-     "video": null,
-     "title": null
+     "video": "q3gVdCFsnKE",
+     "title": "Burj Khalifa vs Mount Everest: 828 m vs 8,849 m"
     },
     {
      "at": "2026-11-21T17:00Z",
@@ -392,11 +397,11 @@
      "title": null
     }
    ],
-   "buffer": 0,
-   "scheduled_ahead": 0,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 5.0,
-   "build_h": 2.8,
+   "watchdog_h": 1.8,
+   "build_h": 1.8,
    "last_build_failed": null,
    "failures": [
     {
@@ -409,14 +414,9 @@
     }
    ],
    "waiting_built": 0,
-   "owner": [
-    [
-     "buffer0",
-     "nothing for the next slot (2026-11-19T17:00Z) and no video ahead"
-    ]
-   ],
+   "owner": [],
    "failed": [],
-   "topics": 32,
+   "topics": 31,
    "actions": []
   }
  ],
