@@ -158,5 +158,1325 @@
   "action": "start episode.yml",
   "why": "0 of the next 3 slots have a video",
   "result": "started"
+ },
+ {
+  "at": "2026-11-07T23:19:25Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "1 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-07T23:19:25Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-08T02:20:26Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "1 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-08T02:20:26Z",
+  "channel": "dinosaurs",
+  "level": 2,
+  "action": "autofix",
+  "why": "part (#) / render part # |",
+  "result": "no patch: Gemini: no failure log was provided to identify the error"
+ },
+ {
+  "at": "2026-11-08T02:20:26Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-08T02:20:26Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" script |",
+  "result": "no patch: Gemini: No failure log was provided to diagnose the failure."
+ },
+ {
+  "at": "2026-11-08T05:09:24Z",
+  "channel": "dinosaurs",
+  "level": 2,
+  "action": "autofix",
+  "why": "part (#) / render part # |",
+  "result": "no patch: Gemini: The failure log is empty, making the exact cause of the failure in the 'Render part 7' step uncertain."
+ },
+ {
+  "at": "2026-11-08T05:09:24Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" script |",
+  "result": "no patch: Gemini: No failure log was provided to diagnose why the script step failed."
+ },
+ {
+  "at": "2026-11-08T08:11:46Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "1 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-08T08:11:46Z",
+  "channel": "dinosaurs",
+  "level": 2,
+  "action": "autofix",
+  "why": "part (#) / render part # |",
+  "result": "no patch: Gemini: The error log is empty, so the exact cause of the step failure cannot be determined with certainty."
+ },
+ {
+  "at": "2026-11-08T08:11:46Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-08T08:11:46Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" script |",
+  "result": "no patch: Gemini: No failure log was provided to determine why the script step failed."
+ },
+ {
+  "at": "2026-11-08T11:18:21Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "1 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-08T11:18:21Z",
+  "channel": "dinosaurs",
+  "level": 2,
+  "action": "autofix",
+  "why": "part (#) / render part # |",
+  "result": "no patch: Gemini: The error log was omitted from the prompt, making it impossible to identify the exact failure."
+ },
+ {
+  "at": "2026-11-08T11:18:21Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" script |",
+  "result": "no patch: Gemini: No error log was provided in the prompt to diagnose the exact failure."
+ },
+ {
+  "at": "2026-11-08T14:19:34Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "1 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-08T14:19:34Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-08T14:19:34Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" narrate |",
+  "result": "no patch: Gemini: No error log was provided to determine the cause of the failure."
+ },
+ {
+  "at": "2026-11-08T17:22:20Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-08T17:22:20Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-08T17:22:20Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" narrate |",
+  "result": "no patch: Gemini: No error log was provided to identify the cause of the failure in the narrate step."
+ },
+ {
+  "at": "2026-11-08T20:24:14Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-08T20:24:14Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "cancel watchdog.yml run 42484741975",
+  "why": "running 7.0 h (limit 6.2 h)",
+  "result": "cancelled"
+ },
+ {
+  "at": "2026-11-08T20:24:14Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start watchdog.yml",
+  "why": "hung",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-08T20:24:14Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-08T20:24:14Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" narrate |",
+  "result": "no patch: Gemini: The error text is missing from the prompt."
+ },
+ {
+  "at": "2026-11-08T23:25:33Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-08T23:25:33Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-08T23:25:33Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" narrate |",
+  "result": "no patch: Gemini: The error log is missing from the prompt."
+ },
+ {
+  "at": "2026-11-09T02:29:34Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-09T02:29:34Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-09T02:29:34Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" narrate |",
+  "result": "no patch: Gemini: The failure log is empty, so the error in the narrate step cannot be determined with certainty."
+ },
+ {
+  "at": "2026-11-09T05:01:23Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" narrate |",
+  "result": "no patch: the edit does not match the file once"
+ },
+ {
+  "at": "2026-11-09T08:02:44Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-09T08:02:44Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-09T08:02:44Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" narrate |",
+  "result": "no patch: Gemini: No failure log was provided, so the cause of the failure cannot be determined with certainty."
+ },
+ {
+  "at": "2026-11-09T11:11:56Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-09T11:11:56Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-09T11:11:56Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" narrate |",
+  "result": "no patch: Gemini: The error text is missing from the prompt."
+ },
+ {
+  "at": "2026-11-09T14:21:23Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-09T14:21:23Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-09T17:22:28Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-09T20:23:30Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-09T20:23:30Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-09T23:24:45Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-09T23:24:45Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-10T02:25:33Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-10T02:25:33Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-10T08:12:33Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-10T08:12:33Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-10T11:13:40Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-10T14:14:29Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-10T14:14:29Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-10T17:15:34Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" script |",
+  "result": "no patch: the edit does not match the file once"
+ },
+ {
+  "at": "2026-11-10T20:17:04Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-10T20:17:04Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-10T20:17:04Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" script |",
+  "result": "no patch: the edit does not match the file once"
+ },
+ {
+  "at": "2026-11-10T23:19:38Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-10T23:19:38Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-10T23:19:38Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" script |",
+  "result": "no patch: the edit does not match the file once"
+ },
+ {
+  "at": "2026-11-11T02:21:02Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-11T02:21:02Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-11T02:21:02Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" script |",
+  "result": "no patch: the edit does not match the file once"
+ },
+ {
+  "at": "2026-11-11T05:07:07Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" script |",
+  "result": "no patch: Gemini: No failure log was provided, so the exact error and its cause cannot be determined with certainty."
+ },
+ {
+  "at": "2026-11-11T08:08:09Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" script |",
+  "result": "no patch: Gemini: No error log was provided, so the cause of failure cannot be determined."
+ },
+ {
+  "at": "2026-11-11T11:12:36Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" script |",
+  "result": "no patch: Gemini: No failure log provided to identify the error"
+ },
+ {
+  "at": "2026-11-11T14:14:54Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-11T14:14:54Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" script |",
+  "result": "no patch: the edit does not match the file once"
+ },
+ {
+  "at": "2026-11-11T17:19:24Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-11T17:19:24Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" script |",
+  "result": "no patch: the edit does not match the file once"
+ },
+ {
+  "at": "2026-11-11T20:21:56Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-11T20:21:56Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "? |",
+  "result": "no patch: the edit does not match the file once"
+ },
+ {
+  "at": "2026-11-12T00:47:03Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-12T00:47:03Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-12T00:47:03Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" script |",
+  "result": "no patch: the edit does not match the file once"
+ },
+ {
+  "at": "2026-11-12T03:48:07Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-12T03:48:07Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" script |",
+  "result": "no patch: the edit does not match the file once"
+ },
+ {
+  "at": "2026-11-12T05:03:59Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-12T08:05:03Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-12T11:05:45Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-12T11:05:45Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-12T17:07:43Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-12T20:08:56Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-12T20:08:56Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-12T23:09:51Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-12T23:09:51Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-13T02:10:48Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-13T02:10:48Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-13T05:11:24Z",
+  "channel": "closed-tabs",
+  "level": 1,
+  "action": "start topics.yml",
+  "why": "9 topics left",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-13T05:11:24Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-13T05:11:24Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-13T08:12:19Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-13T08:12:19Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-13T11:13:09Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-13T14:14:08Z",
+  "channel": "closed-tabs",
+  "level": 1,
+  "action": "cancel watchdog.yml run 43379187798",
+  "why": "running 7.7 h (limit 6.2 h)",
+  "result": "cancelled"
+ },
+ {
+  "at": "2026-11-13T14:14:08Z",
+  "channel": "closed-tabs",
+  "level": 1,
+  "action": "start watchdog.yml",
+  "why": "hung",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-13T14:14:08Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-13T14:14:08Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "1 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-13T14:14:08Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / plan the shots (a topic with under # min of confirmed film is deferred, the next one started) |",
+  "result": "no patch: Gemini: The error log is missing, so the exact failure and failing line cannot be identified."
+ },
+ {
+  "at": "2026-11-13T17:15:48Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-13T17:15:48Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-13T17:15:48Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / plan the shots (a topic with under # min of confirmed film is deferred, the next one started) |",
+  "result": "no patch: the edit does not match the file once"
+ },
+ {
+  "at": "2026-11-13T20:23:52Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-13T23:24:41Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-14T02:25:21Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-14T02:25:21Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-14T05:11:14Z",
+  "channel": "closed-tabs",
+  "level": 1,
+  "action": "start topics.yml",
+  "why": "9 topics left",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-14T08:12:09Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-14T11:13:15Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-14T14:14:00Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" narrate |",
+  "result": "no patch: the edit does not match the file once"
+ },
+ {
+  "at": "2026-11-14T17:19:56Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-14T17:19:56Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" narrate |",
+  "result": "no patch: the edit does not match the file once"
+ },
+ {
+  "at": "2026-11-14T20:20:47Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-14T20:20:47Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-14T20:20:47Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" narrate |",
+  "result": "no patch: Gemini: The error log is missing from the prompt, making it impossible to identify the exact failure."
+ },
+ {
+  "at": "2026-11-14T23:26:18Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-14T23:26:18Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-14T23:26:18Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / run python automation \"$slug\" narrate |",
+  "result": "no patch: Gemini: The error log is missing from the prompt, making it impossible to identify the specific failure and apply a fix."
+ },
+ {
+  "at": "2026-11-15T02:29:22Z",
+  "channel": "closed-tabs",
+  "level": 1,
+  "action": "start topics.yml",
+  "why": "9 topics left",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-15T02:29:22Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-15T02:29:22Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-15T02:29:22Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix autofix/archive-20261115",
+  "why": "prepare / run python automation \"$slug\" narrate |",
+  "result": "patch on .github/workflows/episode.yml, smoke started"
+ },
+ {
+  "at": "2026-11-15T05:02:41Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "merge autofix/archive-20261115",
+  "why": "smoke on the branch passed",
+  "result": "merged into dev; dev goes to main by its smoke"
+ },
+ {
+  "at": "2026-11-15T08:03:22Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-15T08:03:22Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-15T11:04:24Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-15T11:04:24Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix autofix/archive-20261115",
+  "why": "the next build passed",
+  "result": "kept"
+ },
+ {
+  "at": "2026-11-15T14:05:00Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "1 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-15T17:05:49Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-15T20:06:20Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-15T20:06:20Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-15T23:07:02Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-16T02:07:43Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-16T02:07:43Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-16T05:08:44Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-16T08:09:30Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-16T11:10:28Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-16T14:11:04Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-16T17:12:07Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-16T20:12:44Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-16T20:12:44Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-16T23:13:52Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-16T23:13:52Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-17T02:14:36Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-17T02:14:36Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-17T05:00:35Z",
+  "channel": "whatif",
+  "level": 1,
+  "action": "start build-video.yml",
+  "why": "1 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-17T08:01:26Z",
+  "channel": "whatif",
+  "level": 1,
+  "action": "start build-video.yml",
+  "why": "1 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-17T08:01:26Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-17T08:01:26Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-17T11:02:47Z",
+  "channel": "whatif",
+  "level": 1,
+  "action": "start build-video.yml",
+  "why": "1 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-17T11:02:47Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-17T14:05:26Z",
+  "channel": "whatif",
+  "level": 1,
+  "action": "start build-video.yml",
+  "why": "1 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-17T14:05:26Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-17T17:06:13Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-17T20:07:16Z",
+  "channel": "closed-tabs",
+  "level": 1,
+  "action": "start topics.yml",
+  "why": "9 topics left",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-17T20:07:16Z",
+  "channel": "closed-tabs",
+  "level": 1,
+  "action": "start daily.yml",
+  "why": "1 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-17T20:07:16Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-17T23:08:11Z",
+  "channel": "closed-tabs",
+  "level": 1,
+  "action": "start daily.yml",
+  "why": "1 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-17T23:08:11Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-17T23:08:11Z",
+  "channel": "archive",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "1 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-17T23:08:11Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "? |",
+  "result": "no patch: the edit does not match the file once"
+ },
+ {
+  "at": "2026-11-18T02:17:41Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-18T02:17:41Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "? |",
+  "result": "no patch: the edit does not match the file once"
+ },
+ {
+  "at": "2026-11-18T05:10:05Z",
+  "channel": "whatif",
+  "level": 1,
+  "action": "start build-video.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-18T05:10:05Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "? |",
+  "result": "no patch: the edit does not match the file once"
  }
 ]

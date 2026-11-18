@@ -1,124 +1,102 @@
 {
- "at": "2026-11-07T17:17:14Z",
+ "at": "2026-11-18T05:10:05Z",
  "channels": [
   {
    "key": "whatif",
    "name": "What If",
    "repo": "edbackulin-eng/whatif-channel",
-   "problems": [],
+   "problems": [
+    [
+     "buffer",
+     "0 of the next 3 slots have a video"
+    ]
+   ],
    "slots": [
     {
-     "at": "2026-11-09T15:00Z",
-     "video": "C2yep2BX-z0",
-     "title": "What If All the Ice on Earth Melted?"
+     "at": "2026-11-19T15:00Z",
+     "video": null,
+     "title": null
     },
     {
-     "at": "2026-11-10T15:00Z",
-     "video": "VhKX4mkahSc",
-     "title": "What If the Moon Had an Atmosphere?"
+     "at": "2026-11-20T15:00Z",
+     "video": null,
+     "title": null
     },
     {
-     "at": "2026-11-12T15:00Z",
+     "at": "2026-11-21T15:00Z",
      "video": null,
      "title": null
     }
    ],
-   "buffer": 2,
-   "scheduled_ahead": 2,
+   "buffer": 0,
+   "scheduled_ahead": 0,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 4.1,
+   "build_h": 15.1,
    "last_build_failed": null,
-   "failures": [
-    {
-     "run": "https://github.com/edbackulin-eng/whatif-channel/actions/runs/41882220201",
-     "id": 41882220201,
-     "step": "build / Keep two scheduled ahead",
-     "at": "2026-11-04T17:58:51Z",
-     "kind": null,
-     "workflow": ".github/workflows/build-video.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/whatif-channel/actions/runs/41877756411",
-     "id": 41877756411,
-     "step": "build / Keep two scheduled ahead",
-     "at": "2026-11-04T17:43:15Z",
-     "kind": null,
-     "workflow": ".github/workflows/build-video.yml"
-    }
-   ],
+   "failures": [],
    "waiting_built": 0,
-   "owner": [],
+   "owner": [
+    [
+     "buffer0",
+     "nothing for the next slot (2026-11-19T15:00Z) and no video ahead"
+    ]
+   ],
    "failed": [],
-   "topics": 34,
-   "actions": []
+   "topics": 30,
+   "actions": [
+    {
+     "at": "2026-11-18T05:10:05Z",
+     "channel": "whatif",
+     "level": 1,
+     "action": "start build-video.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "closed-tabs",
    "name": "Closed Tabs",
    "repo": "edbackulin-eng/closed-tabs",
-   "problems": [],
+   "problems": [
+    [
+     "buffer",
+     "1 of the next 3 slots have a video"
+    ],
+    [
+     "topics",
+     "9 topics left (min 10)"
+    ]
+   ],
    "slots": [
     {
-     "at": "2026-11-09T17:00Z",
-     "video": "dz_GTE57Ly4",
-     "title": "A Buzz on 4625 kHz, and the Voice That Interrupts It"
+     "at": "2026-11-19T17:00Z",
+     "video": "OBi9ghcicR4",
+     "title": "The 360,000 Dollar Ghost Console"
     },
     {
-     "at": "2026-11-10T17:00Z",
-     "video": "NUdWNIEKZHk",
-     "title": "Is Anyone Actually There? Checking the Dead Internet Claim"
+     "at": "2026-11-20T17:00Z",
+     "video": null,
+     "title": null
     },
     {
-     "at": "2026-11-12T17:00Z",
+     "at": "2026-11-21T17:00Z",
      "video": null,
      "title": null
     }
    ],
-   "buffer": 2,
+   "buffer": 1,
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 14.1,
+   "build_h": 2.8,
    "last_build_failed": null,
-   "failures": [
-    {
-     "run": "https://github.com/edbackulin-eng/closed-tabs/actions/runs/41955999901",
-     "id": 41955999901,
-     "step": "resume / Render and package",
-     "at": "2026-11-05T02:35:13Z",
-     "kind": null,
-     "workflow": ".github/workflows/resume-episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/closed-tabs/actions/runs/41944396414",
-     "id": 41944396414,
-     "step": "render (3) / Render part 3",
-     "at": "2026-11-05T02:21:11Z",
-     "kind": null,
-     "workflow": ".github/workflows/daily.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/closed-tabs/actions/runs/41938354522",
-     "id": 41938354522,
-     "step": "resume / Render and package",
-     "at": "2026-11-05T00:19:57Z",
-     "kind": null,
-     "workflow": ".github/workflows/resume-episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/closed-tabs/actions/runs/41922077446",
-     "id": 41922077446,
-     "step": "render (4) / Render part 4",
-     "at": "2026-11-04T23:43:36Z",
-     "kind": null,
-     "workflow": ".github/workflows/daily.yml"
-    }
-   ],
+   "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
-   "topics": 13,
+   "topics": 9,
    "actions": []
   },
   {
@@ -128,91 +106,26 @@
    "problems": [
     [
      "buffer",
-     "0 of the next 3 slots have a video (1 waiting for approval or a slot)"
-    ]
-   ],
-   "slots": [
-    {
-     "at": "2026-11-11T16:00Z",
-     "video": null,
-     "title": null
-    },
-    {
-     "at": "2026-11-14T16:00Z",
-     "video": null,
-     "title": null
-    },
-    {
-     "at": "2026-11-18T16:00Z",
-     "video": null,
-     "title": null
-    }
-   ],
-   "buffer": 0,
-   "scheduled_ahead": 0,
-   "waiting": 1,
-   "watchdog_h": 0.0,
-   "build_h": 3.0,
-   "last_build_failed": null,
-   "failures": [
-    {
-     "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/42201599552",
-     "id": 42201599552,
-     "step": "part (9) / Render part 9",
-     "at": "2026-11-07T12:07:05Z",
-     "kind": null,
-     "workflow": ".github/workflows/render.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/41922911782",
-     "id": 41922911782,
-     "step": "part (7) / Render part 7",
-     "at": "2026-11-05T13:45:37Z",
-     "kind": null,
-     "workflow": ".github/workflows/render.yml"
-    }
-   ],
-   "waiting_built": 0,
-   "owner": [],
-   "failed": [],
-   "topics": 19,
-   "actions": []
-  },
-  {
-   "key": "archive",
-   "name": "Yesterday in Color",
-   "repo": "edbackulin-eng/archive-channel",
-   "problems": [
-    [
-     "buffer",
      "0 of the next 3 slots have a video"
     ],
     [
      "build",
-     "no successful build yet"
-    ],
-    [
-     "build-failed",
-     "last build failed at prepare / Run python automation/build.py \"$SLUG\" narrate"
-    ],
-    [
-     "failed:1950s-suburb",
-     "1950s-suburb: qa-failed: match_share; length; thumbnail"
+     "last successful build 82.4 h ago"
     ]
    ],
    "slots": [
     {
-     "at": "2026-11-10T17:00Z",
+     "at": "2026-11-18T16:00Z",
      "video": null,
      "title": null
     },
     {
-     "at": "2026-11-13T17:00Z",
+     "at": "2026-11-22T16:00Z",
      "video": null,
      "title": null
     },
     {
-     "at": "2026-11-17T17:00Z",
+     "at": "2026-11-25T16:00Z",
      "video": null,
      "title": null
     }
@@ -221,59 +134,93 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": null,
-   "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42386781523",
-    "id": 42386781523,
-    "step": "prepare / Run python automation/build.py \"$SLUG\" narrate",
-    "at": "2026-11-07T16:02:46Z",
-    "kind": null,
-    "workflow": ".github/workflows/episode.yml"
-   },
+   "build_h": 82.4,
+   "last_build_failed": null,
+   "failures": [],
+   "waiting_built": 0,
+   "owner": [
+    [
+     "buffer0",
+     "nothing for the next slot (2026-11-18T16:00Z) and no video ahead"
+    ]
+   ],
+   "failed": [],
+   "topics": 20,
+   "actions": []
+  },
+  {
+   "key": "archive",
+   "name": "Yesterday in Color",
+   "repo": "edbackulin-eng/archive-channel",
+   "problems": [
+    [
+     "topics",
+     "8 topics left (min 10)"
+    ]
+   ],
+   "slots": [
+    {
+     "at": "2026-11-20T17:00Z",
+     "video": "89z6AuMVwMs",
+     "title": "The $7,990 Dream: Life in America's First Mass-Produced Suburb"
+    },
+    {
+     "at": "2026-11-24T17:00Z",
+     "video": "TTyj7rAwf8s",
+     "title": "A Day in 1955 America in Color"
+    },
+    {
+     "at": "2026-11-27T17:00Z",
+     "video": null,
+     "title": null
+    }
+   ],
+   "buffer": 2,
+   "scheduled_ahead": 2,
+   "waiting": 0,
+   "watchdog_h": 0.0,
+   "build_h": 3.6,
+   "last_build_failed": null,
    "failures": [
     {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42386781523",
-     "id": 42386781523,
-     "step": "prepare / Run python automation/build.py \"$SLUG\" narrate",
-     "at": "2026-11-07T16:02:46Z",
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/44175359128",
+     "id": 44175359128,
+     "step": "?",
+     "at": "2026-11-17T21:01:08Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
     },
     {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42366128886",
-     "id": 42366128886,
-     "step": "render / Record (QA gate; upload when a token exists, else buffer)",
-     "at": "2026-11-07T15:23:11Z",
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/44174339915",
+     "id": 44174339915,
+     "step": "?",
+     "at": "2026-11-17T20:55:14Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
     },
     {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42365239092",
-     "id": 42365239092,
-     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-     "at": "2026-11-07T10:46:21Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/42364244631",
-     "id": 42364244631,
-     "step": "prepare / Run python automation/build.py \"$SLUG\" script",
-     "at": "2026-11-07T10:31:33Z",
+     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/44173214030",
+     "id": 44173214030,
+     "step": "?",
+     "at": "2026-11-17T20:48:42Z",
      "kind": null,
      "workflow": ".github/workflows/episode.yml"
     }
    ],
    "waiting_built": 0,
    "owner": [],
-   "failed": [
+   "failed": [],
+   "topics": 8,
+   "actions": [
     {
-     "episode": "1950s-suburb",
-     "reason": "qa-failed: match_share; length; thumbnail"
+     "at": "2026-11-18T05:10:05Z",
+     "channel": "archive",
+     "level": 2,
+     "action": "autofix",
+     "why": "? |",
+     "result": "no patch: the edit does not match the file once"
     }
-   ],
-   "topics": 20,
-   "actions": []
+   ]
   },
   {
    "key": "stoic",
@@ -282,26 +229,26 @@
    "problems": [],
    "slots": [
     {
-     "at": "2026-11-07T19:00Z",
-     "video": "sxWol7LdNTo",
-     "title": "10 Things Stoics Quietly Remove From Life"
+     "at": "2026-11-18T19:00Z",
+     "video": "ykjDykfRf4c",
+     "title": "10 Things You Should Quietly Remove From Your Life"
     },
     {
-     "at": "2026-11-08T19:00Z",
-     "video": "HcNQ7tfDO30",
-     "title": "10 Stoic Lessons for Hard Choices"
+     "at": "2026-11-19T19:00Z",
+     "video": null,
+     "title": null
     },
     {
-     "at": "2026-11-09T19:00Z",
+     "at": "2026-11-20T19:00Z",
      "video": null,
      "title": null
     }
    ],
-   "buffer": 2,
-   "scheduled_ahead": 2,
+   "buffer": 1,
+   "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 17.5,
-   "build_h": 0.7,
+   "watchdog_h": 3.3,
+   "build_h": 9.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -312,11 +259,11 @@
   }
  ],
  "gpu": {
-  "hours": 10.64,
+  "hours": 8.68,
   "parts": {
-   "closed-tabs": 9.2,
+   "closed-tabs": 7.08,
    "What If": 0.0,
-   "dinosaurs": 1.45
+   "dinosaurs": 1.6
   }
  },
  "shared": []
