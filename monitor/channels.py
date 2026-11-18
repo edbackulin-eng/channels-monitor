@@ -193,6 +193,25 @@ def aot_topics(root):
     return sum(1 for t in q.get("topics", []) if t.get("module") and t.get("status") == "approved" and t.get("id") not in done)
 
 
+def hts_rows(root):
+    return _json(root, "state/episodes.json", {"episodes": []}).get("episodes", [])
+
+
+def hts_scheduled(root):
+    return [(_when(r.get("publish_at")), r.get("video_id"), r.get("title") or r.get("slug"))
+            for r in hts_rows(root) if r.get("video_id") and _when(r.get("publish_at"))]
+
+
+def hts_failed(root):
+    return [(r.get("slug"), r["status"]) for r in hts_rows(root) if r.get("status") in ("failed", "qa-failed")]
+
+
+def hts_topics(root):
+    """Huge To Scale: planned ladder topics the engine can render today (scripts/topics.py keeps 30+ planned)."""
+    q = _json(root, "data/ladder-topics.json", {"topics": []})
+    return sum(1 for t in q.get("topics", []) if t.get("status") == "planned" and t.get("spec"))
+
+
 CHANNELS = [
     {"key": "whatif", "name": "What If", "repo": "edbackulin-eng/whatif-channel", "act": True,
      "slots": {"weekdays": [1, 5], "time": "15:00", "tz": "UTC"},     # Tue + Sat 17:00 Kyiv (owner 16.11)
@@ -261,6 +280,14 @@ CHANNELS = [
      "watchdog": "upload.yml", "watchdog_max_h": 26,
      "builds": ["video.yml", "upload.yml"], "heartbeat": None,
      "scheduled": rows_scheduled, "failed": rows_failed, "topics": None, "waiting": None,   # topics: no runway alarm yet (few topic modules are built)
+     "refill": None, "build": None, "upload": None, "hung_h": {}, "infra_fixes": None, "requeue": None},
+    {"key": "hts", "name": "Huge To Scale", "repo": "edbackulin-eng/HugeToScale", "act": False,
+     "slots": {"weekdays": [0, 1, 2, 3, 4, 5, 6], "time": "19:00", "tz": "Europe/Kyiv"},   # 1 Short a day (owner 18.11)
+     "paths": ["state", "data/ladder-topics.json"],
+     # the daily upload.yml run is its heartbeat; read only, nothing is started or changed in it
+     "watchdog": "upload.yml", "watchdog_max_h": 26,
+     "builds": ["produce.yml", "upload.yml"], "heartbeat": None,
+     "scheduled": hts_scheduled, "failed": hts_failed, "topics": hts_topics, "waiting": None,
      "refill": None, "build": None, "upload": None, "hung_h": {}, "infra_fixes": None, "requeue": None},
 ]
 
