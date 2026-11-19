@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T11:20:12Z",
+ "at": "2026-11-19T14:17:12Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 19.2,
+   "build_h": 22.1,
    "last_build_failed": null,
    "failures": [
     {
@@ -69,7 +69,7 @@
    "topics": 30,
    "actions": [
     {
-     "at": "2026-11-19T11:20:12Z",
+     "at": "2026-11-19T14:17:12Z",
      "channel": "whatif",
      "level": 2,
      "action": "autofix",
@@ -104,7 +104,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 9.5,
+   "build_h": 12.4,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -124,7 +124,11 @@
     ],
     [
      "build",
-     "last successful build 112.5 h ago"
+     "last successful build 115.5 h ago"
+    ],
+    [
+     "build-failed",
+     "last build failed at prepare / German narration, 2.5D layers, species check, plan, footage, voice lines"
     ],
     [
      "missed:2026-11-18",
@@ -152,20 +156,57 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 112.5,
-   "last_build_failed": null,
-   "failures": [],
+   "build_h": 115.5,
+   "last_build_failed": {
+    "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/44517955361",
+    "id": 44517955361,
+    "step": "prepare / German narration, 2.5D layers, species check, plan, footage, voice lines",
+    "at": "2026-11-19T12:13:02Z",
+    "kind": null,
+    "workflow": ".github/workflows/render.yml"
+   },
+   "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/44517955361",
+     "id": 44517955361,
+     "step": "prepare / German narration, 2.5D layers, species check, plan, footage, voice lines",
+     "at": "2026-11-19T12:13:02Z",
+     "kind": null,
+     "workflow": ".github/workflows/render.yml"
+    },
+    {
+     "run": "https://github.com/edbackulin-eng/prehistoric-channel/actions/runs/44513778848",
+     "id": 44513778848,
+     "step": "prepare / German narration, 2.5D layers, species check, plan, footage, voice lines",
+     "at": "2026-11-19T11:35:12Z",
+     "kind": null,
+     "workflow": ".github/workflows/render.yml"
+    }
+   ],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
    "topics": 20,
-   "actions": []
+   "actions": [
+    {
+     "at": "2026-11-19T14:17:12Z",
+     "channel": "dinosaurs",
+     "level": 2,
+     "action": "autofix",
+     "why": "prepare / german narration, #.#d layers, species check, plan, footage, voice lines |",
+     "result": "waiting: no model answered - gemini-flash-latest: the day's quota is spent; gemini-flash-lite-latest: JSONDecodeError after 4 tries; groq: Groq offers none of qwen/qwen3-32b, allam-2-7b; asked again next pass"
+    }
+   ]
   },
   {
    "key": "archive",
    "name": "Yesterday in Color",
    "repo": "edbackulin-eng/archive-channel",
    "problems": [
+    [
+     "build",
+     "last successful build 36.8 h ago"
+    ],
     [
      "topics",
      "8 topics left (min 10)"
@@ -192,7 +233,7 @@
    "scheduled_ahead": 2,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 33.8,
+   "build_h": 36.8,
    "last_build_failed": null,
    "failures": [
     {
@@ -226,12 +267,12 @@
    "topics": 8,
    "actions": [
     {
-     "at": "2026-11-19T11:20:12Z",
+     "at": "2026-11-19T14:17:12Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
      "why": "? |",
-     "result": "no patch: Gemini: No failure log was provided, so the failing step and error cannot be identified with certainty."
+     "result": "no patch: the edit does not match the file once"
     }
    ]
   },
@@ -260,8 +301,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 9.9,
-   "build_h": 2.6,
+   "watchdog_h": 12.8,
+   "build_h": 5.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -277,11 +318,6 @@
    "problems": [],
    "slots": [
     {
-     "at": "2026-11-19T14:00Z",
-     "video": "Z4BxIL3Uhyc",
-     "title": "15 Things That Go for Kids"
-    },
-    {
      "at": "2026-11-22T14:00Z",
      "video": "cbjouadOqAs",
      "title": "15 Birds for Kids"
@@ -290,13 +326,18 @@
      "at": "2026-11-24T14:00Z",
      "video": null,
      "title": null
+    },
+    {
+     "at": "2026-11-26T14:00Z",
+     "video": null,
+     "title": null
     }
    ],
-   "buffer": 2,
-   "scheduled_ahead": 2,
+   "buffer": 1,
+   "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 9.4,
-   "build_h": 0.7,
+   "watchdog_h": 12.4,
+   "build_h": 3.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -330,8 +371,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 17.0,
-   "build_h": 3.2,
+   "watchdog_h": 19.9,
+   "build_h": 6.2,
    "last_build_failed": null,
    "failures": [
     {
@@ -395,8 +436,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 13.6,
-   "build_h": 13.6,
+   "watchdog_h": 16.5,
+   "build_h": 16.5,
    "last_build_failed": {
     "run": "https://github.com/edbackulin-eng/HugeToScale/actions/runs/44418702307",
     "id": 44418702307,

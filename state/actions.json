@@ -1686,5 +1686,29 @@
   "action": "autofix",
   "why": "? |",
   "result": "no patch: Gemini: No failure log was provided, so the failing step and error cannot be identified with certainty."
+ },
+ {
+  "at": "2026-11-19T14:17:12Z",
+  "channel": "whatif",
+  "level": 2,
+  "action": "autofix",
+  "why": "blender (#) / #d shots, share # of # |",
+  "result": "no patch: the edit does not match the file once"
+ },
+ {
+  "at": "2026-11-19T14:17:12Z",
+  "channel": "dinosaurs",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / german narration, #.#d layers, species check, plan, footage, voice lines |",
+  "result": "waiting: no model answered - gemini-flash-latest: the day's quota is spent; gemini-flash-lite-latest: JSONDecodeError after 4 tries; groq: Groq offers none of qwen/qwen3-32b, allam-2-7b; asked again next pass"
+ },
+ {
+  "at": "2026-11-19T14:17:12Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "? |",
+  "result": "no patch: the edit does not match the file once"
  }
 ]
