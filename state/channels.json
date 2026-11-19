@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T17:13:58Z",
+ "at": "2026-11-19T20:16:43Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 1.7,
+   "build_h": 4.7,
    "last_build_failed": null,
    "failures": [
     {
@@ -53,7 +53,7 @@
    "topics": 30,
    "actions": [
     {
-     "at": "2026-11-19T17:13:58Z",
+     "at": "2026-11-19T20:16:43Z",
      "channel": "whatif",
      "level": 2,
      "action": "autofix",
@@ -68,8 +68,8 @@
    "repo": "edbackulin-eng/closed-tabs",
    "problems": [
     [
-     "buffer",
-     "1 of the next 3 slots have a video"
+     "topics",
+     "9 topics left (min 10)"
     ]
    ],
    "slots": [
@@ -80,8 +80,8 @@
     },
     {
      "at": "2026-11-26T17:00Z",
-     "video": null,
-     "title": null
+     "video": "jCa6lzfJOqk",
+     "title": "The Real Horror Behind Marble Hornets: How a YouTube Series Became Legend"
     },
     {
      "at": "2026-11-30T17:00Z",
@@ -89,18 +89,27 @@
      "title": null
     }
    ],
-   "buffer": 1,
-   "scheduled_ahead": 1,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 15.4,
+   "build_h": 0.0,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
-   "topics": 10,
-   "actions": []
+   "topics": 9,
+   "actions": [
+    {
+     "at": "2026-11-19T20:16:43Z",
+     "channel": "closed-tabs",
+     "level": 1,
+     "action": "start topics.yml",
+     "why": "9 topics left",
+     "result": "started"
+    }
+   ]
   },
   {
    "key": "dinosaurs",
@@ -118,6 +127,10 @@
     [
      "failed:wollhaarmammut",
      "wollhaarmammut: qa-failed: hook; first_min; diversity; repeats; match; viewer; license; photos"
+    ],
+    [
+     "failed:plesiosaurier",
+     "plesiosaurier: qa-failed: hook; first_min; diversity; repeats; viewer; license"
     ]
    ],
    "slots": [
@@ -141,7 +154,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 0.9,
+   "build_h": 1.2,
    "last_build_failed": null,
    "failures": [
     {
@@ -167,17 +180,21 @@
     {
      "episode": "wollhaarmammut",
      "reason": "qa-failed: hook; first_min; diversity; repeats; match; viewer; license; photos"
+    },
+    {
+     "episode": "plesiosaurier",
+     "reason": "qa-failed: hook; first_min; diversity; repeats; viewer; license"
     }
    ],
-   "topics": 19,
+   "topics": 18,
    "actions": [
     {
-     "at": "2026-11-19T17:13:58Z",
+     "at": "2026-11-19T20:16:43Z",
      "channel": "dinosaurs",
      "level": 2,
      "action": "autofix",
      "why": "prepare / german narration, #.#d layers, species check, plan, footage, voice lines |",
-     "result": "no patch: the edit does not match the file once"
+     "result": "no patch: Gemini: The failure log was not provided in the prompt."
     }
    ]
   },
@@ -188,7 +205,7 @@
    "problems": [
     [
      "build",
-     "last successful build 39.7 h ago"
+     "last successful build 42.7 h ago"
     ],
     [
      "topics",
@@ -216,7 +233,7 @@
    "scheduled_ahead": 2,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 39.7,
+   "build_h": 42.7,
    "last_build_failed": null,
    "failures": [
     {
@@ -250,7 +267,7 @@
    "topics": 8,
    "actions": [
     {
-     "at": "2026-11-19T17:13:58Z",
+     "at": "2026-11-19T20:16:43Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
@@ -284,8 +301,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 15.8,
-   "build_h": 8.5,
+   "watchdog_h": 18.8,
+   "build_h": 1.1,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -307,8 +324,8 @@
     },
     {
      "at": "2026-11-24T14:00Z",
-     "video": null,
-     "title": null
+     "video": "-gQaHVTXsF8",
+     "title": "15 Wild Animals for Kids"
     },
     {
      "at": "2026-11-26T14:00Z",
@@ -316,11 +333,11 @@
      "title": null
     }
    ],
-   "buffer": 1,
-   "scheduled_ahead": 1,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 15.3,
-   "build_h": 6.6,
+   "watchdog_h": 18.4,
+   "build_h": 1.0,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -354,8 +371,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 22.9,
-   "build_h": 9.1,
+   "watchdog_h": 0.7,
+   "build_h": 0.7,
    "last_build_failed": null,
    "failures": [
     {
@@ -419,8 +436,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 19.4,
-   "build_h": 19.4,
+   "watchdog_h": 22.5,
+   "build_h": 22.5,
    "last_build_failed": {
     "run": "https://github.com/edbackulin-eng/HugeToScale/actions/runs/44418702307",
     "id": 44418702307,
@@ -455,11 +472,11 @@
   }
  ],
  "gpu": {
-  "hours": 8.02,
+  "hours": 9.42,
   "parts": {
-   "closed-tabs": 7.08,
+   "closed-tabs": 9.06,
    "What If": 0.0,
-   "dinosaurs": 0.94
+   "dinosaurs": 0.36
   }
  },
  "shared": []
