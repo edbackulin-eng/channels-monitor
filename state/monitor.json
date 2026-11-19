@@ -1,17 +1,17 @@
 {
  "summary_date": "2026-11-19",
  "alarms": {
+  "closed-tabs:buffer": "Closed Tabs: 1 of the next 3 slots have a video",
   "dinosaurs:buffer": "Urzeit (dinosaurs): 0 of the next 3 slots have a video",
-  "dinosaurs:build": "Urzeit (dinosaurs): last successful build 115.5 h ago",
-  "dinosaurs:build-failed": "Urzeit (dinosaurs): last build failed at prepare / German narration, 2.5D layers, species check, plan, footage, voice lines",
   "dinosaurs:missed:2026-11-18": "Urzeit (dinosaurs): no video went out on the slot 2026-11-18 16:00 UTC",
-  "archive:build": "Yesterday in Color: last successful build 36.8 h ago",
+  "dinosaurs:failed:wollhaarmammut": "Urzeit (dinosaurs): wollhaarmammut: qa-failed: hook; first_min; diversity; repeats; match; viewer; license; photos",
+  "archive:build": "Yesterday in Color: last successful build 39.7 h ago",
   "archive:topics": "Yesterday in Color: 8 topics left (min 10)",
+  "hts:buffer": "Huge To Scale: 1 of the next 3 slots have a video",
   "hts:build-failed": "Huge To Scale: last build failed at render / render (ladder_volcanoes, 2, 187, 279, blender) / render frames 187-279",
-  "hts:missed:2026-11-18": "Huge To Scale: no video went out on the slot 2026-11-18 17:00 UTC",
-  "hts:missed:2026-11-17": "Huge To Scale: no video went out on the slot 2026-11-17 17:00 UTC"
+  "hts:missed:2026-11-18": "Huge To Scale: no video went out on the slot 2026-11-18 17:00 UTC"
  },
- "last_pass": "2026-11-19T14:17:12Z",
+ "last_pass": "2026-11-19T17:13:58Z",
  "planned": [
   {
    "id": "ct-build-0711",
@@ -33,7 +33,7 @@
  ],
  "requeued": [],
  "done": {
-  "whatif:requeue": "2026-11-19T14:17:12Z",
+  "whatif:requeue": "2026-11-19T17:13:58Z",
   "archive:build": "2026-11-17T23:08:11Z",
   "whatif:watchdog": "2026-11-06T11:03:13Z",
   "dinosaurs:build": "2026-11-19T08:16:39Z",
