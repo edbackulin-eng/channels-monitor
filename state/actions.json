@@ -1766,5 +1766,37 @@
   "action": "autofix",
   "why": "? |",
   "result": "no patch: the edit does not match the file once"
+ },
+ {
+  "at": "2026-11-19T23:24:48Z",
+  "channel": "whatif",
+  "level": 2,
+  "action": "autofix",
+  "why": "blender (#) / #d shots, share # of # |",
+  "result": "no patch: Gemini: The failure log is empty, so the failure cannot be determined with certainty and no matching error text can be provided."
+ },
+ {
+  "at": "2026-11-19T23:24:48Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-19T23:24:48Z",
+  "channel": "dinosaurs",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / german narration, #.#d layers, species check, plan, footage, voice lines |",
+  "result": "no patch: Gemini: No error log was provided under THE FAILURE, making it impossible to determine the cause of the failure with certainty."
+ },
+ {
+  "at": "2026-11-19T23:24:48Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "? |",
+  "result": "no patch: Gemini: No failure log was provided, so the failure cannot be identified with certainty."
  }
 ]

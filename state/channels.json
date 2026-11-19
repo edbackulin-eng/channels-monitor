@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T20:16:43Z",
+ "at": "2026-11-19T23:24:48Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 4.7,
+   "build_h": 7.8,
    "last_build_failed": null,
    "failures": [
     {
@@ -53,12 +53,12 @@
    "topics": 30,
    "actions": [
     {
-     "at": "2026-11-19T20:16:43Z",
+     "at": "2026-11-19T23:24:48Z",
      "channel": "whatif",
      "level": 2,
      "action": "autofix",
      "why": "blender (#) / #d shots, share # of # |",
-     "result": "no patch: the edit does not match the file once"
+     "result": "no patch: Gemini: The failure log is empty, so the failure cannot be determined with certainty and no matching error text can be provided."
     }
    ]
   },
@@ -66,12 +66,7 @@
    "key": "closed-tabs",
    "name": "Closed Tabs",
    "repo": "edbackulin-eng/closed-tabs",
-   "problems": [
-    [
-     "topics",
-     "9 topics left (min 10)"
-    ]
-   ],
+   "problems": [],
    "slots": [
     {
      "at": "2026-11-23T17:00Z",
@@ -93,23 +88,14 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 0.0,
+   "build_h": 3.2,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
-   "topics": 9,
-   "actions": [
-    {
-     "at": "2026-11-19T20:16:43Z",
-     "channel": "closed-tabs",
-     "level": 1,
-     "action": "start topics.yml",
-     "why": "9 topics left",
-     "result": "started"
-    }
-   ]
+   "topics": 10,
+   "actions": []
   },
   {
    "key": "dinosaurs",
@@ -118,19 +104,11 @@
    "problems": [
     [
      "buffer",
-     "0 of the next 3 slots have a video"
+     "0 of the next 3 slots have a video (2 waiting for approval or a slot)"
     ],
     [
      "missed:2026-11-18",
      "no video went out on the slot 2026-11-18 16:00 UTC"
-    ],
-    [
-     "failed:wollhaarmammut",
-     "wollhaarmammut: qa-failed: hook; first_min; diversity; repeats; match; viewer; license; photos"
-    ],
-    [
-     "failed:plesiosaurier",
-     "plesiosaurier: qa-failed: hook; first_min; diversity; repeats; viewer; license"
     ]
    ],
    "slots": [
@@ -152,9 +130,9 @@
    ],
    "buffer": 0,
    "scheduled_ahead": 0,
-   "waiting": 0,
+   "waiting": 2,
    "watchdog_h": 0.0,
-   "build_h": 1.2,
+   "build_h": 2.5,
    "last_build_failed": null,
    "failures": [
     {
@@ -176,25 +154,24 @@
    ],
    "waiting_built": 0,
    "owner": [],
-   "failed": [
-    {
-     "episode": "wollhaarmammut",
-     "reason": "qa-failed: hook; first_min; diversity; repeats; match; viewer; license; photos"
-    },
-    {
-     "episode": "plesiosaurier",
-     "reason": "qa-failed: hook; first_min; diversity; repeats; viewer; license"
-    }
-   ],
+   "failed": [],
    "topics": 18,
    "actions": [
     {
-     "at": "2026-11-19T20:16:43Z",
+     "at": "2026-11-19T23:24:48Z",
+     "channel": "dinosaurs",
+     "level": 1,
+     "action": "start episode.yml",
+     "why": "0 of the next 3 slots have a video",
+     "result": "started"
+    },
+    {
+     "at": "2026-11-19T23:24:48Z",
      "channel": "dinosaurs",
      "level": 2,
      "action": "autofix",
      "why": "prepare / german narration, #.#d layers, species check, plan, footage, voice lines |",
-     "result": "no patch: Gemini: The failure log was not provided in the prompt."
+     "result": "no patch: Gemini: No error log was provided under THE FAILURE, making it impossible to determine the cause of the failure with certainty."
     }
    ]
   },
@@ -205,7 +182,7 @@
    "problems": [
     [
      "build",
-     "last successful build 42.7 h ago"
+     "last successful build 45.9 h ago"
     ],
     [
      "topics",
@@ -233,7 +210,7 @@
    "scheduled_ahead": 2,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 42.7,
+   "build_h": 45.9,
    "last_build_failed": null,
    "failures": [
     {
@@ -267,12 +244,12 @@
    "topics": 8,
    "actions": [
     {
-     "at": "2026-11-19T20:16:43Z",
+     "at": "2026-11-19T23:24:48Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
      "why": "? |",
-     "result": "no patch: the edit does not match the file once"
+     "result": "no patch: Gemini: No failure log was provided, so the failure cannot be identified with certainty."
     }
    ]
   },
@@ -301,8 +278,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 18.8,
-   "build_h": 1.1,
+   "watchdog_h": 22.0,
+   "build_h": 4.3,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -336,8 +313,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 18.4,
-   "build_h": 1.0,
+   "watchdog_h": 21.5,
+   "build_h": 4.1,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -371,8 +348,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 0.7,
-   "build_h": 0.7,
+   "watchdog_h": 3.8,
+   "build_h": 3.8,
    "last_build_failed": null,
    "failures": [
     {
@@ -404,12 +381,8 @@
    "repo": "edbackulin-eng/HugeToScale",
    "problems": [
     [
-     "buffer",
-     "1 of the next 3 slots have a video"
-    ],
-    [
      "build-failed",
-     "last build failed at render / render (ladder_volcanoes, 2, 187, 279, blender) / render frames 187-279"
+     "last build failed at render / render (ladder_volcanoes, 3, 280, 370, blender) / render frames 280-370"
     ],
     [
      "missed:2026-11-18",
@@ -424,8 +397,8 @@
     },
     {
      "at": "2026-11-21T17:00Z",
-     "video": null,
-     "title": null
+     "video": "nrukHElFiio",
+     "title": "Saturn V Size Comparison: 110.6 m Next to the Great Pyramid"
     },
     {
      "at": "2026-11-22T17:00Z",
@@ -433,20 +406,28 @@
      "title": null
     }
    ],
-   "buffer": 1,
-   "scheduled_ahead": 1,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 22.5,
-   "build_h": 22.5,
+   "watchdog_h": 1.3,
+   "build_h": 1.3,
    "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/HugeToScale/actions/runs/44418702307",
-    "id": 44418702307,
-    "step": "render / render (ladder_volcanoes, 2, 187, 279, blender) / render frames 187-279",
-    "at": "2026-11-18T23:44:10Z",
+    "run": "https://github.com/edbackulin-eng/HugeToScale/actions/runs/44636649962",
+    "id": 44636649962,
+    "step": "render / render (ladder_volcanoes, 3, 280, 370, blender) / render frames 280-370",
+    "at": "2026-11-19T23:29:04Z",
     "kind": null,
     "workflow": ".github/workflows/produce.yml"
    },
    "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/HugeToScale/actions/runs/44636649962",
+     "id": 44636649962,
+     "step": "render / render (ladder_volcanoes, 3, 280, 370, blender) / render frames 280-370",
+     "at": "2026-11-19T23:29:04Z",
+     "kind": null,
+     "workflow": ".github/workflows/produce.yml"
+    },
     {
      "run": "https://github.com/edbackulin-eng/HugeToScale/actions/runs/44418702307",
      "id": 44418702307,
