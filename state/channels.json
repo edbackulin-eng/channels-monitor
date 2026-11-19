@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T23:35:29Z",
+ "at": "2026-11-19T02:38:02Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 7.4,
+   "build_h": 10.5,
    "last_build_failed": null,
    "failures": [
     {
@@ -69,7 +69,7 @@
    "topics": 30,
    "actions": [
     {
-     "at": "2026-11-18T23:35:29Z",
+     "at": "2026-11-19T02:38:02Z",
      "channel": "whatif",
      "level": 2,
      "action": "autofix",
@@ -104,7 +104,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 21.3,
+   "build_h": 0.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -124,7 +124,7 @@
     ],
     [
      "build",
-     "last successful build 100.8 h ago"
+     "last successful build 103.8 h ago"
     ],
     [
      "missed:2026-11-18",
@@ -152,7 +152,7 @@
    "scheduled_ahead": 0,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 100.8,
+   "build_h": 103.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -161,7 +161,7 @@
    "topics": 20,
    "actions": [
     {
-     "at": "2026-11-18T23:35:29Z",
+     "at": "2026-11-19T02:38:02Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
@@ -201,7 +201,7 @@
    "scheduled_ahead": 2,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 22.1,
+   "build_h": 25.1,
    "last_build_failed": null,
    "failures": [
     {
@@ -235,12 +235,12 @@
    "topics": 8,
    "actions": [
     {
-     "at": "2026-11-18T23:35:29Z",
+     "at": "2026-11-19T02:38:02Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
      "why": "? |",
-     "result": "no patch: Gemini: The error log was omitted from the prompt, making it impossible to identify the exact failing step or fix."
+     "result": "no patch: the edit does not match the file once"
     }
    ]
   },
@@ -269,8 +269,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 21.7,
-   "build_h": 3.8,
+   "watchdog_h": 1.2,
+   "build_h": 6.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -304,8 +304,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 21.1,
-   "build_h": 4.5,
+   "watchdog_h": 0.7,
+   "build_h": 7.5,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -339,8 +339,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 5.3,
-   "build_h": 5.3,
+   "watchdog_h": 8.3,
+   "build_h": 8.3,
    "last_build_failed": null,
    "failures": [
     {
@@ -372,6 +372,10 @@
    "repo": "edbackulin-eng/HugeToScale",
    "problems": [
     [
+     "build-failed",
+     "last build failed at render / render (ladder_volcanoes, 2, 187, 279, blender) / render frames 187-279"
+    ],
+    [
      "missed:2026-11-18",
      "no video went out on the slot 2026-11-18 17:00 UTC"
     ],
@@ -400,10 +404,25 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 1.8,
-   "build_h": 1.8,
-   "last_build_failed": null,
+   "watchdog_h": 4.8,
+   "build_h": 4.8,
+   "last_build_failed": {
+    "run": "https://github.com/edbackulin-eng/HugeToScale/actions/runs/44418702307",
+    "id": 44418702307,
+    "step": "render / render (ladder_volcanoes, 2, 187, 279, blender) / render frames 187-279",
+    "at": "2026-11-18T23:44:10Z",
+    "kind": null,
+    "workflow": ".github/workflows/produce.yml"
+   },
    "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/HugeToScale/actions/runs/44418702307",
+     "id": 44418702307,
+     "step": "render / render (ladder_volcanoes, 2, 187, 279, blender) / render frames 187-279",
+     "at": "2026-11-18T23:44:10Z",
+     "kind": null,
+     "workflow": ".github/workflows/produce.yml"
+    },
     {
      "run": "https://github.com/edbackulin-eng/HugeToScale/actions/runs/44336109555",
      "id": 44336109555,
