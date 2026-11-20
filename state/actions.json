@@ -1918,5 +1918,37 @@
   "action": "autofix",
   "why": "? |",
   "result": "no patch: Gemini: No error log was provided to diagnose the failure."
+ },
+ {
+  "at": "2026-11-20T14:21:17Z",
+  "channel": "whatif",
+  "level": 2,
+  "action": "autofix",
+  "why": "blender (#) / #d shots, share # of # |",
+  "result": "no patch: the edit does not match the file once"
+ },
+ {
+  "at": "2026-11-20T14:21:17Z",
+  "channel": "dinosaurs",
+  "level": 1,
+  "action": "start episode.yml",
+  "why": "0 of the next 3 slots have a video",
+  "result": "started"
+ },
+ {
+  "at": "2026-11-20T14:21:17Z",
+  "channel": "dinosaurs",
+  "level": 2,
+  "action": "autofix",
+  "why": "prepare / german narration, #.#d layers, species check, plan, footage, voice lines |",
+  "result": "waiting: no model answered - gemini-flash-latest: the day's quota is spent; gemini-flash-lite-latest: JSONDecodeError after 4 tries; groq: Groq offers none of qwen/qwen3-32b, allam-2-7b; asked again next pass"
+ },
+ {
+  "at": "2026-11-20T14:21:17Z",
+  "channel": "archive",
+  "level": 2,
+  "action": "autofix",
+  "why": "? |",
+  "result": "no patch: the edit does not match the file once"
  }
 ]
