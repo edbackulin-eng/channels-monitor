@@ -3,12 +3,12 @@
  "alarms": {
   "dinosaurs:buffer": "Urzeit (dinosaurs): 0 of the next 3 slots have a video (2 waiting for approval or a slot)",
   "dinosaurs:missed:2026-11-18": "Urzeit (dinosaurs): no video went out on the slot 2026-11-18 16:00 UTC",
-  "archive:build": "Yesterday in Color: last successful build 51.5 h ago",
+  "archive:build": "Yesterday in Color: last successful build 54.5 h ago",
   "archive:topics": "Yesterday in Color: 8 topics left (min 10)",
   "hts:build-failed": "Huge To Scale: last build failed at render / render (ladder_volcanoes, 3, 280, 370, blender) / render frames 280-370",
   "hts:missed:2026-11-18": "Huge To Scale: no video went out on the slot 2026-11-18 17:00 UTC"
  },
- "last_pass": "2026-11-20T05:02:37Z",
+ "last_pass": "2026-11-20T08:04:45Z",
  "planned": [
   {
    "id": "ct-build-0711",
@@ -30,10 +30,10 @@
  ],
  "requeued": [],
  "done": {
-  "whatif:requeue": "2026-11-20T05:02:37Z",
+  "whatif:requeue": "2026-11-20T08:04:45Z",
   "archive:build": "2026-11-17T23:08:11Z",
   "whatif:watchdog": "2026-11-06T11:03:13Z",
-  "dinosaurs:build": "2026-11-20T02:29:58Z",
+  "dinosaurs:build": "2026-11-20T08:04:45Z",
   "archive:watchdog": "2026-11-08T20:24:14Z",
   "closed-tabs:topics": "2026-11-19T20:16:43Z",
   "closed-tabs:watchdog": "2026-11-13T14:14:08Z",
