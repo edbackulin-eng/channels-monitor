@@ -1,5 +1,5 @@
 {
- "at": "2026-11-20T17:24:07Z",
+ "at": "2026-11-20T20:26:17Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 2.2,
+   "build_h": 5.2,
    "last_build_failed": null,
    "failures": [
     {
@@ -53,7 +53,7 @@
    "topics": 30,
    "actions": [
     {
-     "at": "2026-11-20T17:24:07Z",
+     "at": "2026-11-20T20:26:17Z",
      "channel": "whatif",
      "level": 2,
      "action": "autofix",
@@ -88,7 +88,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 15.7,
+   "build_h": 18.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -128,7 +128,7 @@
    "scheduled_ahead": 0,
    "waiting": 2,
    "watchdog_h": 0.0,
-   "build_h": 20.5,
+   "build_h": 23.6,
    "last_build_failed": null,
    "failures": [
     {
@@ -154,7 +154,7 @@
    "topics": 18,
    "actions": [
     {
-     "at": "2026-11-20T17:24:07Z",
+     "at": "2026-11-20T20:26:17Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
@@ -162,7 +162,7 @@
      "result": "started"
     },
     {
-     "at": "2026-11-20T17:24:07Z",
+     "at": "2026-11-20T20:26:17Z",
      "channel": "dinosaurs",
      "level": 2,
      "action": "autofix",
@@ -177,12 +177,8 @@
    "repo": "edbackulin-eng/archive-channel",
    "problems": [
     [
-     "buffer",
-     "1 of the next 3 slots have a video"
-    ],
-    [
      "build",
-     "last successful build 63.9 h ago"
+     "last successful build 66.9 h ago"
     ],
     [
      "topics",
@@ -197,8 +193,8 @@
     },
     {
      "at": "2026-11-27T17:00Z",
-     "video": null,
-     "title": null
+     "video": "-Bgyvt2aL2k",
+     "title": "Life in 1960s America: Prices, Wages, and Everyday Costs"
     },
     {
      "at": "2026-12-01T17:00Z",
@@ -206,11 +202,11 @@
      "title": null
     }
    ],
-   "buffer": 1,
-   "scheduled_ahead": 1,
+   "buffer": 2,
+   "scheduled_ahead": 2,
    "waiting": 0,
-   "watchdog_h": 0.0,
-   "build_h": 63.9,
+   "watchdog_h": -0.0,
+   "build_h": 66.9,
    "last_build_failed": null,
    "failures": [
     {
@@ -244,12 +240,12 @@
    "topics": 8,
    "actions": [
     {
-     "at": "2026-11-20T17:24:07Z",
+     "at": "2026-11-20T20:26:17Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
      "why": "? |",
-     "result": "no patch: the edit does not match the file once"
+     "result": "no patch: Gemini: No error log was provided to diagnose the specific failure in the workflow."
     }
    ]
   },
@@ -278,8 +274,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 16.0,
-   "build_h": 8.9,
+   "watchdog_h": 19.0,
+   "build_h": 1.6,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -313,8 +309,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 15.6,
-   "build_h": 7.1,
+   "watchdog_h": 18.6,
+   "build_h": 1.6,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -327,13 +323,13 @@
    "key": "aot",
    "name": "America Over Time",
    "repo": "edbackulin-eng/map-timelapse",
-   "problems": [],
+   "problems": [
+    [
+     "build-failed",
+     "last build failed at upload / Upload next reserve video"
+    ]
+   ],
    "slots": [
-    {
-     "at": "2026-11-20T18:00Z",
-     "video": "iAzEpMBxQu0",
-     "title": "US Population 1790–2020: How America Grew Across the Map"
-    },
     {
      "at": "2026-11-23T18:00Z",
      "video": "9E6P9D0O6Mo",
@@ -341,6 +337,11 @@
     },
     {
      "at": "2026-11-27T18:00Z",
+     "video": "rSm_4FokI_g",
+     "title": "Texas Population Growth 1850–2020: How Texas Became a Giant"
+    },
+    {
+     "at": "2026-11-30T18:00Z",
      "video": null,
      "title": null
     }
@@ -348,10 +349,25 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 21.8,
-   "build_h": 21.8,
-   "last_build_failed": null,
+   "watchdog_h": 1.2,
+   "build_h": 24.9,
+   "last_build_failed": {
+    "run": "https://github.com/edbackulin-eng/map-timelapse/actions/runs/44799895664",
+    "id": 44799895664,
+    "step": "upload / Upload next reserve video",
+    "at": "2026-11-20T19:12:43Z",
+    "kind": null,
+    "workflow": ".github/workflows/upload.yml"
+   },
    "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/map-timelapse/actions/runs/44799895664",
+     "id": 44799895664,
+     "step": "upload / Upload next reserve video",
+     "at": "2026-11-20T19:12:43Z",
+     "kind": null,
+     "workflow": ".github/workflows/upload.yml"
+    },
     {
      "run": "https://github.com/edbackulin-eng/map-timelapse/actions/runs/44361659084",
      "id": 44361659084,
@@ -409,8 +425,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 19.3,
-   "build_h": 19.3,
+   "watchdog_h": 22.4,
+   "build_h": 22.4,
    "last_build_failed": {
     "run": "https://github.com/edbackulin-eng/HugeToScale/actions/runs/44636649962",
     "id": 44636649962,
@@ -453,11 +469,11 @@
   }
  ],
  "gpu": {
-  "hours": 7.8,
+  "hours": 7.44,
   "parts": {
    "closed-tabs": 7.44,
    "What If": 0.0,
-   "dinosaurs": 0.36
+   "dinosaurs": 0.0
   }
  },
  "shared": []
