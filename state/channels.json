@@ -1,5 +1,5 @@
 {
- "at": "2026-11-20T20:26:17Z",
+ "at": "2026-11-20T23:28:48Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 5.2,
+   "build_h": 8.2,
    "last_build_failed": null,
    "failures": [
     {
@@ -53,12 +53,12 @@
    "topics": 30,
    "actions": [
     {
-     "at": "2026-11-20T20:26:17Z",
+     "at": "2026-11-20T23:28:48Z",
      "channel": "whatif",
      "level": 2,
      "action": "autofix",
      "why": "blender (#) / #d shots, share # of # |",
-     "result": "no patch: the edit does not match the file once"
+     "result": "no patch: Gemini: No error log was provided to identify the failure in the step."
     }
    ]
   },
@@ -88,7 +88,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 18.7,
+   "build_h": 21.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -128,7 +128,7 @@
    "scheduled_ahead": 0,
    "waiting": 2,
    "watchdog_h": 0.0,
-   "build_h": 23.6,
+   "build_h": 26.6,
    "last_build_failed": null,
    "failures": [
     {
@@ -154,7 +154,7 @@
    "topics": 18,
    "actions": [
     {
-     "at": "2026-11-20T20:26:17Z",
+     "at": "2026-11-20T23:28:48Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
@@ -162,7 +162,7 @@
      "result": "started"
     },
     {
-     "at": "2026-11-20T20:26:17Z",
+     "at": "2026-11-20T23:28:48Z",
      "channel": "dinosaurs",
      "level": 2,
      "action": "autofix",
@@ -176,10 +176,6 @@
    "name": "Yesterday in Color",
    "repo": "edbackulin-eng/archive-channel",
    "problems": [
-    [
-     "build",
-     "last successful build 66.9 h ago"
-    ],
     [
      "topics",
      "8 topics left (min 10)"
@@ -205,49 +201,15 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": 0,
-   "watchdog_h": -0.0,
-   "build_h": 66.9,
+   "watchdog_h": 0.0,
+   "build_h": 3.0,
    "last_build_failed": null,
-   "failures": [
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/44175359128",
-     "id": 44175359128,
-     "step": "?",
-     "at": "2026-11-17T21:01:08Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/44174339915",
-     "id": 44174339915,
-     "step": "?",
-     "at": "2026-11-17T20:55:14Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/archive-channel/actions/runs/44173214030",
-     "id": 44173214030,
-     "step": "?",
-     "at": "2026-11-17T20:48:42Z",
-     "kind": null,
-     "workflow": ".github/workflows/episode.yml"
-    }
-   ],
+   "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
    "topics": 8,
-   "actions": [
-    {
-     "at": "2026-11-20T20:26:17Z",
-     "channel": "archive",
-     "level": 2,
-     "action": "autofix",
-     "why": "? |",
-     "result": "no patch: Gemini: No error log was provided to diagnose the specific failure in the workflow."
-    }
-   ]
+   "actions": []
   },
   {
    "key": "stoic",
@@ -274,8 +236,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 19.0,
-   "build_h": 1.6,
+   "watchdog_h": 22.0,
+   "build_h": 4.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -309,8 +271,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 18.6,
-   "build_h": 1.6,
+   "watchdog_h": 21.7,
+   "build_h": 4.6,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -349,8 +311,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 1.2,
-   "build_h": 24.9,
+   "watchdog_h": 4.3,
+   "build_h": 27.9,
    "last_build_failed": {
     "run": "https://github.com/edbackulin-eng/map-timelapse/actions/runs/44799895664",
     "id": 44799895664,
@@ -402,7 +364,7 @@
     ],
     [
      "build-failed",
-     "last build failed at render / render (ladder_volcanoes, 3, 280, 370, blender) / render frames 280-370"
+     "last build failed at render / render (ladder_volcanoes, 2, 187, 279, blender) / render frames 187-279"
     ]
    ],
    "slots": [
@@ -425,17 +387,25 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 22.4,
-   "build_h": 22.4,
+   "watchdog_h": 1.7,
+   "build_h": 1.7,
    "last_build_failed": {
-    "run": "https://github.com/edbackulin-eng/HugeToScale/actions/runs/44636649962",
-    "id": 44636649962,
-    "step": "render / render (ladder_volcanoes, 3, 280, 370, blender) / render frames 280-370",
-    "at": "2026-11-19T23:29:04Z",
+    "run": "https://github.com/edbackulin-eng/HugeToScale/actions/runs/44832350790",
+    "id": 44832350790,
+    "step": "render / render (ladder_volcanoes, 2, 187, 279, blender) / render frames 187-279",
+    "at": "2026-11-20T22:53:58Z",
     "kind": null,
     "workflow": ".github/workflows/produce.yml"
    },
    "failures": [
+    {
+     "run": "https://github.com/edbackulin-eng/HugeToScale/actions/runs/44832350790",
+     "id": 44832350790,
+     "step": "render / render (ladder_volcanoes, 2, 187, 279, blender) / render frames 187-279",
+     "at": "2026-11-20T22:53:58Z",
+     "kind": null,
+     "workflow": ".github/workflows/produce.yml"
+    },
     {
      "run": "https://github.com/edbackulin-eng/HugeToScale/actions/runs/44636649962",
      "id": 44636649962,
