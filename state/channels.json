@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T23:24:48Z",
+ "at": "2026-11-20T02:29:58Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 7.8,
+   "build_h": 10.9,
    "last_build_failed": null,
    "failures": [
     {
@@ -53,12 +53,12 @@
    "topics": 30,
    "actions": [
     {
-     "at": "2026-11-19T23:24:48Z",
+     "at": "2026-11-20T02:29:58Z",
      "channel": "whatif",
      "level": 2,
      "action": "autofix",
      "why": "blender (#) / #d shots, share # of # |",
-     "result": "no patch: Gemini: The failure log is empty, so the failure cannot be determined with certainty and no matching error text can be provided."
+     "result": "no patch: Gemini: No error log was provided to identify the failure."
     }
    ]
   },
@@ -88,7 +88,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 3.2,
+   "build_h": 0.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -132,7 +132,7 @@
    "scheduled_ahead": 0,
    "waiting": 2,
    "watchdog_h": 0.0,
-   "build_h": 2.5,
+   "build_h": 5.6,
    "last_build_failed": null,
    "failures": [
     {
@@ -158,7 +158,7 @@
    "topics": 18,
    "actions": [
     {
-     "at": "2026-11-19T23:24:48Z",
+     "at": "2026-11-20T02:29:58Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
@@ -166,12 +166,12 @@
      "result": "started"
     },
     {
-     "at": "2026-11-19T23:24:48Z",
+     "at": "2026-11-20T02:29:58Z",
      "channel": "dinosaurs",
      "level": 2,
      "action": "autofix",
      "why": "prepare / german narration, #.#d layers, species check, plan, footage, voice lines |",
-     "result": "no patch: Gemini: No error log was provided under THE FAILURE, making it impossible to determine the cause of the failure with certainty."
+     "result": "no patch: the edit does not match the file once"
     }
    ]
   },
@@ -182,7 +182,7 @@
    "problems": [
     [
      "build",
-     "last successful build 45.9 h ago"
+     "last successful build 49.0 h ago"
     ],
     [
      "topics",
@@ -210,7 +210,7 @@
    "scheduled_ahead": 2,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 45.9,
+   "build_h": 49.0,
    "last_build_failed": null,
    "failures": [
     {
@@ -244,12 +244,12 @@
    "topics": 8,
    "actions": [
     {
-     "at": "2026-11-19T23:24:48Z",
+     "at": "2026-11-20T02:29:58Z",
      "channel": "archive",
      "level": 2,
      "action": "autofix",
      "why": "? |",
-     "result": "no patch: Gemini: No failure log was provided, so the failure cannot be identified with certainty."
+     "result": "no patch: the edit does not match the file once"
     }
    ]
   },
@@ -278,8 +278,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 22.0,
-   "build_h": 4.3,
+   "watchdog_h": 1.1,
+   "build_h": 7.3,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -313,8 +313,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 21.5,
-   "build_h": 4.1,
+   "watchdog_h": 0.7,
+   "build_h": 7.2,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -348,8 +348,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 3.8,
-   "build_h": 3.8,
+   "watchdog_h": 6.9,
+   "build_h": 6.9,
    "last_build_failed": null,
    "failures": [
     {
@@ -409,8 +409,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 1.3,
-   "build_h": 1.3,
+   "watchdog_h": 4.4,
+   "build_h": 4.4,
    "last_build_failed": {
     "run": "https://github.com/edbackulin-eng/HugeToScale/actions/runs/44636649962",
     "id": 44636649962,
@@ -453,9 +453,9 @@
   }
  ],
  "gpu": {
-  "hours": 9.42,
+  "hours": 8.04,
   "parts": {
-   "closed-tabs": 9.06,
+   "closed-tabs": 7.68,
    "What If": 0.0,
    "dinosaurs": 0.36
   }
