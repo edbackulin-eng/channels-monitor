@@ -1,5 +1,5 @@
 {
- "summary_date": "2026-11-20",
+ "summary_date": "2026-11-21",
  "alarms": {
   "dinosaurs:buffer": "Urzeit (dinosaurs): 0 of the next 3 slots have a video (2 waiting for approval or a slot)",
   "archive:topics": "Yesterday in Color: 8 topics left (min 10)",
@@ -7,7 +7,7 @@
   "hts:buffer": "Huge To Scale: 1 of the next 3 slots have a video",
   "hts:build-failed": "Huge To Scale: last build failed at render / render (ladder_volcanoes, 2, 187, 279, blender) / render frames 187-279"
  },
- "last_pass": "2026-11-21T02:30:29Z",
+ "last_pass": "2026-11-21T05:08:31Z",
  "planned": [
   {
    "id": "ct-build-0711",
@@ -29,7 +29,7 @@
  ],
  "requeued": [],
  "done": {
-  "whatif:requeue": "2026-11-21T02:30:29Z",
+  "whatif:requeue": "2026-11-21T05:08:31Z",
   "archive:build": "2026-11-17T23:08:11Z",
   "whatif:watchdog": "2026-11-06T11:03:13Z",
   "dinosaurs:build": "2026-11-21T02:30:29Z",
@@ -39,7 +39,9 @@
   "whatif:build": "2026-11-18T05:10:05Z",
   "closed-tabs:build": "2026-11-17T23:08:11Z"
  },
- "owner_alarms": {},
+ "owner_alarms": {
+  "dinosaurs:owner-buffer0": "Urzeit (dinosaurs): nothing for the next slot (2026-11-22T16:00Z) and no video ahead"
+ },
  "issue": 1,
  "rights": {
   "edbackulin-eng/whatif-channel": {

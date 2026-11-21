@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T02:30:29Z",
+ "at": "2026-11-21T05:08:31Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 11.3,
+   "build_h": 13.9,
    "last_build_failed": null,
    "failures": [
     {
@@ -53,7 +53,7 @@
    "topics": 30,
    "actions": [
     {
-     "at": "2026-11-21T02:30:29Z",
+     "at": "2026-11-21T05:08:31Z",
      "channel": "whatif",
      "level": 2,
      "action": "autofix",
@@ -88,7 +88,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 1.1,
+   "build_h": 3.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -128,7 +128,7 @@
    "scheduled_ahead": 0,
    "waiting": 2,
    "watchdog_h": 0.0,
-   "build_h": 29.6,
+   "build_h": 32.3,
    "last_build_failed": null,
    "failures": [
     {
@@ -149,20 +149,17 @@
     }
    ],
    "waiting_built": 0,
-   "owner": [],
+   "owner": [
+    [
+     "buffer0",
+     "nothing for the next slot (2026-11-22T16:00Z) and no video ahead"
+    ]
+   ],
    "failed": [],
    "topics": 18,
    "actions": [
     {
-     "at": "2026-11-21T02:30:29Z",
-     "channel": "dinosaurs",
-     "level": 1,
-     "action": "start episode.yml",
-     "why": "0 of the next 3 slots have a video",
-     "result": "started"
-    },
-    {
-     "at": "2026-11-21T02:30:29Z",
+     "at": "2026-11-21T05:08:31Z",
      "channel": "dinosaurs",
      "level": 2,
      "action": "autofix",
@@ -202,7 +199,7 @@
    "scheduled_ahead": 2,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 6.0,
+   "build_h": 8.7,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -236,8 +233,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 1.6,
-   "build_h": 7.7,
+   "watchdog_h": 4.2,
+   "build_h": 10.3,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -271,8 +268,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 0.9,
-   "build_h": 7.6,
+   "watchdog_h": 3.6,
+   "build_h": 10.3,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -311,8 +308,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 7.3,
-   "build_h": 30.9,
+   "watchdog_h": 9.9,
+   "build_h": 33.6,
    "last_build_failed": {
     "run": "https://github.com/edbackulin-eng/map-timelapse/actions/runs/44799895664",
     "id": 44799895664,
@@ -387,8 +384,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 4.8,
-   "build_h": 4.8,
+   "watchdog_h": 7.4,
+   "build_h": 7.4,
    "last_build_failed": {
     "run": "https://github.com/edbackulin-eng/HugeToScale/actions/runs/44832350790",
     "id": 44832350790,
@@ -439,9 +436,9 @@
   }
  ],
  "gpu": {
-  "hours": 5.82,
+  "hours": 5.43,
   "parts": {
-   "closed-tabs": 5.82,
+   "closed-tabs": 5.43,
    "What If": 0.0,
    "dinosaurs": 0.0
   }
