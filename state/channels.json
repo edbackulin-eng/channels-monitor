@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T08:12:23Z",
+ "at": "2026-11-21T11:16:48Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,7 +27,7 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 17.0,
+   "build_h": 20.0,
    "last_build_failed": null,
    "failures": [
     {
@@ -37,30 +37,13 @@
      "at": "2026-11-18T13:03:59Z",
      "kind": null,
      "workflow": ".github/workflows/build-v2.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/whatif-channel/actions/runs/44261282033",
-     "id": 44261282033,
-     "step": "blender (5) / 3D shots, share 5 of 8",
-     "at": "2026-11-18T09:57:58Z",
-     "kind": null,
-     "workflow": ".github/workflows/build-v2.yml"
     }
    ],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
    "topics": 30,
-   "actions": [
-    {
-     "at": "2026-11-21T08:12:23Z",
-     "channel": "whatif",
-     "level": 2,
-     "action": "autofix",
-     "why": "blender (#) / #d shots, share # of # |",
-     "result": "no patch: Gemini: No error log was provided to identify the cause of the failure."
-    }
-   ]
+   "actions": []
   },
   {
    "key": "closed-tabs",
@@ -88,7 +71,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 6.8,
+   "build_h": 9.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -105,6 +88,10 @@
     [
      "buffer",
      "0 of the next 3 slots have a video (2 waiting for approval or a slot)"
+    ],
+    [
+     "build",
+     "last successful build 38.4 h ago"
     ]
    ],
    "slots": [
@@ -128,7 +115,7 @@
    "scheduled_ahead": 0,
    "waiting": 2,
    "watchdog_h": 0.0,
-   "build_h": 35.3,
+   "build_h": 38.4,
    "last_build_failed": null,
    "failures": [
     {
@@ -159,7 +146,7 @@
    "topics": 18,
    "actions": [
     {
-     "at": "2026-11-21T08:12:23Z",
+     "at": "2026-11-21T11:16:48Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
@@ -167,12 +154,12 @@
      "result": "started"
     },
     {
-     "at": "2026-11-21T08:12:23Z",
+     "at": "2026-11-21T11:16:48Z",
      "channel": "dinosaurs",
      "level": 2,
      "action": "autofix",
      "why": "prepare / german narration, #.#d layers, species check, plan, footage, voice lines |",
-     "result": "no patch: Gemini: No failure log was provided, so the cause cannot be determined with certainty."
+     "result": "no patch: the edit does not match the file once"
     }
    ]
   },
@@ -206,8 +193,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": 0,
-   "watchdog_h": -0.0,
-   "build_h": 11.7,
+   "watchdog_h": 0.0,
+   "build_h": 14.8,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -241,8 +228,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 7.3,
-   "build_h": -0.1,
+   "watchdog_h": 10.3,
+   "build_h": 3.0,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -276,8 +263,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 6.6,
-   "build_h": 13.3,
+   "watchdog_h": 9.7,
+   "build_h": 1.2,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -293,7 +280,7 @@
    "problems": [
     [
      "build",
-     "last successful build 36.6 h ago"
+     "last successful build 39.7 h ago"
     ],
     [
      "build-failed",
@@ -320,8 +307,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 13.0,
-   "build_h": 36.6,
+   "watchdog_h": 16.1,
+   "build_h": 39.7,
    "last_build_failed": {
     "run": "https://github.com/edbackulin-eng/map-timelapse/actions/runs/44799895664",
     "id": 44799895664,
@@ -396,8 +383,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 10.4,
-   "build_h": 10.4,
+   "watchdog_h": 13.5,
+   "build_h": 13.5,
    "last_build_failed": {
     "run": "https://github.com/edbackulin-eng/HugeToScale/actions/runs/44832350790",
     "id": 44832350790,
