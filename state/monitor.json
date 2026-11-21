@@ -3,11 +3,12 @@
  "alarms": {
   "dinosaurs:buffer": "Urzeit (dinosaurs): 0 of the next 3 slots have a video (2 waiting for approval or a slot)",
   "archive:topics": "Yesterday in Color: 8 topics left (min 10)",
+  "aot:build": "America Over Time: last successful build 36.6 h ago",
   "aot:build-failed": "America Over Time: last build failed at upload / Upload next reserve video",
   "hts:buffer": "Huge To Scale: 1 of the next 3 slots have a video",
   "hts:build-failed": "Huge To Scale: last build failed at render / render (ladder_volcanoes, 2, 187, 279, blender) / render frames 187-279"
  },
- "last_pass": "2026-11-21T05:08:31Z",
+ "last_pass": "2026-11-21T08:12:23Z",
  "planned": [
   {
    "id": "ct-build-0711",
@@ -29,10 +30,10 @@
  ],
  "requeued": [],
  "done": {
-  "whatif:requeue": "2026-11-21T05:08:31Z",
+  "whatif:requeue": "2026-11-21T08:12:23Z",
   "archive:build": "2026-11-17T23:08:11Z",
   "whatif:watchdog": "2026-11-06T11:03:13Z",
-  "dinosaurs:build": "2026-11-21T02:30:29Z",
+  "dinosaurs:build": "2026-11-21T08:12:23Z",
   "archive:watchdog": "2026-11-08T20:24:14Z",
   "closed-tabs:topics": "2026-11-19T20:16:43Z",
   "closed-tabs:watchdog": "2026-11-13T14:14:08Z",
