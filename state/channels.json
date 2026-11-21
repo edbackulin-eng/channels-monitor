@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T11:16:48Z",
+ "at": "2026-11-21T14:22:56Z",
  "channels": [
   {
    "key": "whatif",
@@ -27,18 +27,9 @@
    "scheduled_ahead": 3,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 20.0,
+   "build_h": 0.7,
    "last_build_failed": null,
-   "failures": [
-    {
-     "run": "https://github.com/edbackulin-eng/whatif-channel/actions/runs/44281130610",
-     "id": 44281130610,
-     "step": "blender (0) / 3D shots, share 0 of 8",
-     "at": "2026-11-18T13:03:59Z",
-     "kind": null,
-     "workflow": ".github/workflows/build-v2.yml"
-    }
-   ],
+   "failures": [],
    "waiting_built": 0,
    "owner": [],
    "failed": [],
@@ -71,7 +62,7 @@
    "scheduled_ahead": 2,
    "waiting": null,
    "watchdog_h": 0.0,
-   "build_h": 9.9,
+   "build_h": 13.0,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -91,7 +82,7 @@
     ],
     [
      "build",
-     "last successful build 38.4 h ago"
+     "last successful build 41.5 h ago"
     ]
    ],
    "slots": [
@@ -115,7 +106,7 @@
    "scheduled_ahead": 0,
    "waiting": 2,
    "watchdog_h": 0.0,
-   "build_h": 38.4,
+   "build_h": 41.5,
    "last_build_failed": null,
    "failures": [
     {
@@ -146,7 +137,7 @@
    "topics": 18,
    "actions": [
     {
-     "at": "2026-11-21T11:16:48Z",
+     "at": "2026-11-21T14:22:56Z",
      "channel": "dinosaurs",
      "level": 1,
      "action": "start episode.yml",
@@ -154,12 +145,12 @@
      "result": "started"
     },
     {
-     "at": "2026-11-21T11:16:48Z",
+     "at": "2026-11-21T14:22:56Z",
      "channel": "dinosaurs",
      "level": 2,
      "action": "autofix",
      "why": "prepare / german narration, #.#d layers, species check, plan, footage, voice lines |",
-     "result": "no patch: the edit does not match the file once"
+     "result": "no patch: Gemini: The failure log is empty, so the exact error message and failing line cannot be identified."
     }
    ]
   },
@@ -194,7 +185,7 @@
    "scheduled_ahead": 2,
    "waiting": 0,
    "watchdog_h": 0.0,
-   "build_h": 14.8,
+   "build_h": 17.9,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -228,8 +219,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 10.3,
-   "build_h": 3.0,
+   "watchdog_h": 13.4,
+   "build_h": 6.1,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -263,8 +254,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 9.7,
-   "build_h": 1.2,
+   "watchdog_h": 12.8,
+   "build_h": 4.4,
    "last_build_failed": null,
    "failures": [],
    "waiting_built": 0,
@@ -280,7 +271,7 @@
    "problems": [
     [
      "build",
-     "last successful build 39.7 h ago"
+     "last successful build 42.8 h ago"
     ],
     [
      "build-failed",
@@ -307,8 +298,8 @@
    "buffer": 2,
    "scheduled_ahead": 2,
    "waiting": null,
-   "watchdog_h": 16.1,
-   "build_h": 39.7,
+   "watchdog_h": 19.2,
+   "build_h": 42.8,
    "last_build_failed": {
     "run": "https://github.com/edbackulin-eng/map-timelapse/actions/runs/44799895664",
     "id": 44799895664,
@@ -331,14 +322,6 @@
      "id": 44361659084,
      "step": "upload / Upload next reserve video",
      "at": "2026-11-18T17:43:10Z",
-     "kind": null,
-     "workflow": ".github/workflows/upload.yml"
-    },
-    {
-     "run": "https://github.com/edbackulin-eng/map-timelapse/actions/runs/44316573560",
-     "id": 44316573560,
-     "step": "upload / Upload next reserve video",
-     "at": "2026-11-18T13:43:41Z",
      "kind": null,
      "workflow": ".github/workflows/upload.yml"
     }
@@ -383,8 +366,8 @@
    "buffer": 1,
    "scheduled_ahead": 1,
    "waiting": null,
-   "watchdog_h": 13.5,
-   "build_h": 13.5,
+   "watchdog_h": 16.6,
+   "build_h": 16.6,
    "last_build_failed": {
     "run": "https://github.com/edbackulin-eng/HugeToScale/actions/runs/44832350790",
     "id": 44832350790,
